@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 
 interface AssociationItem {
@@ -158,6 +160,125 @@ const associationItems: AssociationItem[] = [
 ];
 
 export default function ProfessionalAssociations() {
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const [isHovered, setIsHovered] = useState(false);
+    const [isDragging, setIsDragging] = useState(false);
+
+    const isDownRef = useRef(false);
+    const startXRef = useRef(0);
+    const scrollLeftRef = useRef(0);
+    const animationFrameId = useRef<number | null>(null);
+
+    // Initial positioning: start in the middle set of 3 so dragging left or right works seamlessly
+    useEffect(() => {
+        const container = scrollContainerRef.current;
+        if (!container) return;
+
+        // Allow layout to render before calculating scrollWidth
+        const timer = setTimeout(() => {
+            if (container) {
+                const singleSetWidth = container.scrollWidth / 3;
+                if (singleSetWidth > 0) {
+                    container.scrollLeft = singleSetWidth;
+                }
+            }
+        }, 50);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    // Smooth auto-play loop with requestAnimationFrame
+    useEffect(() => {
+        const container = scrollContainerRef.current;
+        if (!container) return;
+
+        const speed = 0.8; // pixels per frame
+
+        const step = () => {
+            if (!isHovered && !isDownRef.current && container) {
+                container.scrollLeft += speed;
+                const singleSetWidth = container.scrollWidth / 3;
+
+                if (singleSetWidth > 0) {
+                    if (container.scrollLeft >= singleSetWidth * 2) {
+                        container.scrollLeft -= singleSetWidth;
+                    } else if (container.scrollLeft <= singleSetWidth * 0.1) {
+                        container.scrollLeft += singleSetWidth;
+                    }
+                }
+            }
+            animationFrameId.current = requestAnimationFrame(step);
+        };
+
+        animationFrameId.current = requestAnimationFrame(step);
+
+        return () => {
+            if (animationFrameId.current) {
+                cancelAnimationFrame(animationFrameId.current);
+            }
+        };
+    }, [isHovered]);
+
+    // Mouse drag handlers
+    const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+        const container = scrollContainerRef.current;
+        if (!container) return;
+        isDownRef.current = true;
+        setIsDragging(true);
+        startXRef.current = e.pageX - container.offsetLeft;
+        scrollLeftRef.current = container.scrollLeft;
+    };
+
+    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (!isDownRef.current) return;
+        const container = scrollContainerRef.current;
+        if (!container) return;
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const walk = (x - startXRef.current) * 1.5; // Drag speed sensitivity
+        container.scrollLeft = scrollLeftRef.current - walk;
+
+        // Wrap around seamlessly during drag
+        const singleSetWidth = container.scrollWidth / 3;
+        if (singleSetWidth > 0) {
+            if (container.scrollLeft >= singleSetWidth * 2) {
+                container.scrollLeft -= singleSetWidth;
+                scrollLeftRef.current -= singleSetWidth;
+            } else if (container.scrollLeft <= singleSetWidth * 0.1) {
+                container.scrollLeft += singleSetWidth;
+                scrollLeftRef.current += singleSetWidth;
+            }
+        }
+    };
+
+    const handleMouseUp = () => {
+        isDownRef.current = false;
+        setIsDragging(false);
+    };
+
+    const handleMouseLeave = () => {
+        isDownRef.current = false;
+        setIsDragging(false);
+        setIsHovered(false);
+    };
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    // Touch handlers for mobile
+    const handleTouchStart = () => {
+        isDownRef.current = true;
+        setIsDragging(true);
+        setIsHovered(true);
+    };
+
+    const handleTouchEnd = () => {
+        isDownRef.current = false;
+        setIsDragging(false);
+        setIsHovered(false);
+    };
+
     return (
         <section
             className="relative w-full bg-cover bg-center bg-no-repeat overflow-hidden py-12 lg:py-16 text-white"
@@ -187,7 +308,7 @@ export default function ProfessionalAssociations() {
                 </p>
             </div>
 
-            {/* Marquee Container with subtle gradient edge fades */}
+            {/* Drag & Auto-play Marquee Container with subtle gradient edge fades */}
             <div className="relative z-10 w-full overflow-hidden">
                 {/* Left gradient fade */}
                 <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#061533] via-[#061533]/80 to-transparent z-20" />
@@ -195,37 +316,54 @@ export default function ProfessionalAssociations() {
                 {/* Right gradient fade */}
                 <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[#061533] via-[#061533]/80 to-transparent z-20" />
 
-                {/* Marquee Track: Seamless Infinite Loop */}
-                <div className="animate-marquee gap-4 sm:gap-5 py-2 px-4 flex">
-                    {[...associationItems, ...associationItems].map((item, index) => (
-                        <div
-                            key={`${item.id}-${index}`}
-                            className="w-[185px] sm:w-[205px] h-[180px] sm:h-[190px] bg-white rounded-xl shadow-sm border border-gray-100 p-4 flex flex-col items-center justify-between text-center select-none shrink-0 transition-transform duration-300 hover:scale-[1.03] hover:shadow-md group"
-                        >
-                            {/* Logo Image */}
-                            <div className="h-12 w-full flex items-center justify-center">
-                                <Image
-                                    src={item.logo}
-                                    alt={item.title}
-                                    width={item.logoWidth}
-                                    height={item.logoHeight}
-                                    className="max-h-11 max-w-[85%] object-contain"
-                                />
-                            </div>
+                {/* Interactive Drag & Auto-play Track */}
+                <div
+                    ref={scrollContainerRef}
+                    onMouseDown={handleMouseDown}
+                    onMouseMove={handleMouseMove}
+                    onMouseUp={handleMouseUp}
+                    onMouseLeave={handleMouseLeave}
+                    onMouseEnter={handleMouseEnter}
+                    onTouchStart={handleTouchStart}
+                    onTouchEnd={handleTouchEnd}
+                    className={`w-full overflow-x-auto no-scrollbar flex gap-4 sm:gap-5 py-3 px-4 select-none ${
+                        isDragging ? "cursor-grabbing" : "cursor-grab"
+                    }`}
+                    style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+                >
+                    {/* Render 3 copies of items for seamless infinite drag and auto-scroll */}
+                    {[...associationItems, ...associationItems, ...associationItems].map(
+                        (item, index) => (
+                            <div
+                                key={`${item.id}-${index}`}
+                                className="w-[185px] sm:w-[205px] h-[180px] sm:h-[190px] bg-white rounded-xl shadow-sm border border-gray-100 p-4 flex flex-col items-center justify-between text-center select-none shrink-0 transition-transform duration-300 hover:scale-[1.03] hover:shadow-md group pointer-events-auto"
+                            >
+                                {/* Logo Image */}
+                                <div className="h-12 w-full flex items-center justify-center pointer-events-none">
+                                    <Image
+                                        src={item.logo}
+                                        alt={item.title}
+                                        width={item.logoWidth}
+                                        height={item.logoHeight}
+                                        draggable={false}
+                                        className="max-h-11 max-w-[85%] object-contain select-none pointer-events-none"
+                                    />
+                                </div>
 
-                            {/* Title */}
-                            <h4 className="font-sans font-bold text-[12px] sm:text-[12.5px] text-[#091D46] leading-snug line-clamp-2 px-1">
-                                {item.title}
-                            </h4>
+                                {/* Title */}
+                                <h4 className="font-sans font-bold text-[12px] sm:text-[12.5px] text-[#091D46] leading-snug line-clamp-2 px-1 select-none">
+                                    {item.title}
+                                </h4>
 
-                            {/* Membership */}
-                            <div className="pt-2 border-t border-gray-100 w-full mt-auto">
-                                <span className="text-[10.5px] sm:text-[11px] font-bold tracking-wider text-[#ECAB3C] uppercase block truncate">
-                                    {item.membership}
-                                </span>
+                                {/* Membership */}
+                                <div className="pt-2 border-t border-gray-100 w-full mt-auto select-none">
+                                    <span className="text-[10.5px] sm:text-[11px] font-bold tracking-wider text-[#ECAB3C] uppercase block truncate select-none">
+                                        {item.membership}
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    )}
                 </div>
             </div>
         </section>
