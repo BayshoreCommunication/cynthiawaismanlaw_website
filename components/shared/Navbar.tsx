@@ -109,11 +109,33 @@ export default function Navbar() {
 
           {/* Right: Phone & Mobile Hamburger */}
           <div className="flex items-center gap-4 sm:gap-6">
+            {/* Call Action Link: Icon only on phone, Icon + Number on web */}
             <a
               href="tel:+18132796180"
-              className="text-lg sm:text-2xl md:text-[26px] font-medium tracking-tight text-[#162a55] hover:text-[#ECAB3C] transition-colors whitespace-nowrap"
+              aria-label="Call +1 (813) 279-6180"
+              className="inline-flex items-center gap-2 sm:gap-2.5 text-lg sm:text-2xl font-medium tracking-tight text-[#162a55] hover:text-[#ECAB3C] transition-colors whitespace-nowrap group"
             >
-              +1 (813) 279-6180
+              {/* Call Icon (always visible) */}
+              <span className="w-9 h-9 sm:w-auto sm:h-auto rounded-full bg-[#fdf8f0] sm:bg-transparent border sm:border-0 border-[#ECAB3C]/50 flex items-center justify-center text-[#ECAB3C] group-hover:scale-105 transition-transform shrink-0">
+                <svg
+                  className="w-4 h-4 sm:w-5 sm:h-5 md:w-[22px] md:h-[22px]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+              </span>
+
+              {/* Number (hidden on phone, visible on web / sm and up) */}
+              <span className="hidden sm:inline">
+                +1 (813) 279-6180
+              </span>
             </a>
 
             {/* Mobile Hamburger Button */}
@@ -161,21 +183,20 @@ export default function Navbar() {
       {/* Desktop Navigation Bar */}
       <nav className="w-full bg-[#f1f1f1] border-b border-[#e5e5e5] hidden lg:block">
         <div className="w-full max-w-[1320px] mx-auto px-4">
-          <ul className="flex items-center flex-wrap gap-x-6 xl:gap-x-7 py-2.5">
+          <ul className="w-full flex items-center justify-between py-2.5">
             {navItems.map((item) => {
               const active = isActive(item);
               const hasChildren = Boolean(item.children && item.children.length > 0);
 
               return (
-                <li key={item.label} className="relative group">
+                <li key={item.label} className="relative group shrink-0">
                   <div className="flex items-center">
                     <Link
                       href={item.href}
-                      className={`text-[14px] xl:text-[15px] font-semibold py-1.5 transition-colors inline-flex items-center gap-1 ${
-                        active
+                      className={`whitespace-nowrap text-[13px] xl:text-[14.5px] 2xl:text-[15px] font-semibold py-1.5 transition-colors inline-flex items-center gap-1 ${active
                           ? "text-[#ECAB3C]"
                           : "text-[#162a55] hover:text-[#ECAB3C]"
-                      }`}
+                        }`}
                     >
                       {item.label}
                       {hasChildren && (
@@ -204,11 +225,10 @@ export default function Navbar() {
                           <Link
                             key={subItem.label}
                             href={subItem.href}
-                            className={`block px-4 py-2 text-[13.5px] transition-colors ${
-                              pathname === subItem.href
+                            className={`block px-4 py-2 text-[13.5px] transition-colors ${pathname === subItem.href
                                 ? "text-[#ECAB3C] bg-gray-50 font-medium"
                                 : "text-[#162a55] hover:text-[#ECAB3C] hover:bg-gray-50"
-                            }`}
+                              }`}
                           >
                             {subItem.label}
                           </Link>
@@ -239,11 +259,10 @@ export default function Navbar() {
                       <Link
                         href={item.href}
                         onClick={() => !hasChildren && setMobileMenuOpen(false)}
-                        className={`text-[15px] font-semibold transition-colors py-1 ${
-                          active
+                        className={`text-[15px] font-semibold transition-colors py-1 ${active
                             ? "text-[#ECAB3C]"
                             : "text-[#162a55] hover:text-[#ECAB3C]"
-                        }`}
+                          }`}
                       >
                         {item.label}
                       </Link>
@@ -256,9 +275,8 @@ export default function Navbar() {
                           aria-label={`Toggle ${item.label} submenu`}
                         >
                           <svg
-                            className={`w-4 h-4 transition-transform duration-200 ${
-                              isExpanded ? "rotate-180" : ""
-                            }`}
+                            className={`w-4 h-4 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""
+                              }`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -282,11 +300,10 @@ export default function Navbar() {
                             <Link
                               href={subItem.href}
                               onClick={() => setMobileMenuOpen(false)}
-                              className={`block text-[14px] py-1 transition-colors ${
-                                pathname === subItem.href
+                              className={`block text-[14px] py-1 transition-colors ${pathname === subItem.href
                                   ? "text-[#ECAB3C] font-medium"
                                   : "text-[#162a55] hover:text-[#ECAB3C]"
-                              }`}
+                                }`}
                             >
                               {subItem.label}
                             </Link>

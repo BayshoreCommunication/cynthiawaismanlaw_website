@@ -233,9 +233,6 @@ export default function EstatePlanningSection() {
                     </div>
                 </div>
             </div>
-
-            {/* Bottom Accent Bar */}
-            <div className="w-full h-1 bg-[#091D46]" />
         </section>
     );
 }

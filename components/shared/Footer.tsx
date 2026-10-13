@@ -123,7 +123,7 @@ export default function Footer() {
 
                                 <div className="text-sm text-gray-300 space-y-0.5 leading-relaxed">
                                     <p>2451 McMullen Booth Rd</p>
-                                    <p>Ste. 239 Clearwater, FL 33759</p>
+                                    <p>Ste. 214 Clearwater, FL 33759</p>
                                 </div>
 
                                 <div className="pt-1">

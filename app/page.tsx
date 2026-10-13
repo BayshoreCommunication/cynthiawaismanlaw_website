@@ -17,8 +17,8 @@ export default function HomePage() {
       <ServicesSection />
       <AboutFirmSection />
       <EstatePlanningSection />
-      <ImmigrationServicesSection />
       <ProfessionalAssociations />
+      <ImmigrationServicesSection />
       <TestimonialsSection />
       <CallToSection />
       <ContactFirmSection />

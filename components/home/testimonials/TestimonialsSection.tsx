@@ -313,7 +313,7 @@ export default function TestimonialsSection() {
       {/* 1320px Global Content Container - Keeps carousel constrained within website container */}
       <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-14 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-10 ">
           {/* Subheading with gold accent lines */}
           <div className="inline-flex items-center gap-3">
             <span className="w-8 h-[2px] bg-[#ECAB3C]" />
@@ -393,9 +393,8 @@ export default function TestimonialsSection() {
               onMouseUp={handleMouseUp}
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
-              className={`w-full overflow-x-auto no-scrollbar flex gap-6 py-4 px-1 select-none ${
-                isDragging ? "cursor-grabbing" : "cursor-grab"
-              }`}
+              className={`w-full overflow-x-auto no-scrollbar flex gap-6 py-4 px-1 select-none ${isDragging ? "cursor-grabbing" : "cursor-grab"
+                }`}
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
               {/* Render 3 duplicate sets of items for seamless infinite marquee loop */}
