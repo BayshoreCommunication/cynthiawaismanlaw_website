@@ -280,7 +280,7 @@ export default function ImmigrationServicesSection() {
                                 </div>
                                 <div className="space-y-1">
                                     <p className="font-bold text-xs sm:text-[13px] text-[#091D46] leading-snug">
-                                        20+ Years of Experience
+                                        25+ Years of Experience
                                     </p>
                                     <p className="text-[11px] text-gray-500 leading-snug">
                                         Trusted legal guidance for individuals and families.

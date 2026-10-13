@@ -263,10 +263,10 @@ export default function Footer() {
                                     <div>
                                         <p className="text-sm text-gray-300">Email Us</p>
                                         <a
-                                            href="mailto:info@waismanlaw.com"
+                                            href="mailto:cynthia@cynthiawaismanlaw.com"
                                             className="text-base font-semibold text-white hover:text-[#ECAB3C] transition-colors break-all"
                                         >
-                                            info@waismanlaw.com
+                                            cynthia@cynthiawaismanlaw.com
                                         </a>
                                     </div>
                                 </div>

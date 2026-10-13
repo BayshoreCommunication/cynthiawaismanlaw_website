@@ -74,9 +74,9 @@ export default function ContactFirmSection() {
 
                     {/* Subtitle Description */}
                     <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-2xl mx-auto">
-                        Whether you are pursuing U.S. citizenship or need a comprehensive
-                        estate plan, our firm can help. Let us give you the peace of
-                        mind that comes with having all your affairs in order.
+                        Whether you&apos;re navigating the U.S. immigration process, planning your estate,
+                        or coping with the loss of a loved one, our firm is here to guide you with
+                        compassion, integrity, and personalized legal support.
                     </p>
                 </div>
 
@@ -143,13 +143,13 @@ export default function ContactFirmSection() {
                                 </div>
                                 <div>
                                     <span className="text-[11px] font-bold tracking-widest text-[#ECAB3C] uppercase block mb-0.5">
-                                        VISIT OUR OFFICE
+                                        OUR OFFICE LOCATIONS
                                     </span>
                                     <span className="text-base sm:text-lg font-bold text-white block">
-                                        Tampa, Florida
+                                        Tampa, Florida – Main Office
                                     </span>
                                     <span className="text-xs sm:text-[13px] text-gray-300 font-medium block mt-0.5">
-                                        Near Wesley Chapel & Clearwater
+                                        Clearwater &amp; Wesley Chapel – By Appointment Only
                                     </span>
                                     <p className="text-xs text-blue-200/80 mt-1 leading-relaxed max-w-xs">
                                         Conveniently located to serve Tampa Bay and surrounding
@@ -180,10 +180,10 @@ export default function ContactFirmSection() {
                                         EMAIL US
                                     </span>
                                     <a
-                                        href="mailto:info@waismanlaw.com"
+                                        href="mailto:cynthia@cynthiawaismanlaw.com"
                                         className="text-base sm:text-lg font-bold text-white hover:text-[#ECAB3C] transition-colors block"
                                     >
-                                        info@waismanlaw.com
+                                        cynthia@cynthiawaismanlaw.com
                                     </a>
                                     <p className="text-xs text-blue-200/80 mt-0.5">
                                         We typically respond within one business day.
