@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "About Our Firm | Cynthia I. Waisman, P.A. | Tampa Bay Law Firm",
+  title: "About Our Firm",
   description:
     "Learn about Cynthia I. Waisman, P.A. Dedicated legal counsel in Immigration Law and Estate Planning serving Tampa, Clearwater, and Wesley Chapel.",
 };

@@ -19,11 +19,11 @@ const siteUrl = "https://cynthiawaismanlaw-website.vercel.app";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Cynthia I. Waisman, P.A. | Tampa Immigration & Estate Planning Attorney",
+    default: "Cynthia I. Waisman, P.A. | Immigration & Estate Planning Law Firm",
     template: "%s | Cynthia I. Waisman, P.A.",
   },
   description:
-    "Cynthia I. Waisman, P.A. provides dedicated legal representation in immigration law, estate planning, probate administration, and guardianship across Tampa, Clearwater, and Florida.",
+    "Cynthia I. Waisman, P.A. provides dedicated and compassionate legal representation in Immigration Law, Estate Planning, Probate Administration, and Guardianship across Tampa, Clearwater, and Wesley Chapel, Florida.",
   keywords: [
     "Cynthia I. Waisman",
     "Tampa Immigration Attorney",
@@ -31,6 +31,8 @@ export const metadata: Metadata = {
     "Wesley Chapel Probate Law",
     "Florida Guardianship Attorney",
     "Tampa Bay Law Firm",
+    "Immigration Law Florida",
+    "Wills and Trusts Tampa",
   ],
   authors: [{ name: "Cynthia I. Waisman, P.A." }],
   creator: "Cynthia I. Waisman, P.A.",
@@ -43,24 +45,24 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Cynthia I. Waisman, P.A.",
-    title: "Cynthia I. Waisman, P.A. | Tampa Immigration & Estate Planning Attorney",
+    title: "Cynthia I. Waisman, P.A. | Immigration & Estate Planning Law Firm",
     description:
-      "Dedicated legal counsel in Immigration Law, Estate Planning, Probate Administration, and Guardianship across Tampa, Clearwater, and Wesley Chapel.",
+      "Dedicated legal counsel in Immigration Law, Estate Planning, Probate Administration, and Guardianship across Tampa, Clearwater, and Wesley Chapel, Florida.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph.png",
         width: 1200,
         height: 630,
-        alt: "Cynthia I. Waisman, P.A. Attorney at Law",
+        alt: "Cynthia I. Waisman, P.A. Attorney At Law",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cynthia I. Waisman, P.A. | Tampa Immigration & Estate Planning Attorney",
+    title: "Cynthia I. Waisman, P.A. | Immigration & Estate Planning Law Firm",
     description:
-      "Dedicated legal counsel in Immigration Law, Estate Planning, Probate Administration, and Guardianship across Tampa, Clearwater, and Wesley Chapel.",
-    images: ["/og-image.png"],
+      "Dedicated legal counsel in Immigration Law, Estate Planning, Probate Administration, and Guardianship across Tampa, Clearwater, and Wesley Chapel, Florida.",
+    images: ["/opengraph.png"],
   },
   robots: {
     index: true,
