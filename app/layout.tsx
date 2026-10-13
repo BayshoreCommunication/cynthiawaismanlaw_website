@@ -14,16 +14,72 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://cynthiawaismanlaw-website.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Cynthia I. Waisman, P.A. | Tampa Immigration & Estate Planning Attorney",
     template: "%s | Cynthia I. Waisman, P.A.",
   },
   description:
     "Cynthia I. Waisman, P.A. provides dedicated legal representation in immigration law, estate planning, probate administration, and guardianship across Tampa, Clearwater, and Florida.",
+  keywords: [
+    "Cynthia I. Waisman",
+    "Tampa Immigration Attorney",
+    "Clearwater Estate Planning Lawyer",
+    "Wesley Chapel Probate Law",
+    "Florida Guardianship Attorney",
+    "Tampa Bay Law Firm",
+  ],
+  authors: [{ name: "Cynthia I. Waisman, P.A." }],
+  creator: "Cynthia I. Waisman, P.A.",
+  publisher: "Cynthia I. Waisman, P.A.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Cynthia I. Waisman, P.A.",
+    title: "Cynthia I. Waisman, P.A. | Tampa Immigration & Estate Planning Attorney",
+    description:
+      "Dedicated legal counsel in Immigration Law, Estate Planning, Probate Administration, and Guardianship across Tampa, Clearwater, and Wesley Chapel.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cynthia I. Waisman, P.A. Attorney at Law",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cynthia I. Waisman, P.A. | Tampa Immigration & Estate Planning Attorney",
+    description:
+      "Dedicated legal counsel in Immigration Law, Estate Planning, Probate Administration, and Guardianship across Tampa, Clearwater, and Wesley Chapel.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
       lang="en"
