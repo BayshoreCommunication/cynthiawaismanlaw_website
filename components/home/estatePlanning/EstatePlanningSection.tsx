@@ -15,7 +15,7 @@ const estatePlanningFeatures: EstatePlanningFeature[] = [
             "You'll work directly with Cynthia, not a high-volume legal factory. She takes the time to hear your story, understand what matters to your family, and help you make informed decisions.",
         icon: (
             <svg
-                className="w-5 h-5 text-[#091D46]"
+                className="w-6 h-6 sm:w-7 sm:h-7 text-[#091D46]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -41,7 +41,7 @@ const estatePlanningFeatures: EstatePlanningFeature[] = [
             "Children. Second marriages. Property. Aging parents. Beneficiaries. Future care. Every family is different. Cynthia looks beyond the documents to understand the people the plan is designed to protect.",
         icon: (
             <svg
-                className="w-5 h-5 text-[#091D46]"
+                className="w-6 h-6 sm:w-7 sm:h-7 text-[#091D46]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -62,7 +62,7 @@ const estatePlanningFeatures: EstatePlanningFeature[] = [
             "With decades of legal experience and more than 1,000 trusts personally prepared, Cynthia has helped families with a wide range of estate planning needs and complex situations.",
         icon: (
             <svg
-                className="w-5 h-5 text-[#091D46]"
+                className="w-6 h-6 sm:w-7 sm:h-7 text-[#091D46]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -83,7 +83,7 @@ const estatePlanningFeatures: EstatePlanningFeature[] = [
             "You receive the experience of an established attorney with the personal attention and accessibility of a boutique practice.",
         icon: (
             <svg
-                className="w-5 h-5 text-[#091D46]"
+                className="w-6 h-6 sm:w-7 sm:h-7 text-[#091D46]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -180,7 +180,7 @@ export default function EstatePlanningSection() {
 
                                 {/* Stat Text */}
                                 <div className="flex flex-col">
-                                    <span className="font-sans font-bold text-3xl sm:text-4xl text-[#ECAB3C] leading-none tracking-tight">
+                                    <span className="font-sans font-extrabold text-3xl sm:text-4xl text-[#ECAB3C] leading-none tracking-tight">
                                         1,000+
                                     </span>
                                     <span className="font-sans font-bold text-xs sm:text-[12.5px] text-[#091D46] uppercase tracking-wider mt-1.5 leading-snug">
@@ -207,16 +207,15 @@ export default function EstatePlanningSection() {
                         {estatePlanningFeatures.map((feature, idx) => (
                             <div
                                 key={feature.id}
-                                className={`flex flex-col space-y-3 ${
-                                    idx === 0
+                                className={`flex flex-col space-y-3 ${idx === 0
                                         ? "lg:pr-6 xl:pr-8"
                                         : idx === 3
-                                        ? "lg:pl-6 xl:pl-8"
-                                        : "lg:px-6 xl:px-8"
-                                }`}
+                                            ? "lg:pl-6 xl:pl-8"
+                                            : "lg:px-6 xl:px-8"
+                                    }`}
                             >
                                 {/* Circular Icon Badge */}
-                                <div className="w-11 h-11 rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 flex items-center justify-center shrink-0">
+                                <div className="w-[60px] h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 flex items-center justify-center shrink-0 shadow-xs">
                                     {feature.icon}
                                 </div>
 

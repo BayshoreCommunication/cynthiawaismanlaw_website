@@ -17,11 +17,11 @@ const immigrationCards: ImmigrationCard[] = [
         id: "family-marriage",
         title: "Family & Marriage",
         subtitle: "Helping families stay together and build a future in the United States.",
-        image: "/images/immigration/family-marriage.jpg",
+        image: "/images/immigration/family-marriage.png",
         link: "/immigration-law-overview",
         badgeIcon: (
             <svg
-                className="w-5 h-5 text-[#091D46]"
+                className="w-6 h-6 sm:w-7 sm:h-7 text-[#091D46]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -46,11 +46,11 @@ const immigrationCards: ImmigrationCard[] = [
         id: "green-cards",
         title: "Green Cards & Status",
         subtitle: "Guidance for obtaining, maintaining, and updating your immigration status.",
-        image: "/images/immigration/green-cards.jpg",
+        image: "/images/immigration/green-cards.png",
         link: "/immigration-law-overview",
         badgeIcon: (
             <svg
-                className="w-5 h-5 text-[#091D46]"
+                className="w-6 h-6 sm:w-7 sm:h-7 text-[#091D46]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -75,11 +75,11 @@ const immigrationCards: ImmigrationCard[] = [
         id: "citizenship",
         title: "Citizenship",
         subtitle: "Helping you take the next step toward becoming a U.S. citizen.",
-        image: "/images/immigration/citizenship.jpg",
+        image: "/images/immigration/citizenship.png",
         link: "/immigration-law-overview",
         badgeIcon: (
             <svg
-                className="w-5 h-5 text-[#091D46]"
+                className="w-6 h-6 sm:w-7 sm:h-7 text-[#091D46]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -104,11 +104,11 @@ const immigrationCards: ImmigrationCard[] = [
         id: "special-matters",
         title: "Special Immigration Matters",
         subtitle: "Support for unique and sensitive immigration situations.",
-        image: "/images/immigration/special-matters.jpg",
+        image: "/images/immigration/special-matters.png",
         link: "/immigration-law-overview",
         badgeIcon: (
             <svg
-                className="w-5 h-5 text-[#091D46]"
+                className="w-6 h-6 sm:w-7 sm:h-7 text-[#091D46]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -180,7 +180,7 @@ export default function ImmigrationServicesSection() {
                             className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                         >
                             <div>
-                                {/* Top Image Header with Circular Floating Badge */}
+                                {/* Top Image Header */}
                                 <div className="relative w-full h-40 sm:h-44 overflow-hidden">
                                     <Image
                                         src={card.image}
@@ -189,16 +189,19 @@ export default function ImmigrationServicesSection() {
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
-                                    {/* Circular Icon Badge */}
-                                    <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-[#fdf8f0] border-2 border-[#ECAB3C] shadow-sm flex items-center justify-center z-10 group-hover:bg-[#ECAB3C] group-hover:border-[#091D46] transition-colors duration-300">
+                                </div>
+
+                                {/* Floating Round Icon Badge - 60px */}
+                                <div className="relative -mt-[30px] flex justify-center z-10">
+                                    <div className="w-[60px] h-[60px] rounded-full bg-[#fdfbf7] border-2 border-white shadow-md flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
                                         {card.badgeIcon}
                                     </div>
                                 </div>
 
                                 {/* Card Body */}
-                                <div className="pt-8 px-5 sm:px-6 pb-4 flex flex-col text-center">
-                                    {/* Title */}
-                                    <h4 className="font-serif text-lg sm:text-[19px] font-bold text-[#091D46] group-hover:text-[#ECAB3C] transition-colors">
+                                <div className="pt-3 px-5 sm:px-6 pb-4 flex flex-col text-center">
+                                    {/* Title - Title color does not change on hover */}
+                                    <h4 className="font-serif text-lg sm:text-[19px] font-bold text-[#091D46] transition-colors">
                                         {card.title}
                                     </h4>
 
@@ -232,14 +235,14 @@ export default function ImmigrationServicesSection() {
                                 </div>
                             </div>
 
-                            {/* Card Footer Link */}
+                            {/* Card Footer Link - Button only changes color on direct hover */}
                             <div className="px-5 sm:px-6 pb-6 pt-2">
                                 <Link
                                     href={card.link}
-                                    className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-[#091D46] group-hover:text-[#ECAB3C] transition-colors"
+                                    className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-[#091D46] hover:text-[#ECAB3C] transition-colors group/btn"
                                 >
                                     <span>Learn More</span>
-                                    <span className="group-hover:translate-x-1 transition-transform duration-200">
+                                    <span className="group-hover/btn:translate-x-1 transition-transform duration-200">
                                         →
                                     </span>
                                 </Link>
@@ -249,12 +252,12 @@ export default function ImmigrationServicesSection() {
                 </div>
 
                 {/* Bottom Strip: 4 Credibility Badges + CTA Box */}
-                <div className="bg-[#f8fafc] border border-gray-100 rounded-xl p-5 sm:p-6 lg:p-7 shadow-xs mt-10 lg:mt-12">
-                    <div className="flex flex-col xl:flex-row items-center justify-between gap-6 lg:gap-8">
+                <div className="bg-[#f8fafc] border border-gray-100 rounded-xl p-6 sm:p-7 shadow-xs mt-10 lg:mt-12">
+                    <div className="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-6 lg:gap-8">
                         {/* 4 Credibility Badges */}
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6 flex-1 w-full">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-5 flex-1 w-full">
                             {/* Badge 1: 20+ Years */}
-                            <div className="flex items-center gap-3">
+                            <div className="flex flex-col items-center text-center space-y-2">
                                 <div className="w-10 h-10 rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 flex items-center justify-center shrink-0 text-[#ECAB3C]">
                                     <svg
                                         className="w-5 h-5"
@@ -275,18 +278,18 @@ export default function ImmigrationServicesSection() {
                                         />
                                     </svg>
                                 </div>
-                                <div className="leading-tight">
-                                    <p className="font-bold text-xs sm:text-[12.5px] text-[#091D46]">
+                                <div className="space-y-1">
+                                    <p className="font-bold text-xs sm:text-[13px] text-[#091D46] leading-snug">
                                         20+ Years of Experience
                                     </p>
-                                    <p className="text-[10.5px] text-gray-500 mt-0.5">
+                                    <p className="text-[11px] text-gray-500 leading-snug">
                                         Trusted legal guidance for individuals and families.
                                     </p>
                                 </div>
                             </div>
 
                             {/* Badge 2: Personalized */}
-                            <div className="flex items-center gap-3">
+                            <div className="flex flex-col items-center text-center space-y-2">
                                 <div className="w-10 h-10 rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 flex items-center justify-center shrink-0 text-[#ECAB3C]">
                                     <svg
                                         className="w-5 h-5"
@@ -302,18 +305,18 @@ export default function ImmigrationServicesSection() {
                                         />
                                     </svg>
                                 </div>
-                                <div className="leading-tight">
-                                    <p className="font-bold text-xs sm:text-[12.5px] text-[#091D46]">
+                                <div className="space-y-1">
+                                    <p className="font-bold text-xs sm:text-[13px] text-[#091D46] leading-snug">
                                         Personalized Representation
                                     </p>
-                                    <p className="text-[10.5px] text-gray-500 mt-0.5">
+                                    <p className="text-[11px] text-gray-500 leading-snug">
                                         Your situation is unique. So is our approach.
                                     </p>
                                 </div>
                             </div>
 
                             {/* Badge 3: Tampa Bay */}
-                            <div className="flex items-center gap-3">
+                            <div className="flex flex-col items-center text-center space-y-2">
                                 <div className="w-10 h-10 rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 flex items-center justify-center shrink-0 text-[#ECAB3C]">
                                     <svg
                                         className="w-5 h-5"
@@ -329,18 +332,18 @@ export default function ImmigrationServicesSection() {
                                         />
                                     </svg>
                                 </div>
-                                <div className="leading-tight">
-                                    <p className="font-bold text-xs sm:text-[12.5px] text-[#091D46]">
+                                <div className="space-y-1">
+                                    <p className="font-bold text-xs sm:text-[13px] text-[#091D46] leading-snug">
                                         Serving The Tampa Bay Area
                                     </p>
-                                    <p className="text-[10.5px] text-gray-500 mt-0.5">
+                                    <p className="text-[11px] text-gray-500 leading-snug">
                                         Tampa • Clearwater • Wesley Chapel
                                     </p>
                                 </div>
                             </div>
 
                             {/* Badge 4: USCIS */}
-                            <div className="flex items-center gap-3">
+                            <div className="flex flex-col items-center text-center space-y-2">
                                 <div className="w-10 h-10 rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 flex items-center justify-center shrink-0 text-[#ECAB3C]">
                                     <svg
                                         className="w-5 h-5"
@@ -356,11 +359,11 @@ export default function ImmigrationServicesSection() {
                                         />
                                     </svg>
                                 </div>
-                                <div className="leading-tight">
-                                    <p className="font-bold text-xs sm:text-[12.5px] text-[#091D46]">
+                                <div className="space-y-1">
+                                    <p className="font-bold text-xs sm:text-[13px] text-[#091D46] leading-snug">
                                         USCIS-Focused Representation
                                     </p>
-                                    <p className="text-[10.5px] text-gray-500 mt-0.5">
+                                    <p className="text-[11px] text-gray-500 leading-snug">
                                         Help with applications, RFEs, interviews, and more.
                                     </p>
                                 </div>
@@ -368,35 +371,32 @@ export default function ImmigrationServicesSection() {
                         </div>
 
                         {/* Right Divider & CTA Box */}
-                        <div className="flex flex-col sm:flex-row xl:flex-col items-center gap-3 shrink-0 pt-4 xl:pt-0 border-t xl:border-t-0 xl:border-l border-gray-200 xl:pl-8 w-full xl:w-auto justify-center">
-                            <span className="text-[11px] font-bold tracking-wider text-[#091D46] uppercase text-center">
+                        <div className="flex flex-col items-center justify-center text-center shrink-0 w-full xl:w-auto pt-6 xl:pt-0 border-t xl:border-t-0 xl:border-l border-gray-200 xl:pl-8 space-y-3">
+                            <span className="text-[11px] font-bold tracking-wider text-[#091D46] uppercase">
                                 Ready to discuss your immigration options?
                             </span>
-                            <div className="flex items-center gap-4">
-                                <Link
-                                    href="/contact"
-                                    className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase px-5 py-2.5 rounded-md inline-flex items-center gap-2 shadow-xs transition-all duration-300 group hover:shadow-md"
+                            <Link
+                                href="/contact"
+                                className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase px-7 py-3 rounded-md shadow-xs transition-all duration-300 inline-flex items-center justify-center gap-2 group hover:shadow-md w-full max-w-[270px]"
+                            >
+                                <span>Schedule A Consultation</span>
+                                <span className="group-hover:translate-x-1 transition-transform duration-200">
+                                    →
+                                </span>
+                            </Link>
+                            <a
+                                href="tel:+18132796180"
+                                className="inline-flex items-center gap-2 text-[#091D46] hover:text-[#ECAB3C] transition-colors font-bold text-sm tracking-wide group pt-0.5"
+                            >
+                                <svg
+                                    className="w-4 h-4 text-[#ECAB3C] group-hover:scale-110 transition-transform"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
                                 >
-                                    <span>Schedule A Consultation</span>
-                                    <span className="group-hover:translate-x-1 transition-transform duration-200">
-                                        →
-                                    </span>
-                                </Link>
-
-                                <a
-                                    href="tel:+18132796180"
-                                    className="inline-flex items-center gap-1.5 text-[#091D46] hover:text-[#ECAB3C] transition-colors font-bold text-sm tracking-wide group"
-                                >
-                                    <svg
-                                        className="w-4 h-4 text-[#ECAB3C] group-hover:scale-110 transition-transform"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                    >
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z" />
-                                    </svg>
-                                    <span>(813) 279-6180</span>
-                                </a>
-                            </div>
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z" />
+                                </svg>
+                                <span>(813) 279-6180</span>
+                            </a>
                         </div>
                     </div>
                 </div>

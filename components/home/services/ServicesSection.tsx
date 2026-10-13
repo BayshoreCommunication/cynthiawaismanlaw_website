@@ -16,7 +16,6 @@ interface ServiceCard {
   items: ServiceItem[];
   btnText: string;
   btnHref: string;
-  isPrimaryBtn?: boolean;
 }
 
 const serviceCards: ServiceCard[] = [
@@ -25,8 +24,7 @@ const serviceCards: ServiceCard[] = [
     title: "Immigration Services",
     subtitle:
       "Helping individuals and families achieve their immigration goals with clarity and care.",
-    image: "/images/services/immigration.jpg",
-    isPrimaryBtn: true,
+    image: "/images/services/immigration.png",
     btnText: "View Immigration Services",
     btnHref: "/immigration-law-overview",
     icon: (
@@ -84,8 +82,7 @@ const serviceCards: ServiceCard[] = [
     title: "Estate Planning",
     subtitle:
       "Protecting your loved ones and your legacy with thoughtful, customized plans.",
-    image: "/images/services/estate-planning.jpg",
-    isPrimaryBtn: false,
+    image: "/images/services/estate-planning.png",
     btnText: "View Estate Planning Services",
     btnHref: "/estate-planning",
     icon: (
@@ -126,9 +123,8 @@ const serviceCards: ServiceCard[] = [
     id: "guardianship",
     title: "Guardianship Services",
     subtitle:
-      "Ensuring safety, stability, and peace of mind for vulnerable loved ones.",
-    image: "/images/services/guardianship.jpg",
-    isPrimaryBtn: false,
+      "Personalized legal guidance for you and your family with compassion, integrity, and experience.",
+    image: "/images/services/guardianship.png",
     btnText: "View Guardianship Services",
     btnHref: "/guardianship-services",
     icon: (
@@ -182,8 +178,7 @@ const serviceCards: ServiceCard[] = [
     title: "Probate Administration",
     subtitle:
       "Guiding families through the probate process with efficiency and compassion.",
-    image: "/images/services/probate.jpg",
-    isPrimaryBtn: false,
+    image: "/images/services/probate.png",
     btnText: "View Probate Services",
     btnHref: "/probate-administration",
     icon: (
@@ -251,7 +246,7 @@ export default function ServicesSection() {
         </div>
 
         {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {serviceCards.map((card) => (
             <div
               key={card.id}
@@ -310,14 +305,10 @@ export default function ServicesSection() {
               <div className="p-4 pt-2">
                 <Link
                   href={card.btnHref}
-                  className={`w-full py-3 px-2 sm:px-3 rounded-md text-[11px] xl:text-[12px] font-bold uppercase tracking-wider inline-flex items-center justify-center gap-1.5 transition-all duration-300 ${
-                    card.isPrimaryBtn
-                      ? "bg-[#ECAB3C] border border-[#ECAB3C] text-[#091D46] shadow-xs hover:bg-[#dca034]"
-                      : "bg-white text-[#091D46] border border-[#091D46] hover:bg-[#ECAB3C] hover:border-[#ECAB3C] hover:text-[#091D46] group-hover:bg-[#ECAB3C] group-hover:border-[#ECAB3C] group-hover:text-[#091D46]"
-                  }`}
+                  className="w-full py-3 px-2 sm:px-3 rounded-md text-[11px] xl:text-[12px] font-bold uppercase tracking-wider inline-flex items-center justify-center gap-1.5 transition-all duration-300 bg-white text-[#091D46] border border-[#091D46] hover:bg-[#ECAB3C] hover:border-[#ECAB3C] hover:text-[#091D46] group/btn"
                 >
                   <span className="whitespace-nowrap">{card.btnText}</span>
-                  <span className="transition-transform duration-200 group-hover:translate-x-1 shrink-0">
+                  <span className="transition-transform duration-200 group-hover/btn:translate-x-1 shrink-0">
                     →
                   </span>
                 </Link>
