@@ -134,12 +134,12 @@ export default function ContactOffices() {
           </div>
 
           {/* Heading */}
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#091D46] tracking-tight leading-tight">
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-normal text-[#091D46] tracking-tight leading-tight">
             Conveniently Located Across the Tampa Bay Area
           </h2>
 
           {/* Subtitle */}
-          <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-2xl">
+          <p className="text-sm sm:text-base text-[#4a5568] leading-relaxed max-w-2xl">
             Visit us at any of our office locations. We proudly serve clients throughout
             Tampa, Clearwater, Wesley Chapel and surrounding communities.
           </p>

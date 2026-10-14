@@ -21,7 +21,7 @@ export function BreadcrumbNav({
 
   return (
     <nav aria-label="Breadcrumb" className={`inline-flex items-center ${className}`}>
-      <ol className="flex items-center flex-wrap gap-1.5 sm:gap-2 text-xs sm:text-[13px] font-medium">
+      <ol className="flex items-center flex-wrap gap-1 sm:gap-1.5 text-xs sm:text-[13px] font-sans">
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
 
@@ -30,9 +30,8 @@ export function BreadcrumbNav({
               {index > 0 && (
                 <li
                   aria-hidden="true"
-                  className={`select-none mx-0.5 text-xs sm:text-[13px] font-normal ${
-                    isLight ? "text-white/60" : "text-gray-400"
-                  }`}
+                  className={`select-none mx-1.5 sm:mx-2 text-xs sm:text-[13px] font-normal ${isLight ? "text-white/70" : "text-gray-400"
+                    }`}
                 >
                   &gt;
                 </li>
@@ -41,20 +40,18 @@ export function BreadcrumbNav({
                 {item.href && !isLast ? (
                   <Link
                     href={item.href}
-                    className={`transition-colors ${
-                      isLight
-                        ? "text-white/80 hover:text-[#ECAB3C]"
-                        : "text-[#4a5568] hover:text-[#091D46]"
-                    }`}
+                    className={`transition-colors ${isLight
+                      ? "text-white/80 hover:text-[#ECAB3C]"
+                      : "text-[#4a5568] hover:text-[#091D46]"
+                      }`}
                   >
                     {item.label}
                   </Link>
                 ) : (
                   <span
                     aria-current={isLast ? "page" : undefined}
-                    className={`font-medium ${
-                      isLight ? "text-white" : "text-[#091D46]"
-                    }`}
+                    className={`font-medium ${isLight ? "text-white" : "text-[#091D46]"
+                      }`}
                   >
                     {item.label}
                   </span>
@@ -97,30 +94,30 @@ export default function Breadcrumb({
   // Full Page Hero Banner matching the design demo
   return (
     <section
-      className={`relative w-full overflow-hidden bg-[#091D46] text-white ${className}`}
+      className={`relative w-full overflow-hidden bg-[#012349] text-white ${className}`}
     >
       {/* Background Image: Classical Courthouse Columns with Sunlit Warmth */}
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-right lg:bg-center"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-[position:right_center]"
         style={{
           backgroundImage: `url('${bgImage}')`,
         }}
       />
 
       {/* Subtle Mobile Overlay for guaranteed contrast on narrow screens */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#061533]/90 via-[#091D46]/70 to-transparent sm:hidden pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#012349]/95 via-[#012349]/75 to-transparent sm:hidden pointer-events-none" />
 
       {/* 1320px Global Container */}
-      <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 md:py-20 lg:py-24">
+      <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24">
         {/* Breadcrumb Navigation at Top */}
-        <div className="mb-5 sm:mb-6">
+        <div className="mb-6 sm:mb-8">
           <BreadcrumbNav items={items} variant="light" />
         </div>
 
         {/* Pre-heading Badge with Gold Accent Bar */}
         {badge && (
-          <div className="inline-flex items-center gap-3 mb-3 sm:mb-4">
-            <span className="w-8 sm:w-10 h-[2px] bg-[#ECAB3C]" />
+          <div className="inline-flex items-center gap-3 mb-3.5 sm:mb-4">
+            <span className="w-10 sm:w-12 h-[2.5px] bg-[#ECAB3C]" />
             <span className="text-xs sm:text-[13px] font-bold tracking-[0.2em] text-[#ECAB3C] uppercase font-sans">
               {badge}
             </span>
@@ -129,21 +126,21 @@ export default function Breadcrumb({
 
         {/* Main Headline */}
         {title && (
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[54px] font-bold text-white tracking-tight leading-[1.15] max-w-3xl">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-[46px] lg:text-[52px] xl:text-[56px] font-normal text-white tracking-tight leading-[1.12] max-w-5xl">
             {title}
           </h1>
         )}
 
         {/* Subtitle (e.g. Attorney at Law) */}
         {subtitle && (
-          <p className="font-serif text-xl sm:text-2xl md:text-3xl text-white/95 font-normal tracking-wide mt-2 max-w-2xl">
+          <p className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-[36px] xl:text-[38px] text-white font-normal tracking-wide mt-1 sm:mt-1.5 leading-snug max-w-2xl">
             {subtitle}
           </p>
         )}
 
-        {/* Description Paragraph */}
+        {/* Description Paragraph (if any) */}
         {description && (
-          <p className="text-sm sm:text-base text-blue-100/90 leading-relaxed max-w-2xl font-sans pt-2">
+          <p className="text-sm sm:text-base text-white/90 leading-relaxed max-w-xl font-sans mt-4 sm:mt-5">
             {description}
           </p>
         )}

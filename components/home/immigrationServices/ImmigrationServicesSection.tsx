@@ -201,7 +201,7 @@ export default function ImmigrationServicesSection() {
                                 {/* Card Body */}
                                 <div className="pt-3 px-5 sm:px-6 pb-4 flex flex-col text-center">
                                     {/* Title - Title color does not change on hover */}
-                                    <h4 className="font-serif text-lg sm:text-[19px] font-bold text-[#091D46] transition-colors">
+                                    <h4 className="font-serif text-lg sm:text-[19px] font-semibold text-[#091D46] transition-colors">
                                         {card.title}
                                     </h4>
 

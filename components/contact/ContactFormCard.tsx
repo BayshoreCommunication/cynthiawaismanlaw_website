@@ -60,7 +60,7 @@ export default function ContactFormCard() {
           </span>
         </div>
 
-        <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white tracking-tight leading-snug">
+        <h3 className="font-serif text-2xl sm:text-3xl font-normal text-white tracking-tight leading-snug">
           Request a Consultation
         </h3>
 

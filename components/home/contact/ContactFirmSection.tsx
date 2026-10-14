@@ -68,7 +68,7 @@ export default function ContactFirmSection() {
                     </div>
 
                     {/* Main Title */}
-                    <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#091D46] tracking-tight leading-tight mb-4">
+                    <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-normal text-[#091D46] tracking-tight leading-tight mb-4">
                         Take the First Step Toward Peace of Mind
                     </h2>
 
@@ -273,7 +273,7 @@ export default function ContactFirmSection() {
                                 </span>
                             </div>
 
-                            <h3 className="font-serif text-2xl sm:text-[28px] font-bold text-[#091D46] tracking-tight">
+                            <h3 className="font-serif text-2xl sm:text-[28px] font-normal text-[#091D46] tracking-tight">
                                 Contact Cynthia I. Waisman, P.A.
                             </h3>
 
