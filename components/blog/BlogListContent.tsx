@@ -1,11 +1,34 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useMemo } from "react";
 import Link from "next/link";
-import { blogPosts, blogCategories } from "./blogData";
-import BlogSidebar from "./BlogSidebar";
+import BlogSidebar, {
+  SidebarCategoryItem,
+  SidebarRecentPost,
+} from "./BlogSidebar";
+import type { WpPost, WpCategoryItem } from "@/lib/wordpress";
 
-export default function BlogListContent() {
+interface BlogListContentProps {
+  initialPosts: WpPost[];
+  initialCategories: WpCategoryItem[];
+  totalPosts?: number;
+}
+
+function cleanExcerpt(text: string): string {
+  if (!text) return "";
+  return text
+    .replace(/[\.\s]*\[\s*(?:…|\.\.\.|&hellip;)\s*\]/g, "...")
+    .replace(/[\.\s]*\[\s*\.\.\.\s*\]/g, "...")
+    .replace(/\s*\[[^\]]*\]\s*$/g, "...")
+    .replace(/\.{4,}/g, "...")
+    .trim();
+}
+
+export default function BlogListContent({
+  initialPosts,
+  initialCategories,
+  totalPosts,
+}: BlogListContentProps) {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [isLeftShorter, setIsLeftShorter] = useState(false);
@@ -13,16 +36,54 @@ export default function BlogListContent() {
   const leftColRef = useRef<HTMLDivElement>(null);
   const rightColRef = useRef<HTMLDivElement>(null);
 
-  const filteredPosts = blogPosts.filter((post) => {
-    const matchesCategory =
-      selectedCategory === "All" || post.category === selectedCategory;
-    const matchesSearch =
-      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
+  // Top category filter pills: "All" + top 7 prominent categories
+  const topPillCategories = useMemo(() => {
+    const list = ["All"];
+    initialCategories.slice(0, 7).forEach((c) => {
+      if (!list.includes(c.name)) list.push(c.name);
+    });
+    return list;
+  }, [initialCategories]);
 
-  // Calculate which column is shorter to apply sticky correctly
+  // Sidebar categories with real counts
+  const sidebarCategories: SidebarCategoryItem[] = useMemo(() => {
+    const totalCount =
+      totalPosts || initialPosts.length;
+    return [
+      { name: "All", count: totalCount },
+      ...initialCategories.map((c) => ({
+        name: c.name,
+        count: c.count,
+      })),
+    ];
+  }, [initialCategories, initialPosts, totalPosts]);
+
+  // Sidebar recent posts
+  const sidebarRecentPosts: SidebarRecentPost[] = useMemo(() => {
+    return initialPosts.slice(0, 5).map((p) => ({
+      id: p.id,
+      title: p.title,
+      slug: p.slug,
+      date: p.date,
+      category: p.category,
+    }));
+  }, [initialPosts]);
+
+  // Filter posts based on selected category and search query
+  const filteredPosts = useMemo(() => {
+    return initialPosts.filter((post) => {
+      const matchesCategory =
+        selectedCategory === "All" ||
+        post.category.toLowerCase() === selectedCategory.toLowerCase();
+      const matchesSearch =
+        !searchQuery.trim() ||
+        post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesCategory && matchesSearch;
+    });
+  }, [initialPosts, selectedCategory, searchQuery]);
+
+  // Calculate which column is shorter to apply sticky correctly (offset lg:top-[144px])
   useEffect(() => {
     const calculateHeights = () => {
       if (leftColRef.current && rightColRef.current) {
@@ -45,7 +106,6 @@ export default function BlogListContent() {
     <section className="relative w-full py-12 sm:py-16 lg:py-20 bg-white">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-          
           {/* Left Column: Blog Articles List (Sticky if shorter than sidebar) */}
           <div
             ref={leftColRef}
@@ -55,12 +115,12 @@ export default function BlogListContent() {
           >
             {/* Category Filter Pills on Top with full-width bottom divider line */}
             <div className="flex flex-wrap items-center gap-2 pb-5 mb-8 border-b border-gray-200/90">
-              {blogCategories.map((cat) => (
+              {topPillCategories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
                   className={`text-xs px-3.5 py-1.5 rounded-full font-sans tracking-wide uppercase transition-all cursor-pointer ${
-                    selectedCategory === cat
+                    selectedCategory.toLowerCase() === cat.toLowerCase()
                       ? "bg-[#091D46] text-[#ECAB3C] font-bold shadow-xs"
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                   }`}
@@ -69,6 +129,37 @@ export default function BlogListContent() {
                 </button>
               ))}
             </div>
+
+            {/* Results count / active filter indicator */}
+            {(selectedCategory !== "All" || searchQuery) && (
+              <div className="flex items-center justify-between pb-4 mb-6 border-b border-gray-100 text-xs text-gray-500 font-sans">
+                <div>
+                  Showing {filteredPosts.length} article
+                  {filteredPosts.length === 1 ? "" : "s"}
+                  {selectedCategory !== "All" && (
+                    <span>
+                      {" "}
+                      in <strong className="text-[#091D46]">{selectedCategory}</strong>
+                    </span>
+                  )}
+                  {searchQuery && (
+                    <span>
+                      {" "}
+                      matching &ldquo;<strong>{searchQuery}</strong>&rdquo;
+                    </span>
+                  )}
+                </div>
+                <button
+                  onClick={() => {
+                    setSelectedCategory("All");
+                    setSearchQuery("");
+                  }}
+                  className="text-[#0056b3] hover:underline font-semibold cursor-pointer"
+                >
+                  Reset filters
+                </button>
+              </div>
+            )}
 
             {/* If no articles match */}
             {filteredPosts.length === 0 ? (
@@ -88,14 +179,14 @@ export default function BlogListContent() {
               </div>
             ) : (
               /* Articles list */
-              <div className="space-y-10 divide-y divide-gray-200/90">
-                {filteredPosts.map((post, idx) => (
+              <div className="divide-y divide-gray-200/90">
+                {filteredPosts.map((post) => (
                   <article
                     key={post.id}
-                    className={idx > 0 ? "pt-10" : ""}
+                    className="py-10 sm:py-12 first:pt-0 last:pb-0"
                   >
                     {/* Category & Date Line */}
-                    <div className="flex items-center gap-3 text-xs text-gray-500 font-sans mb-2.5">
+                    <div className="flex items-center gap-3 text-xs text-gray-500 font-sans mb-3">
                       <span className="inline-block bg-[#FAF7F2] text-[#091D46] border border-amber-200/70 font-semibold px-2.5 py-0.5 rounded-sm uppercase tracking-wider text-[11px]">
                         {post.category}
                       </span>
@@ -106,7 +197,7 @@ export default function BlogListContent() {
                     </div>
 
                     {/* Article Title */}
-                    <h2 className="font-serif text-[24px] sm:text-[28px] lg:text-[30px] font-normal text-[#091D46] leading-[1.2] mb-3.5 tracking-tight group">
+                    <h2 className="font-serif text-[24px] sm:text-[28px] lg:text-[30px] font-normal text-[#091D46] leading-[1.25] mb-3.5 tracking-tight group">
                       <Link
                         href={`/blog/${post.slug}`}
                         className="hover:text-[#ECAB3C] transition-colors"
@@ -116,12 +207,12 @@ export default function BlogListContent() {
                     </h2>
 
                     {/* Excerpt */}
-                    <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-5">
-                      {post.excerpt}
+                    <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
+                      {cleanExcerpt(post.excerpt)}
                     </p>
 
-                    {/* Read More Link */}
-                    <div>
+                    {/* Read More Link (With proper spacing below before divider) */}
+                    <div className="pt-1">
                       <Link
                         href={`/blog/${post.slug}`}
                         className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#091D46] hover:text-[#ECAB3C] transition-colors font-sans group/link"
@@ -150,9 +241,10 @@ export default function BlogListContent() {
               onSelectCategory={(cat) => setSelectedCategory(cat)}
               searchQuery={searchQuery}
               onSearchChange={(q) => setSearchQuery(q)}
+              categories={sidebarCategories}
+              recentPosts={sidebarRecentPosts}
             />
           </div>
-
         </div>
       </div>
     </section>

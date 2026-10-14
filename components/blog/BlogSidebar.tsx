@@ -2,13 +2,28 @@
 
 import React from "react";
 import Link from "next/link";
-import { blogPosts, blogCategories } from "./blogData";
+import { blogPosts as fallbackPosts, blogCategories as fallbackCategories } from "./blogData";
+
+export interface SidebarCategoryItem {
+  name: string;
+  count: number;
+}
+
+export interface SidebarRecentPost {
+  id: number;
+  title: string;
+  slug: string;
+  date: string;
+  category: string;
+}
 
 interface BlogSidebarProps {
   activeCategory?: string;
   onSelectCategory?: (category: string) => void;
   searchQuery?: string;
   onSearchChange?: (query: string) => void;
+  categories?: SidebarCategoryItem[];
+  recentPosts?: SidebarRecentPost[];
 }
 
 export default function BlogSidebar({
@@ -16,8 +31,32 @@ export default function BlogSidebar({
   onSelectCategory,
   searchQuery = "",
   onSearchChange,
+  categories,
+  recentPosts,
 }: BlogSidebarProps) {
-  const recentPosts = blogPosts.slice(0, 4);
+  // Use passed categories or compute from fallback
+  const displayCategories: SidebarCategoryItem[] = categories && categories.length > 0
+    ? categories
+    : [
+        { name: "All", count: fallbackPosts.length },
+        ...fallbackCategories
+          .filter((c) => c !== "All")
+          .map((c) => ({
+            name: c,
+            count: fallbackPosts.filter((p) => p.category === c).length,
+          })),
+      ];
+
+  // Use passed recent posts or fallback
+  const displayRecentPosts: SidebarRecentPost[] = recentPosts && recentPosts.length > 0
+    ? recentPosts.slice(0, 5)
+    : fallbackPosts.slice(0, 4).map((p) => ({
+        id: p.id,
+        title: p.title,
+        slug: p.slug,
+        date: p.date,
+        category: p.category,
+      }));
 
   return (
     <aside className="w-full space-y-6 font-sans">
@@ -54,32 +93,28 @@ export default function BlogSidebar({
           </h3>
         </div>
 
-        <ul className="space-y-1.5 font-sans">
-          {blogCategories.map((cat) => {
-            const count =
-              cat === "All"
-                ? blogPosts.length
-                : blogPosts.filter((p) => p.category === cat).length;
-            const isSelected = activeCategory === cat;
+        <ul className="space-y-1.5 font-sans max-h-[460px] overflow-y-auto pr-1">
+          {displayCategories.map((cat) => {
+            const isSelected = activeCategory === cat.name;
 
             return (
-              <li key={cat}>
+              <li key={cat.name}>
                 <button
                   type="button"
-                  onClick={() => onSelectCategory && onSelectCategory(cat)}
+                  onClick={() => onSelectCategory && onSelectCategory(cat.name)}
                   className={`w-full flex items-center justify-between py-2 px-3 rounded-md transition-all text-left text-xs sm:text-[13.5px] cursor-pointer ${
                     isSelected
                       ? "bg-[#091D46] text-white font-semibold shadow-xs"
                       : "text-gray-700 hover:text-[#091D46] hover:bg-gray-50"
                   }`}
                 >
-                  <span className={isSelected ? "text-white" : ""}>{cat}</span>
+                  <span className={isSelected ? "text-white" : ""}>{cat.name}</span>
                   <span
                     className={`text-[11.5px] font-mono ${
                       isSelected ? "text-[#ECAB3C] font-bold" : "text-gray-400"
                     }`}
                   >
-                    ({count})
+                    ({cat.count})
                   </span>
                 </button>
               </li>
@@ -97,14 +132,14 @@ export default function BlogSidebar({
           </h3>
         </div>
 
-        <ul className="space-y-3 divide-y divide-gray-100">
-          {recentPosts.map((post, idx) => (
-            <li key={post.id} className={idx > 0 ? "pt-3" : ""}>
+        <ul className="space-y-3.5 divide-y divide-gray-100">
+          {displayRecentPosts.map((post, idx) => (
+            <li key={post.id} className={idx > 0 ? "pt-3.5" : ""}>
               <Link href={`/blog/${post.slug}`} className="group block">
                 <h4 className="font-serif text-[13.5px] sm:text-[14px] font-normal text-[#091D46] group-hover:text-[#ECAB3C] transition-colors leading-snug line-clamp-2">
                   {post.title}
                 </h4>
-                <div className="flex items-center gap-2 mt-1 text-[11px] text-gray-500">
+                <div className="flex items-center gap-2 mt-1.5 text-[11px] text-gray-500">
                   <span>{post.date}</span>
                   <span>•</span>
                   <span className="text-[#091D46] font-medium">
