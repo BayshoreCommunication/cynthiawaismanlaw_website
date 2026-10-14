@@ -90,27 +90,35 @@ const practiceCategories: PracticeCategory[] = [
   {
     id: "estate-planning",
     name: "Estate Planning Services",
-    href: "/estate-planning-services",
+    href: "/estate-planning",
     subItems: [
       {
+        label: "Estate Planning Overview",
+        href: "/estate-planning",
+      },
+      {
         label: "Estate Planning FAQ",
-        href: "/estate-planning-services/estate-planning-faq",
+        href: "/estate-planning/faq",
       },
       {
-        label: "Wills & Living Trusts",
-        href: "/estate-planning-services#wills-trusts",
+        label: "Wills",
+        href: "/estate-planning/wills",
       },
       {
-        label: "Durable Powers of Attorney",
-        href: "/estate-planning-services#power-of-attorney",
+        label: "Trusts",
+        href: "/estate-planning/trusts",
       },
       {
-        label: "Healthcare Directives & Living Wills",
-        href: "/estate-planning-services#healthcare-directives",
+        label: "Powers of Attorney",
+        href: "/estate-planning/powers-of-attorney",
       },
       {
-        label: "Asset Protection Planning",
-        href: "/estate-planning-services#asset-protection",
+        label: "Living Wills",
+        href: "/estate-planning/living-wills",
+      },
+      {
+        label: "Funding & Your Revocable Trust",
+        href: "/estate-planning/funding-revocable-trust",
       },
     ],
   },
@@ -120,20 +128,20 @@ const practiceCategories: PracticeCategory[] = [
     href: "/probate-administration",
     subItems: [
       {
-        label: "Formal Administration",
-        href: "/probate-administration#formal",
-      },
-      {
-        label: "Summary Administration",
-        href: "/probate-administration#summary",
+        label: "Probate Administration Overview",
+        href: "/probate-administration",
       },
       {
         label: "Ancillary Probate",
-        href: "/probate-administration#ancillary",
+        href: "/probate-administration/ancillary-probate",
       },
       {
-        label: "Fiduciary & Executor Representation",
-        href: "/probate-administration#executor",
+        label: "Summary Administration",
+        href: "/probate-administration/summary-administration",
+      },
+      {
+        label: "Will Contests",
+        href: "/probate-administration/will-contests",
       },
     ],
   },

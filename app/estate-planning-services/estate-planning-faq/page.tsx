@@ -137,7 +137,7 @@ export default function EstatePlanningFaqPage() {
             </article>
 
             {/* Right Column: Practice Areas Sticky Sidebar */}
-            <div className="lg:col-span-4 lg:sticky lg:top-24">
+            <div className="lg:col-span-4 lg:sticky lg:top-[144px]">
               <PracticeAreasSidebar
                 currentCategory="estate-planning"
                 currentSubItem="Estate Planning FAQ"
