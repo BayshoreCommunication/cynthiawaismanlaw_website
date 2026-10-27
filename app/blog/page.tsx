@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     "Stay informed with legal insights, USCIS policy updates, and Florida estate planning guidance from attorney Cynthia I. Waisman.",
 };
 
+export const instant = false;
+
 interface BlogPageProps {
   searchParams?: Promise<{ category?: string }>;
 }

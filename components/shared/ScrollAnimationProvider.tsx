@@ -3,11 +3,7 @@
 import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-export default function ScrollAnimationProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function ScrollAnimationProvider() {
   const pathname = usePathname();
 
   useEffect(() => {
@@ -47,15 +43,13 @@ export default function ScrollAnimationProvider({
       }
     );
 
-    // Automatically attach luxury entrance animations to main article containers that don't have them yet
-    document.querySelectorAll("main article:not([data-animate])").forEach((el) => {
-      el.setAttribute("data-animate", "fade-up");
+    const rafId = requestAnimationFrame(() => {
+      const elements = document.querySelectorAll("[data-animate]:not(.is-revealed)");
+      elements.forEach((el) => observer.observe(el));
     });
 
-    const elements = document.querySelectorAll("[data-animate]:not(.is-revealed)");
-    elements.forEach((el) => observer.observe(el));
-
     return () => {
+      cancelAnimationFrame(rafId);
       observer.disconnect();
     };
   }, [pathname]);
@@ -182,7 +176,6 @@ export default function ScrollAnimationProvider({
           }
         }
       `}</style>
-      {children}
     </>
   );
 }

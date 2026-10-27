@@ -77,6 +77,7 @@ export const metadata: Metadata = {
   },
 };
 
+import { Suspense } from "react";
 import ScrollAnimationProvider from "@/components/shared/ScrollAnimationProvider";
 
 export default function RootLayout({
@@ -90,11 +91,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <ScrollAnimationProvider>
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </ScrollAnimationProvider>
+        <Suspense fallback={null}>
+          <ScrollAnimationProvider />
+        </Suspense>
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
