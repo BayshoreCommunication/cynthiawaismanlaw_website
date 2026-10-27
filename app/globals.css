@@ -30,7 +30,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
@@ -38,6 +41,7 @@ h1, h2, h3, h4 {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -56,8 +60,8 @@ h1, h2, h3, h4 {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-

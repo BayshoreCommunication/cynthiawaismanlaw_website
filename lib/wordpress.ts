@@ -10,6 +10,7 @@ export interface WpPost {
   isoDate: string;
   author: string;
   category: string;
+  categories?: string[];
   categoryId?: number;
   excerpt: string;
   content: string;
@@ -92,12 +93,18 @@ export function cleanWpExcerpt(html: string): string {
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function transformWpPost(item: any): WpPost {
-  const primaryTerm =
-    item._embedded?.["wp:term"]?.[0]?.[0] || null;
+  const terms: any[] = item._embedded?.["wp:term"]?.[0] || [];
+  const primaryTerm = terms[0] || null;
   const categoryName = primaryTerm
     ? decodeHtmlEntities(primaryTerm.name)
     : "Legal Updates";
   const categoryId = primaryTerm?.id;
+  const allCategories = terms
+    .map((t: any) => decodeHtmlEntities(t.name))
+    .filter((n: string) => n && n.toLowerCase() !== "uncategorized");
+  if (allCategories.length === 0) {
+    allCategories.push(categoryName);
+  }
 
   let authorName =
     item._embedded?.author?.[0]?.name || "Cynthia I. Waisman";
@@ -122,6 +129,7 @@ function transformWpPost(item: any): WpPost {
     isoDate: item.date,
     author: decodeHtmlEntities(authorName),
     category: categoryName,
+    categories: allCategories,
     categoryId,
     excerpt: cleanExcerpt,
     content: item.content?.rendered || "",
@@ -138,7 +146,7 @@ export async function getWpPosts(options: {
   search?: string;
   categoryId?: number;
 } = {}): Promise<{ posts: WpPost[]; total: number; totalPages: number }> {
-  const { page = 1, perPage = 20, search, categoryId } = options;
+  const { page = 1, perPage = 100, search, categoryId } = options;
 
   try {
     const url = new URL(`${WP_API_BASE}/posts`);
@@ -204,6 +212,36 @@ export async function getWpPostBySlug(slug: string): Promise<WpPost | null> {
     console.error(`Error fetching WordPress post slug "${slug}":`, err);
     return getFallbackPostBySlug(slug);
   }
+}
+
+/**
+ * Dynamically computes accurate category counts from a given list of posts.
+ * This guarantees the count badges in the UI 100% match the actual articles available.
+ */
+export function computeCategoryCounts(
+  posts: WpPost[]
+): { name: string; count: number }[] {
+  const countMap: Record<string, number> = {};
+
+  posts.forEach((post) => {
+    const cats =
+      post.categories && post.categories.length > 0
+        ? post.categories
+        : [post.category || "Legal Updates"];
+
+    cats.forEach((c) => {
+      const trimmed = c.trim();
+      if (trimmed && trimmed.toLowerCase() !== "uncategorized") {
+        countMap[trimmed] = (countMap[trimmed] || 0) + 1;
+      }
+    });
+  });
+
+  const sortedCats = Object.entries(countMap)
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count);
+
+  return [{ name: "All", count: posts.length }, ...sortedCats];
 }
 
 /**

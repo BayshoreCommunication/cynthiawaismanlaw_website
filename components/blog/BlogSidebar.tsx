@@ -93,30 +93,50 @@ export default function BlogSidebar({
           </h3>
         </div>
 
-        <ul className="space-y-1.5 font-sans max-h-[460px] overflow-y-auto pr-1">
+        <ul className="space-y-1.5 font-sans">
           {displayCategories.map((cat) => {
-            const isSelected = activeCategory === cat.name;
+            const isSelected = activeCategory.toLowerCase() === cat.name.toLowerCase();
+            const itemClasses = `w-full flex items-center justify-between py-2 px-3 rounded-md transition-all text-left text-xs sm:text-[13.5px] cursor-pointer ${
+              isSelected
+                ? "bg-[#091D46] text-white font-semibold shadow-xs"
+                : "text-gray-700 hover:text-[#091D46] hover:bg-gray-50"
+            }`;
+
+            const innerContent = (
+              <>
+                <span className={isSelected ? "text-white" : ""}>{cat.name}</span>
+                <span
+                  className={`text-[11.5px] font-mono ${
+                    isSelected ? "text-[#ECAB3C] font-bold" : "text-gray-400"
+                  }`}
+                >
+                  ({cat.count})
+                </span>
+              </>
+            );
 
             return (
               <li key={cat.name}>
-                <button
-                  type="button"
-                  onClick={() => onSelectCategory && onSelectCategory(cat.name)}
-                  className={`w-full flex items-center justify-between py-2 px-3 rounded-md transition-all text-left text-xs sm:text-[13.5px] cursor-pointer ${
-                    isSelected
-                      ? "bg-[#091D46] text-white font-semibold shadow-xs"
-                      : "text-gray-700 hover:text-[#091D46] hover:bg-gray-50"
-                  }`}
-                >
-                  <span className={isSelected ? "text-white" : ""}>{cat.name}</span>
-                  <span
-                    className={`text-[11.5px] font-mono ${
-                      isSelected ? "text-[#ECAB3C] font-bold" : "text-gray-400"
-                    }`}
+                {onSelectCategory ? (
+                  <button
+                    type="button"
+                    onClick={() => onSelectCategory(cat.name)}
+                    className={itemClasses}
                   >
-                    ({cat.count})
-                  </span>
-                </button>
+                    {innerContent}
+                  </button>
+                ) : (
+                  <Link
+                    href={
+                      cat.name === "All"
+                        ? "/blog"
+                        : `/blog?category=${encodeURIComponent(cat.name)}`
+                    }
+                    className={itemClasses}
+                  >
+                    {innerContent}
+                  </Link>
+                )}
               </li>
             );
           })}

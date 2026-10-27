@@ -6,7 +6,7 @@ import BlogSidebar, {
   SidebarCategoryItem,
   SidebarRecentPost,
 } from "@/components/blog/BlogSidebar";
-import { getWpPostBySlug, getWpPosts, getWpCategories } from "@/lib/wordpress";
+import { getWpPostBySlug, getWpPosts, computeCategoryCounts } from "@/lib/wordpress";
 import Link from "next/link";
 
 interface BlogPostPageProps {
@@ -14,7 +14,6 @@ interface BlogPostPageProps {
     slug: string;
   }>;
 }
-
 
 export async function generateStaticParams() {
   const { posts } = await getWpPosts({ perPage: 20 });
@@ -41,27 +40,20 @@ export async function generateMetadata({
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
 
-  const [post, { posts: recentPosts, total }, categories] = await Promise.all([
+  const [post, { posts: allPosts }] = await Promise.all([
     getWpPostBySlug(slug),
-    getWpPosts({ perPage: 6 }),
-    getWpCategories(),
+    getWpPosts({ perPage: 100 }),
   ]);
 
   if (!post) {
     notFound();
   }
 
-  // Categories formatted for sidebar
-  const sidebarCats: SidebarCategoryItem[] = [
-    { name: "All", count: total || 441 },
-    ...categories.map((c) => ({
-      name: c.name,
-      count: c.count,
-    })),
-  ];
+  // Categories formatted for sidebar with real counts matching the blog listing
+  const sidebarCats: SidebarCategoryItem[] = computeCategoryCounts(allPosts);
 
   // Recent posts formatted for sidebar (exclude current post)
-  const sidebarRecent: SidebarRecentPost[] = recentPosts
+  const sidebarRecent: SidebarRecentPost[] = allPosts
     .filter((p) => p.slug !== slug)
     .slice(0, 5)
     .map((p) => ({
@@ -159,8 +151,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
             </article>
 
-            {/* Right Column: Sticky Sidebar */}
-            <div className="lg:col-span-4 lg:sticky lg:top-[144px] self-start">
+            {/* Right Column: Sidebar */}
+            <div className="lg:col-span-4 self-start">
               <BlogSidebar
                 activeCategory={post.category}
                 categories={sidebarCats}

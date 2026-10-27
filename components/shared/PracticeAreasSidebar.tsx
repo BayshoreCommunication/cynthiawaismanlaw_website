@@ -24,66 +24,82 @@ const practiceCategories: PracticeCategory[] = [
     subItems: [
       {
         label: "Citizenship Benefits & Requirements",
-        href: "/citizenship-benefits-requirements",
+        href: "/immigration-law-overview/citizenship-benefits-requirements",
       },
       {
         label: "Conditional Resident Petitions",
-        href: "/conditional-resident-petitions",
+        href: "/immigration-law-overview/conditional-resident-petitions",
       },
       {
         label: "Deferred Action",
-        href: "/deferred-action",
+        href: "/immigration-law-overview/deferred-action",
       },
       {
         label: "Naturalization For Non-English Speaking Residents",
-        href: "/naturalization-non-english-speaking-residents",
+        href: "/immigration-law-overview/naturalization-non-english-speaking-residents",
       },
       {
         label: "Requests For Evidence",
-        href: "/requests-for-evidence",
+        href: "/immigration-law-overview/requests-for-evidence",
       },
       {
         label: "Responding To A Request For Evidence",
-        href: "/responding-to-request-for-evidence",
+        href: "/immigration-law-overview/responding-request-for-evidence",
       },
       {
         label: "The ABCs of Naturalization & Immigration Law",
-        href: "/abcs-naturalization-immigration-law",
+        href: "/immigration-law-overview/abcs-naturalization-immigration-law",
       },
       {
         label: "Travel & Re-Entry Permits",
-        href: "/travel-re-entry-permits",
+        href: "/immigration-law-overview/travel-reentry-permits",
       },
       {
         label: "Waivers",
-        href: "/immigration-waivers",
+        href: "/immigration-law-overview/waivers",
       },
     ],
   },
   {
     id: "green-cards",
     name: "Green Cards & Visas",
-    href: "/green-cards-visas",
+    href: "/immigration-law-overview/green-cards",
     subItems: [
       {
-        label: "Marriage & Family-Based Green Cards",
-        href: "/green-cards-visas#family",
+        label: "Green Cards & Visas Overview",
+        href: "/immigration-law-overview/green-cards",
       },
       {
-        label: "Adjustment of Status (I-485)",
-        href: "/green-cards-visas#adjustment",
+        label: "Marriage-Based Green Cards",
+        href: "/immigration-law-overview/marriage-based-green-cards",
+      },
+      {
+        label: "Family-Based Visas",
+        href: "/immigration-law-overview/family-based-visas",
+      },
+      {
+        label: "Fiancé Visa (K-1)",
+        href: "/immigration-law-overview/fiance-visa",
       },
       {
         label: "Consular Processing",
-        href: "/green-cards-visas#consular",
+        href: "/immigration-law-overview/consular-processing",
       },
       {
-        label: "Removal of Conditions (I-751)",
-        href: "/green-cards-visas#conditions",
+        label: "Green Card Renewal",
+        href: "/immigration-law-overview/green-card-renewal",
       },
       {
-        label: "K-1 / Fiancé Visas",
-        href: "/green-cards-visas#k1",
+        label: "VAWA Green Cards",
+        href: "/immigration-law-overview/vawa-green-cards",
+      },
+      {
+        label: "E-2 Treaty Visas",
+        href: "/immigration-law-overview/e2-treaty-visas",
+      },
+      {
+        label: "Visa Waiver Program",
+        href: "/immigration-law-overview/visa-waiver-program",
       },
     ],
   },
@@ -162,9 +178,17 @@ export default function PracticeAreasSidebar({
   currentSubItem,
 }: PracticeAreasSidebarProps) {
   const pathname = usePathname();
-  const [openCategories, setOpenCategories] = useState<Record<string, boolean>>({
-    [currentCategory]: true,
-  });
+  const [openCategories, setOpenCategories] = useState<Record<string, boolean>>(
+    () => {
+      const initial: Record<string, boolean> = { [currentCategory]: true };
+      practiceCategories.forEach((cat) => {
+        if (cat.subItems?.some((sub) => sub.href === pathname)) {
+          initial[cat.id] = true;
+        }
+      });
+      return initial;
+    }
+  );
 
   const toggleCategory = (id: string) => {
     setOpenCategories((prev) => ({
@@ -186,14 +210,22 @@ export default function PracticeAreasSidebar({
           const isCategoryActive =
             category.id === currentCategory ||
             pathname === category.href ||
+            (category.subItems &&
+              category.subItems.some((sub) => sub.href === pathname)) ||
             (category.id === "guardianship" &&
-              (pathname === "/guardianship" || pathname === "/guardianship-services"));
+              (pathname === "/guardianship" ||
+                pathname === "/guardianship-services"));
 
           return (
-            <div key={category.id} className="border-b border-white/10 last:border-b-0">
+            <div
+              key={category.id}
+              className="border-b border-white/10 last:border-b-0"
+            >
               <div
                 className={`flex items-center justify-between py-3 cursor-pointer select-none transition-colors group ${
-                  isCategoryActive ? "text-white font-semibold" : "text-gray-200 hover:text-white"
+                  isCategoryActive
+                    ? "text-white font-semibold"
+                    : "text-gray-200 hover:text-white"
                 }`}
                 onClick={() => {
                   if (hasSubItems) {
@@ -230,7 +262,10 @@ export default function PracticeAreasSidebar({
                 <ul className="pl-3 pb-3 pt-0.5 space-y-2 border-l border-white/15 ml-2.5 my-1">
                   {category.subItems!.map((item, idx) => {
                     const isItemActive =
-                      item.label === currentSubItem || pathname === item.href;
+                      item.label.toLowerCase() ===
+                        (currentSubItem || "").toLowerCase() ||
+                      pathname === item.href;
+
                     return (
                       <li key={idx}>
                         <Link
@@ -255,4 +290,3 @@ export default function PracticeAreasSidebar({
     </aside>
   );
 }
-

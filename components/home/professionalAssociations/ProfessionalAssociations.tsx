@@ -281,27 +281,27 @@ export default function ProfessionalAssociations() {
 
     return (
         <section
-            className="relative w-full bg-cover bg-center bg-no-repeat overflow-hidden pt-8 lg:pt-10 text-white"
+            className="relative w-full bg-cover bg-center bg-no-repeat overflow-hidden pt-8 lg:pt-10 text-gray-900"
             style={{
-                backgroundImage: "url('/images/professional-associations-bg-image.png')",
+                backgroundImage: "url('/images/professional-associations-bg-image-gray.png')",
             }}
         >
-            {/* Deep navy darkish overlay matching the logo palette */}
-            <div className="absolute inset-0 bg-[#07193b]/10 backdrop-blur-[0.5px] pointer-events-none" />
+            {/* Light gray overlay with reduced opacity so bg image is subtly visible */}
+            <div className="absolute inset-0 bg-[#f4f5f8]/70 backdrop-blur-[0.5px] pointer-events-none" />
 
             {/* Same 1320px Global Container for Header */}
             <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4">
                 {/* Section Header: Title with Gold Lines */}
                 <div className="flex items-center justify-center gap-3.5 mb-2.5">
                     <span className="w-8 sm:w-12 h-[2px] bg-[#ECAB3C]" />
-                    <h2 className="font-serif text-lg sm:text-xl md:text-2xl font-normal text-white uppercase tracking-wider text-center">
+                    <h2 className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-black uppercase tracking-wider text-center">
                         Professional Associations, Honors &amp; Recognition
                     </h2>
                     <span className="w-8 sm:w-12 h-[2px] bg-[#ECAB3C]" />
                 </div>
 
                 {/* Subtitle */}
-                <p className="text-center text-xs sm:text-[13px] md:text-sm text-gray-300 font-light max-w-3xl mx-auto leading-relaxed ">
+                <p className="text-center text-xs sm:text-[13px] md:text-sm text-gray-700 font-normal max-w-3xl mx-auto leading-relaxed">
                     Cynthia is an active member of respected legal organizations and has been
                     recognized for her professional achievements and dedication to her clients and
                     community.
@@ -311,10 +311,10 @@ export default function ProfessionalAssociations() {
             {/* Drag & Auto-play Marquee Container with subtle gradient edge fades */}
             <div className="relative z-10 w-full overflow-hidden">
                 {/* Left gradient fade */}
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#07193b] via-[#07193b]/80 to-transparent z-20" />
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#f4f5f8]/80 via-[#f4f5f8]/40 to-transparent z-20" />
 
                 {/* Right gradient fade */}
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[#07193b] via-[#07193b]/80 to-transparent z-20" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[#f4f5f8]/80 via-[#f4f5f8]/40 to-transparent z-20" />
 
                 {/* Interactive Drag & Auto-play Track */}
                 <div
@@ -351,14 +351,14 @@ export default function ProfessionalAssociations() {
 
                                 {/* 2. Title */}
                                 <div className="mt-3.5 mb-2 flex items-center justify-center">
-                                    <h4 className="font-sans font-bold text-xs sm:text-[13.5px] text-white group-hover:text-[#ECAB3C] transition-colors leading-snug line-clamp-2 px-1 select-none">
+                                    <h4 className="font-sans font-bold text-xs sm:text-[13.5px] text-black  leading-snug line-clamp-2 px-1 select-none">
                                         {item.title}
                                     </h4>
                                 </div>
 
                                 {/* 3. Position (Membership) */}
                                 <div className="pt-0.5 w-full select-none">
-                                    <span className="text-[10.5px] sm:text-[11px] font-bold tracking-wider text-[#ECAB3C] uppercase block truncate select-none">
+                                    <span className="text-[10.5px] sm:text-[11px] font-bold tracking-wider text-[#b87e22] uppercase block truncate select-none">
                                         {item.membership}
                                     </span>
                                 </div>

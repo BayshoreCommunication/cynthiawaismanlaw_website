@@ -55,8 +55,135 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/attorney/waisman-cynthia-i",
+        destination: "/about/our-attorney",
+        permanent: true,
+      },
+      {
+        source: "/waisman-cynthia-i",
+        destination: "/about/our-attorney",
+        permanent: true,
+      },
+      {
         source: "/our-team",
         destination: "/about/our-team",
+        permanent: true,
+      },
+
+      // Immigration flat alias redirects for indexing and direct links
+      {
+        source: "/conditional-resident-petitions",
+        destination: "/immigration-law-overview/conditional-resident-petitions",
+        permanent: true,
+      },
+      {
+        source: "/citizenship-benefits-requirements",
+        destination: "/immigration-law-overview/citizenship-benefits-requirements",
+        permanent: true,
+      },
+      {
+        source: "/deferred-action",
+        destination: "/immigration-law-overview/deferred-action",
+        permanent: true,
+      },
+      {
+        source: "/naturalization-non-english-speaking-residents",
+        destination: "/immigration-law-overview/naturalization-non-english-speaking-residents",
+        permanent: true,
+      },
+      {
+        source: "/requests-for-evidence",
+        destination: "/immigration-law-overview/requests-for-evidence",
+        permanent: true,
+      },
+      {
+        source: "/responding-request-for-evidence",
+        destination: "/immigration-law-overview/responding-request-for-evidence",
+        permanent: true,
+      },
+      {
+        source: "/responding-to-request-for-evidence",
+        destination: "/immigration-law-overview/responding-request-for-evidence",
+        permanent: true,
+      },
+      {
+        source: "/abcs-naturalization-immigration-law",
+        destination: "/immigration-law-overview/abcs-naturalization-immigration-law",
+        permanent: true,
+      },
+      {
+        source: "/the-abcs-of-naturalization-immigration-law",
+        destination: "/immigration-law-overview/abcs-naturalization-immigration-law",
+        permanent: true,
+      },
+      {
+        source: "/travel-reentry-permits",
+        destination: "/immigration-law-overview/travel-reentry-permits",
+        permanent: true,
+      },
+      {
+        source: "/travel-re-entry-permits",
+        destination: "/immigration-law-overview/travel-reentry-permits",
+        permanent: true,
+      },
+      {
+        source: "/waivers",
+        destination: "/immigration-law-overview/waivers",
+        permanent: true,
+      },
+      {
+        source: "/immigration-waivers",
+        destination: "/immigration-law-overview/waivers",
+        permanent: true,
+      },
+      {
+        source: "/green-cards",
+        destination: "/immigration-law-overview/green-cards",
+        permanent: true,
+      },
+      {
+        source: "/green-cards-visas",
+        destination: "/immigration-law-overview/green-cards",
+        permanent: true,
+      },
+      {
+        source: "/marriage-based-green-cards",
+        destination: "/immigration-law-overview/marriage-based-green-cards",
+        permanent: true,
+      },
+      {
+        source: "/family-based-visas",
+        destination: "/immigration-law-overview/family-based-visas",
+        permanent: true,
+      },
+      {
+        source: "/fiance-visa",
+        destination: "/immigration-law-overview/fiance-visa",
+        permanent: true,
+      },
+      {
+        source: "/consular-processing",
+        destination: "/immigration-law-overview/consular-processing",
+        permanent: true,
+      },
+      {
+        source: "/green-card-renewal",
+        destination: "/immigration-law-overview/green-card-renewal",
+        permanent: true,
+      },
+      {
+        source: "/vawa-green-cards",
+        destination: "/immigration-law-overview/vawa-green-cards",
+        permanent: true,
+      },
+      {
+        source: "/e2-treaty-visas",
+        destination: "/immigration-law-overview/e2-treaty-visas",
+        permanent: true,
+      },
+      {
+        source: "/visa-waiver-program",
+        destination: "/immigration-law-overview/visa-waiver-program",
         permanent: true,
       },
     ];

@@ -86,7 +86,7 @@ export default function ImmigrationOverviewContent() {
               goals. To help you better understand various immigration terms, we
               created an{" "}
               <Link
-                href="/immigration-glossary"
+                href="/immigration-law-overview/abcs-naturalization-immigration-law"
                 className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
               >
                 immigration glossary
@@ -95,11 +95,18 @@ export default function ImmigrationOverviewContent() {
             </p>
 
             <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-[15px] text-[#4a5568] leading-relaxed mb-8">
-              <li>Obtaining a green card or visa</li>
+              <li>
+                <Link
+                  href="/immigration-law-overview/green-cards"
+                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+                >
+                  Obtaining a green card or visa
+                </Link>
+              </li>
               <li>
                 Pursuing{" "}
                 <Link
-                  href="/citizenship-benefits-requirements"
+                  href="/immigration-law-overview/citizenship-benefits-requirements"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   citizenship
@@ -108,7 +115,7 @@ export default function ImmigrationOverviewContent() {
               </li>
               <li>
                 <Link
-                  href="/deferred-action"
+                  href="/immigration-law-overview/deferred-action"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   Deferred action measures
@@ -118,7 +125,7 @@ export default function ImmigrationOverviewContent() {
               <li>
                 Naturalization for{" "}
                 <Link
-                  href="/naturalization-non-english-speaking-residents"
+                  href="/immigration-law-overview/naturalization-non-english-speaking-residents"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   non-English speaking residents
@@ -127,7 +134,7 @@ export default function ImmigrationOverviewContent() {
               <li>
                 Obtaining permits for{" "}
                 <Link
-                  href="/travel-re-entry-permits"
+                  href="/immigration-law-overview/travel-reentry-permits"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   travel or re-entry
