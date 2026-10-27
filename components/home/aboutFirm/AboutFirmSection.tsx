@@ -143,7 +143,7 @@ export default function AboutFirmSection() {
 
                                     {/* Practice Area 3: Estate Planning */}
                                     <Link
-                                        href="/estate-planning"
+                                        href="/estate-planning-services"
                                         className="flex items-start gap-3 group/pa transition-all"
                                     >
                                         <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 group-hover/pa:bg-[#ECAB3C] group-hover/pa:text-[#091D46] transition-all duration-300">

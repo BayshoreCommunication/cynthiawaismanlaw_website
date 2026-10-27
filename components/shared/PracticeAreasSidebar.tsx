@@ -90,35 +90,35 @@ const practiceCategories: PracticeCategory[] = [
   {
     id: "estate-planning",
     name: "Estate Planning Services",
-    href: "/estate-planning",
+    href: "/estate-planning-services",
     subItems: [
       {
         label: "Estate Planning Overview",
-        href: "/estate-planning",
+        href: "/estate-planning-services",
       },
       {
         label: "Estate Planning FAQ",
-        href: "/estate-planning/faq",
+        href: "/estate-planning-services/estate-planning-faq",
       },
       {
         label: "Wills",
-        href: "/estate-planning/wills",
+        href: "/estate-planning-services/wills",
       },
       {
         label: "Trusts",
-        href: "/estate-planning/trusts",
+        href: "/estate-planning-services/trusts",
       },
       {
         label: "Powers of Attorney",
-        href: "/estate-planning/powers-of-attorney",
+        href: "/estate-planning-services/powers-of-attorney",
       },
       {
         label: "Living Wills",
-        href: "/estate-planning/living-wills",
+        href: "/estate-planning-services/living-wills",
       },
       {
         label: "Funding & Your Revocable Trust",
-        href: "/estate-planning/funding-revocable-trust",
+        href: "/estate-planning-services/funding-administration-your-revocable-trust",
       },
     ],
   },
@@ -148,7 +148,7 @@ const practiceCategories: PracticeCategory[] = [
   {
     id: "guardianship",
     name: "Guardianship Services",
-    href: "/guardianship",
+    href: "/guardianship-services",
   },
 ];
 

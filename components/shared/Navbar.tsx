@@ -32,17 +32,17 @@ const navItems: NavItem[] = [
   },
   {
     label: "Estate Planning",
-    href: "/estate-planning",
+    href: "/estate-planning-services",
     children: [
-      { label: "Estate Planning FAQ", href: "/estate-planning/faq" },
+      { label: "Estate Planning FAQ", href: "/estate-planning-services/estate-planning-faq" },
       {
         label: "Funding & Your Revocable Trust",
-        href: "/estate-planning/funding-revocable-trust",
+        href: "/estate-planning-services/funding-administration-your-revocable-trust",
       },
-      { label: "Living Wills", href: "/estate-planning/living-wills" },
-      { label: "Powers of Attorney", href: "/estate-planning/powers-of-attorney" },
-      { label: "Trusts", href: "/estate-planning/trusts" },
-      { label: "Wills", href: "/estate-planning/wills" },
+      { label: "Living Wills", href: "/estate-planning-services/living-wills" },
+      { label: "Powers of Attorney", href: "/estate-planning-services/powers-of-attorney" },
+      { label: "Trusts", href: "/estate-planning-services/trusts" },
+      { label: "Wills", href: "/estate-planning-services/wills" },
     ],
   },
   {

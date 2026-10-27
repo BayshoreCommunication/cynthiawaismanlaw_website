@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import ContactHero from "@/components/contact/ContactHero";
 import ContactOffices from "@/components/contact/ContactOffices";
 import ContactFormCard from "@/components/contact/ContactFormCard";
-import ContactMap from "@/components/contact/ContactMap";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -18,23 +17,15 @@ export default function ContactPage() {
 
       {/* 2. Main Content Section */}
       <section className="relative w-full py-12 sm:py-16 lg:py-20">
-        <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-14">
-          {/* Top Grid: Offices & Quick Contact on Left (7 cols), Request Form on Right (5 cols) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
-            {/* Left Column (7 cols): Quick Contacts & 3 Offices */}
-            <div className="lg:col-span-7 xl:col-span-7">
-              <ContactOffices />
-            </div>
-
-            {/* Right Column (5 cols): Sticky Request a Consultation Card */}
-            <div className="lg:col-span-5 xl:col-span-5">
-              <ContactFormCard />
-            </div>
+        <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
+          {/* Top Section: Quick Contacts & 3 Offices (Full Width) */}
+          <div className="w-full">
+            <ContactOffices />
           </div>
 
-          {/* Full-Width Interactive Google Map across the 1320px container */}
+          {/* Bottom Section: Consultation Form (Full Width) */}
           <div className="w-full">
-            <ContactMap />
+            <ContactFormCard />
           </div>
         </div>
       </section>

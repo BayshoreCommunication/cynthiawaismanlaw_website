@@ -409,24 +409,24 @@ export default function Footer() {
                     {/* Bottom Sub-row: Legal & Bayshore Communication Credit */}
                     <div className="flex flex-col sm:flex-row items-center justify-end gap-x-4 gap-y-2 text-[11px] text-gray-400">
                         <Link
-                            href="/privacy-policy"
+                            href="/disclaimer"
                             className="hover:text-white transition-colors"
                         >
-                            Privacy Policy
+                            Disclaimer
                         </Link>
                         <span className="text-gray-600 hidden sm:inline">|</span>
                         <Link
-                            href="/terms-of-use"
-                            className="hover:text-white transition-colors"
-                        >
-                            Terms of Use
-                        </Link>
-                        <span className="text-gray-600 hidden sm:inline">|</span>
-                        <Link
-                            href="/sitemap.xml"
+                            href="/site-map"
                             className="hover:text-white transition-colors"
                         >
                             Site Map
+                        </Link>
+                        <span className="text-gray-600 hidden sm:inline">|</span>
+                        <Link
+                            href="/privacy"
+                            className="hover:text-white transition-colors"
+                        >
+                            Privacy Policy
                         </Link>
                         <span className="text-gray-600 hidden sm:inline">|</span>
 

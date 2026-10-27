@@ -2,6 +2,10 @@ import React from "react";
 import type { Metadata } from "next";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import WillContestsContent from "@/components/probate/WillContestsContent";
+import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
+import AboutFirmSection from "@/components/home/aboutFirm/AboutFirmSection";
+import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
+import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
   title: "Will Contests & Estate Disputes | Cynthia I. Waisman, P.A.",
@@ -23,7 +27,12 @@ export default function WillContestsPage() {
         bgImage="/images/breadcrumb-bg-image.png"
       />
       <WillContestsContent />
+
+      {/* 3. Global Sections */}
+      <ProfessionalAssociations />
+      <AboutFirmSection />
+      <TestimonialsSection />
+      <ContactFirmSection />
     </main>
   );
 }
-

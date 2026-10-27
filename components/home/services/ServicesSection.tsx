@@ -76,7 +76,7 @@ const serviceCards: ServiceCard[] = [
       "Protecting your loved ones and your legacy with thoughtful, customized plans.",
     image: "/images/services/estate-planning.png",
     btnText: "View Estate Planning Services",
-    btnHref: "/estate-planning",
+    btnHref: "/estate-planning-services",
     icon: (
       <svg
         className="w-6 h-6 text-[#091D46]"
@@ -93,17 +93,17 @@ const serviceCards: ServiceCard[] = [
       </svg>
     ),
     items: [
-      { title: "Wills & Trusts", href: "/estate-planning" },
-      { title: "Power of Attorney", href: "/estate-planning" },
-      { title: "Healthcare Directives", href: "/estate-planning" },
-      { title: "Succession Planning", href: "/estate-planning" },
+      { title: "Wills & Trusts", href: "/estate-planning-services/wills" },
+      { title: "Power of Attorney", href: "/estate-planning-services/powers-of-attorney" },
+      { title: "Healthcare Directives", href: "/estate-planning-services/living-wills" },
+      { title: "Succession Planning", href: "/estate-planning-services" },
       {
         title: "Review & Update of Existing Plans",
-        href: "/estate-planning",
+        href: "/estate-planning-services",
       },
       {
         title: "Personalized Estate Planning Consultations",
-        href: "/estate-planning",
+        href: "/estate-planning-services",
       },
     ],
   },

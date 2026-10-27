@@ -1,2 +1,1 @@
-export { default, metadata } from "../../estate-planning/funding-revocable-trust/page";
-
+export { default, metadata } from "../funding-administration-your-revocable-trust/page";

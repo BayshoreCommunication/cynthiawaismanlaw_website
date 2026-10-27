@@ -2,6 +2,10 @@ import React from "react";
 import type { Metadata } from "next";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import SummaryAdministrationContent from "@/components/probate/SummaryAdministrationContent";
+import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
+import AboutFirmSection from "@/components/home/aboutFirm/AboutFirmSection";
+import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
+import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
   title: "Summary Administration | Cynthia I. Waisman, P.A.",
@@ -23,7 +27,12 @@ export default function SummaryAdministrationPage() {
         bgImage="/images/breadcrumb-bg-image.png"
       />
       <SummaryAdministrationContent />
+
+      {/* 3. Global Sections */}
+      <ProfessionalAssociations />
+      <AboutFirmSection />
+      <TestimonialsSection />
+      <ContactFirmSection />
     </main>
   );
 }
-

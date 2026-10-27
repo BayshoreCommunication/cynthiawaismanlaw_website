@@ -44,7 +44,7 @@ export default function EstatePlanningOverviewContent() {
             <ul className="list-disc pl-5 sm:pl-6 space-y-2.5 text-sm sm:text-[15px] text-[#4a5568] leading-relaxed mb-8">
               <li>
                 <Link
-                  href="/estate-planning/wills"
+                  href="/estate-planning-services/wills"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   Last Will &amp; Testament
@@ -54,7 +54,7 @@ export default function EstatePlanningOverviewContent() {
               </li>
               <li>
                 <Link
-                  href="/estate-planning/trusts"
+                  href="/estate-planning-services/trusts"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   Revocable Living Trusts &amp; Irrevocable Trusts
@@ -64,7 +64,7 @@ export default function EstatePlanningOverviewContent() {
               </li>
               <li>
                 <Link
-                  href="/estate-planning/powers-of-attorney"
+                  href="/estate-planning-services/powers-of-attorney"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   Durable Powers of Attorney
@@ -74,7 +74,7 @@ export default function EstatePlanningOverviewContent() {
               </li>
               <li>
                 <Link
-                  href="/estate-planning/living-wills"
+                  href="/estate-planning-services/living-wills"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   Living Wills &amp; Healthcare Directives
@@ -84,7 +84,7 @@ export default function EstatePlanningOverviewContent() {
               </li>
               <li>
                 <Link
-                  href="/estate-planning/funding-revocable-trust"
+                  href="/estate-planning-services/funding-administration-your-revocable-trust"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   Trust Funding Strategies
@@ -94,7 +94,7 @@ export default function EstatePlanningOverviewContent() {
               </li>
               <li>
                 <Link
-                  href="/estate-planning/faq"
+                  href="/estate-planning-services/estate-planning-faq"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
                   Estate Planning FAQ

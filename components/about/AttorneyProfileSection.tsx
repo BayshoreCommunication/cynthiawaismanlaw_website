@@ -166,7 +166,7 @@ export default function AttorneyProfileSection() {
                     </svg>
                   </div>
                   <Link
-                    href="/estate-planning"
+                    href="/estate-planning-services"
                     className="text-sm font-medium text-[#1e58b8] hover:text-[#091D46] hover:underline transition-colors"
                   >
                     Estate Planning
