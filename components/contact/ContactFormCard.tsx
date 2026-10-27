@@ -2,15 +2,15 @@ import React from "react";
 
 export default function ContactFormCard() {
   return (
-    <div className="w-full bg-[#091D46] text-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12 border border-blue-950/80">
+    <div className="w-full bg-[#091D46] text-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12 border border-blue-950/80" data-animate="fade-up">
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
         <div className="inline-flex items-center justify-center gap-2 mb-2.5">
-          <span className="w-6 h-[2px] bg-[#ECAB3C]" />
+          <span className="w-6 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "1.5rem" } as React.CSSProperties} />
           <span className="text-[11px] sm:text-xs font-bold tracking-[0.2em] text-[#ECAB3C] uppercase font-sans">
             Send Us A Message
           </span>
-          <span className="w-6 h-[2px] bg-[#ECAB3C]" />
+          <span className="w-6 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "1.5rem" } as React.CSSProperties} />
         </div>
 
         <h3 className="font-serif text-2xl sm:text-3xl lg:text-[38px] font-normal text-white tracking-tight leading-snug">

@@ -118,27 +118,27 @@ export default function EstatePlanningSection() {
                         {/* Left Column: Heading, Subtitle, Text, Stat Box */}
                         <div className="lg:col-span-7 xl:col-span-6 flex flex-col space-y-4 max-w-xl">
                             {/* Pre-heading with Gold Line */}
-                            <div className="inline-flex items-center gap-2.5">
-                                <span className="w-8 h-[2px] bg-[#ECAB3C]" />
+                            <div className="inline-flex items-center gap-2.5" data-animate="fade-down" data-delay="100">
+                                <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
                                 <h3 className="text-xs font-bold tracking-widest text-[#ECAB3C] uppercase font-sans">
                                     Estate Planning
                                 </h3>
                             </div>
 
                             {/* Main Heading */}
-                            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-[#091D46] tracking-tight leading-[1.15]">
+                            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-[#091D46] tracking-tight leading-[1.15]" data-animate="fade-up" data-delay="200">
                                 Why Families Choose
                                 <br />
                                 Cynthia for Estate Planning
                             </h2>
 
                             {/* Subtitle */}
-                            <h4 className="font-sans font-bold text-sm sm:text-[15px] text-[#091D46] leading-snug pt-1">
+                            <h4 className="font-sans font-bold text-sm sm:text-[15px] text-[#091D46] leading-snug pt-1" data-animate="fade-up" data-delay="280">
                                 Your Family&apos;s Plan Shouldn&apos;t Come From a Legal Factory.
                             </h4>
 
                             {/* Paragraph */}
-                            <p className="text-sm sm:text-[14px] text-[#4a5568] leading-relaxed">
+                            <p className="text-sm sm:text-[14px] text-[#4a5568] leading-relaxed" data-animate="fade-up" data-delay="360">
                                 At Cynthia I. Waisman, P.A., estate planning is personal. As a
                                 boutique law firm, Cynthia works directly with clients to understand
                                 your family, concerns, assets, and wishes before developing a plan
@@ -146,7 +146,7 @@ export default function EstatePlanningSection() {
                             </p>
 
                             {/* Highlight / Stat Card */}
-                            <div className="bg-[#fef9f0] border border-[#ECAB3C]/35 rounded-xl p-5 sm:p-6 shadow-xs flex items-center gap-4 sm:gap-6 mt-3">
+                            <div className="bg-[#fef9f0] border border-[#ECAB3C]/35 rounded-xl p-5 sm:p-6 shadow-xs flex items-center gap-4 sm:gap-6 mt-3 hover:shadow-md transition-shadow" data-animate="fade-up" data-delay="440">
                                 {/* Document Shield Icon */}
                                 <div className="shrink-0 text-[#ECAB3C]">
                                     <svg
@@ -207,6 +207,8 @@ export default function EstatePlanningSection() {
                         {estatePlanningFeatures.map((feature, idx) => (
                             <div
                                 key={feature.id}
+                                data-animate="fade-up"
+                                data-delay={(idx * 100 + 150).toString()}
                                 className={`flex flex-col space-y-3 ${idx === 0
                                         ? "lg:pr-6 xl:pr-8"
                                         : idx === 3

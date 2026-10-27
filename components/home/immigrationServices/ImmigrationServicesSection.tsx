@@ -150,22 +150,22 @@ export default function ImmigrationServicesSection() {
                 {/* Section Header */}
                 <div className="flex flex-col space-y-3.5 max-w-2xl mb-10 sm:mb-12">
                     {/* Pre-heading */}
-                    <div className="inline-flex items-center gap-2.5">
-                        <span className="w-8 h-[2px] bg-[#ECAB3C]" />
+                    <div className="inline-flex items-center gap-2.5" data-animate="fade-down" data-delay="100">
+                        <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
                         <h3 className="text-xs font-bold tracking-widest text-[#ECAB3C] uppercase font-sans">
                             Immigration Services
                         </h3>
                     </div>
 
                     {/* Main Heading */}
-                    <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-[#091D46] tracking-tight leading-[1.15]">
+                    <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-[#091D46] tracking-tight leading-[1.15]" data-animate="fade-up" data-delay="200">
                         Helping You Move Forward
                         <br />
                         With Confidence
                     </h2>
 
                     {/* Description */}
-                    <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed max-w-xl">
+                    <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed max-w-xl" data-animate="fade-up" data-delay="300">
                         We provide personalized immigration guidance for individuals and families,
                         helping you navigate USCIS processes and build a brighter future in the United
                         States.
@@ -174,9 +174,11 @@ export default function ImmigrationServicesSection() {
 
                 {/* 4 Service Cards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
-                    {immigrationCards.map((card) => (
+                    {immigrationCards.map((card, idx) => (
                         <div
                             key={card.id}
+                            data-animate="fade-up"
+                            data-delay={(idx * 100 + 150).toString()}
                             className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                         >
                             <div>

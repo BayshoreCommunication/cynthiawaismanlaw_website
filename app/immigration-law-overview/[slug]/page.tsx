@@ -86,14 +86,14 @@ export default async function ImmigrationSubPage({
         <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
             {/* Left Column: Legal Article */}
-            <article className="lg:col-span-8 text-[#2b2b2b]">
+            <article className="lg:col-span-8 text-[#2b2b2b]" data-animate="fade-up">
               {/* Main Heading */}
               <h1 className="font-serif text-[28px] sm:text-[34px] lg:text-[40px] font-normal text-[#091D46] leading-[1.2] mb-6 tracking-tight">
                 {page.title}
               </h1>
 
               {/* Gold Divider Accent */}
-              <div className="w-16 h-1 bg-[#ECAB3C] mb-8" />
+              <div className="w-16 h-1 bg-[#ECAB3C] mb-8" data-animate="line-expand" style={{ "--line-width": "4rem" } as React.CSSProperties} />
 
               {/* Rendered HTML Content with Rich Legal Styling */}
               <div
@@ -102,9 +102,9 @@ export default async function ImmigrationSubPage({
               />
 
               {/* Bottom Consultation Callout Box */}
-              <div className="mt-12 p-6 sm:p-8 bg-[#FAF7F2] border border-amber-200/90 rounded-none shadow-2xs">
+              <div className="mt-12 p-6 sm:p-8 bg-[#FAF7F2] border border-amber-200/90 rounded-none shadow-2xs" data-animate="fade-up" data-delay="200">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="w-5 h-[2px] bg-[#ECAB3C]" />
+                  <span className="w-5 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "1.25rem" } as React.CSSProperties} />
                   <span className="text-xs font-bold tracking-widest text-[#091D46] uppercase font-sans">
                     TAKE ACTION TODAY
                   </span>
@@ -141,7 +141,7 @@ export default async function ImmigrationSubPage({
             </article>
 
             {/* Right Column: Practice Areas Sidebar */}
-            <div className="lg:col-span-4 self-start">
+            <div className="lg:col-span-4 self-start" data-animate="fade-left" data-delay="150">
               <PracticeAreasSidebar
                 currentCategory={currentCategory}
                 currentSubItem={page.title}

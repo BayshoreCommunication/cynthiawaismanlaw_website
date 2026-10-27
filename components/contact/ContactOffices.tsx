@@ -56,7 +56,7 @@ export default function ContactOffices() {
       {/* 1. Top Quick Contact Cards: Call Us & Email Us */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
         {/* Card 1: Call Us */}
-        <div className="flex items-center gap-4 sm:gap-5 bg-white p-5 sm:p-6 rounded-xl border border-gray-200/80 shadow-xs hover:border-[#ECAB3C]/60 transition-colors">
+        <div className="flex items-center gap-4 sm:gap-5 bg-white p-5 sm:p-6 rounded-xl border border-gray-200/80 shadow-xs hover:border-[#ECAB3C]/60 transition-colors" data-animate="fade-up" data-delay="100">
           <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#fdf2df] flex items-center justify-center shrink-0 text-[#ECAB3C]">
             <svg
               className="w-6 h-6"
@@ -89,7 +89,7 @@ export default function ContactOffices() {
         </div>
 
         {/* Card 2: Email Us */}
-        <div className="flex items-center gap-4 sm:gap-5 bg-white p-5 sm:p-6 rounded-xl border border-gray-200/80 shadow-xs hover:border-[#ECAB3C]/60 transition-colors">
+        <div className="flex items-center gap-4 sm:gap-5 bg-white p-5 sm:p-6 rounded-xl border border-gray-200/80 shadow-xs hover:border-[#ECAB3C]/60 transition-colors" data-animate="fade-up" data-delay="200">
           <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#fdf2df] flex items-center justify-center shrink-0 text-[#ECAB3C]">
             <svg
               className="w-6 h-6"
@@ -124,14 +124,14 @@ export default function ContactOffices() {
 
       {/* 2. Our Offices Section */}
       <div className="space-y-8 pt-4">
-        <div className="text-center max-w-3xl mx-auto space-y-3">
+        <div className="text-center max-w-3xl mx-auto space-y-3" data-animate="fade-up">
           {/* Pre-heading Badge with Gold Decorative Bars */}
           <div className="inline-flex items-center justify-center gap-3">
-            <span className="w-7 h-[1.5px] bg-[#ECAB3C]" />
+            <span className="w-7 h-[1.5px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "1.75rem" } as React.CSSProperties} />
             <span className="text-xs font-bold tracking-[0.2em] text-[#ECAB3C] uppercase font-sans">
               OUR OFFICES
             </span>
-            <span className="w-7 h-[1.5px] bg-[#ECAB3C]" />
+            <span className="w-7 h-[1.5px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "1.75rem" } as React.CSSProperties} />
           </div>
 
           {/* Heading */}
@@ -148,10 +148,12 @@ export default function ContactOffices() {
 
         {/* 3 Office Location Cards (Full Width 3-Column Grid) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
-          {offices.map((office) => (
+          {offices.map((office, idx) => (
             <div
               key={office.id}
               className="bg-white rounded-xl overflow-hidden border border-gray-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group"
+              data-animate="fade-up"
+              data-delay={String(150 + idx * 120)}
             >
               <div>
                 {/* Building Photo */}

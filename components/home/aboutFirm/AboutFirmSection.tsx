@@ -17,7 +17,7 @@ export default function AboutFirmSection() {
             <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 pb-0">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-end">
                     {/* Left Column: Cynthia Portrait flush to bottom */}
-                    <div className="lg:col-span-4 xl:col-span-4 flex justify-center lg:justify-start items-end self-end relative leading-none pb-0">
+                    <div className="lg:col-span-4 xl:col-span-4 flex justify-center lg:justify-start items-end self-end relative leading-none pb-0" data-animate="fade-up" data-delay="150">
                         <div className="relative w-full max-w-[340px] sm:max-w-[380px] lg:max-w-none flex justify-center lg:justify-start items-end leading-none">
                             <Image
                                 src="/images/cynthia2.png"
@@ -37,21 +37,21 @@ export default function AboutFirmSection() {
                             {/* Left Text Block */}
                             <div className="md:col-span-7 flex flex-col space-y-3.5">
                                 {/* Pre-heading */}
-                                <div className="inline-flex items-center gap-2.5">
-                                    <span className="w-8 h-[2px] bg-[#ECAB3C]" />
+                                <div className="inline-flex items-center gap-2.5" data-animate="fade-down" data-delay="100">
+                                    <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
                                     <h3 className="text-xs font-bold tracking-widest text-[#ECAB3C] uppercase font-sans">
                                         About Our Firm
                                     </h3>
                                 </div>
 
                                 {/* Main Heading */}
-                                <h2 className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-normal text-[#091D46] tracking-tight leading-[1.18]">
+                                <h2 className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-normal text-[#091D46] tracking-tight leading-[1.18]" data-animate="fade-up" data-delay="200">
                                     Guiding Families Toward
                                     <br />a More Secure Future
                                 </h2>
 
                                 {/* Paragraph 1 */}
-                                <p className="text-sm sm:text-[14px] text-[#4a5568] leading-relaxed">
+                                <p className="text-sm sm:text-[14px] text-[#4a5568] leading-relaxed" data-animate="fade-up" data-delay="300">
                                     Cynthia I. Waisman, P.A. is a boutique law firm focused on
                                     immigration, estate planning, probate, and guardianship
                                     matters. Cynthia works directly with clients to understand
@@ -60,7 +60,7 @@ export default function AboutFirmSection() {
                                 </p>
 
                                 {/* Paragraph 2 */}
-                                <p className="text-sm sm:text-[14px] text-[#4a5568] leading-relaxed">
+                                <p className="text-sm sm:text-[14px] text-[#4a5568] leading-relaxed" data-animate="fade-up" data-delay="400">
                                     With over 25 years of legal experience, she is known for her
                                     compassionate, responsive, and client-centered approach.
                                     Clients appreciate her ability to explain complex legal
@@ -70,7 +70,7 @@ export default function AboutFirmSection() {
                             </div>
 
                             {/* Right Practice Areas Card */}
-                            <div className="md:col-span-5 flex justify-center md:justify-end">
+                            <div className="md:col-span-5 flex justify-center md:justify-end" data-animate="fade-left" data-delay="350">
                                 <div className="w-full max-w-[340px] md:max-w-none bg-white rounded-xl shadow-lg border border-gray-100 p-5 sm:p-5.5 space-y-3.5">
                                     {/* Card Header */}
                                     <div className="inline-flex items-center gap-2 pb-0.5">
@@ -209,7 +209,7 @@ export default function AboutFirmSection() {
                         <div className="mt-8 pt-6 border-t border-gray-200/80">
                             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 lg:gap-2">
                                 {/* Stat 1: 25+ Years */}
-                                <div className="flex items-center gap-3 sm:border-r sm:border-gray-200/80 sm:pr-3">
+                                <div className="flex items-center gap-3 sm:border-r sm:border-gray-200/80 sm:pr-3" data-animate="fade-up" data-delay="150">
                                     <div className="w-[60px] h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
                                         <svg
                                             className="w-6 h-6"
@@ -236,7 +236,7 @@ export default function AboutFirmSection() {
                                 </div>
 
                                 {/* Stat 2: Personalized Guidance */}
-                                <div className="flex items-center gap-3 sm:border-r sm:border-gray-200/80 sm:px-3">
+                                <div className="flex items-center gap-3 sm:border-r sm:border-gray-200/80 sm:px-3" data-animate="fade-up" data-delay="250">
                                     <div className="w-[60px] h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
                                         <svg
                                             className="w-6 h-6"
@@ -263,7 +263,7 @@ export default function AboutFirmSection() {
                                 </div>
 
                                 {/* Stat 3: Compassionate Approach */}
-                                <div className="flex items-center gap-3 sm:border-r sm:border-gray-200/80 sm:px-3">
+                                <div className="flex items-center gap-3 sm:border-r sm:border-gray-200/80 sm:px-3" data-animate="fade-up" data-delay="350">
                                     <div className="w-[60px] h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
                                         <svg
                                             className="w-6 h-6"
@@ -290,7 +290,7 @@ export default function AboutFirmSection() {
                                 </div>
 
                                 {/* Stat 4: Serving Tampa Bay */}
-                                <div className="flex items-center gap-3 sm:pl-3">
+                                <div className="flex items-center gap-3 sm:pl-3" data-animate="fade-up" data-delay="450">
                                     <div className="w-[60px] h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
                                         <svg
                                             className="w-6 h-6"

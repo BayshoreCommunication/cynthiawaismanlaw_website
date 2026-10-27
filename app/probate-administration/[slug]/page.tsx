@@ -71,12 +71,12 @@ export default async function ProbateSubPage({ params }: ProbateSubPageProps) {
         <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
             {/* Left Column: Legal Article */}
-            <article className="lg:col-span-8 text-[#2b2b2b]">
+            <article className="lg:col-span-8 text-[#2b2b2b]" data-animate="fade-up">
               <h1 className="font-serif text-[28px] sm:text-[34px] lg:text-[40px] font-normal text-[#091D46] leading-[1.2] mb-6 tracking-tight">
                 {page.title}
               </h1>
 
-              <div className="w-16 h-1 bg-[#ECAB3C] mb-8" />
+              <div className="w-16 h-1 bg-[#ECAB3C] mb-8" data-animate="line-expand" style={{ "--line-width": "4rem" } as React.CSSProperties} />
 
               <div
                 className="service-content-body space-y-5 text-sm sm:text-base text-[#4a5568] leading-relaxed [&_h2]:font-serif [&_h2]:text-[22px] [&_h2]:sm:text-[26px] [&_h2]:font-normal [&_h2]:text-[#091D46] [&_h2]:leading-snug [&_h2]:mt-8 [&_h2]:mb-4 [&_h3]:font-serif [&_h3]:text-[18px] [&_h3]:sm:text-[20px] [&_h3]:font-semibold [&_h3]:text-[#091D46] [&_h3]:mt-6 [&_h3]:mb-3 [&_p]:leading-relaxed [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ul]:my-4 [&_li]:leading-relaxed [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2 [&_ol]:my-4 [&_a]:text-[#0056b3] [&_a]:underline [&_a]:font-medium hover:[&_a]:text-[#003d80] [&_blockquote]:border-l-4 [&_blockquote]:border-[#ECAB3C] [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:my-6 [&_blockquote]:text-[#091D46]"
@@ -84,9 +84,9 @@ export default async function ProbateSubPage({ params }: ProbateSubPageProps) {
               />
 
               {/* Bottom Consultation Callout Box */}
-              <div className="mt-12 p-6 sm:p-8 bg-[#FAF7F2] border border-amber-200/90 rounded-none shadow-2xs">
+              <div className="mt-12 p-6 sm:p-8 bg-[#FAF7F2] border border-amber-200/90 rounded-none shadow-2xs" data-animate="fade-up" data-delay="200">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="w-5 h-[2px] bg-[#ECAB3C]" />
+                  <span className="w-5 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "1.25rem" } as React.CSSProperties} />
                   <span className="text-xs font-bold tracking-widest text-[#091D46] uppercase font-sans">
                     NAVIGATE PROBATE WITH CONFIDENCE
                   </span>
@@ -122,7 +122,7 @@ export default async function ProbateSubPage({ params }: ProbateSubPageProps) {
             </article>
 
             {/* Right Column: Practice Areas Sidebar */}
-            <div className="lg:col-span-4 self-start">
+            <div className="lg:col-span-4 self-start" data-animate="fade-left" data-delay="150">
               <PracticeAreasSidebar
                 currentCategory="probate"
                 currentSubItem={page.title}

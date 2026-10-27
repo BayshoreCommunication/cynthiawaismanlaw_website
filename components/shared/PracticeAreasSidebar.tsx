@@ -260,7 +260,7 @@ export default function PracticeAreasSidebar({
   };
 
   return (
-    <aside className="w-full bg-[#091D46] text-white rounded-none p-6 sm:p-7 shadow-md">
+    <aside className="w-full bg-[#091D46] text-white rounded-none p-6 sm:p-7 shadow-md" data-animate="fade-left" data-delay="150">
       <h3 className="text-[#ECAB3C] text-[15px] sm:text-base font-bold tracking-[0.12em] uppercase mb-5 font-sans border-b border-white/10 pb-3">
         PRACTICE AREAS
       </h3>

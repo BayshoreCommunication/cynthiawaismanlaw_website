@@ -290,18 +290,18 @@ export default function ProfessionalAssociations() {
             <div className="absolute inset-0 bg-[#f4f5f8]/70 backdrop-blur-[0.5px] pointer-events-none" />
 
             {/* Same 1320px Global Container for Header */}
-            <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4">
+            <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4" data-animate="fade-up">
                 {/* Section Header: Title with Gold Lines */}
                 <div className="flex items-center justify-center gap-3.5 mb-2.5">
-                    <span className="w-8 sm:w-12 h-[2px] bg-[#ECAB3C]" />
+                    <span className="w-8 sm:w-12 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "3rem" } as React.CSSProperties} />
                     <h2 className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-black uppercase tracking-wider text-center">
                         Professional Associations, Honors &amp; Recognition
                     </h2>
-                    <span className="w-8 sm:w-12 h-[2px] bg-[#ECAB3C]" />
+                    <span className="w-8 sm:w-12 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "3rem" } as React.CSSProperties} />
                 </div>
 
                 {/* Subtitle */}
-                <p className="text-center text-xs sm:text-[13px] md:text-sm text-gray-700 font-normal max-w-3xl mx-auto leading-relaxed">
+                <p className="text-center text-xs sm:text-[13px] md:text-sm text-gray-700 font-normal max-w-3xl mx-auto leading-relaxed" data-animate="fade-up" data-delay="150">
                     Cynthia is an active member of respected legal organizations and has been
                     recognized for her professional achievements and dedication to her clients and
                     community.
@@ -309,7 +309,7 @@ export default function ProfessionalAssociations() {
             </div>
 
             {/* Drag & Auto-play Marquee Container with subtle gradient edge fades */}
-            <div className="relative z-10 w-full overflow-hidden">
+            <div className="relative z-10 w-full overflow-hidden" data-animate="fade-up" data-delay="250">
                 {/* Left gradient fade */}
                 <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#f4f5f8]/80 via-[#f4f5f8]/40 to-transparent z-20" />
 

@@ -12,7 +12,7 @@ export default function AttorneyProfileSection() {
           {/* ========================================================= */}
           {/* LEFT COLUMN: Profile Card / Sidebar                       */}
           {/* ========================================================= */}
-          <aside className="lg:col-span-4 xl:col-span-4 bg-white rounded-xl border border-gray-200/80 shadow-xs p-6 sm:p-7">
+          <aside className="lg:col-span-4 xl:col-span-4 bg-white rounded-xl border border-gray-200/80 shadow-xs p-6 sm:p-7" data-animate="fade-right">
             {/* Cynthia's Portrait Photo */}
             <div className="relative w-full aspect-[3/4] max-w-[280px] mx-auto rounded-lg overflow-hidden border border-gray-100 shadow-xs bg-gray-50">
               <Image
@@ -218,7 +218,7 @@ export default function AttorneyProfileSection() {
           {/* ========================================================= */}
           <main className="lg:col-span-8 xl:col-span-8 space-y-10 sm:space-y-12">
             {/* 1. Biography Section */}
-            <section className="space-y-4 pb-8 sm:pb-10 border-b border-gray-200/80">
+            <section className="space-y-4 pb-8 sm:pb-10 border-b border-gray-200/80" data-animate="fade-up">
               <div className="flex items-center gap-3.5">
                 <div className="w-11 h-11 rounded-full bg-[#fdf2df] flex items-center justify-center shrink-0 text-[#ECAB3C]">
                   <svg
@@ -262,7 +262,7 @@ export default function AttorneyProfileSection() {
             </section>
 
             {/* 2. Professional Associations Section */}
-            <section className="space-y-4 pb-8 sm:pb-10 border-b border-gray-200/80">
+            <section className="space-y-4 pb-8 sm:pb-10 border-b border-gray-200/80" data-animate="fade-up">
               <div className="flex items-center gap-3.5">
                 <div className="w-11 h-11 rounded-full bg-[#fdf2df] flex items-center justify-center shrink-0 text-[#ECAB3C]">
                   <svg
@@ -309,7 +309,7 @@ export default function AttorneyProfileSection() {
             </section>
 
             {/* 3. Honors Section */}
-            <section className="space-y-4 pb-8 sm:pb-10 border-b border-gray-200/80">
+            <section className="space-y-4 pb-8 sm:pb-10 border-b border-gray-200/80" data-animate="fade-up">
               <div className="flex items-center gap-3.5">
                 <div className="w-11 h-11 rounded-full bg-[#fdf2df] flex items-center justify-center shrink-0 text-[#ECAB3C]">
                   <svg
@@ -341,7 +341,7 @@ export default function AttorneyProfileSection() {
             </section>
 
             {/* 4. Education Section */}
-            <section className="space-y-4 pb-8 sm:pb-10 border-b border-gray-200/80">
+            <section className="space-y-4 pb-8 sm:pb-10 border-b border-gray-200/80" data-animate="fade-up">
               <div className="flex items-center gap-3.5">
                 <div className="w-11 h-11 rounded-full bg-[#fdf2df] flex items-center justify-center shrink-0 text-[#ECAB3C]">
                   <svg
@@ -405,7 +405,7 @@ export default function AttorneyProfileSection() {
             </section>
 
             {/* 5. Bar Admission Section */}
-            <section className="space-y-4">
+            <section className="space-y-4" data-animate="fade-up">
               <div className="flex items-center gap-3.5">
                 <div className="w-11 h-11 rounded-full bg-[#fdf2df] flex items-center justify-center shrink-0 text-[#ECAB3C]">
                   <svg

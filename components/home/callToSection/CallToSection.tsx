@@ -22,7 +22,7 @@ export default function CallToSection() {
             <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-6">
                     {/* Left Column: Heading and Subtitle */}
-                    <div className="flex-1 max-w-xl text-center lg:text-left">
+                    <div className="flex-1 max-w-xl text-center lg:text-left" data-animate="fade-up" data-delay="100">
                         <h2 className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-normal text-white leading-tight tracking-tight">
                             Your legacy. Their future. Our focus.
                         </h2>
@@ -34,7 +34,7 @@ export default function CallToSection() {
                     </div>
 
                     {/* Middle Column: CTA Button & Phone */}
-                    <div className="flex flex-col items-center justify-center shrink-0 space-y-2.5">
+                    <div className="flex flex-col items-center justify-center shrink-0 space-y-2.5" data-animate="zoom-in" data-delay="200">
                         {/* Schedule Consultation Button */}
                         <Link
                             href="/contact"
@@ -66,7 +66,7 @@ export default function CallToSection() {
                     <div className="hidden lg:block w-px bg-white/20 h-16 self-center shrink-0 mx-2" />
 
                     {/* Right Column: 3 Office Locations */}
-                    <div className="flex flex-col space-y-3 shrink-0 text-left">
+                    <div className="flex flex-col space-y-3 shrink-0 text-left" data-animate="fade-left" data-delay="300">
                         {/* Office 1: Tampa */}
                         <div className="flex items-center gap-3">
                             <svg

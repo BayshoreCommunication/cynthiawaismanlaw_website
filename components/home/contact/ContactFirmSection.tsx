@@ -22,21 +22,21 @@ export default function ContactFirmSection() {
                 {/* Section Header */}
                 <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
                     {/* Pre-heading with Gold Decorative Bars */}
-                    <div className="inline-flex items-center justify-center gap-3 mb-3">
-                        <span className="w-7 h-[1.5px] bg-[#ECAB3C]" />
+                    <div className="inline-flex items-center justify-center gap-3 mb-3" data-animate="fade-down" data-delay="100">
+                        <span className="w-7 h-[1.5px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "1.75rem" } as React.CSSProperties} />
                         <span className="text-xs sm:text-[13px] font-bold tracking-[0.2em] text-[#ECAB3C] uppercase">
                             CONTACT OUR FIRM
                         </span>
-                        <span className="w-7 h-[1.5px] bg-[#ECAB3C]" />
+                        <span className="w-7 h-[1.5px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "1.75rem" } as React.CSSProperties} />
                     </div>
 
                     {/* Main Title */}
-                    <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-normal text-[#091D46] tracking-tight leading-tight mb-4">
+                    <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-normal text-[#091D46] tracking-tight leading-tight mb-4" data-animate="fade-up" data-delay="200">
                         Take the First Step Toward Peace of Mind
                     </h2>
 
                     {/* Subtitle Description */}
-                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-2xl mx-auto" data-animate="fade-up" data-delay="300">
                         Whether you&apos;re navigating the U.S. immigration process, planning your estate,
                         or coping with the loss of a loved one, our firm is here to guide you with
                         compassion, integrity, and personalized legal support.
@@ -46,7 +46,7 @@ export default function ContactFirmSection() {
                 {/* Two-Column Grid: Left Navy Info Card & Right White Form Card */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch gap-8 lg:gap-0">
                     {/* Left Column: Navy Contact Card */}
-                    <div className="lg:col-span-5 bg-[#091D46] text-white rounded-2xl lg:rounded-r-none p-7 sm:p-9 lg:p-10 shadow-2xl flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-b border-blue-950">
+                    <div className="lg:col-span-5 bg-[#091D46] text-white rounded-2xl lg:rounded-r-none p-7 sm:p-9 lg:p-10 shadow-2xl flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-b border-blue-950" data-animate="fade-right" data-delay="200">
                         {/* Top: Title & Subtitle moved to Left Column */}
                         <div>
                             <div className="flex items-center gap-2 mb-2">
@@ -245,7 +245,7 @@ export default function ContactFirmSection() {
                     </div>
 
                     {/* Right Column: White Contact Form Card with Embedded MyCase Intake Form */}
-                    <div className="lg:col-span-7 bg-white rounded-2xl shadow-2xl p-5 sm:p-7 lg:p-8 border border-gray-100 flex flex-col justify-center relative z-10 lg:-ml-2">
+                    <div className="lg:col-span-7 bg-white rounded-2xl shadow-2xl p-5 sm:p-7 lg:p-8 border border-gray-100 flex flex-col justify-center relative z-10 lg:-ml-2" data-animate="fade-left" data-delay="300">
                         {/* MyCase Embedded Lead / Contact Intake Form */}
                         <div className="w-full relative rounded-xl overflow-hidden bg-transparent">
                             <iframe

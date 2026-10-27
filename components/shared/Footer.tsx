@@ -20,16 +20,16 @@ export default function Footer() {
                 {/* Main Footer Content */}
                 <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 pt-14 pb-12">
                     {/* Section Titles */}
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8 pb-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8 pb-4" data-animate="fade-up">
                         <div className="lg:col-span-9 flex items-center gap-4">
                             <h3 className="text-sm md:text-base font-semibold tracking-widest text-white uppercase font-sans">
                                 Our Locations
                             </h3>
-                            <span className="w-12 h-[1px] bg-[#ECAB3C]" />
+                            <span className="w-12 h-[1px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "3rem" } as React.CSSProperties} />
                         </div>
 
                         <div className="lg:col-span-3 hidden lg:flex items-center gap-4">
-                            <span className="w-12 h-[1px] bg-[#ECAB3C]" />
+                            <span className="w-12 h-[1px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "3rem" } as React.CSSProperties} />
                             <h3 className="text-sm md:text-base font-semibold tracking-widest text-white uppercase font-sans">
                                 Get In Touch
                             </h3>
@@ -39,7 +39,7 @@ export default function Footer() {
                     {/* 4 Columns: 3 Offices + Get In Touch */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-0 lg:divide-x lg:divide-white/10">
                         {/* Column 1: Tampa Office */}
-                        <div className="lg:col-span-3 lg:pr-4 xl:pr-6 2xl:pr-8 flex flex-col justify-between space-y-6">
+                        <div className="lg:col-span-3 lg:pr-4 xl:pr-6 2xl:pr-8 flex flex-col justify-between space-y-6" data-animate="fade-up" data-delay="100">
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <span className="text-[#ECAB3C]">
@@ -98,7 +98,7 @@ export default function Footer() {
                         </div>
 
                         {/* Column 2: Clearwater Office */}
-                        <div className="lg:col-span-3 lg:px-4 xl:px-6 2xl:px-8 flex flex-col justify-between space-y-6">
+                        <div className="lg:col-span-3 lg:px-4 xl:px-6 2xl:px-8 flex flex-col justify-between space-y-6" data-animate="fade-up" data-delay="200">
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <span className="text-[#ECAB3C]">
@@ -157,7 +157,7 @@ export default function Footer() {
                         </div>
 
                         {/* Column 3: Wesley Chapel Office */}
-                        <div className="lg:col-span-3 lg:px-4 xl:px-6 2xl:px-8 flex flex-col justify-between space-y-6">
+                        <div className="lg:col-span-3 lg:px-4 xl:px-6 2xl:px-8 flex flex-col justify-between space-y-6" data-animate="fade-up" data-delay="300">
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <span className="text-[#ECAB3C]">
@@ -217,7 +217,7 @@ export default function Footer() {
                         </div>
 
                         {/* Column 4: Get In Touch */}
-                        <div className="lg:col-span-3 lg:pl-4 xl:pl-6 2xl:pl-8 flex flex-col justify-between space-y-6">
+                        <div className="lg:col-span-3 lg:pl-4 xl:pl-6 2xl:pl-8 flex flex-col justify-between space-y-6" data-animate="fade-up" data-delay="400">
                             {/* Mobile Title for Get In Touch */}
                             <div className="lg:hidden flex items-center gap-4 pt-4">
                                 <span className="w-8 h-[1px] bg-[#ECAB3C]" />
@@ -326,13 +326,7 @@ export default function Footer() {
                             <Link href="/about" className="hover:text-white transition-colors">
                                 About
                             </Link>
-                            <span className="text-gray-600">|</span>
-                            <Link
-                                href="/immigration-law-overview"
-                                className="hover:text-white transition-colors"
-                            >
-                                Practice Areas
-                            </Link>
+
                             <span className="text-gray-600">|</span>
                             <Link href="/contact" className="hover:text-white transition-colors">
                                 Our Locations

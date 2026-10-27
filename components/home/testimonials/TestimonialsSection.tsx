@@ -313,29 +313,29 @@ export default function TestimonialsSection() {
       {/* 1320px Global Content Container - Keeps carousel constrained within website container */}
       <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-10 ">
+        <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-10">
           {/* Subheading with gold accent lines */}
-          <div className="inline-flex items-center gap-3">
-            <span className="w-8 h-[2px] bg-[#ECAB3C]" />
+          <div className="inline-flex items-center gap-3" data-animate="fade-down" data-delay="100">
+            <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
             <h3 className="text-xs sm:text-[13px] md:text-sm font-bold tracking-widest text-[#ECAB3C] uppercase font-sans">
               Testimonials
             </h3>
-            <span className="w-8 h-[2px] bg-[#ECAB3C]" />
+            <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
           </div>
 
           {/* Main Title */}
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-normal text-[#091D46] tracking-tight leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-normal text-[#091D46] tracking-tight leading-tight" data-animate="fade-up" data-delay="200">
             Real Families. Real Peace of Mind.
           </h2>
 
           {/* Subtitle */}
-          <p className="text-sm md:text-base text-[#4a5568] leading-relaxed">
+          <p className="text-sm md:text-base text-[#4a5568] leading-relaxed" data-animate="fade-up" data-delay="300">
             Every family’s situation is different. Here are authentic reviews from clients Cynthia has helped
             protect their loved ones, achieve legal status, and plan for the future.
           </p>
 
           {/* Google Reviews Badge */}
-          <div className="pt-2 flex justify-center">
+          <div className="pt-2 flex justify-center" data-animate="zoom-in" data-delay="400">
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-xs border border-gray-200/90 shadow-xs">
               {/* Google Colored Logo */}
               <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
@@ -356,6 +356,8 @@ export default function TestimonialsSection() {
         {/* Carousel Wrapper with Left & Right Arrows (Contained inside 1320px) */}
         <div
           className="relative px-1 sm:px-2"
+          data-animate="fade-up"
+          data-delay="450"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -401,7 +403,7 @@ export default function TestimonialsSection() {
               {[...testimonials, ...testimonials, ...testimonials].map((item, index) => (
                 <div
                   key={`${item.id}-${index}`}
-                  className="w-[310px] sm:w-[360px] md:w-[385px] min-h-[300px] shrink-0 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between select-none pointer-events-auto group"
+                  className="w-[310px] sm:w-[360px] md:w-[385px] min-h-[320px] shrink-0 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between select-none pointer-events-auto group"
                 >
                   <div>
                     {/* Card Top: Category Badge & Gold Quote Icon */}
@@ -419,7 +421,7 @@ export default function TestimonialsSection() {
                     </div>
 
                     {/* Quote Body */}
-                    <p className="text-[13.5px] sm:text-[14.5px] text-[#2c3e50] leading-relaxed font-sans line-clamp-4 select-none">
+                    <p className="text-[13.5px] sm:text-[14.5px] text-[#2c3e50] leading-relaxed font-sans select-none">
                       {item.quote}
                     </p>
                   </div>

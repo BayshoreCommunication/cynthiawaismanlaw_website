@@ -111,7 +111,7 @@ const serviceCards: ServiceCard[] = [
     id: "guardianship",
     title: "Guardianship Services",
     subtitle:
-      "Personalized legal guidance for you and your family with compassion, integrity, and experience.",
+      "Ensuring safety, stability, and peace of mind for vulnerable loved ones.",
     image: "/images/services/guardianship.png",
     btnText: "View Guardianship Services",
     btnHref: "/guardianship-services",
@@ -204,33 +204,34 @@ export default function ServicesSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-14 space-y-3">
           {/* Subheading with gold accent lines */}
-          <div className="inline-flex items-center gap-3">
-            <span className="w-8 h-[2px] bg-[#ECAB3C]" />
+          <div className="inline-flex items-center gap-3" data-animate="fade-down" data-delay="100">
+            <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
             <h3 className="text-xs sm:text-[13px] md:text-sm font-bold tracking-widest text-[#ECAB3C] uppercase font-sans">
               Our Services
             </h3>
-            <span className="w-8 h-[2px] bg-[#ECAB3C]" />
+            <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
           </div>
 
           {/* Main Title */}
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-[#091D46] tracking-tight leading-tight">
-            Immigration & Elder Law Services For The Tampa Area
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-[#091D46] tracking-tight leading-tight" data-animate="fade-up" data-delay="200">
+            Immigration &amp; Elder Law Services For The Tampa Area
           </h2>
 
           {/* Subtitle */}
-          <p className="text-sm md:text-base text-[#4a5568] leading-relaxed">
-            Personalized legal guidance for you and your family — with compassion, clarity, and experience.
-
+          <p className="text-sm md:text-base text-[#4a5568] leading-relaxed" data-animate="fade-up" data-delay="300">
+            Personalized legal guidance for you and your family with compassion, integrity, and experience.
 
           </p>
         </div>
 
         {/* 4 Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {serviceCards.map((card) => (
+          {serviceCards.map((card, idx) => (
             <div
               key={card.id}
-              className="bg-white rounded-xl border border-gray-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group"
+              data-animate="fade-up"
+              data-delay={(idx * 100 + 150).toString()}
+              className="bg-white rounded-xl border border-gray-200/80 shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden group"
             >
               {/* Card Top: Image + Floating Icon Badge */}
               <div>

@@ -106,6 +106,7 @@ export default function TeamMembersSection() {
                       ? "order-1 md:order-2 md:flex md:justify-end"
                       : "order-1 md:order-1"
                       }`}
+                    data-animate={isImageRight ? "fade-left" : "fade-right"}
                   >
                     <div className="relative w-full max-w-[320px] mx-auto md:mx-0 aspect-[3/4] rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-gray-50">
                       <Image
@@ -124,10 +125,12 @@ export default function TeamMembersSection() {
                       ? "order-2 md:order-1"
                       : "order-2 md:order-2"
                       }`}
+                    data-animate={isImageRight ? "fade-right" : "fade-left"}
+                    data-delay="150"
                   >
                     {/* Pre-heading Role */}
                     <div className="inline-flex items-center gap-2.5">
-                      <span className="w-8 h-[2px] bg-[#ECAB3C]" />
+                      <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
                       <span className="text-xs font-bold tracking-widest text-[#ECAB3C] uppercase font-sans">
                         {member.role}
                       </span>

@@ -110,14 +110,14 @@ export default function Breadcrumb({
       {/* 1320px Global Container */}
       <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24">
         {/* Breadcrumb Navigation at Top */}
-        <div className="mb-6 sm:mb-8">
+        <div className="mb-6 sm:mb-8" data-animate="fade-down" data-delay="100">
           <BreadcrumbNav items={items} variant="light" />
         </div>
 
         {/* Pre-heading Badge with Gold Accent Bar */}
         {badge && (
-          <div className="inline-flex items-center gap-3 mb-3.5 sm:mb-4">
-            <span className="w-10 sm:w-12 h-[2.5px] bg-[#ECAB3C]" />
+          <div className="inline-flex items-center gap-3 mb-3.5 sm:mb-4" data-animate="fade-down" data-delay="150">
+            <span className="w-10 sm:w-12 h-[2.5px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "3rem" } as React.CSSProperties} />
             <span className="text-xs sm:text-[13px] font-bold tracking-[0.2em] text-[#ECAB3C] uppercase font-sans">
               {badge}
             </span>
@@ -126,21 +126,21 @@ export default function Breadcrumb({
 
         {/* Main Headline */}
         {title && (
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-[46px] lg:text-[52px] xl:text-[56px] font-normal text-white tracking-tight leading-[1.12] max-w-5xl">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-[46px] lg:text-[52px] xl:text-[56px] font-normal text-white tracking-tight leading-[1.12] max-w-5xl" data-animate="fade-up" data-delay="250">
             {title}
           </h1>
         )}
 
         {/* Subtitle (e.g. Attorney at Law) */}
         {subtitle && (
-          <p className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-[36px] xl:text-[38px] text-white font-normal tracking-wide mt-1 sm:mt-1.5 leading-snug max-w-2xl">
+          <p className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-[36px] xl:text-[38px] text-white font-normal tracking-wide mt-1 sm:mt-1.5 leading-snug max-w-2xl" data-animate="fade-up" data-delay="350">
             {subtitle}
           </p>
         )}
 
         {/* Description Paragraph (if any) */}
         {description && (
-          <p className="text-sm sm:text-base text-white/90 leading-relaxed max-w-xl font-sans mt-4 sm:mt-5">
+          <p className="text-sm sm:text-base text-white/90 leading-relaxed max-w-xl font-sans mt-4 sm:mt-5" data-animate="fade-up" data-delay="450">
             {description}
           </p>
         )}
