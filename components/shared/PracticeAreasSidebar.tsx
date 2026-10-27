@@ -58,6 +58,10 @@ const practiceCategories: PracticeCategory[] = [
         label: "Waivers",
         href: "/immigration-law-overview/waivers",
       },
+      {
+        label: "U Visa (Crime Victims)",
+        href: "/immigration-law-overview/u-visa",
+      },
     ],
   },
   {
@@ -113,10 +117,6 @@ const practiceCategories: PracticeCategory[] = [
         href: "/estate-planning-services",
       },
       {
-        label: "Estate Planning FAQ",
-        href: "/estate-planning-services/estate-planning-faq",
-      },
-      {
         label: "Wills",
         href: "/estate-planning-services/wills",
       },
@@ -136,6 +136,53 @@ const practiceCategories: PracticeCategory[] = [
         label: "Funding & Your Revocable Trust",
         href: "/estate-planning-services/funding-administration-your-revocable-trust",
       },
+      {
+        label: "Business Succession Planning",
+        href: "/estate-planning-services/succession-planning",
+      },
+      {
+        label: "Review & Update of Existing Plans",
+        href: "/estate-planning-services/estate-plan-review",
+      },
+      {
+        label: "Estate Planning FAQ",
+        href: "/estate-planning-services/estate-planning-faq",
+      },
+    ],
+  },
+  {
+    id: "guardianship",
+    name: "Guardianship Services",
+    href: "/guardianship-services",
+    subItems: [
+      {
+        label: "Guardianship Overview",
+        href: "/guardianship-services",
+      },
+      {
+        label: "Guardianship for Adults (Elderly)",
+        href: "/guardianship-services/adult-guardianship",
+      },
+      {
+        label: "Guardianship for Minors (Children)",
+        href: "/guardianship-services/minor-guardianship",
+      },
+      {
+        label: "Limited Guardianship",
+        href: "/guardianship-services/limited-guardianship",
+      },
+      {
+        label: "Plenary Guardianship",
+        href: "/guardianship-services/plenary-guardianship",
+      },
+      {
+        label: "Guardianship Advocacy",
+        href: "/guardianship-services/guardianship-advocacy",
+      },
+      {
+        label: "Guardianship Plan Reviews & Accountings",
+        href: "/guardianship-services/guardianship-plan-reviews",
+      },
     ],
   },
   {
@@ -148,23 +195,38 @@ const practiceCategories: PracticeCategory[] = [
         href: "/probate-administration",
       },
       {
-        label: "Ancillary Probate",
-        href: "/probate-administration/ancillary-probate",
-      },
-      {
         label: "Summary Administration",
         href: "/probate-administration/summary-administration",
+      },
+      {
+        label: "Ancillary Probate",
+        href: "/probate-administration/ancillary-probate",
       },
       {
         label: "Will Contests",
         href: "/probate-administration/will-contests",
       },
+      {
+        label: "Will Validation",
+        href: "/probate-administration/will-validation",
+      },
+      {
+        label: "Trust Administration",
+        href: "/probate-administration/trust-administration",
+      },
+      {
+        label: "Estate Settlement",
+        href: "/probate-administration/estate-settlement",
+      },
+      {
+        label: "Transfer of Assets",
+        href: "/probate-administration/transfer-of-assets",
+      },
+      {
+        label: "Guidance for Personal Representatives",
+        href: "/probate-administration/executor-guidance",
+      },
     ],
-  },
-  {
-    id: "guardianship",
-    name: "Guardianship Services",
-    href: "/guardianship-services",
   },
 ];
 

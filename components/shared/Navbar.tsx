@@ -34,36 +34,90 @@ const navItems: NavItem[] = [
     label: "Estate Planning",
     href: "/estate-planning-services",
     children: [
-      { label: "Estate Planning FAQ", href: "/estate-planning-services/estate-planning-faq" },
+      { label: "Wills", href: "/estate-planning-services/wills" },
+      { label: "Trusts", href: "/estate-planning-services/trusts" },
+      { label: "Powers of Attorney", href: "/estate-planning-services/powers-of-attorney" },
+      { label: "Living Wills", href: "/estate-planning-services/living-wills" },
       {
         label: "Funding & Your Revocable Trust",
         href: "/estate-planning-services/funding-administration-your-revocable-trust",
       },
-      { label: "Living Wills", href: "/estate-planning-services/living-wills" },
-      { label: "Powers of Attorney", href: "/estate-planning-services/powers-of-attorney" },
-      { label: "Trusts", href: "/estate-planning-services/trusts" },
-      { label: "Wills", href: "/estate-planning-services/wills" },
+      {
+        label: "Succession Planning",
+        href: "/estate-planning-services/succession-planning",
+      },
+      {
+        label: "Review & Update Plans",
+        href: "/estate-planning-services/estate-plan-review",
+      },
+      { label: "Estate Planning FAQ", href: "/estate-planning-services/estate-planning-faq" },
     ],
   },
   {
     label: "Guardianship Services",
     href: "/guardianship-services",
+    children: [
+      {
+        label: "Guardianship for Adults",
+        href: "/guardianship-services/adult-guardianship",
+      },
+      {
+        label: "Guardianship for Minors",
+        href: "/guardianship-services/minor-guardianship",
+      },
+      {
+        label: "Limited Guardianship",
+        href: "/guardianship-services/limited-guardianship",
+      },
+      {
+        label: "Plenary Guardianship",
+        href: "/guardianship-services/plenary-guardianship",
+      },
+      {
+        label: "Guardianship Advocacy",
+        href: "/guardianship-services/guardianship-advocacy",
+      },
+      {
+        label: "Plan Reviews & Accountings",
+        href: "/guardianship-services/guardianship-plan-reviews",
+      },
+    ],
   },
   {
     label: "Probate Administration",
     href: "/probate-administration",
     children: [
       {
-        label: "Ancillary Probate",
-        href: "/probate-administration/ancillary-probate",
-      },
-      {
         label: "Summary Administration",
         href: "/probate-administration/summary-administration",
       },
       {
+        label: "Ancillary Probate",
+        href: "/probate-administration/ancillary-probate",
+      },
+      {
         label: "Will Contests",
         href: "/probate-administration/will-contests",
+      },
+      {
+        label: "Will Validation",
+        href: "/probate-administration/will-validation",
+      },
+      {
+        label: "Trust Administration",
+        href: "/probate-administration/trust-administration",
+      },
+      {
+        label: "Estate Settlement",
+        href: "/probate-administration/estate-settlement",
+      },
+      {
+        label: "Transfer of Assets",
+        href: "/probate-administration/transfer-of-assets",
+      },
+      {
+        label: "Guidance for Personal Representatives",
+        href: "/probate-administration/executor-guidance",
       },
     ],
   },

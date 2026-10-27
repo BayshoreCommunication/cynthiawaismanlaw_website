@@ -50,6 +50,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/probate",
+        destination: "/probate-administration",
+        permanent: true,
+      },
+      {
+        source: "/probate/:slug*",
+        destination: "/probate-administration/:slug*",
+        permanent: true,
+      },
+      {
         source: "/attorney",
         destination: "/about/our-attorney",
         permanent: true,

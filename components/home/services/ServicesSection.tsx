@@ -45,27 +45,27 @@ const serviceCards: ServiceCard[] = [
     items: [
       {
         title: "Family-Based Immigration",
-        href: "/immigration-law-overview",
+        href: "/immigration-law-overview/family-based-visas",
       },
       {
         title: "VAWA (Abused Spouse)",
-        href: "/immigration-law-overview",
+        href: "/immigration-law-overview/vawa-green-cards",
       },
       {
         title: "U Visa (Crime Victims)",
-        href: "/immigration-law-overview",
+        href: "/immigration-law-overview/u-visa",
       },
       {
         title: "Removal of Conditions (I-751)",
-        href: "/immigration-law-overview",
+        href: "/immigration-law-overview/conditional-resident-petitions",
       },
       {
         title: "Green Card & Naturalization (Citizenship)",
-        href: "/immigration-law-overview",
+        href: "/immigration-law-overview/green-cards",
       },
       {
         title: "Work Permits, Advance Parole & Travel",
-        href: "/immigration-law-overview",
+        href: "/immigration-law-overview/travel-reentry-permits",
       },
     ],
   },
@@ -96,14 +96,14 @@ const serviceCards: ServiceCard[] = [
       { title: "Wills & Trusts", href: "/estate-planning-services/wills" },
       { title: "Power of Attorney", href: "/estate-planning-services/powers-of-attorney" },
       { title: "Healthcare Directives", href: "/estate-planning-services/living-wills" },
-      { title: "Succession Planning", href: "/estate-planning-services" },
+      { title: "Succession Planning", href: "/estate-planning-services/succession-planning" },
       {
         title: "Review & Update of Existing Plans",
-        href: "/estate-planning-services",
+        href: "/estate-planning-services/estate-plan-review",
       },
       {
         title: "Personalized Estate Planning Consultations",
-        href: "/estate-planning-services",
+        href: "/estate-planning-services/estate-planning-faq",
       },
     ],
   },
@@ -133,27 +133,27 @@ const serviceCards: ServiceCard[] = [
     items: [
       {
         title: "Guardianship for Adults (Elderly)",
-        href: "/guardianship-services",
+        href: "/guardianship-services/adult-guardianship",
       },
       {
         title: "Guardianship for Minors (Children)",
-        href: "/guardianship-services",
+        href: "/guardianship-services/minor-guardianship",
       },
       {
         title: "Limited Guardianship",
-        href: "/guardianship-services",
+        href: "/guardianship-services/limited-guardianship",
       },
       {
         title: "Plenary Guardianship",
-        href: "/guardianship-services",
+        href: "/guardianship-services/plenary-guardianship",
       },
       {
         title: "Guardianship Advocacy",
-        href: "/guardianship-services",
+        href: "/guardianship-services/guardianship-advocacy",
       },
       {
         title: "Guardianship Plan Reviews",
-        href: "/guardianship-services",
+        href: "/guardianship-services/guardianship-plan-reviews",
       },
     ],
   },
@@ -185,13 +185,13 @@ const serviceCards: ServiceCard[] = [
         title: "Probate Administration",
         href: "/probate-administration",
       },
-      { title: "Will Validation", href: "/probate-administration" },
-      { title: "Trust Administration", href: "/probate-administration" },
-      { title: "Estate Settlement", href: "/probate-administration" },
-      { title: "Transfer of Assets", href: "/probate-administration" },
+      { title: "Will Validation", href: "/probate-administration/will-validation" },
+      { title: "Trust Administration", href: "/probate-administration/trust-administration" },
+      { title: "Estate Settlement", href: "/probate-administration/estate-settlement" },
+      { title: "Transfer of Assets", href: "/probate-administration/transfer-of-assets" },
       {
         title: "Guidance for Executors & Family Members",
-        href: "/probate-administration",
+        href: "/probate-administration/executor-guidance",
       },
     ],
   },
