@@ -46,6 +46,7 @@ export default function HeroSection() {
                         <p className="text-sm sm:text-base md:text-[17px] text-[#4a5568] leading-relaxed max-w-xl">
                             Helping individuals and families with immigration, estate planning, guardianship, and probate with compassion, integrity, and personalized solutions.
 
+
                         </p>
 
                         {/* CTA Buttons */}

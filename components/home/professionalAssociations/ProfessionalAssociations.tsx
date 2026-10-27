@@ -80,7 +80,7 @@ const associationItems: AssociationItem[] = [
     {
         id: "assoc-9",
         title: "Florida Bar Grievance Committee",
-        membership: "Former President",
+        membership: "Former Chairman",
         logo: "/images/associations/assoc-9-grievance.png",
         logoWidth: 150,
         logoHeight: 96,

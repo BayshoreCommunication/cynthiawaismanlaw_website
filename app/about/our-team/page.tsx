@@ -38,7 +38,6 @@ export default function OurTeamPage() {
       <TeamMembersSection />
       {/* 3. Global Sections */}
       <ProfessionalAssociations />
-      <AboutFirmSection />
       <TestimonialsSection />
       <ContactFirmSection />
     </main>

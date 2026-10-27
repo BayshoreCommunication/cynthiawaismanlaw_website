@@ -33,7 +33,7 @@ export default function AttorneyProfileSection() {
             {/* Email Me Button */}
             <div className="mt-3.5">
               <a
-                href="mailto:info@cynthiawaisman.com"
+                href="mailto:cynthiawaisman@yahoo.com"
                 className="w-full py-2.5 px-4 rounded-full border border-[#091D46] text-[#091D46] hover:bg-[#091D46] hover:text-white transition-all duration-300 font-bold text-xs tracking-wider uppercase inline-flex items-center justify-center gap-2 group cursor-pointer"
               >
                 <svg

@@ -48,19 +48,11 @@ const serviceCards: ServiceCard[] = [
         href: "/immigration-law-overview",
       },
       {
-        title: "Employment & Work Visas",
-        href: "/immigration-law-overview",
-      },
-      {
         title: "VAWA (Abused Spouse)",
         href: "/immigration-law-overview",
       },
       {
         title: "U Visa (Crime Victims)",
-        href: "/immigration-law-overview",
-      },
-      {
-        title: "Asylum & Deportation Defense",
         href: "/immigration-law-overview",
       },
       {
@@ -104,10 +96,6 @@ const serviceCards: ServiceCard[] = [
       { title: "Wills & Trusts", href: "/estate-planning" },
       { title: "Power of Attorney", href: "/estate-planning" },
       { title: "Healthcare Directives", href: "/estate-planning" },
-      {
-        title: "Living Wills & Asset Protection",
-        href: "/estate-planning",
-      },
       { title: "Succession Planning", href: "/estate-planning" },
       {
         title: "Review & Update of Existing Plans",
@@ -164,10 +152,6 @@ const serviceCards: ServiceCard[] = [
         href: "/guardianship-services",
       },
       {
-        title: "Incapacity Proceedings",
-        href: "/guardianship-services",
-      },
-      {
         title: "Guardianship Plan Reviews",
         href: "/guardianship-services",
       },
@@ -204,11 +188,6 @@ const serviceCards: ServiceCard[] = [
       { title: "Will Validation", href: "/probate-administration" },
       { title: "Trust Administration", href: "/probate-administration" },
       { title: "Estate Settlement", href: "/probate-administration" },
-      {
-        title: "Summary Administration",
-        href: "/probate-administration",
-      },
-      { title: "Ancillary Probate", href: "/probate-administration" },
       { title: "Transfer of Assets", href: "/probate-administration" },
       {
         title: "Guidance for Executors & Family Members",
@@ -240,8 +219,9 @@ export default function ServicesSection() {
 
           {/* Subtitle */}
           <p className="text-sm md:text-base text-[#4a5568] leading-relaxed">
-            Personalized legal guidance for you and your family — with
-            compassion, clarity, and experience.
+            Personalized legal guidance for you and your family — with compassion, clarity, and experience.
+
+
           </p>
         </div>
 

@@ -348,7 +348,7 @@ export default function TestimonialsSection() {
               <div className="flex items-center text-[#ECAB3C] text-xs">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
               </div>
-              <span className="text-[11px] font-semibold text-gray-500">Google Reviews</span>
+              <span className="text-[11px] font-semibold text-gray-500">(180) Google Reviews</span>
             </div>
           </div>
         </div>

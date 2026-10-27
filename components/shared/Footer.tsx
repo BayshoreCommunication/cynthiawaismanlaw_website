@@ -39,7 +39,7 @@ export default function Footer() {
                     {/* 4 Columns: 3 Offices + Get In Touch */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-0 lg:divide-x lg:divide-white/10">
                         {/* Column 1: Tampa Office */}
-                        <div className="lg:col-span-3 lg:pr-8 flex flex-col justify-between space-y-6">
+                        <div className="lg:col-span-3 lg:pr-4 xl:pr-6 2xl:pr-8 flex flex-col justify-between space-y-6">
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <span className="text-[#ECAB3C]">
@@ -84,10 +84,10 @@ export default function Footer() {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className="pt-2">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-xs font-semibold tracking-wider uppercase transition-all duration-300 group"
+                                    className="inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-[11px] xl:text-xs font-semibold tracking-wide uppercase transition-all duration-300 group whitespace-nowrap"
                                 >
                                     <span>Tampa Law Office</span>
                                     <span className="group-hover:translate-x-1 transition-transform duration-200">
@@ -98,7 +98,7 @@ export default function Footer() {
                         </div>
 
                         {/* Column 2: Clearwater Office */}
-                        <div className="lg:col-span-3 lg:px-8 flex flex-col justify-between space-y-6">
+                        <div className="lg:col-span-3 lg:px-4 xl:px-6 2xl:px-8 flex flex-col justify-between space-y-6">
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <span className="text-[#ECAB3C]">
@@ -143,10 +143,10 @@ export default function Footer() {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className="pt-2">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-xs font-semibold tracking-wider uppercase transition-all duration-300 group"
+                                    className="inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-[11px] xl:text-xs font-semibold tracking-wide uppercase transition-all duration-300 group whitespace-nowrap"
                                 >
                                     <span>Clearwater Law Office</span>
                                     <span className="group-hover:translate-x-1 transition-transform duration-200">
@@ -157,7 +157,7 @@ export default function Footer() {
                         </div>
 
                         {/* Column 3: Wesley Chapel Office */}
-                        <div className="lg:col-span-3 lg:px-8 flex flex-col justify-between space-y-6">
+                        <div className="lg:col-span-3 lg:px-4 xl:px-6 2xl:px-8 flex flex-col justify-between space-y-6">
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <span className="text-[#ECAB3C]">
@@ -203,10 +203,10 @@ export default function Footer() {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className="pt-2">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-xs font-semibold tracking-wider uppercase transition-all duration-300 group"
+                                    className="inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 xl:px-5 py-2 sm:py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-[11px] xl:text-xs font-semibold tracking-wide uppercase transition-all duration-300 group whitespace-nowrap"
                                 >
                                     <span>Wesley Chapel Law Office</span>
                                     <span className="group-hover:translate-x-1 transition-transform duration-200">
@@ -217,7 +217,7 @@ export default function Footer() {
                         </div>
 
                         {/* Column 4: Get In Touch */}
-                        <div className="lg:col-span-3 lg:pl-8 flex flex-col justify-between space-y-6">
+                        <div className="lg:col-span-3 lg:pl-4 xl:pl-6 2xl:pl-8 flex flex-col justify-between space-y-6">
                             {/* Mobile Title for Get In Touch */}
                             <div className="lg:hidden flex items-center gap-4 pt-4">
                                 <span className="w-8 h-[1px] bg-[#ECAB3C]" />
@@ -228,21 +228,21 @@ export default function Footer() {
 
                             <div className="space-y-5">
                                 {/* Phone */}
-                                <div className="flex items-start gap-4">
-                                    <div className="w-10 h-10 rounded-full border border-[#ECAB3C] flex items-center justify-center shrink-0 text-[#ECAB3C]">
+                                <div className="flex items-start gap-3 sm:gap-3.5">
+                                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#ECAB3C] flex items-center justify-center shrink-0 text-[#ECAB3C]">
                                         <svg
-                                            className="w-5 h-5"
+                                            className="w-4 h-4 sm:w-5 sm:h-5"
                                             fill="currentColor"
                                             viewBox="0 0 24 24"
                                         >
                                             <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                                         </svg>
                                     </div>
-                                    <div>
-                                        <p className="text-sm text-gray-300">Call Us</p>
+                                    <div className="min-w-0">
+                                        <p className="text-xs sm:text-sm text-gray-300">Call Us</p>
                                         <a
                                             href="tel:+18132796180"
-                                            className="text-base font-semibold text-white hover:text-[#ECAB3C] transition-colors"
+                                            className="text-sm sm:text-base font-semibold text-white hover:text-[#ECAB3C] transition-colors whitespace-nowrap block"
                                         >
                                             +1 (813) 279-6180
                                         </a>
@@ -250,40 +250,40 @@ export default function Footer() {
                                 </div>
 
                                 {/* Email */}
-                                <div className="flex items-start gap-4">
-                                    <div className="w-10 h-10 rounded-full border border-[#ECAB3C] flex items-center justify-center shrink-0 text-[#ECAB3C]">
+                                <div className="flex items-start gap-3 sm:gap-3.5">
+                                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#ECAB3C] flex items-center justify-center shrink-0 text-[#ECAB3C]">
                                         <svg
-                                            className="w-5 h-5"
+                                            className="w-4 h-4 sm:w-5 sm:h-5"
                                             fill="currentColor"
                                             viewBox="0 0 24 24"
                                         >
                                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                                         </svg>
                                     </div>
-                                    <div>
-                                        <p className="text-sm text-gray-300">Email Us</p>
+                                    <div className="min-w-0">
+                                        <p className="text-xs sm:text-sm text-gray-300">Email Us</p>
                                         <a
-                                            href="mailto:cynthia@cynthiawaismanlaw.com"
-                                            className="text-base font-semibold text-white hover:text-[#ECAB3C] transition-colors break-all"
+                                            href="mailto:cynthiawaisman@yahoo.com"
+                                            className="text-[12px] sm:text-[13px] md:text-sm lg:text-[12px] xl:text-[14px] 2xl:text-[15px] font-semibold text-white hover:text-[#ECAB3C] transition-colors whitespace-nowrap block"
                                         >
-                                            cynthia@cynthiawaismanlaw.com
+                                            cynthiawaisman@yahoo.com
                                         </a>
                                     </div>
                                 </div>
 
                                 {/* Office Hours */}
-                                <div className="flex items-start gap-4">
-                                    <div className="w-10 h-10 rounded-full border border-[#ECAB3C] flex items-center justify-center shrink-0 text-[#ECAB3C]">
+                                <div className="flex items-start gap-3 sm:gap-3.5">
+                                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#ECAB3C] flex items-center justify-center shrink-0 text-[#ECAB3C]">
                                         <svg
-                                            className="w-5 h-5"
+                                            className="w-4 h-4 sm:w-5 sm:h-5"
                                             fill="currentColor"
                                             viewBox="0 0 24 24"
                                         >
                                             <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
                                         </svg>
                                     </div>
-                                    <div className="text-sm text-gray-300 space-y-0.5">
-                                        <p className="text-sm font-semibold text-white">Office Hours</p>
+                                    <div className="text-xs sm:text-sm text-gray-300 space-y-0.5">
+                                        <p className="font-semibold text-white">Office Hours</p>
                                         <p>Monday – Friday</p>
                                         <p>9:00 AM – 5:00 PM</p>
                                         <p className="italic text-xs text-gray-400">By appointment.</p>
@@ -291,10 +291,10 @@ export default function Footer() {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className="pt-2">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center gap-2 px-8 py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-xs font-semibold tracking-wider uppercase transition-all duration-300 group"
+                                    className="inline-flex items-center justify-center gap-1.5 px-6 sm:px-7 py-2 sm:py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-[11px] xl:text-xs font-semibold tracking-wide uppercase transition-all duration-300 group whitespace-nowrap"
                                 >
                                     <span>Contact Us</span>
                                     <span className="group-hover:translate-x-1 transition-transform duration-200">
@@ -351,7 +351,7 @@ export default function Footer() {
                         <div className="flex items-center gap-2.5">
                             {/* Facebook */}
                             <a
-                                href="https://facebook.com"
+                                href="https://www.facebook.com/p/Cynthia-I-Waisman-PA-100063645035449/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Facebook"
@@ -364,7 +364,7 @@ export default function Footer() {
 
                             {/* LinkedIn */}
                             <a
-                                href="https://linkedin.com"
+                                href="https://www.linkedin.com/company/cynthia-i.-waisman-p.a."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
@@ -377,7 +377,7 @@ export default function Footer() {
 
                             {/* Instagram */}
                             <a
-                                href="https://instagram.com"
+                                href="https://www.instagram.com/cynthiawaismanlaw/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Instagram"
@@ -390,7 +390,7 @@ export default function Footer() {
 
                             {/* YouTube */}
                             <a
-                                href="https://youtube.com"
+                                href="https://www.youtube.com/@cynthiawaisman"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="YouTube"
