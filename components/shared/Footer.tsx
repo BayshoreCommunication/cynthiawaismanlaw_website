@@ -62,10 +62,15 @@ export default function Footer() {
                                     </p>
                                 </div>
 
-                                <div className="text-sm text-gray-300 space-y-0.5 leading-relaxed">
+                                <a
+                                    href="https://www.google.com/maps/place/Cynthia+I.+Waisman+P.A./@27.997905,-82.534223,127416m/data=!3m1!1e3!4m6!3m5!1s0x88c2c22152d3f595:0x9ced1906369a04ad!8m2!3d27.9979045!4d-82.5342231!16s%2Fg%2F11h1n4ljq?hl=en&entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block text-sm text-gray-300 hover:text-[#ECAB3C] transition-colors space-y-0.5 leading-relaxed"
+                                >
                                     <p>5406 Hoover Blvd Ste. 11</p>
                                     <p>Tampa, FL 33634</p>
-                                </div>
+                                </a>
 
                                 <div className="pt-1">
                                     <a
@@ -85,15 +90,17 @@ export default function Footer() {
                             </div>
 
                             <div className="pt-2">
-                                <Link
-                                    href="/contact"
+                                <a
+                                    href="https://www.google.com/maps/place/Cynthia+I.+Waisman+P.A./@27.997905,-82.534223,127416m/data=!3m1!1e3!4m6!3m5!1s0x88c2c22152d3f595:0x9ced1906369a04ad!8m2!3d27.9979045!4d-82.5342231!16s%2Fg%2F11h1n4ljq?hl=en&entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-[11px] xl:text-xs font-semibold tracking-wide uppercase transition-all duration-300 group whitespace-nowrap"
                                 >
                                     <span>Tampa Law Office</span>
                                     <span className="group-hover:translate-x-1 transition-transform duration-200">
                                         →
                                     </span>
-                                </Link>
+                                </a>
                             </div>
                         </div>
 
@@ -121,10 +128,15 @@ export default function Footer() {
                                     </p>
                                 </div>
 
-                                <div className="text-sm text-gray-300 space-y-0.5 leading-relaxed">
+                                <a
+                                    href="https://www.google.com/maps/place/Cynthia+I.+Waisman,+P.A./@28.0103776,-82.7251337,7963m/data=!3m2!1e3!5s0x88c2ee75aff07979:0xfb2c6611c25bed4b!4m6!3m5!1s0x88c2ee7519878715:0x1240b47cd73f816b!8m2!3d28.0103569!4d-82.7097531!16s%2Fg%2F1tctml4n?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block text-sm text-gray-300 hover:text-[#ECAB3C] transition-colors space-y-0.5 leading-relaxed"
+                                >
                                     <p>2451 McMullen Booth Rd</p>
                                     <p>Ste. 214 Clearwater, FL 33759</p>
-                                </div>
+                                </a>
 
                                 <div className="pt-1">
                                     <a
@@ -144,15 +156,17 @@ export default function Footer() {
                             </div>
 
                             <div className="pt-2">
-                                <Link
-                                    href="/contact"
+                                <a
+                                    href="https://www.google.com/maps/place/Cynthia+I.+Waisman,+P.A./@28.0103776,-82.7251337,7963m/data=!3m2!1e3!5s0x88c2ee75aff07979:0xfb2c6611c25bed4b!4m6!3m5!1s0x88c2ee7519878715:0x1240b47cd73f816b!8m2!3d28.0103569!4d-82.7097531!16s%2Fg%2F1tctml4n?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-[11px] xl:text-xs font-semibold tracking-wide uppercase transition-all duration-300 group whitespace-nowrap"
                                 >
                                     <span>Clearwater Law Office</span>
                                     <span className="group-hover:translate-x-1 transition-transform duration-200">
                                         →
                                     </span>
-                                </Link>
+                                </a>
                             </div>
                         </div>
 
@@ -180,11 +194,16 @@ export default function Footer() {
                                     </p>
                                 </div>
 
-                                <div className="text-sm text-gray-300 space-y-0.5 leading-relaxed">
+                                <a
+                                    href="https://www.google.com/maps/place/6013+Wesley+Grove+Blvd+Bldg+2,+Suite+208,+Wesley+Chapel,+FL+33544,+USA/@28.2441519,-82.3510799,993m/data=!3m3!1e3!4b1!5s0x88c2b0495a328d69:0x584cf7cfaef1a726!4m6!3m5!1s0x88c2b0495bbab293:0x87162f96460bfd6c!8m2!3d28.2441519!4d-82.3510799!16s%2Fg%2F11ks2sgx38?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block text-sm text-gray-300 hover:text-[#ECAB3C] transition-colors space-y-0.5 leading-relaxed"
+                                >
                                     <p>6013 Wesley Grove Blvd</p>
                                     <p>Building 2, Ste. 208</p>
                                     <p>Wesley Chapel, FL 33544</p>
-                                </div>
+                                </a>
 
                                 <div className="pt-1">
                                     <a
@@ -204,15 +223,17 @@ export default function Footer() {
                             </div>
 
                             <div className="pt-2">
-                                <Link
-                                    href="/contact"
+                                <a
+                                    href="https://www.google.com/maps/place/6013+Wesley+Grove+Blvd+Bldg+2,+Suite+208,+Wesley+Chapel,+FL+33544,+USA/@28.2441519,-82.3510799,993m/data=!3m3!1e3!4b1!5s0x88c2b0495a328d69:0x584cf7cfaef1a726!4m6!3m5!1s0x88c2b0495bbab293:0x87162f96460bfd6c!8m2!3d28.2441519!4d-82.3510799!16s%2Fg%2F11ks2sgx38?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 xl:px-5 py-2 sm:py-2.5 rounded-full border border-[#ECAB3C] text-white hover:bg-[#ECAB3C] hover:text-[#01172d] text-[11px] xl:text-xs font-semibold tracking-wide uppercase transition-all duration-300 group whitespace-nowrap"
                                 >
                                     <span>Wesley Chapel Law Office</span>
                                     <span className="group-hover:translate-x-1 transition-transform duration-200">
                                         →
                                     </span>
-                                </Link>
+                                </a>
                             </div>
                         </div>
 

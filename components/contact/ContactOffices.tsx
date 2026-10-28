@@ -19,34 +19,34 @@ const offices: OfficeLocation[] = [
     id: "tampa",
     name: "Tampa Office",
     image: "/images/offices/tampa-office.png",
-    addressLine1: "3624 W Cypress St, Suite 500",
-    addressLine2: "Tampa, FL 33607",
+    addressLine1: "5406 Hoover Blvd, Suite 11",
+    addressLine2: "Tampa, FL 33634",
     phone: "(813) 279-6180",
     hours: "Mon – Fri, 9:00 AM – 5:00 PM",
     mapLink:
-      "https://maps.google.com/?q=3624+W+Cypress+St+Suite+500+Tampa+FL+33607",
+      "https://www.google.com/maps/place/Cynthia+I.+Waisman+P.A./@27.997905,-82.534223,127416m/data=!3m1!1e3!4m6!3m5!1s0x88c2c22152d3f595:0x9ced1906369a04ad!8m2!3d27.9979045!4d-82.5342231!16s%2Fg%2F11h1n4ljq?hl=en&entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     id: "clearwater",
     name: "Clearwater Office",
     image: "/images/offices/clearwater-office.png",
-    addressLine1: "2665 Countryside Blvd, Suite 102",
-    addressLine2: "Clearwater, FL 33761",
-    phone: "(727) 355-4377",
+    addressLine1: "2451 McMullen Booth Rd, Suite 214",
+    addressLine2: "Clearwater, FL 33759",
+    phone: "(813) 279-6180",
     hours: "Mon – Fri, 9:00 AM – 5:00 PM",
     mapLink:
-      "https://maps.google.com/?q=2665+Countryside+Blvd+Suite+102+Clearwater+FL+33761",
+      "https://www.google.com/maps/place/Cynthia+I.+Waisman,+P.A./@28.0103776,-82.7251337,7963m/data=!3m2!1e3!5s0x88c2ee75aff07979:0xfb2c6611c25bed4b!4m6!3m5!1s0x88c2ee7519878715:0x1240b47cd73f816b!8m2!3d28.0103569!4d-82.7097531!16s%2Fg%2F1tctml4n?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     id: "wesley-chapel",
     name: "Wesley Chapel Office",
     image: "/images/offices/wesley-chapel-office.png",
-    addressLine1: "2024 Bruce B. Downs Blvd, Suite 104",
+    addressLine1: "6013 Wesley Grove Blvd, Bldg 2, Suite 208",
     addressLine2: "Wesley Chapel, FL 33544",
-    phone: "(813) 803-0830",
+    phone: "(813) 279-6180",
     hours: "Mon – Fri, 9:00 AM – 5:00 PM",
     mapLink:
-      "https://maps.google.com/?q=2024+Bruce+B+Downs+Blvd+Suite+104+Wesley+Chapel+FL+33544",
+      "https://www.google.com/maps/place/6013+Wesley+Grove+Blvd+Bldg+2,+Suite+208,+Wesley+Chapel,+FL+33544,+USA/@28.2441519,-82.3510799,993m/data=!3m3!1e3!4b1!5s0x88c2b0495a328d69:0x584cf7cfaef1a726!4m6!3m5!1s0x88c2b0495bbab293:0x87162f96460bfd6c!8m2!3d28.2441519!4d-82.3510799!16s%2Fg%2F11ks2sgx38?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
   },
 ];
 
@@ -194,12 +194,17 @@ export default function ContactOffices() {
                           d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                         />
                       </svg>
-                      <div>
-                        <p className="font-medium text-gray-700">
+                      <a
+                        href={office.mapLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/addr block hover:text-[#ECAB3C] transition-colors"
+                      >
+                        <p className="font-medium text-gray-700 group-hover/addr:text-[#ECAB3C] transition-colors">
                           {office.addressLine1}
                         </p>
                         <p>{office.addressLine2}</p>
-                      </div>
+                      </a>
                     </div>
 
                     {/* Phone with Gold Phone Icon */}
