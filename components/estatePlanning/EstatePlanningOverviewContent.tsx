@@ -8,165 +8,145 @@ export default function EstatePlanningOverviewContent() {
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Article Content */}
-          <article className="lg:col-span-8 text-[#2b2b2b]">
+          <article className="lg:col-span-8 text-[#2b2b2b]" data-animate="fade-up">
             {/* Main Title */}
             <h1 className="font-serif text-[28px] sm:text-[34px] lg:text-[40px] font-normal text-[#091D46] leading-[1.18] mb-6 tracking-tight">
               Estate Planning Services You Can Trust
             </h1>
 
+            {/* Gold Divider Accent */}
+            <div
+              className="w-16 h-1 bg-[#ECAB3C] mb-8"
+              data-animate="line-expand"
+              style={{ "--line-width": "4rem" } as React.CSSProperties}
+            />
+
             {/* Intro text */}
-            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-5">
-              Estate planning is about much more than deciding who receives your
-              property after you pass away. A comprehensive Florida estate plan protects
-              you during your lifetime, designates trusted individuals to handle your
-              finances and healthcare if you become incapacitated, prevents burdensome
-              guardianships, and ensures your wishes are honored without unnecessary
-              taxes or court delays.
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
+              Planning for death is not an easy task. However, it does help prevent
+              difficult situations later and will provide guidance to let others know
+              your intentions. At Cynthia I. Waisman, P.A., we often encounter cases
+              where no estate planning took place, and when assets are later
+              discovered, an investigation must be done to locate possible
+              relatives. This can become a stressful and daunting process for loved
+              ones. With offices in Tampa and Clearwater, our attorney can help you
+              create a proper estate plan that spells out your wishes in an effort to
+              prevent unnecessary expenditures and lost time later.
             </p>
 
-            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-8">
-              At Cynthia I. Waisman, P.A., attorney Cynthia I. Waisman provides
-              personalized, thoughtful estate planning strategies crafted for your
-              unique family structure and financial goals. Whether you are creating your
-              very first will or managing an intricate trust portfolio, we provide
-              clarity, care, and legal precision.
-            </p>
-
-            {/* Core Pillars */}
+            {/* Important Aspects */}
             <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
-              Our Core Estate Planning Solutions
+              Important Aspects Of Estate Planning
             </h2>
 
             <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-4">
-              We design cohesive legal instruments tailored to every stage of life:
+              Many people don’t think about the following aspects of estate planning:
             </p>
 
             <ul className="list-disc pl-5 sm:pl-6 space-y-2.5 text-sm sm:text-[15px] text-[#4a5568] leading-relaxed mb-8">
               <li>
-                <Link
-                  href="/estate-planning-services/wills"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  Last Will &amp; Testament
-                </Link>
-                : Clearly name beneficiaries, designate guardians for minor children,
-                and nominate a personal representative you trust.
+                Do you have any minor children, and have you arranged for someone
+                to take care of them if you are incapacitated or deceased?
               </li>
               <li>
-                <Link
-                  href="/estate-planning-services/trusts"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  Revocable Living Trusts &amp; Irrevocable Trusts
-                </Link>
-                : Avoid probate, protect privacy, safeguard assets for future
-                generations, and maintain seamless control during incapacity.
+                If you are remarried, have you made provisions for your children
+                and your new spouse when you pass away or become incapacitated? Or,
+                if you are not married, but in a significant relationship, do you
+                have a plan for your significant other to prevent your children from
+                taking away his/her possessions?
               </li>
               <li>
-                <Link
-                  href="/estate-planning-services/powers-of-attorney"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  Durable Powers of Attorney
-                </Link>
-                : Empower an agent to make financial and legal decisions on your behalf
-                without court intervention if you cannot do so yourself.
+                In the event you become incapacitated or ill, do you have a plan
+                for someone to take care of you?
               </li>
               <li>
-                <Link
-                  href="/estate-planning-services/living-wills"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  Living Wills &amp; Healthcare Directives
-                </Link>
-                : Document your exact preferences regarding end-of-life medical
-                treatment and appoint a trusted Healthcare Surrogate.
+                Where are your assets located? Does anyone know whether you have a
+                safe deposit box?
               </li>
               <li>
-                <Link
-                  href="/estate-planning-services/funding-administration-your-revocable-trust"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  Trust Funding Strategies
-                </Link>
-                : Ensure your real estate, financial accounts, and business assets are
-                correctly retitled to fully realize trust benefits.
+                Do you have a wish to be located near another deceased loved one
+                at death?
               </li>
               <li>
-                <Link
-                  href="/estate-planning-services/estate-planning-faq"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  Estate Planning FAQ
-                </Link>
-                : Read answers to the most common questions regarding Florida wills,
-                personal representatives, and probate avoidance.
+                Who do you trust to take care of your affairs in the event you are
+                unable to do so?
+              </li>
+              <li>
+                Do you own a business and have certain goals for that business in
+                the event that you can no longer take care of it or pass away?
+              </li>
+              <li>
+                Do you have family members living outside of the United States who
+                you want to receive part of your estate?
               </li>
             </ul>
 
-            {/* Why Work with Cynthia */}
+            {/* Creating Your Custom Plan */}
             <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
-              Personalized Guidance for Florida Families
+              Creating Your Custom Plan
             </h2>
 
             <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-8">
-              Estate planning is deeply personal. As a boutique firm, we take the time to
-              listen to your specific concerns, understand your family dynamics, and
-              build legally sound documents that withstand scrutiny.
+              It is important to determine what estate planning tools are best
+              suited for each individual depending on their circumstances. An estate
+              plan should be periodically reviewed to make sure that it complies
+              with updated laws. Detailed estate planning should be done in the state
+              where you reside as each state has different laws. Each estate plan
+              should be comprehensive and take into account the individual needs of
+              each client. Our firm will help you create a custom plan that may
+              include a will or{" "}
+              <Link
+                href="/estate-planning-services/living-wills"
+                className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+              >
+                living will
+              </Link>
+              ,{" "}
+              <Link
+                href="/estate-planning-services/powers-of-attorney"
+                className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+              >
+                powers of attorney
+              </Link>
+              ,{" "}
+              <Link
+                href="/estate-planning-services/trusts"
+                className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+              >
+                trusts
+              </Link>{" "}
+              and other estate planning instruments.
             </p>
 
-            {/* CTA */}
-            <div className="pt-4 border-t border-gray-200/80">
-              <h2 className="font-serif text-[22px] sm:text-[26px] font-normal text-[#091D46] leading-snug mb-3">
-                Begin Planning for Your Family&apos;s Future
-              </h2>
-              <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
-                Call{" "}
-                <a
-                  href="tel:+18132796180"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  +1 (813) 279-6180
-                </a>{" "}
-                or{" "}
-                <Link
-                  href="/contact"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  contact us online
-                </Link>{" "}
-                to schedule a confidential estate planning consultation in Tampa or
-                Clearwater.
-              </p>
+            {/* Call Today For A Consultation */}
+            <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
+              Call Today For A Consultation
+            </h2>
 
-              <div className="flex flex-wrap items-center gap-4">
-                <Link
-                  href="/contact"
-                  className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase py-3.5 px-6 rounded-md shadow-sm transition-all inline-flex items-center gap-2"
-                >
-                  <span>Request A Consultation</span>
-                  <span>→</span>
-                </Link>
-                <a
-                  href="tel:+18132796180"
-                  className="py-3.5 px-6 rounded-md border border-[#091D46] text-[#091D46] hover:bg-[#091D46] hover:text-white font-bold text-xs tracking-wider uppercase transition-all inline-flex items-center gap-2"
-                >
-                  <span>Call (813) 279-6180</span>
-                </a>
-              </div>
-            </div>
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-8">
+              <Link
+                href="/contact"
+                className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+              >
+                Contact our offices today
+              </Link>{" "}
+              to find out what estate planning is best for you. Call{" "}
+              <a
+                href="tel:+18132796180"
+                className="text-[#0056b3] font-semibold hover:text-[#003d80] underline"
+              >
+                +1 (813) 279-6180
+              </a>{" "}
+              to arrange a 10-minute consultation with a knowledgeable lawyer.
+            </p>
           </article>
 
-          {/* Right Column: Practice Areas Sticky Sidebar */}
-          <div className="lg:col-span-4 lg:sticky lg:top-[144px]">
-            <PracticeAreasSidebar
-              currentCategory="estate-planning"
-              currentSubItem="Estate Planning Overview"
-            />
-          </div>
+          {/* Right Column: Practice Areas Sidebar & Consultation Card */}
+          <aside className="lg:col-span-4 space-y-8" data-animate="fade-left">
+            <PracticeAreasSidebar currentCategory="estate-planning" />
+          </aside>
         </div>
       </div>
     </section>
   );
 }
-

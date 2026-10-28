@@ -8,138 +8,98 @@ export default function SummaryAdministrationContent() {
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Article Content */}
-          <article className="lg:col-span-8 text-[#2b2b2b]">
+          <article className="lg:col-span-8 text-[#2b2b2b]" data-animate="fade-up">
             {/* Main Title */}
             <h1 className="font-serif text-[28px] sm:text-[34px] lg:text-[40px] font-normal text-[#091D46] leading-[1.18] mb-6 tracking-tight">
               Summary Administration
             </h1>
 
+            {/* Gold Divider Accent */}
+            <div
+              className="w-16 h-1 bg-[#ECAB3C] mb-8"
+              data-animate="line-expand"
+              style={{ "--line-width": "4rem" } as React.CSSProperties}
+            />
+
             {/* Intro text */}
-            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-5">
-              Summary administration is an expedited, simplified probate proceeding
-              available under Florida law for qualifying estates. Unlike formal
-              probate, summary administration does not require the formal appointment of
-              a personal representative, lengthy creditor notice periods, or regular
-              court accountings, allowing beneficiaries to receive their inheritance
-              faster and with lower legal expenses.
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
+              Florida has a streamlined probate process when the value of the
+              decedent’s probate estate is less than a certain amount, or
+              $75,000, called summary administration. Besides having a lower
+              value of the estate, there are other circumstances where this
+              process will apply where the decedent has been dead more than two
+              years.
             </p>
+
+            {/* Streamlining Probate For Real Estate */}
+            <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
+              Streamlining Probate For Real Estate
+            </h2>
+
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-4">
+              Relatives of a Florida nonresident who owned Florida real property
+              can also use this process depending on the property’s value.
+              Generally, the process is much faster than a formal administration.
+              It can take a shorter time frame, as little as two weeks, though
+              most cases take a month or two to complete. The timing depends on
+              such factors as the amount of cases in the system when the case is
+              filed. A person who only owned real property may qualify for this
+              process also.
+            </p>
+
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-4">
+              The court cost of filing varies throughout the state of Florida
+              from $345 to $400. There are no publication costs or bond fees
+              involved either. Courts prefer that an attorney prepare the proper
+              paperwork in these cases, since with incorrectly prepared
+              documents, there could be delays in processing.
+            </p>
+
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-4">
+              Further, if an error is made on a case involving real estate, there
+              can be title defects later on when the property is sold or where
+              title searches are needed. While some cases appear to qualify for
+              summary administration, there still may be some reasons to pursue
+              the formal administration process, for example where a will
+              contest is possible or where there are multiple unknown creditors.
+            </p>
+
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
+              It is important to discuss your situation with an experienced
+              attorney before proceeding in any Florida estate administration
+              process, as each case differs.
+            </p>
+
+            {/* Contact A Knowledgeable Probate Attorney Today */}
+            <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
+              Contact A Knowledgeable Probate Attorney Today
+            </h2>
 
             <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-8">
-              At Cynthia I. Waisman, P.A., attorney Cynthia I. Waisman evaluates your
-              decedent&apos;s assets to determine whether summary administration is
-              feasible, helping Florida families transfer bank accounts, vehicles, and
-              homestead property efficiently.
+              <Link
+                href="/contact"
+                className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+              >
+                Send us an email
+              </Link>{" "}
+              or call our office at{" "}
+              <a
+                href="tel:+18132796180"
+                className="text-[#0056b3] font-semibold hover:text-[#003d80] underline"
+              >
+                +1 (813) 279-6180
+              </a>{" "}
+              to discuss your probate/estate administration questions. We have
+              successful experience handling estates throughout Florida.
             </p>
-
-            {/* Qualifications */}
-            <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
-              Who Qualifies for Florida Summary Administration?
-            </h2>
-
-            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-4">
-              Under Florida Statute § 735.201, an estate qualifies for summary
-              administration if either of the following criteria is met:
-            </p>
-
-            <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-[15px] text-[#4a5568] leading-relaxed mb-8">
-              <li>
-                <strong className="text-[#091D46]">Estate Value $75,000 or Less</strong>
-                : The total value of the entire probate estate subject to Florida
-                administration (excluding the value of exempt Florida homestead real
-                property) does not exceed $75,000.
-              </li>
-              <li>
-                <strong className="text-[#091D46]">
-                  Decedent Deceased for More Than 2 Years
-                </strong>
-                : Regardless of the estate&apos;s total dollar value, if the decedent has
-                been deceased for over two years, the two-year creditor claim period has
-                expired by statute, allowing summary administration.
-              </li>
-              <li>
-                <strong className="text-[#091D46]">Debts Paid or Consented To</strong>:
-                The decedent has no unpaid debts, or all known creditors have agreed to
-                or been satisfied by the petition.
-              </li>
-            </ul>
-
-            {/* Benefits */}
-            <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
-              Key Advantages of Summary Administration
-            </h2>
-
-            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-4">
-              When an estate qualifies, summary administration provides substantial
-              advantages:
-            </p>
-
-            <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-[15px] text-[#4a5568] leading-relaxed mb-8">
-              <li>
-                <strong>Faster Resolution</strong>: Often completed in weeks to a few
-                months rather than a full year or more.
-              </li>
-              <li>
-                <strong>Cost-Effective</strong>: Substantially lower attorney fees and
-                court filing fees.
-              </li>
-              <li>
-                <strong>Direct Order of Summary Administration</strong>: The court
-                issues an immediate order transferring ownership of assets directly to
-                the named beneficiaries.
-              </li>
-            </ul>
-
-            {/* CTA */}
-            <div className="pt-4 border-t border-gray-200/80">
-              <h2 className="font-serif text-[22px] sm:text-[26px] font-normal text-[#091D46] leading-snug mb-3">
-                Find Out If Your Case Qualifies
-              </h2>
-              <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
-                Call{" "}
-                <a
-                  href="tel:+18132796180"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  +1 (813) 279-6180
-                </a>{" "}
-                or{" "}
-                <Link
-                  href="/contact"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  contact our office online
-                </Link>{" "}
-                to discuss your Florida probate options.
-              </p>
-
-              <div className="flex flex-wrap items-center gap-4">
-                <Link
-                  href="/contact"
-                  className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase py-3.5 px-6 rounded-md shadow-sm transition-all inline-flex items-center gap-2"
-                >
-                  <span>Request A Consultation</span>
-                  <span>→</span>
-                </Link>
-                <a
-                  href="tel:+18132796180"
-                  className="py-3.5 px-6 rounded-md border border-[#091D46] text-[#091D46] hover:bg-[#091D46] hover:text-white font-bold text-xs tracking-wider uppercase transition-all inline-flex items-center gap-2"
-                >
-                  <span>Call (813) 279-6180</span>
-                </a>
-              </div>
-            </div>
           </article>
 
-          {/* Right Column: Practice Areas Sticky Sidebar */}
-          <div className="lg:col-span-4 lg:sticky lg:top-[144px]">
-            <PracticeAreasSidebar
-              currentCategory="probate"
-              currentSubItem="Summary Administration"
-            />
-          </div>
+          {/* Right Column: Practice Areas Sidebar */}
+          <aside className="lg:col-span-4 space-y-8" data-animate="fade-left">
+            <PracticeAreasSidebar currentCategory="probate" />
+          </aside>
         </div>
       </div>
     </section>
   );
 }
-

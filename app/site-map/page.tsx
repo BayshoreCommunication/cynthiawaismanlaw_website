@@ -30,7 +30,7 @@ const siteMapData: SiteMapGroup[] = [
     links: [
       { label: "Home", href: "/", desc: "Welcome to Cynthia I. Waisman, P.A. Attorney At Law" },
       { label: "About Our Firm", href: "/about", desc: "Overview of firm values, history, and community dedication" },
-      { label: "Our Attorney (Cynthia I. Waisman)", href: "/about/our-attorney", desc: "Biography, background, and legal credentials of Cynthia I. Waisman" },
+      { label: "Our Attorney (Cynthia I. Waisman)", href: "/attorney/waisman-cynthia-i", desc: "Biography, background, and legal credentials of Cynthia I. Waisman" },
       { label: "Our Team", href: "/about/our-team", desc: "Meet the dedicated legal team supporting our clients" },
       { label: "Contact Us", href: "/contact", desc: "Office addresses, phone numbers, and consultation inquiry form" },
       { label: "Legal Blog & Resources", href: "/blog", desc: "Articles, insights, and updates on Florida law & immigration" },

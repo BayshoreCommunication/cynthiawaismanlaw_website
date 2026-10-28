@@ -22,7 +22,7 @@ const navItems: NavItem[] = [
     label: "About",
     href: "/about",
     children: [
-      { label: "Our Attorney", href: "/about/our-attorney" },
+      { label: "Our Attorney", href: "/attorney/waisman-cynthia-i" },
       { label: "Our Team", href: "/about/our-team" },
     ],
   },

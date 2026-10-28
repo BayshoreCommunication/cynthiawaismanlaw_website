@@ -32,19 +32,32 @@ export default function EstatePlanningFAQContent() {
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: FAQ Content */}
-          <article className="lg:col-span-8 text-[#2b2b2b]">
+          <article className="lg:col-span-8 text-[#2b2b2b]" data-animate="fade-up">
             {/* Main Page Title */}
             <h1 className="font-serif text-[28px] sm:text-[34px] lg:text-[40px] font-normal text-[#091D46] leading-[1.18] mb-6 tracking-tight">
               Answers To Your Estate Planning Questions
             </h1>
 
+            {/* Gold Divider Accent */}
+            <div
+              className="w-16 h-1 bg-[#ECAB3C] mb-8"
+              data-animate="line-expand"
+              style={{ "--line-width": "4rem" } as React.CSSProperties}
+            />
+
             {/* Introductory Paragraph */}
             <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-8">
-              Estate planning and probate matters can feel overwhelming, especially
-              during difficult times. Attorney Cynthia I. Waisman provides strategic,
-              compassionate legal guidance to help Florida families protect their
-              legacies, appoint trusted representatives, and navigate every stage of the
-              estate administration process with peace of mind.
+              At Cynthia I. Waisman, P.A., we are committed to answering your
+              questions and providing you with the comprehensive information you need
+              to make informed{" "}
+              <Link
+                href="/estate-planning-services"
+                className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+              >
+                estate planning decisions
+              </Link>
+              . To learn more, please call for an attorney consultation. We serve
+              clients throughout the Tampa Bay area.
             </p>
 
             {/* FAQ Questions & Answers */}
@@ -69,55 +82,35 @@ export default function EstatePlanningFAQContent() {
             </div>
 
             {/* Concluding CTA Section */}
-            <div className="mt-12 pt-8 border-t border-gray-200/80">
-              <h2 className="font-serif text-[22px] sm:text-[26px] font-normal text-[#091D46] leading-snug mb-3">
+            <div className="mt-12 pt-8 border-t border-gray-100">
+              <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
                 Do You Have Other Estate Planning Questions? Get Answers Today.
               </h2>
-              <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
+              <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed">
                 Call{" "}
                 <a
                   href="tel:+18132796180"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+                  className="text-[#0056b3] font-semibold hover:text-[#003d80] underline"
                 >
                   +1 (813) 279-6180
                 </a>{" "}
-                or complete our{" "}
+                or{" "}
                 <Link
                   href="/contact"
                   className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
                 >
-                  online contact form
+                  complete the online form
                 </Link>{" "}
                 to discuss your needs with a knowledgeable lawyer in a 10-minute
                 consultation.
               </p>
-
-              <div className="flex flex-wrap items-center gap-4">
-                <Link
-                  href="/contact"
-                  className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase py-3.5 px-6 rounded-md shadow-sm transition-all inline-flex items-center gap-2"
-                >
-                  <span>Schedule A Consultation</span>
-                  <span>→</span>
-                </Link>
-
-                <a
-                  href="tel:+18132796180"
-                  className="py-3.5 px-6 rounded-md border border-[#091D46] text-[#091D46] hover:bg-[#091D46] hover:text-white font-bold text-xs tracking-wider uppercase transition-all inline-flex items-center gap-2"
-                >
-                  <span>Call (813) 279-6180</span>
-                </a>
-              </div>
             </div>
           </article>
 
-          {/* Right Column: Practice Areas Sticky Sidebar */}
-          <div className="lg:col-span-4 lg:sticky lg:top-[144px]">
-            <PracticeAreasSidebar
-              currentCategory="estate-planning"
-              currentSubItem="Estate Planning FAQ"
-            />
-          </div>
+          {/* Right Column: Practice Areas Sidebar */}
+          <aside className="lg:col-span-4 space-y-8" data-animate="fade-left">
+            <PracticeAreasSidebar currentCategory="estate-planning" />
+          </aside>
         </div>
       </div>
     </section>

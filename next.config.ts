@@ -60,18 +60,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/attorney",
-        destination: "/about/our-attorney",
+        source: "/about/our-attorney",
+        destination: "/attorney/waisman-cynthia-i",
         permanent: true,
       },
       {
-        source: "/attorney/waisman-cynthia-i",
-        destination: "/about/our-attorney",
+        source: "/attorney",
+        destination: "/attorney/waisman-cynthia-i",
         permanent: true,
       },
       {
         source: "/waisman-cynthia-i",
-        destination: "/about/our-attorney",
+        destination: "/attorney/waisman-cynthia-i",
         permanent: true,
       },
       {

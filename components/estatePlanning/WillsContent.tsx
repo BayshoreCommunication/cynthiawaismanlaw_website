@@ -8,127 +8,100 @@ export default function WillsContent() {
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Article Content */}
-          <article className="lg:col-span-8 text-[#2b2b2b]">
+          <article className="lg:col-span-8 text-[#2b2b2b]" data-animate="fade-up">
             {/* Main Title */}
             <h1 className="font-serif text-[28px] sm:text-[34px] lg:text-[40px] font-normal text-[#091D46] leading-[1.18] mb-6 tracking-tight">
               Make Your Will Count
             </h1>
 
+            {/* Gold Divider Accent */}
+            <div
+              className="w-16 h-1 bg-[#ECAB3C] mb-8"
+              data-animate="line-expand"
+              style={{ "--line-width": "4rem" } as React.CSSProperties}
+            />
+
             {/* Intro text */}
-            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-5">
-              A Last Will and Testament is the cornerstone of any estate plan. When you
-              execute a legally valid will, you retain full control over how your hard-earned
-              assets will be distributed, who will step in as legal guardian for your
-              minor children, and who will serve as your personal representative to oversee
-              your estate.
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
+              A detailed and accurate will is the essential element of any estate
+              plan. Cynthia I. Waisman, P.A. in Tampa and Clearwater can write your
+              will in a straightforward way that will make your wishes known and avoid
+              unnecessary taxes. Ensure that your plan becomes official and valid by
+              following these steps.
             </p>
 
-            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-8">
-              If you die without a will in Florida (known as dying &quot;intestate&quot;),
-              state statutes—not your personal wishes—determine who inherits your property
-              and who raises your children. Attorney Cynthia I. Waisman crafts customized,
-              meticulously drafted wills that protect your family and stand up against
-              legal challenges.
-            </p>
-
-            {/* Key Elements */}
+            {/* Build A Comprehensive Plan */}
             <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
-              What Can You Accomplish in a Florida Will?
+              Build A Comprehensive Plan
             </h2>
 
-            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-4">
-              With a professionally drafted will, you can:
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
+              A lawyer skilled at{" "}
+              <Link
+                href="/estate-planning-services"
+                className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+              >
+                estate planning
+              </Link>{" "}
+              may recommend other estate documents as they pertain to your unique
+              situation. There may be an advantage to using other documents in your
+              estate plan, such as{" "}
+              <Link
+                href="/estate-planning-services/trusts"
+                className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+              >
+                trusts
+              </Link>
+              . Above all, having an experienced estate law attorney help you craft
+              your will can bring peace of mind: You will have a legally binding
+              document that accurately represents how you want your estate disbursed.
             </p>
 
-            <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-[15px] text-[#4a5568] leading-relaxed mb-8">
-              <li>
-                <strong>Designate Beneficiaries</strong>: Specify exact bequests of real
-                estate, personal heirlooms, financial accounts, and digital assets.
-              </li>
-              <li>
-                <strong>Nominate Guardians for Minor Children</strong>: Choose the trusted
-                guardians you want raising your children if tragedy strikes, preventing
-                court disputes.
-              </li>
-              <li>
-                <strong>Appoint a Personal Representative</strong>: Select an executor with
-                the financial judgment and integrity to handle your estate administration.
-              </li>
-              <li>
-                <strong>Establish Testamentary Trusts</strong>: Protect inheritances for
-                young or financially inexperienced children until they reach adulthood.
-              </li>
-              <li>
-                <strong>Minimize Family Conflict</strong>: Clear instructions prevent
-                bitter misunderstandings among surviving relatives.
-              </li>
-            </ul>
-
-            {/* Florida Statutory Formalities */}
+            {/* Update For Validity */}
             <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
-              Florida Will Signing &amp; Witness Requirements
+              Update For Validity
+            </h2>
+
+            <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
+              If you now consider Florida your primary residence but wrote a will in
+              another state, it may need to be updated to be valid in Florida. Also,
+              if there have been changes in your family since you wrote your will,
+              such as a divorce or the addition of a new in-law or grandchild, the
+              document will need updating to reflect the change.
+            </p>
+
+            {/* Contact Us To Find Out More */}
+            <h2 className="font-serif text-[22px] sm:text-[28px] font-normal text-[#091D46] leading-snug mb-4">
+              Contact Us To Find Out More
             </h2>
 
             <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-8">
-              Florida has strict formal execution requirements under § 732.502. The will
-              must be in writing, signed by the testator in the physical presence of at
-              least two attesting witnesses, who must also sign in each other&apos;s
-              presence. DIY online forms frequently fail these legal tests, risking will
-              invalidation during probate. Cynthia I. Waisman, P.A. ensures flawless
-              execution with a self-proving affidavit.
+              If you die without a will, a probate court will decide the disbursal of
+              your property and assets, costing your family time and money. Call the
+              firm of Cynthia I. Waisman, P.A., at{" "}
+              <a
+                href="tel:+18132796180"
+                className="text-[#0056b3] font-semibold hover:text-[#003d80] underline"
+              >
+                +1 (813) 279-6180
+              </a>{" "}
+              to learn more about wills and estate planning in general, or{" "}
+              <Link
+                href="/contact"
+                className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
+              >
+                contact us online
+              </Link>{" "}
+              to schedule a 10-minute consultation about your concerns.
             </p>
-
-            {/* CTA */}
-            <div className="pt-4 border-t border-gray-200/80">
-              <h2 className="font-serif text-[22px] sm:text-[26px] font-normal text-[#091D46] leading-snug mb-3">
-                Create or Update Your Will Today
-              </h2>
-              <p className="text-sm sm:text-base md:text-[16px] text-[#4a5568] leading-relaxed mb-6">
-                Call{" "}
-                <a
-                  href="tel:+18132796180"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  +1 (813) 279-6180
-                </a>{" "}
-                or{" "}
-                <Link
-                  href="/contact"
-                  className="text-[#0056b3] hover:text-[#003d80] underline font-medium"
-                >
-                  schedule a consultation online
-                </Link>{" "}
-                with attorney Cynthia I. Waisman in Tampa or Clearwater.
-              </p>
-
-              <div className="flex flex-wrap items-center gap-4">
-                <Link
-                  href="/contact"
-                  className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase py-3.5 px-6 rounded-md shadow-sm transition-all inline-flex items-center gap-2"
-                >
-                  <span>Request A Consultation</span>
-                  <span>→</span>
-                </Link>
-                <a
-                  href="tel:+18132796180"
-                  className="py-3.5 px-6 rounded-md border border-[#091D46] text-[#091D46] hover:bg-[#091D46] hover:text-white font-bold text-xs tracking-wider uppercase transition-all inline-flex items-center gap-2"
-                >
-                  <span>Call (813) 279-6180</span>
-                </a>
-              </div>
-            </div>
           </article>
 
-          {/* Right Column: Practice Areas Sticky Sidebar */}
-          <div className="lg:col-span-4 lg:sticky lg:top-[144px]">
-            <PracticeAreasSidebar
-              currentCategory="estate-planning"
-              currentSubItem="Wills"
-            />
-          </div>
+          {/* Right Column: Practice Areas Sidebar */}
+          <aside className="lg:col-span-4 space-y-8" data-animate="fade-left">
+            <PracticeAreasSidebar currentCategory="estate-planning" />
+          </aside>
         </div>
       </div>
     </section>
   );
 }
-
