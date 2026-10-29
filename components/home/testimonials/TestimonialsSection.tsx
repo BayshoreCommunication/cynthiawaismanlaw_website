@@ -151,24 +151,35 @@ export default function TestimonialsSection() {
   const [isDragging, setIsDragging] = useState(false);
   const startXRef = useRef(0);
   const scrollLeftRef = useRef(0);
+  const scrollPosRef = useRef(0);
   const isDownRef = useRef(false);
   const isManualScrollingRef = useRef(false);
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const resumeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const animationFrameId = useRef<number | null>(null);
 
   // Initialize offset to middle set for seamless wrap-around in both directions
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (scrollContainerRef.current) {
-        const container = scrollContainerRef.current;
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    const initPosition = () => {
+      if (container) {
         const singleSetWidth = container.scrollWidth / 3;
-        if (singleSetWidth > 0) {
+        if (singleSetWidth > 0 && (container.scrollLeft === 0 || scrollPosRef.current === 0)) {
           container.scrollLeft = singleSetWidth;
+          scrollPosRef.current = singleSetWidth;
         }
       }
-    }, 100);
+    };
 
-    return () => clearTimeout(timer);
+    const timer1 = setTimeout(initPosition, 60);
+    const timer2 = setTimeout(initPosition, 350);
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
   }, []);
 
   // Check seamless boundary wrapping
@@ -177,10 +188,12 @@ export default function TestimonialsSection() {
     if (!container) return;
     const singleSetWidth = container.scrollWidth / 3;
     if (singleSetWidth > 0) {
-      if (container.scrollLeft >= singleSetWidth * 2) {
-        container.scrollLeft -= singleSetWidth;
-      } else if (container.scrollLeft <= singleSetWidth * 0.1) {
-        container.scrollLeft += singleSetWidth;
+      if (scrollPosRef.current >= singleSetWidth * 2) {
+        scrollPosRef.current -= singleSetWidth;
+        container.scrollLeft = scrollPosRef.current;
+      } else if (scrollPosRef.current <= singleSetWidth * 0.1) {
+        scrollPosRef.current += singleSetWidth;
+        container.scrollLeft = scrollPosRef.current;
       }
     }
   };
@@ -194,8 +207,18 @@ export default function TestimonialsSection() {
 
     const step = () => {
       if (!isHovered && !isDownRef.current && !isManualScrollingRef.current && container) {
-        container.scrollLeft += speed;
-        checkWrap();
+        scrollPosRef.current += speed;
+        const singleSetWidth = container.scrollWidth / 3;
+        if (singleSetWidth > 0) {
+          if (scrollPosRef.current >= singleSetWidth * 2) {
+            scrollPosRef.current -= singleSetWidth;
+          } else if (scrollPosRef.current <= singleSetWidth * 0.1) {
+            scrollPosRef.current += singleSetWidth;
+          }
+        }
+        container.scrollLeft = scrollPosRef.current;
+      } else if (container && !isManualScrollingRef.current) {
+        scrollPosRef.current = container.scrollLeft;
       }
       animationFrameId.current = requestAnimationFrame(step);
     };
@@ -225,7 +248,10 @@ export default function TestimonialsSection() {
     });
 
     scrollTimeoutRef.current = setTimeout(() => {
-      checkWrap();
+      if (container) {
+        scrollPosRef.current = container.scrollLeft;
+        checkWrap();
+      }
       isManualScrollingRef.current = false;
     }, 550);
   };
@@ -252,6 +278,7 @@ export default function TestimonialsSection() {
     setIsDragging(true);
     startXRef.current = e.pageX - container.offsetLeft;
     scrollLeftRef.current = container.scrollLeft;
+    scrollPosRef.current = container.scrollLeft;
   };
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -262,15 +289,18 @@ export default function TestimonialsSection() {
     const x = e.pageX - container.offsetLeft;
     const walk = (x - startXRef.current) * 1.5;
     container.scrollLeft = scrollLeftRef.current - walk;
+    scrollPosRef.current = container.scrollLeft;
 
     const singleSetWidth = container.scrollWidth / 3;
     if (singleSetWidth > 0) {
       if (container.scrollLeft >= singleSetWidth * 2) {
         container.scrollLeft -= singleSetWidth;
         scrollLeftRef.current -= singleSetWidth;
+        scrollPosRef.current = container.scrollLeft;
       } else if (container.scrollLeft <= singleSetWidth * 0.1) {
         container.scrollLeft += singleSetWidth;
         scrollLeftRef.current += singleSetWidth;
+        scrollPosRef.current = container.scrollLeft;
       }
     }
   };
@@ -278,29 +308,60 @@ export default function TestimonialsSection() {
   const handleMouseUp = () => {
     isDownRef.current = false;
     setIsDragging(false);
+    if (scrollContainerRef.current) {
+      scrollPosRef.current = scrollContainerRef.current.scrollLeft;
+    }
   };
 
   const handleMouseLeave = () => {
     isDownRef.current = false;
     setIsDragging(false);
     setIsHovered(false);
+    if (scrollContainerRef.current) {
+      scrollPosRef.current = scrollContainerRef.current.scrollLeft;
+    }
   };
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
+    // Only pause on hover for devices with actual hover/mouse support (avoids sticky hover freeze on iPhone/iPad)
+    if (typeof window !== "undefined" && window.matchMedia("(hover: hover)").matches) {
+      setIsHovered(true);
+    }
   };
 
-  // Touch handlers for mobile devices
+  // Touch handlers for mobile devices (iPhone, iPad, Android)
   const handleTouchStart = () => {
+    if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
     isDownRef.current = true;
     setIsDragging(true);
-    setIsHovered(true);
   };
 
   const handleTouchEnd = () => {
     isDownRef.current = false;
     setIsDragging(false);
     setIsHovered(false);
+    if (scrollContainerRef.current) {
+      scrollPosRef.current = scrollContainerRef.current.scrollLeft;
+    }
+    // Resume auto-scroll smoothly after touch interaction
+    if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
+    resumeTimeoutRef.current = setTimeout(() => {
+      isDownRef.current = false;
+      setIsHovered(false);
+      if (scrollContainerRef.current) {
+        scrollPosRef.current = scrollContainerRef.current.scrollLeft;
+      }
+    }, 600);
+  };
+
+  const handleTouchCancel = () => {
+    handleTouchEnd();
+  };
+
+  const handleScroll = () => {
+    if (isDownRef.current && scrollContainerRef.current) {
+      scrollPosRef.current = scrollContainerRef.current.scrollLeft;
+    }
   };
 
   return (
@@ -426,6 +487,8 @@ export default function TestimonialsSection() {
               onMouseUp={handleMouseUp}
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
+              onTouchCancel={handleTouchCancel}
+              onScroll={handleScroll}
               className={`w-full overflow-x-auto no-scrollbar flex gap-6 py-4 px-1 select-none ${isDragging ? "cursor-grabbing" : "cursor-grab"
                 }`}
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
