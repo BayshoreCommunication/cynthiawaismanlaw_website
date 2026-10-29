@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import EstatePlanReviewContent from "@/components/estatePlanning/EstatePlanReviewContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
-import AboutFirmSection from "@/components/home/aboutFirm/AboutFirmSection";
+import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
@@ -33,7 +33,7 @@ export default function EstatePlanReviewPage() {
 
       {/* Global Sections */}
       <ProfessionalAssociations />
-      <AboutFirmSection />
+      <CallToSection />
       <TestimonialsSection />
       <ContactFirmSection />
     </main>

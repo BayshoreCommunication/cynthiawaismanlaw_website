@@ -79,6 +79,7 @@ export const metadata: Metadata = {
 
 import { Suspense } from "react";
 import ScrollAnimationProvider from "@/components/shared/ScrollAnimationProvider";
+import { ConsultationModalProvider } from "@/components/shared/ConsultationModalContext";
 
 export default function RootLayout({
   children,
@@ -94,9 +95,11 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <ScrollAnimationProvider />
         </Suspense>
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <ConsultationModalProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ConsultationModalProvider>
       </body>
     </html>
   );

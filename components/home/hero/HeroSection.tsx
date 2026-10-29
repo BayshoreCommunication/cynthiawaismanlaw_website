@@ -146,15 +146,17 @@ export default function HeroSection() {
                         {/* CTA Buttons */}
                         <div className="anim-hero-buttons flex flex-wrap items-center gap-4 pt-2">
                             {/* Button 1: Book A Consultation */}
-                            <Link
-                                href="/contact"
-                                className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs md:text-[13px] tracking-wider uppercase px-7 py-3.5 rounded-md inline-flex items-center gap-2 shadow-xs transition-all duration-300 group hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
+                            <button
+                                type="button"
+                                data-open-consultation
+                                aria-label="Book a consultation"
+                                className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs md:text-[13px] tracking-wider uppercase px-7 py-3.5 rounded-md inline-flex items-center gap-2 shadow-xs transition-all duration-300 group hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
                             >
                                 <span>Book A Consultation</span>
                                 <span className="group-hover:translate-x-1.5 transition-transform duration-200">
                                     →
                                 </span>
-                            </Link>
+                            </button>
 
                             {/* Button 2: Our Services */}
                             <Link

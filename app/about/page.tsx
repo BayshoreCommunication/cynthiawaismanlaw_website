@@ -5,6 +5,7 @@ import AboutFirmContent from "@/components/about/AboutFirmContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
+import CallToSection from "@/components/home/callToSection/CallToSection";
 
 export const metadata: Metadata = {
   title: "About Our Firm | Cynthia I. Waisman, P.A.",
@@ -31,9 +32,9 @@ export default function AboutPage() {
 
       {/* 2. Main Firm Content & 8-Photo Gallery */}
       <AboutFirmContent />
-
       {/* 3. Global Sections */}
       <ProfessionalAssociations />
+      <CallToSection />
       <TestimonialsSection />
       <ContactFirmSection />
     </main>

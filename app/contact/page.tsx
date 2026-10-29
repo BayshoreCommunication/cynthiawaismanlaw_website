@@ -18,15 +18,17 @@ export default function ContactPage() {
       {/* 2. Main Content Section */}
       <section className="relative w-full py-12 sm:py-16 lg:py-20">
         <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
-          {/* Top Section: Quick Contacts & 3 Offices (Full Width) */}
-          <div className="w-full">
-            <ContactOffices />
-          </div>
 
           {/* Bottom Section: Consultation Form (Full Width) */}
           <div className="w-full">
             <ContactFormCard />
           </div>
+          {/* Top Section: Quick Contacts & 3 Offices (Full Width) */}
+          <div className="w-full">
+            <ContactOffices />
+          </div>
+
+
         </div>
       </section>
     </main>

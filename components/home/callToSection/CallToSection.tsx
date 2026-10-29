@@ -36,15 +36,17 @@ export default function CallToSection() {
                     {/* Middle Column: CTA Button & Phone */}
                     <div className="flex flex-col items-center justify-center shrink-0 space-y-2.5" data-animate="zoom-in" data-delay="200">
                         {/* Schedule Consultation Button */}
-                        <Link
-                            href="/contact"
-                            className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs sm:text-[13px] tracking-wider uppercase px-7 py-3.5 rounded-md inline-flex items-center gap-2.5 shadow-md transition-all duration-300 group hover:shadow-lg hover:scale-[1.02]"
+                        <button
+                            type="button"
+                            data-open-consultation
+                            aria-label="Schedule a consultation"
+                            className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs sm:text-[13px] tracking-wider uppercase px-7 py-3.5 rounded-md inline-flex items-center gap-2.5 shadow-md transition-all duration-300 group hover:shadow-lg hover:scale-[1.02] cursor-pointer"
                         >
                             <span>Schedule A Consultation</span>
                             <span className="group-hover:translate-x-1 transition-transform duration-200">
                                 →
                             </span>
-                        </Link>
+                        </button>
 
                         {/* Direct Phone Call */}
                         <a

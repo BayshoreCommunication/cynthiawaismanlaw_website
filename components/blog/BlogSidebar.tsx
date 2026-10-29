@@ -186,7 +186,8 @@ export default function BlogSidebar({
         </p>
         <Link
           href="/contact"
-          className="w-full bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase py-3 px-4 rounded-md inline-flex items-center justify-center gap-2 transition-all shadow-sm font-sans"
+          data-open-consultation
+          className="w-full bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase py-3 px-4 rounded-md inline-flex items-center justify-center gap-2 transition-all shadow-sm font-sans cursor-pointer"
         >
           <span>Contact Our Firm</span>
           <span>→</span>

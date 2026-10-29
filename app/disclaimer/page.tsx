@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
-import AboutFirmSection from "@/components/home/aboutFirm/AboutFirmSection";
+import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
@@ -131,8 +131,8 @@ export default function DisclaimerPage() {
                 </p>
                 <p>
                   Email:{" "}
-                  <a href="mailto:cynthiawaisman@yahoo.com" className="text-[#0056b3] hover:underline">
-                    cynthiawaisman@yahoo.com
+                  <a href="mailto:cynthia@cynthiawaismanlaw.com" className="text-[#0056b3] hover:underline">
+                    cynthia@cynthiawaismanlaw.com
                   </a>
                 </p>
               </div>
@@ -145,7 +145,7 @@ export default function DisclaimerPage() {
 
       {/* 3. Global Sections */}
       <ProfessionalAssociations />
-      <AboutFirmSection />
+      <CallToSection />
       <TestimonialsSection />
       <ContactFirmSection />
     </main>

@@ -110,10 +110,10 @@ export default function ContactOffices() {
               Email Us
             </span>
             <a
-              href="mailto:cynthiawaisman@yahoo.com"
+              href="mailto:cynthia@cynthiawaismanlaw.com"
               className="font-sans text-lg sm:text-xl font-bold text-[#091D46] hover:text-[#ECAB3C] transition-colors block mt-0.5 truncate"
             >
-              cynthiawaisman@yahoo.com
+              cynthia@cynthiawaismanlaw.com
             </a>
             <span className="text-xs text-gray-500 block mt-0.5">
               We respond within 1 business day.

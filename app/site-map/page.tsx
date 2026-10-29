@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
-import AboutFirmSection from "@/components/home/aboutFirm/AboutFirmSection";
+import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
@@ -199,7 +199,7 @@ export default function SiteMapPage() {
 
       {/* 3. Global Sections */}
       <ProfessionalAssociations />
-      <AboutFirmSection />
+      <CallToSection />
       <TestimonialsSection />
       <ContactFirmSection />
     </main>

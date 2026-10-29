@@ -5,7 +5,7 @@ import TeamMembersSection from "@/components/about/TeamMembersSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
-import AboutFirmSection from "@/components/home/aboutFirm/AboutFirmSection";
+import CallToSection from "@/components/home/callToSection/CallToSection";
 
 export const metadata: Metadata = {
   title: "Our Team",
@@ -38,6 +38,7 @@ export default function OurTeamPage() {
       <TeamMembersSection />
       {/* 3. Global Sections */}
       <ProfessionalAssociations />
+      <CallToSection />
       <TestimonialsSection />
       <ContactFirmSection />
     </main>

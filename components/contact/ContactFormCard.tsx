@@ -24,7 +24,7 @@ export default function ContactFormCard() {
       </div>
 
       {/* MyCase Embedded Lead Form */}
-      <div className="w-full max-w-4xl mx-auto bg-white rounded-xl overflow-hidden shadow-2xl p-2 sm:p-6">
+      <div className="w-full max-w-4xl mx-auto bg-white rounded-xl overflow-hidden shadow-2xl ">
         <iframe
           src="https://cynthia-i-waisman-pa.mycase.com/contact_us/g2nH6iehHEv9jMDQXPy5byKD"
           title="Contact Cynthia I. Waisman, P.A. via MyCase"
