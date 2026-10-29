@@ -334,8 +334,8 @@ export default function TestimonialsSection() {
             protect their loved ones, achieve legal status, and plan for the future.
           </p>
 
-          {/* Google Reviews Badge */}
-          <div className="pt-2 flex justify-center" data-animate="zoom-in" data-delay="400">
+          {/* Google Reviews Badge & Review Us Button */}
+          <div className="pt-2 flex flex-wrap items-center justify-center gap-3" data-animate="zoom-in" data-delay="400">
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-xs border border-gray-200/90 shadow-xs">
               {/* Google Colored Logo */}
               <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
@@ -350,6 +350,37 @@ export default function TestimonialsSection() {
               </div>
               <span className="text-[11px] font-semibold text-gray-500">(180) Google Reviews</span>
             </div>
+
+            {/* Review Us Button */}
+            <a
+              href="https://reviewplatform.findlaw.app/pages/review-request/6656c0b90969960001b12984"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase border border-[#ECAB3C] hover:border-[#dca034] shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer"
+            >
+              <svg
+                className="w-3.5 h-3.5 shrink-0 transition-transform duration-300 group-hover:scale-110"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                />
+              </svg>
+              <span>Review Us</span>
+              <svg
+                className="w-3 h-3 shrink-0 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
           </div>
         </div>
 
