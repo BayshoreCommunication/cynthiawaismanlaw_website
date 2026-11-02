@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import TypingTitle from "@/components/shared/TypingTitle";
 
 export default function HeroSection() {
     return (
@@ -111,7 +112,7 @@ export default function HeroSection() {
                     {/* Left Column: Headline, Tags, Description, CTAs - Centered in middle */}
                     <div className="lg:col-span-7 xl:col-span-7 flex flex-col justify-center space-y-6 self-center py-10 lg:py-16">
                         {/* Practice Area Tags */}
-                        <div className="anim-hero-tags flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs sm:text-[13px] md:text-sm font-semibold tracking-widest text-[#091D46] uppercase">
+                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs sm:text-[13px] md:text-sm font-semibold tracking-widest text-[#091D46] uppercase reveal-left">
                             <span>Immigration</span>
                             <span className="text-gray-300">|</span>
                             <span>Estate Planning</span>
@@ -121,30 +122,25 @@ export default function HeroSection() {
                             <span>Probate</span>
                         </div>
 
-                        {/* Main Headline with masked slide-up reveal */}
-                        <h1 className="font-serif text-4xl sm:text-5xl md:text-[56px] lg:text-[62px] text-[#091D46] font-normal leading-[1.08] tracking-tight">
-                            <span className="block overflow-hidden pb-1 -mb-1">
-                                <span className="block anim-hero-headline-1">
-                                    Trusted Legal Guidance
-                                </span>
-                            </span>
-                            <span className="block overflow-hidden pb-1.5 -mb-1.5">
-                                <span className="block anim-hero-headline-2">
-                                    For Every Chapter
-                                </span>
-                            </span>
-                        </h1>
+                        {/* Main Headline - Typing Animation Without Cursor */}
+                        <TypingTitle
+                            as="h1"
+                            className="font-serif text-4xl sm:text-5xl md:text-[56px] lg:text-[62px] text-[#091D46] font-normal leading-[1.08] tracking-tight"
+                            text={["Trusted Legal Guidance", "For Every Chapter"]}
+                            speed={28}
+                            delay={100}
+                        />
 
                         {/* Gold Accent Line */}
-                        <div className="anim-hero-line w-14 h-1 bg-[#ECAB3C] rounded-full origin-left" />
+                        <div className="w-14 h-1 bg-[#ECAB3C] rounded-full reveal-left reveal-delay-1" />
 
-                        {/* Description Text */}
-                        <p className="anim-hero-desc text-sm sm:text-base md:text-[17px] text-[#4a5568] leading-relaxed max-w-xl">
+                        {/* Description Text - Reveal from Left */}
+                        <p className="text-sm sm:text-base md:text-[17px] text-[#4a5568] leading-relaxed max-w-xl reveal-left reveal-delay-2">
                             Helping individuals and families with immigration, estate planning, guardianship, and probate with compassion, integrity, and personalized solutions.
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="anim-hero-buttons flex flex-wrap items-center gap-4 pt-2">
+                        <div className="flex flex-wrap items-center gap-4 pt-2 reveal-left reveal-delay-3">
                             {/* Button 1: Book A Consultation */}
                             <button
                                 type="button"
@@ -171,9 +167,9 @@ export default function HeroSection() {
                         </div>
                     </div>
 
-                    {/* Right Column: Cynthia Portrait flush with bottom edge */}
+                    {/* Right Column: Cynthia Portrait - Reveal from Right */}
                     <div className="lg:col-span-5 xl:col-span-5 flex justify-center lg:justify-end items-end self-end pb-0 leading-none">
-                        <div className="anim-hero-portrait relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-none flex justify-center lg:justify-end items-end leading-none">
+                        <div className="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-none flex justify-center lg:justify-end items-end leading-none reveal-image-right">
                             <Image
                                 src="/images/cynthia.png"
                                 alt="Attorney Cynthia I. Waisman"

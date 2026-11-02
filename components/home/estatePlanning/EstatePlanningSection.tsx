@@ -210,10 +210,10 @@ export default function EstatePlanningSection() {
                                 data-animate="fade-up"
                                 data-delay={(idx * 100 + 150).toString()}
                                 className={`flex flex-col space-y-3 ${idx === 0
-                                        ? "lg:pr-6 xl:pr-8"
-                                        : idx === 3
-                                            ? "lg:pl-6 xl:pl-8"
-                                            : "lg:px-6 xl:px-8"
+                                    ? "lg:pr-6 xl:pr-8"
+                                    : idx === 3
+                                        ? "lg:pl-6 xl:pl-8"
+                                        : "lg:px-6 xl:px-8"
                                     }`}
                             >
                                 {/* Circular Icon Badge */}

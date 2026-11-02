@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import TypingTitle from "@/components/shared/TypingTitle";
 
 interface ServiceItem {
   title: string;
@@ -204,34 +205,37 @@ export default function ServicesSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-14 space-y-3">
           {/* Subheading with gold accent lines */}
-          <div className="inline-flex items-center gap-3" data-animate="fade-down" data-delay="100">
-            <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
+          <div className="inline-flex items-center gap-3 reveal-up">
+            <span className="w-8 h-[2px] bg-[#ECAB3C]" />
             <h3 className="text-xs sm:text-[13px] md:text-sm font-bold tracking-widest text-[#ECAB3C] uppercase font-sans">
               Our Services
             </h3>
-            <span className="w-8 h-[2px] bg-[#ECAB3C]" data-animate="line-expand" style={{ "--line-width": "2rem" } as React.CSSProperties} />
+            <span className="w-8 h-[2px] bg-[#ECAB3C]" />
           </div>
 
-          {/* Main Title */}
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-[#091D46] tracking-tight leading-tight" data-animate="fade-up" data-delay="200">
-            Immigration &amp; Elder Law Services For The Tampa Area
-          </h2>
+          {/* Main Title - Typing Animation Without Cursor */}
+          <TypingTitle
+            as="h2"
+            className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-[#091D46] tracking-tight leading-tight"
+            text="Immigration & Elder Law Services For The Tampa Area"
+            speed={22}
+            delay={100}
+          />
 
-          {/* Subtitle */}
-          <p className="text-sm md:text-base text-[#4a5568] leading-relaxed" data-animate="fade-up" data-delay="300">
-            Personalized legal guidance for you and your family with compassion, integrity, and experience.
-
+          {/* Subtitle - Reveal Up */}
+          <p className="text-sm md:text-base text-[#4a5568] leading-relaxed reveal-up reveal-delay-1">
+            Personalized legal guidance for you and your family — with compassion, clarity, and experience.
           </p>
         </div>
 
-        {/* 4 Cards Grid */}
+        {/* 4 Cards Grid - Left from Left, Right from Right */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {serviceCards.map((card, idx) => (
             <div
               key={card.id}
-              data-animate="fade-up"
-              data-delay={(idx * 100 + 150).toString()}
-              className="bg-white rounded-xl border border-gray-200/80 shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden group"
+              className={`bg-white rounded-xl border border-gray-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group ${
+                idx < 2 ? "reveal-left" : "reveal-right"
+              } ${idx % 2 === 1 ? "reveal-delay-1" : ""}`}
             >
               {/* Card Top: Image + Floating Icon Badge */}
               <div>

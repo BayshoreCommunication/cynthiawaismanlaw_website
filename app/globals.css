@@ -66,3 +66,109 @@ h4 {
   scrollbar-width: none;
 }
 
+/* ========================================================
+   SMOOTH REVEAL ANIMATIONS (Left, Right, Images & Descriptions)
+   ======================================================== */
+
+/* 1. Reveal from Left: Smooth glide from left */
+html.reveal-ready .reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+html.reveal-ready .reveal-left.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 2. Reveal from Right: Smooth glide from right */
+html.reveal-ready .reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+html.reveal-ready .reveal-right.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 3. Reveal Up: Soft upward float (for centered descriptions) */
+html.reveal-ready .reveal-up {
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(3px);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity, filter;
+  backface-visibility: hidden;
+}
+
+html.reveal-ready .reveal-up.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* 4. Image Reveal Left: Subtle scale + smooth slide from left */
+html.reveal-ready .reveal-image-left {
+  opacity: 0;
+  transform: translateX(-50px) scale(0.96);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+html.reveal-ready .reveal-image-left.is-revealed {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* 5. Image Reveal Right: Subtle scale + smooth slide from right */
+html.reveal-ready .reveal-image-right {
+  opacity: 0;
+  transform: translateX(50px) scale(0.96);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+html.reveal-ready .reveal-image-right.is-revealed {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* Staggered Delay Utilities */
+.reveal-delay-1 {
+  transition-delay: 0.12s !important;
+}
+.reveal-delay-2 {
+  transition-delay: 0.22s !important;
+}
+.reveal-delay-3 {
+  transition-delay: 0.32s !important;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-left,
+  .reveal-right,
+  .reveal-up,
+  .reveal-image-left,
+  .reveal-image-right {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+}
