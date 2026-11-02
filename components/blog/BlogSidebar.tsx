@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import { blogPosts as fallbackPosts, blogCategories as fallbackCategories } from "./blogData";
 
 export interface SidebarCategoryItem {
   name: string;
@@ -34,29 +33,8 @@ export default function BlogSidebar({
   categories,
   recentPosts,
 }: BlogSidebarProps) {
-  // Use passed categories or compute from fallback
-  const displayCategories: SidebarCategoryItem[] = categories && categories.length > 0
-    ? categories
-    : [
-        { name: "All", count: fallbackPosts.length },
-        ...fallbackCategories
-          .filter((c) => c !== "All")
-          .map((c) => ({
-            name: c,
-            count: fallbackPosts.filter((p) => p.category === c).length,
-          })),
-      ];
-
-  // Use passed recent posts or fallback
-  const displayRecentPosts: SidebarRecentPost[] = recentPosts && recentPosts.length > 0
-    ? recentPosts.slice(0, 5)
-    : fallbackPosts.slice(0, 4).map((p) => ({
-        id: p.id,
-        title: p.title,
-        slug: p.slug,
-        date: p.date,
-        category: p.category,
-      }));
+  const displayCategories: SidebarCategoryItem[] = categories ?? [];
+  const displayRecentPosts: SidebarRecentPost[] = (recentPosts ?? []).slice(0, 5);
 
   return (
     <aside className="w-full space-y-6 font-sans">

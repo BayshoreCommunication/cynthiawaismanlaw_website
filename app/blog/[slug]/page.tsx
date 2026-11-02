@@ -6,7 +6,12 @@ import BlogSidebar, {
   SidebarCategoryItem,
   SidebarRecentPost,
 } from "@/components/blog/BlogSidebar";
-import { getWpPostBySlug, getWpPosts, computeCategoryCounts } from "@/lib/wordpress";
+import {
+  getPostBySlug,
+  getAllPostSlugs,
+  getAllPostSummaries,
+  computeCategoryCounts,
+} from "@/lib/blog";
 import Link from "next/link";
 
 interface BlogPostPageProps {
@@ -15,18 +20,15 @@ interface BlogPostPageProps {
   }>;
 }
 
-export async function generateStaticParams() {
-  const { posts } = await getWpPosts({ perPage: 20 });
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+export function generateStaticParams() {
+  return getAllPostSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const post = await getWpPostBySlug(slug);
+  const post = getPostBySlug(slug);
   if (!post) {
     return { title: "Article Not Found | Cynthia I. Waisman, P.A." };
   }
@@ -40,10 +42,8 @@ export async function generateMetadata({
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
 
-  const [post, { posts: allPosts }] = await Promise.all([
-    getWpPostBySlug(slug),
-    getWpPosts({ perPage: 100 }),
-  ]);
+  const post = getPostBySlug(slug);
+  const allPosts = getAllPostSummaries();
 
   if (!post) {
     notFound();
@@ -113,7 +113,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   [&_a]:text-[#0056b3] [&_a]:underline hover:[&_a]:text-[#091D46]
                   [&_blockquote]:border-l-4 [&_blockquote]:border-[#ECAB3C] [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:my-6 [&_blockquote]:text-gray-700
                   [&_strong]:font-semibold [&_strong]:text-[#091D46]
-                  [&_img]:rounded-lg [&_img]:my-6 [&_img]:max-w-full [&_img]:h-auto"
+                  [&_img]:rounded-lg [&_img]:my-6 [&_img]:max-w-full [&_img]:h-auto
+                  [&_table]:w-full [&_table]:my-6 [&_table]:border-collapse [&_table]:text-[14px] sm:[&_table]:text-[15px]
+                  [&_td]:border [&_td]:border-gray-200 [&_td]:px-3 [&_td]:py-2 [&_td]:align-top"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
 

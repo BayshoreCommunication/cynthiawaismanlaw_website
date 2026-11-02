@@ -6,13 +6,11 @@ import BlogSidebar, {
   SidebarCategoryItem,
   SidebarRecentPost,
 } from "./BlogSidebar";
-import type { WpPost, WpCategoryItem } from "@/lib/wordpress";
-import { computeCategoryCounts } from "@/lib/wordpress";
+import type { BlogPostSummary } from "@/lib/blog";
+import { computeCategoryCounts } from "@/lib/blog";
 
 interface BlogListContentProps {
-  initialPosts: WpPost[];
-  initialCategories?: WpCategoryItem[];
-  totalPosts?: number;
+  initialPosts: BlogPostSummary[];
   initialSelectedCategory?: string;
 }
 
@@ -30,8 +28,6 @@ function cleanExcerpt(text: string): string {
 
 export default function BlogListContent({
   initialPosts,
-  initialCategories,
-  totalPosts,
   initialSelectedCategory,
 }: BlogListContentProps) {
   const [selectedCategory, setSelectedCategory] = useState(

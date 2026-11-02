@@ -1,5 +1,5 @@
 import pagesData from "./immigrationPages.json";
-import { decodeHtmlEntities } from "./wordpress";
+import { decodeHtmlEntities } from "./html";
 
 export interface ImmigrationPage {
   id: number;
@@ -11,8 +11,6 @@ export interface ImmigrationPage {
   modified?: string;
 }
 
-const WP_API_BASE = "https://cynthiawaismanlaw.com/wp-json/wp/v2";
-
 /**
  * Strips top-level h1 from content if present, as layout provides its own h1
  */
@@ -22,7 +20,7 @@ function cleanContentHtml(html: string): string {
   // Remove leading <h1>...</h1> tag
   let cleaned = html.replace(/^\s*<h1[^>]*>[\s\S]*?<\/h1>/i, "");
 
-  // Replace WordPress shortcodes like [nap_phone id="..."]
+  // Replace leftover shortcodes like [nap_phone id="..."]
   cleaned = cleaned.replace(
     /\[nap_phone[^\]]*\]/gi,
     '<a href="tel:+18132796180" class="text-[#0056b3] font-semibold hover:text-[#003d80] underline">+1 (813) 279-6180</a>'
@@ -39,56 +37,23 @@ export function getAllImmigrationSlugs(): string[] {
 }
 
 /**
- * Fetch an immigration subpage by slug with fallback
+ * Get an immigration subpage by slug from the bundled local data
  */
 export async function getImmigrationPage(
   slug: string
 ): Promise<ImmigrationPage | null> {
-  // 1. Try to fetch live from WordPress API
-  try {
-    const url = new URL(`${WP_API_BASE}/pages`);
-    url.searchParams.set("slug", slug);
-
-    const res = await fetch(url.toString(), {
-      next: { revalidate: 3600 },
-      headers: { Accept: "application/json" },
-    });
-
-    if (res.ok) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const data: any[] = await res.json();
-      if (data && data.length > 0) {
-        const item = data[0];
-        return {
-          id: item.id,
-          slug: item.slug,
-          title: decodeHtmlEntities(item.title?.rendered || slug),
-          content: cleanContentHtml(item.content?.rendered || ""),
-          excerpt: decodeHtmlEntities(
-            (item.excerpt?.rendered || "").replace(/<[^>]+>/g, " ").trim()
-          ),
-          date: item.date,
-          modified: item.modified,
-        };
-      }
-    }
-  } catch (err) {
-    console.warn(`Error fetching live WP page for slug "${slug}":`, err);
-  }
-
-  // 2. Fallback to bundled data
-  const fallback = pagesData.find((p) => p.slug === slug);
-  if (!fallback) return null;
+  const page = pagesData.find((p) => p.slug === slug);
+  if (!page) return null;
 
   return {
-    id: fallback.id,
-    slug: fallback.slug,
-    title: decodeHtmlEntities(fallback.title),
-    content: cleanContentHtml(fallback.content),
+    id: page.id,
+    slug: page.slug,
+    title: decodeHtmlEntities(page.title),
+    content: cleanContentHtml(page.content),
     excerpt: decodeHtmlEntities(
-      (fallback.excerpt || "").replace(/<[^>]+>/g, " ").trim()
+      (page.excerpt || "").replace(/<[^>]+>/g, " ").trim()
     ),
-    date: fallback.date,
-    modified: fallback.modified,
+    date: page.date,
+    modified: page.modified,
   };
 }

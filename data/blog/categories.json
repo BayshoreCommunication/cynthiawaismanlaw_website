@@ -1,0 +1,146 @@
+[
+  {
+    "id": 15,
+    "name": "Immigration",
+    "slug": "immigration",
+    "count": 176
+  },
+  {
+    "id": 27,
+    "name": "Estate Planning",
+    "slug": "estate-planning",
+    "count": 84
+  },
+  {
+    "id": 52,
+    "name": "Estate Administration",
+    "slug": "estate-administration",
+    "count": 31
+  },
+  {
+    "id": 45,
+    "name": "Probate",
+    "slug": "probate",
+    "count": 27
+  },
+  {
+    "id": 64,
+    "name": "Family Based Visas",
+    "slug": "family-based-visas",
+    "count": 21
+  },
+  {
+    "id": 61,
+    "name": "Citizenship",
+    "slug": "citizenship",
+    "count": 19
+  },
+  {
+    "id": 59,
+    "name": "Trusts",
+    "slug": "trusts",
+    "count": 18
+  },
+  {
+    "id": 34,
+    "name": "K1 Visa’s",
+    "slug": "k1-visas",
+    "count": 9
+  },
+  {
+    "id": 39,
+    "name": "Wills",
+    "slug": "wills",
+    "count": 9
+  },
+  {
+    "id": 53,
+    "name": "Guardianships",
+    "slug": "guardianships",
+    "count": 7
+  },
+  {
+    "id": 40,
+    "name": "Powers Of Attorney",
+    "slug": "powers-of-attorney",
+    "count": 7
+  },
+  {
+    "id": 41,
+    "name": "Health Care Surrogate",
+    "slug": "health-care-surrogate",
+    "count": 6
+  },
+  {
+    "id": 42,
+    "name": "Living Will",
+    "slug": "living-will",
+    "count": 6
+  },
+  {
+    "id": 43,
+    "name": "Pre-Need Guardian",
+    "slug": "pre-need-guardian",
+    "count": 5
+  },
+  {
+    "id": 47,
+    "name": "Probate Process",
+    "slug": "probate-process",
+    "count": 5
+  },
+  {
+    "id": 50,
+    "name": "Will Contests",
+    "slug": "will-contests",
+    "count": 5
+  },
+  {
+    "id": 62,
+    "name": "Employment Authorization Cards",
+    "slug": "employment-authorization-cards",
+    "count": 4
+  },
+  {
+    "id": 44,
+    "name": "Anatomical Gift Donation",
+    "slug": "anatomical-gift-donation",
+    "count": 3
+  },
+  {
+    "id": 33,
+    "name": "Naturalization",
+    "slug": "naturalization",
+    "count": 2
+  },
+  {
+    "id": 60,
+    "name": "Trust Administration",
+    "slug": "trust-administration",
+    "count": 2
+  },
+  {
+    "id": 49,
+    "name": "Creditor Claims",
+    "slug": "creditor-claims",
+    "count": 1
+  },
+  {
+    "id": 54,
+    "name": "Minor Guardianships",
+    "slug": "minor-guardianships",
+    "count": 1
+  },
+  {
+    "id": 65,
+    "name": "Removal Proceedings",
+    "slug": "removal-proceedings",
+    "count": 1
+  },
+  {
+    "id": 46,
+    "name": "Who Qualifies As A Personal Representative",
+    "slug": "personal-representative",
+    "count": 1
+  }
+]

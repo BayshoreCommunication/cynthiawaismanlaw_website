@@ -1,4 +1,50 @@
 import type { NextConfig } from "next";
+import { readdirSync } from "node:fs";
+import blogPosts from "./data/blog/posts.json";
+import blogCategories from "./data/blog/categories.json";
+
+type Redirect = { source: string; destination: string; permanent: boolean };
+
+/**
+ * Old WordPress blog URLs → new /blog URLs, so search rankings and
+ * existing links keep working after WordPress is shut down.
+ */
+function blogRedirects(taken: Set<string>): Redirect[] {
+  const redirects: Redirect[] = [];
+
+  // WordPress permalinks were /<slug>/ — skip any that clash with a real page.
+  for (const { slug } of blogPosts) {
+    if (!taken.has(`/${slug}`)) {
+      redirects.push({ source: `/${slug}`, destination: `/blog/${slug}`, permanent: true });
+    }
+  }
+
+  // Older permalink style: /blog/2021/05/<slug>/
+  redirects.push({
+    source: "/blog/:year(\\d{4})/:month(\\d{2})/:slug",
+    destination: "/blog/:slug",
+    permanent: true,
+  });
+
+  // Date archives and pagination: /blog/2022, /blog/2022/07, /blog/page/2
+  for (const source of [
+    "/blog/:year(\\d{4})",
+    "/blog/:year(\\d{4})/:month(\\d{2})",
+    "/blog/page/:page(\\d+)",
+  ]) {
+    redirects.push({ source, destination: "/blog", permanent: true });
+  }
+
+  // Category archives: /blog/category/<slug> and /blog/category/<parent>/<slug>
+  for (const { slug, name } of blogCategories) {
+    const destination = `/blog?category=${encodeURIComponent(name)}`;
+    redirects.push({ source: `/blog/category/${slug}`, destination, permanent: true });
+    redirects.push({ source: `/blog/category/:parent/${slug}`, destination, permanent: true });
+  }
+  redirects.push({ source: "/blog/category/:path*", destination: "/blog", permanent: true });
+
+  return redirects;
+}
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -13,7 +59,7 @@ const nextConfig: NextConfig = {
     },
   },
   async redirects() {
-    return [
+    const siteRedirects: Redirect[] = [
       {
         source: "/estate-planning",
         destination: "/estate-planning-services",
@@ -37,6 +83,11 @@ const nextConfig: NextConfig = {
       {
         source: "/estate-planning/:slug",
         destination: "/estate-planning-services/:slug",
+        permanent: true,
+      },
+      {
+        source: "/powers-of-attorney",
+        destination: "/estate-planning-services/powers-of-attorney",
         permanent: true,
       },
       {
@@ -197,6 +248,13 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ];
+
+    // Never redirect away from a real top-level page (e.g. /about).
+    const appRoutes = readdirSync("app", { withFileTypes: true })
+      .filter((d) => d.isDirectory() && !d.name.startsWith("(") && !d.name.startsWith("["))
+      .map((d) => `/${d.name}`);
+    const taken = new Set([...siteRedirects.map((r) => r.source), ...appRoutes]);
+    return [...siteRedirects, ...blogRedirects(taken)];
   },
 };
 
