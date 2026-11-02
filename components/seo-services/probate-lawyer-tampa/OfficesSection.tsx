@@ -1,0 +1,124 @@
+import React from "react";
+import Image from "next/image";
+
+const offices = [
+  {
+    name: "Tampa Office",
+    firm: "Cynthia I. Waisman, P.A.",
+    street: "5406 Hoover Blvd, Ste. 11",
+    city: "Tampa, FL 33634",
+    phone: "+1 (813) 279-6180",
+    phoneHref: "tel:+18132796180",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=5406+Hoover+Blvd+Ste+11+Tampa+FL+33634",
+    note: "By Appointment Only",
+    image: "/images/seo-services/tampa-office.png",
+  },
+  {
+    name: "Clearwater Office",
+    firm: null,
+    street: "2451 McMullen Booth Rd, Ste. 239",
+    city: "Clearwater, FL 33759",
+    phone: "+1 (813) 279-6180",
+    phoneHref: "tel:+18132796180",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=2451+McMullen+Booth+Rd+Clearwater+FL+33759",
+    note: "By Appointment Only",
+    image: "/images/seo-services/clearwater-office.png",
+  },
+  {
+    name: "Wesley Chapel Office",
+    firm: null,
+    street: "6013 Wesley Grove Blvd, Bldg. 2, Ste. 208",
+    city: "Wesley Chapel, FL 33544",
+    phone: "+1 (813) 279-6180",
+    phoneHref: "tel:+18132796180",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=6013+Wesley+Grove+Blvd+Wesley+Chapel+FL+33544",
+    note: null,
+    image: "/images/seo-services/wesley-chapel-office.png",
+  },
+];
+
+export function OfficesSection() {
+  return (
+    <section
+      id="offices"
+      className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-[#e4dccb]"
+    >
+      <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[820px] mb-10">
+          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#0e2240] leading-[1.22]">
+            Tampa Offices and Areas We Serve
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          {offices.map((office) => (
+            <div
+              key={office.name}
+              className="bg-white border border-[#e4dccb] rounded-[22px] overflow-hidden p-6 sm:p-7 shadow-xs hover:shadow-[0_18px_40px_rgba(14,34,64,0.12)] hover:border-[#b8914a] transition-all flex flex-col justify-between"
+            >
+              <div>
+                <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-5 bg-[#091830] border border-[#e4dccb]">
+                  <Image
+                    src={office.image}
+                    alt={`${office.name} - Cynthia I. Waisman, P.A.`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 400px"
+                    className="object-cover object-center"
+                  />
+                </div>
+
+                <h3 className="font-serif text-xl font-bold text-[#0e2240] mb-2">
+                  {office.name}
+                </h3>
+
+                <div className="text-sm sm:text-base text-[#586375] leading-relaxed mb-6">
+                  {office.firm && <p className="font-medium text-[#0e2240]">{office.firm}</p>}
+                  <p>{office.street}</p>
+                  <p>{office.city}</p>
+                  <p className="font-semibold text-[#0e2240] mt-1">{office.phone}</p>
+                  <p className="mt-2">
+                    <a
+                      href={office.mapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block font-semibold text-[#b8914a] hover:text-[#0e2240] underline underline-offset-4 transition-colors"
+                    >
+                      Get Directions &rarr;
+                    </a>
+                  </p>
+                  {office.note && (
+                    <p className="mt-2 text-xs font-semibold text-[#b8914a] uppercase tracking-wider">
+                      {office.note}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <a
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm text-[#0e2240] bg-[#b8914a]/15 hover:bg-[#b8914a] hover:text-white border border-[#b8914a]/40 transition-colors mt-auto"
+                href={office.phoneHref}
+              >
+                <svg
+                  className="w-4 h-4 text-current"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" />
+                </svg>
+                Call {office.phone}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
