@@ -200,17 +200,6 @@ export default function AttorneyProfileSection() {
               </ul>
             </div>
 
-            {/* Lead Counsel Verified Seal */}
-            <div className="border-t border-gray-200/80 mt-7 pt-6 flex justify-center">
-              <div className="relative w-24 h-24">
-                <Image
-                  src="/images/associations/honor-1-lead-counsel.png"
-                  alt="Lead Counsel Verified Seal"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
           </aside>
 
           {/* ========================================================= */}

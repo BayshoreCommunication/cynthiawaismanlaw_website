@@ -497,18 +497,11 @@ export default function TestimonialsSection() {
               {[...testimonials, ...testimonials, ...testimonials].map((item, index) => (
                 <div
                   key={`${item.id}-${index}`}
-                  className="w-[310px] sm:w-[360px] md:w-[385px] min-h-[320px] shrink-0 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between select-none pointer-events-auto group"
+                  className="w-[310px] sm:w-[360px] md:w-[385px] min-h-[220px] sm:min-h-[240px] shrink-0 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between select-none pointer-events-auto group"
                 >
                   <div>
-                    {/* Card Top: Category Badge & Gold Quote Icon */}
-                    <div className="flex items-center justify-between gap-2 mb-3">
-                      <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#f6f7f9] border border-gray-100/90 shrink-0">
-                        {item.tagIcon}
-                        <span className="text-[11px] font-bold text-[#091D46] uppercase tracking-wider">
-                          {item.tag}
-                        </span>
-                      </div>
-
+                    {/* Card Top: Gold Quote Icon */}
+                    <div className="flex items-center justify-end mb-2">
                       <span className="font-serif text-3xl sm:text-4xl text-[#ECAB3C] leading-none select-none opacity-90 group-hover:scale-110 transition-transform">
                         “
                       </span>
@@ -520,8 +513,8 @@ export default function TestimonialsSection() {
                     </p>
                   </div>
 
-                  {/* Card Bottom: 5-Star Rating & Author Details */}
-                  <div className="pt-4 mt-3 border-t border-gray-100/90 flex flex-col gap-2">
+                  {/* Card Bottom: 5-Star Rating */}
+                  <div className="pt-4 mt-3 border-t border-gray-100/90 flex items-center justify-between">
                     {/* 5 Gold Stars */}
                     <div className="flex items-center gap-1 text-[#ECAB3C]">
                       {[...Array(5)].map((_, starIdx) => (
@@ -530,19 +523,6 @@ export default function TestimonialsSection() {
                         </svg>
                       ))}
                       <span className="text-[11px] font-bold text-gray-500 ml-1">5.0</span>
-                    </div>
-
-                    {/* Author Name & Practice Subtitle */}
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className="w-5 h-[2px] bg-[#ECAB3C] rounded-full shrink-0" />
-                        <h4 className="text-sm sm:text-[15px] font-bold text-[#091D46]">
-                          {item.author}
-                        </h4>
-                      </div>
-                      <p className="text-xs text-gray-500 pl-7 mt-0.5 font-medium">
-                        {item.service}
-                      </p>
                     </div>
                   </div>
                 </div>

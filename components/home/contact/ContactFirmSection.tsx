@@ -162,10 +162,10 @@ export default function ContactFirmSection() {
                                         EMAIL US
                                     </span>
                                     <a
-                                        href="mailto:cynthiawaisman@yahoo.com"
+                                        href="mailto:cynthia@cynthiawaismanlaw.com"
                                         className="text-base sm:text-lg font-bold text-white hover:text-[#ECAB3C] transition-colors block"
                                     >
-                                        cynthiawaisman@yahoo.com
+                                        cynthia@cynthiawaismanlaw.com
                                     </a>
                                     <p className="text-xs text-blue-200/80 mt-0.5">
                                         We typically respond within one business day.
