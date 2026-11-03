@@ -8,6 +8,9 @@ import ProfessionalAssociations from "@/components/home/professionalAssociations
 import CallToSection from "@/components/home/callToSection/CallToSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/about/our-team",
+  },
   title: "Our Team",
   description:
     "Meet the dedicated team at Cynthia I. Waisman, P.A. providing compassionate and personalized legal support in Immigration, Estate Planning, and Probate across Tampa Bay.",

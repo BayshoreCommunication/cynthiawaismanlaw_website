@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/estate-planning-services/funding-administration-your-revocable-trust",
+  },
   title: "Funding Your Revocable Trust | Cynthia I. Waisman, P.A.",
   description:
     "Protect your Florida assets and avoid probate by properly funding your revocable living trust. Guidance from attorney Cynthia I. Waisman.",

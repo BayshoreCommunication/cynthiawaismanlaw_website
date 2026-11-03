@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/privacy",
+  },
   title: "Privacy Policy | Cynthia I. Waisman, P.A.",
   description:
     "Privacy Policy for Cynthia I. Waisman, P.A. Learn how our Florida law firm collects, protects, and handles your personal information.",

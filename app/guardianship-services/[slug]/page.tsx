@@ -41,6 +41,9 @@ export async function generateMetadata({
   return {
     title: page.metaTitle,
     description: page.description,
+    alternates: {
+      canonical: `/guardianship-services/${slug}`,
+    },
   };
 }
 

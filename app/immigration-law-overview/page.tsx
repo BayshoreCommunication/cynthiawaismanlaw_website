@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/immigration-law-overview",
+  },
   title: "Immigration Law Overview | Cynthia I. Waisman, P.A.",
   description:
     "Committed to helping you achieve your American dream. Dedicated legal counsel for citizenship, green cards, waivers, and family immigration across Tampa and Clearwater, FL.",

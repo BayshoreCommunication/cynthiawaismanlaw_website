@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/estate-planning-services/living-wills",
+  },
   title: "Living Wills & Healthcare Directives | Cynthia I. Waisman, P.A.",
   description:
     "Ensure your medical wishes are honored with a Florida Living Will and Designation of Healthcare Surrogate drafted by Cynthia I. Waisman, P.A.",

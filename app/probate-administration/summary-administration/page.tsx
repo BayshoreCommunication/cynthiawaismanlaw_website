@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/probate-administration/summary-administration",
+  },
   title: "Summary Administration | Cynthia I. Waisman, P.A.",
   description:
     "Expedited Florida summary administration probate for qualifying estates under $75,000 or when decedent has been deceased for over 2 years.",

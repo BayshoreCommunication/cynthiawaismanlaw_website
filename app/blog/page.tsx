@@ -5,6 +5,9 @@ import BlogListContent from "@/components/blog/BlogListContent";
 import { getAllPostSummaries } from "@/lib/blog";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/blog",
+  },
   title: "Blog & Legal Insights | Cynthia I. Waisman, P.A.",
   description:
     "Stay informed with legal insights, USCIS policy updates, and Florida estate planning guidance from attorney Cynthia I. Waisman.",

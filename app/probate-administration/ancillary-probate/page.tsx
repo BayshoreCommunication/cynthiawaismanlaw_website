@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/probate-administration/ancillary-probate",
+  },
   title: "Ancillary Probate | Cynthia I. Waisman, P.A.",
   description:
     "Florida ancillary probate representation for out-of-state executors and families owning Florida real estate or vacation property.",

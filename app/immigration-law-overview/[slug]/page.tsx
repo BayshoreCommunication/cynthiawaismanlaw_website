@@ -36,6 +36,9 @@ export async function generateMetadata({
     description:
       page.excerpt ||
       `Learn more about ${page.title} from experienced Tampa immigration attorney Cynthia I. Waisman.`,
+    alternates: {
+      canonical: `/immigration-law-overview/${slug}`,
+    },
   };
 }
 

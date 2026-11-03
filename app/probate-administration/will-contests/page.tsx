@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/probate-administration/will-contests",
+  },
   title: "Will Contests & Estate Disputes | Cynthia I. Waisman, P.A.",
   description:
     "Experienced representation in Florida will contests, undue influence claims, lack of testamentary capacity, and fiduciary litigation.",

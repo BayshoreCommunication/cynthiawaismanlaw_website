@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Meet Cynthia I. Waisman, experienced Immigration and Estate Planning Attorney representing clients across Tampa, Clearwater, and Wesley Chapel, Florida.",
   alternates: {
-    canonical: "https://cynthiawaismanlaw.com/attorney/waisman-cynthia-i/",
+    canonical: "/attorney/waisman-cynthia-i",
   },
 };
 

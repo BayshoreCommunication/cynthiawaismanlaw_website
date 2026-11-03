@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/probate-administration",
+  },
   title: "Probate Administration | Cynthia I. Waisman, P.A.",
   description:
     "Dedicated Florida probate administration counsel. Guiding personal representatives, executors, and beneficiaries through formal and summary probate.",

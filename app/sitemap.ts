@@ -25,8 +25,9 @@ const page = (
 
 /**
  * Pages that exist only once. Left out on purpose:
- * /attorney and /about/our-attorney (redirect), /privacy-policy, /sitemap and
- * /estate-planning-services/funding-revocable-trust (copies of other pages).
+ * /attorney and /about/our-attorney (redirect), /privacy-policy, /sitemap,
+ * /terms-of-use and /estate-planning-services/funding-revocable-trust
+ * (copies of other pages).
  */
 const STATIC_PAGES: Entry[] = [
   page("", 1.0, "weekly"),
@@ -60,7 +61,6 @@ const STATIC_PAGES: Entry[] = [
 
   page("/site-map", 0.3, "yearly"),
   page("/privacy", 0.2, "yearly"),
-  page("/terms-of-use", 0.2, "yearly"),
   page("/disclaimer", 0.2, "yearly"),
 ];
 

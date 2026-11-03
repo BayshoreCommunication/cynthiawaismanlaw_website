@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/guardianship-services",
+  },
   title: "Guardianship Services | Cynthia I. Waisman, P.A.",
   description:
     "Experienced Florida guardianship representation for mental incapacity and minor guardianships. Protecting your loved ones across Tampa, Clearwater, and Florida.",

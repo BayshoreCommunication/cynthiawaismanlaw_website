@@ -38,9 +38,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Cynthia I. Waisman, P.A." }],
   creator: "Cynthia I. Waisman, P.A.",
   publisher: "Cynthia I. Waisman, P.A.",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: "en_US",

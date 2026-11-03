@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/estate-planning-services/estate-plan-review",
+  },
   title: "Review & Update Existing Estate Plans | Cynthia I. Waisman, P.A.",
   description:
     "Is your will or trust up to date? Comprehensive estate plan audits, out-of-state document updates, and codicil amendments in Tampa & Clearwater, Florida.",

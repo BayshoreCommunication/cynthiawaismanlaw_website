@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/estate-planning-services/powers-of-attorney",
+  },
   title: "Powers of Attorney | Cynthia I. Waisman, P.A.",
   description:
     "Protect your financial and legal affairs with a Florida Durable Power of Attorney drafted by experienced counsel in Tampa and Clearwater.",

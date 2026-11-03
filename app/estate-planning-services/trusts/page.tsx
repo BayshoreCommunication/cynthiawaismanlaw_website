@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/estate-planning-services/trusts",
+  },
   title: "Trusts & Living Trusts | Cynthia I. Waisman, P.A.",
   description:
     "Use trusts to achieve your goals. Florida revocable living trusts, special needs trusts, and irrevocable asset protection trusts in Tampa Bay.",

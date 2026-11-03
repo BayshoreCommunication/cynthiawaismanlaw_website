@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/disclaimer",
+  },
   title: "Disclaimer | Cynthia I. Waisman, P.A.",
   description:
     "Legal disclaimer and terms of website use for Cynthia I. Waisman, P.A., Florida law firm representing clients in Immigration, Estate Planning, and Probate.",

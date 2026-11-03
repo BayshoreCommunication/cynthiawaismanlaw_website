@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/site-map",
+  },
   title: "Site Map | Cynthia I. Waisman, P.A.",
   description:
     "Complete website directory and site map for Cynthia I. Waisman, P.A. Find pages on Florida estate planning, probate, guardianship, and immigration law.",

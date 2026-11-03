@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/estate-planning-services",
+  },
   title: "Estate Planning Services | Cynthia I. Waisman, P.A.",
   description:
     "Comprehensive Florida estate planning services. Wills, living trusts, durable powers of attorney, living wills, and asset protection in Tampa and Clearwater.",

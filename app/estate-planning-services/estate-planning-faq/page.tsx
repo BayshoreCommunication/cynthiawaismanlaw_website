@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/estate-planning-services/estate-planning-faq",
+  },
   title: "Estate Planning FAQ | Cynthia I. Waisman, P.A.",
   description:
     "Get clear answers to frequently asked estate planning and probate questions in Florida. Experienced legal counsel for wills, trusts, and personal representatives.",

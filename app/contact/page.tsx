@@ -4,6 +4,9 @@ import ContactOffices from "@/components/contact/ContactOffices";
 import ContactFormCard from "@/components/contact/ContactFormCard";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/contact",
+  },
   title: "Contact Us",
   description:
     "Get in touch with Cynthia I. Waisman, P.A. Convenient office locations in Tampa, Clearwater, and Wesley Chapel. Call +1 (813) 279-6180 or request a consultation online today.",

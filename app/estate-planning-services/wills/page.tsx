@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/estate-planning-services/wills",
+  },
   title: "Wills & Testamentary Planning | Cynthia I. Waisman, P.A.",
   description:
     "Make your will count. Strategic drafting of Florida last wills and testaments, guardian designations, and personal representative appointments.",

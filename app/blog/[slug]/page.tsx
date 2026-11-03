@@ -36,6 +36,9 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Cynthia I. Waisman, P.A.`,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
   };
 }
 

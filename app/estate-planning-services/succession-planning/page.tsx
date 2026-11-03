@@ -8,6 +8,9 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/estate-planning-services/succession-planning",
+  },
   title: "Business Succession Planning | Cynthia I. Waisman, P.A.",
   description:
     "Protect your Florida company and family legacy. Strategic business succession planning, buy-sell agreements, leadership transitions, and estate tax solutions in Tampa & Clearwater.",
