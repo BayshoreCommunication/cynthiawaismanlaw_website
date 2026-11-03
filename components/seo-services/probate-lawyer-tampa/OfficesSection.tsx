@@ -44,11 +44,11 @@ export function OfficesSection() {
   return (
     <section
       id="offices"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-[#e4dccb]"
+      className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200"
     >
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-[820px] mb-10">
-          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#0e2240] leading-[1.22]">
+          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22]">
             Tampa Offices and Areas We Serve
           </h2>
         </div>
@@ -57,10 +57,10 @@ export function OfficesSection() {
           {offices.map((office) => (
             <div
               key={office.name}
-              className="bg-white border border-[#e4dccb] rounded-[22px] overflow-hidden p-6 sm:p-7 shadow-xs hover:shadow-[0_18px_40px_rgba(14,34,64,0.12)] hover:border-[#b8914a] transition-all flex flex-col justify-between"
+              className="bg-white border border-gray-200 rounded-[22px] overflow-hidden p-6 sm:p-7 shadow-xs hover:shadow-[0_18px_40px_rgba(9,29,70,0.12)] hover:border-[#ECAB3C] transition-all flex flex-col justify-between"
             >
               <div>
-                <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-5 bg-[#091830] border border-[#e4dccb]">
+                <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-5 bg-[#091D46] border border-gray-200">
                   <Image
                     src={office.image}
                     alt={`${office.name} - Cynthia I. Waisman, P.A.`}
@@ -70,27 +70,27 @@ export function OfficesSection() {
                   />
                 </div>
 
-                <h3 className="font-serif text-xl font-bold text-[#0e2240] mb-2">
+                <h3 className="font-serif text-xl font-bold text-[#091D46] mb-2">
                   {office.name}
                 </h3>
 
                 <div className="text-sm sm:text-base text-[#586375] leading-relaxed mb-6">
-                  {office.firm && <p className="font-medium text-[#0e2240]">{office.firm}</p>}
+                  {office.firm && <p className="font-medium text-[#091D46]">{office.firm}</p>}
                   <p>{office.street}</p>
                   <p>{office.city}</p>
-                  <p className="font-semibold text-[#0e2240] mt-1">{office.phone}</p>
+                  <p className="font-semibold text-[#091D46] mt-1">{office.phone}</p>
                   <p className="mt-2">
                     <a
                       href={office.mapUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block font-semibold text-[#b8914a] hover:text-[#0e2240] underline underline-offset-4 transition-colors"
+                      className="inline-block font-semibold text-[#ECAB3C] hover:text-[#091D46] underline underline-offset-4 transition-colors"
                     >
                       Get Directions &rarr;
                     </a>
                   </p>
                   {office.note && (
-                    <p className="mt-2 text-xs font-semibold text-[#b8914a] uppercase tracking-wider">
+                    <p className="mt-2 text-xs font-semibold text-[#ECAB3C] uppercase tracking-wider">
                       {office.note}
                     </p>
                   )}
@@ -98,7 +98,7 @@ export function OfficesSection() {
               </div>
 
               <a
-                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm text-[#0e2240] bg-[#b8914a]/15 hover:bg-[#b8914a] hover:text-white border border-[#b8914a]/40 transition-colors mt-auto"
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm text-[#091D46] bg-[#ECAB3C]/15 hover:bg-[#ECAB3C] hover:text-[#091D46] border border-[#ECAB3C]/40 transition-colors mt-auto"
                 href={office.phoneHref}
               >
                 <svg

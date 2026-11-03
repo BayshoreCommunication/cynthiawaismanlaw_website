@@ -5,15 +5,15 @@ export function ConsultationCtaSection() {
   return (
     <section
       id="consult"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#0e2240] via-[#091830] to-[#050e1c] text-white border-t border-[#b8914a]/30 overflow-hidden"
+      className="relative w-full py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#091D46] via-[#061533] to-[#040e24] text-white border-t border-[#ECAB3C]/30 overflow-hidden"
     >
       {/* Decorative ambient background glows */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#b8914a]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#e0bd7c]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#ECAB3C]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#ECAB3C]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-[860px] mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#b8914a]/20 border border-[#b8914a]/40 text-[#e0bd7c] text-xs font-bold uppercase tracking-wider mb-5">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#ECAB3C]/20 border border-[#ECAB3C]/40 text-[#ECAB3C] text-xs font-bold uppercase tracking-wider mb-5">
             Compassionate & Experienced Legal Guidance
           </div>
 
@@ -33,7 +33,7 @@ export function ConsultationCtaSection() {
             guide your family through the next steps. Call{" "}
             <a
               href="tel:+18132796180"
-              className="text-[#e0bd7c] hover:underline font-semibold"
+              className="text-[#ECAB3C] hover:underline font-semibold"
             >
               +1 (813) 279-6180
             </a>{" "}
@@ -45,10 +45,10 @@ export function ConsultationCtaSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <a
               href="tel:+18132796180"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-white text-[#0e2240] hover:bg-slate-100 font-bold text-base transition-all duration-200 shadow-xl hover:shadow-2xl"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-white text-[#091D46] hover:bg-slate-100 font-bold text-base transition-all duration-200 shadow-xl hover:shadow-2xl"
             >
               <svg
-                className="w-5 h-5 text-[#b8914a]"
+                className="w-5 h-5 text-[#ECAB3C]"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -65,7 +65,7 @@ export function ConsultationCtaSection() {
             <Link
               href="/contact"
               data-open-consultation
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#b8914a] via-[#c9a25b] to-[#967434] hover:from-[#c9a25b] hover:to-[#b8914a] text-white font-bold text-base transition-all duration-200 shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-base transition-all duration-200 shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
             >
               <span>Schedule Your Probate Consultation</span>
               <span aria-hidden="true">→</span>

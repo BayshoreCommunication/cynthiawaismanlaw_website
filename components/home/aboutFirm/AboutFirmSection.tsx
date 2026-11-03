@@ -8,7 +8,7 @@ export default function AboutFirmSection() {
         <section
             className="relative w-full bg-cover bg-center bg-no-repeat overflow-hidden flex flex-col justify-end"
             style={{
-                backgroundImage: "url('/images/about-firm-bg-image.png')",
+                backgroundImage: "url('/images/about-firm-bg-image.webp')",
             }}
         >
             {/* Subtle overlay for optimal contrast and warmth */}
@@ -25,7 +25,7 @@ export default function AboutFirmSection() {
                                 alt="Attorney Cynthia I. Waisman"
                                 width={692}
                                 height={1037}
-                                priority
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
                                 className="w-auto h-[440px] sm:h-[480px] md:h-[520px] lg:h-[540px] xl:h-[580px] object-contain object-bottom drop-shadow-md select-none block align-bottom -mb-px"
                             />
                         </div>

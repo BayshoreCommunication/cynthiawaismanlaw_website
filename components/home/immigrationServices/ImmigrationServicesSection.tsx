@@ -7,7 +7,7 @@ export default function ImmigrationServicesSection() {
             <div
                 className="absolute top-0 left-0 right-0 h-[480px] sm:h-[520px] lg:h-[560px] bg-cover bg-no-repeat bg-[position:right_center] lg:bg-center pointer-events-none"
                 style={{
-                    backgroundImage: "url('/images/immigration-services.png')",
+                    backgroundImage: "url('/images/immigration-services.webp')",
                 }}
             >
                 {/* Gentle gradient wash on left for maximum text contrast */}

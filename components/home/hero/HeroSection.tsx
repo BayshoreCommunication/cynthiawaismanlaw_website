@@ -8,9 +8,16 @@ export default function HeroSection() {
         <section
             className="relative w-full bg-cover bg-center bg-no-repeat overflow-hidden min-h-[600px] lg:min-h-[680px] flex flex-col justify-end"
             style={{
-                backgroundImage: "url('/images/hero-bg-image-main.png')",
+                backgroundImage: "url('/images/hero-bg-image-main.webp')",
             }}
         >
+            {/* React 19 hoisted preload for Hero background image */}
+            <link
+                rel="preload"
+                as="image"
+                href="/images/hero-bg-image-main.webp"
+                type="image/webp"
+            />
             {/* Scoped Keyframes & Animation Styles for Text Animations */}
             <style>{`
                 @keyframes heroSlideUpMask {
@@ -176,6 +183,7 @@ export default function HeroSection() {
                                 width={752}
                                 height={1126}
                                 priority
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 420px"
                                 className="w-auto h-[380px] sm:h-[460px] md:h-[520px] lg:h-[580px] xl:h-[640px] object-contain object-bottom drop-shadow-sm select-none block align-bottom -mb-px"
                             />
                         </div>

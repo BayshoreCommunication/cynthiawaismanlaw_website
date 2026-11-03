@@ -104,11 +104,11 @@ export function NeedProbateLawyerSection() {
   ];
 
   return (
-    <section id="need" className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-[#e4dccb]/80">
+    <section id="need" className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
-          <h2 className="font-serif text-[#0e2240] text-2xl sm:text-3xl lg:text-[36px] font-semibold leading-tight mb-4">
+          <h2 className="font-serif text-[#091D46] text-2xl sm:text-3xl lg:text-[36px] font-semibold leading-tight mb-4">
             Do you need a probate lawyer in Tampa, FL ?
           </h2>
           <p className="text-[#586375] text-base sm:text-lg leading-relaxed">
@@ -121,16 +121,16 @@ export function NeedProbateLawyerSection() {
           {cards.map((card) => (
             <div
               key={card.num}
-              className="relative bg-white border border-[#e4dccb] rounded-[20px] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#b8914a] flex flex-col justify-between"
+              className="relative bg-white border border-gray-200 rounded-[20px] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#ECAB3C] flex flex-col justify-between"
             >
               <div>
-                <div className="w-[52px] h-[52px] rounded-[14px] bg-[#0e2240] text-[#e0bd7c] flex items-center justify-center mb-5">
+                <div className="w-[52px] h-[52px] rounded-[14px] bg-[#091D46] text-[#ECAB3C] flex items-center justify-center mb-5">
                   {card.icon}
                 </div>
-                <span className="absolute right-6 top-6 font-serif text-3xl font-semibold text-[#b8914a]/40 select-none">
+                <span className="absolute right-6 top-6 font-serif text-3xl font-semibold text-[#ECAB3C]/40 select-none">
                   {card.num}
                 </span>
-                <h3 className="font-serif text-xl font-semibold text-[#0e2240] mb-3 leading-snug">
+                <h3 className="font-serif text-xl font-semibold text-[#091D46] mb-3 leading-snug">
                   {card.title}
                 </h3>
                 <p className="text-[#586375] text-sm sm:text-[15px] leading-relaxed">
@@ -142,10 +142,10 @@ export function NeedProbateLawyerSection() {
         </div>
 
         {/* Bottom Banner Strip */}
-        <div className="mt-12 bg-[#0e2240] rounded-[18px] p-6 sm:p-8 flex flex-wrap items-center justify-between gap-5 shadow-lg">
+        <div className="mt-12 bg-[#091D46] rounded-[18px] p-6 sm:p-8 flex flex-wrap items-center justify-between gap-5 shadow-lg">
           <a
             href="tel:+18132796180"
-            className="flex items-center gap-3 text-[#e0bd7c] hover:text-white font-serif font-semibold text-xl sm:text-2xl transition-colors"
+            className="flex items-center gap-3 text-[#ECAB3C] hover:text-white font-serif font-semibold text-xl sm:text-2xl transition-colors"
           >
             <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" />
@@ -155,7 +155,7 @@ export function NeedProbateLawyerSection() {
           <a
             href="#consult"
             data-open-consultation
-            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-bold bg-[#b8914a] hover:bg-[#e0bd7c] text-[#101c33] border-2 border-[#b8914a] hover:border-[#e0bd7c] transition-all duration-200 text-sm sm:text-base shadow-sm hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-bold bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] border-2 border-[#ECAB3C] hover:border-[#dca034] transition-all duration-200 text-sm sm:text-base shadow-sm hover:-translate-y-0.5"
           >
             Schedule a Consultation
           </a>

@@ -102,7 +102,7 @@ export function WhyChooseUsSection() {
   return (
     <section
       id="why"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#091830] text-white border-t border-[#b8914a]/20"
+      className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#091D46] text-white border-t border-[#ECAB3C]/20"
     >
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-[820px] mb-12">
@@ -119,9 +119,9 @@ export function WhyChooseUsSection() {
           {reasons.map((item) => (
             <div
               key={item.title}
-              className="bg-[#0e2240]/80 border border-[#b8914a]/30 rounded-[20px] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#e0bd7c] hover:shadow-[0_18px_40px_rgba(0,0,0,0.4)] backdrop-blur-xs"
+              className="bg-[#061533]/80 border border-[#ECAB3C]/25 rounded-[20px] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#ECAB3C] hover:shadow-[0_18px_40px_rgba(0,0,0,0.4)] backdrop-blur-xs"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#b8914a]/20 text-[#e0bd7c] border border-[#b8914a]/40 flex items-center justify-center mb-5 shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-[#ECAB3C]/15 text-[#ECAB3C] border border-[#ECAB3C]/35 flex items-center justify-center mb-5 shrink-0">
                 {item.icon}
               </div>
               <h3 className="font-serif text-lg sm:text-xl font-bold text-white mb-2.5">

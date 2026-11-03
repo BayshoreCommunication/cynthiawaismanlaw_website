@@ -11,7 +11,7 @@ export default function Footer() {
             <div
                 className="relative w-full bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('/images/footer/footer-bg-image.png')",
+                    backgroundImage: "url('/images/footer/footer-bg-image.webp')",
                 }}
             >
                 {/* Subtle overlay so text remains razor sharp while courthouse and palm trees stay clearly visible */}

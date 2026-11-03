@@ -3,15 +3,15 @@ import React from "react";
 export function MobileStickyBar() {
   return (
     <div
-      className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#091830]/95 backdrop-blur-md border-t border-[#b8914a]/30 p-2.5 sm:p-3 flex items-center gap-2.5 shadow-2xl"
+      className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#091D46]/95 backdrop-blur-md border-t border-[#ECAB3C]/30 p-2.5 sm:p-3 flex items-center gap-2.5 shadow-2xl"
       aria-label="Quick contact mobile bar"
     >
       <a
         href="tel:+18132796180"
-        className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-gradient-to-r from-[#b8914a] via-[#c9a25b] to-[#967434] text-white font-bold text-sm tracking-wide shadow-md active:scale-95 transition-all"
+        className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-sm tracking-wide shadow-md active:scale-95 transition-all"
       >
         <svg
-          className="w-4 h-4 text-white"
+          className="w-4 h-4 text-[#091D46]"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -28,7 +28,7 @@ export function MobileStickyBar() {
       <a
         href="#consult"
         data-open-consultation
-        className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-white text-[#0e2240] hover:bg-slate-100 font-bold text-sm tracking-wide shadow-md active:scale-95 transition-all"
+        className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-white text-[#091D46] hover:bg-slate-100 font-bold text-sm tracking-wide shadow-md active:scale-95 transition-all"
       >
         Free Consultation
       </a>

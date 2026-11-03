@@ -21,11 +21,11 @@ export function ProbateCostSection() {
   return (
     <section
       id="cost"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-[#e4dccb]"
+      className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-gray-200"
     >
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-[820px] mb-8">
-          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#0e2240] leading-[1.22] mb-3.5">
+          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
             How much does probate cost in Florida?
           </h2>
           <p className="text-[1.05rem] text-[#586375] leading-relaxed">
@@ -36,9 +36,9 @@ export function ProbateCostSection() {
           </p>
         </div>
 
-        <div className="overflow-x-auto border border-[#e4dccb] rounded-2xl bg-white shadow-xs my-6">
+        <div className="overflow-x-auto border border-gray-200 rounded-2xl bg-white shadow-xs my-6">
           <table className="w-full border-collapse text-left text-sm sm:text-base">
-            <thead className="bg-[#0e2240] text-[#e0bd7c]">
+            <thead className="bg-[#091D46] text-[#ECAB3C]">
               <tr>
                 <th className="py-4 px-5 sm:px-6 font-semibold tracking-wider text-xs uppercase">
                   Probate Expense
@@ -52,9 +52,9 @@ export function ProbateCostSection() {
               {expenses.map((row) => (
                 <tr
                   key={row.item}
-                  className="border-b border-[#e4dccb]/70 last:border-b-0 even:bg-[#b8914a]/[0.03] hover:bg-[#b8914a]/[0.08] transition-colors"
+                  className="border-b border-gray-100 last:border-b-0 even:bg-[#ECAB3C]/[0.03] hover:bg-[#ECAB3C]/[0.08] transition-colors"
                 >
-                  <td className="py-3.5 px-5 sm:px-6 font-semibold text-[#0e2240]">
+                  <td className="py-3.5 px-5 sm:px-6 font-semibold text-[#091D46]">
                     {row.item}
                   </td>
                   <td className="py-3.5 px-5 sm:px-6 text-[#586375]">
@@ -66,7 +66,7 @@ export function ProbateCostSection() {
           </table>
         </div>
 
-        <p className="mt-6 p-4 rounded-xl bg-[#b8914a]/[0.08] border-l-4 border-[#b8914a] text-xs sm:text-sm text-[#586375] leading-relaxed italic">
+        <p className="mt-6 p-4 rounded-xl bg-[#fdf8f0] border-l-4 border-[#ECAB3C] text-xs sm:text-sm text-[#586375] leading-relaxed italic">
           Disclaimer: We provide the applicable attorney fee after reviewing the
           estate and the probate work required. This section covers legal fees
           for probate representation and related document preparation. Court

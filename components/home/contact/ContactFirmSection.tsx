@@ -10,7 +10,7 @@ export default function ContactFirmSection() {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('/images/contact-firm-bg-image.png')",
+                    backgroundImage: "url('/images/contact-firm-bg-image.webp')",
                 }}
             />
 

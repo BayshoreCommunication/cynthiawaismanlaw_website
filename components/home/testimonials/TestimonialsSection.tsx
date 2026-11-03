@@ -368,7 +368,7 @@ export default function TestimonialsSection() {
     <section
       className="relative w-full bg-cover bg-center bg-no-repeat py-12 lg:py-20 overflow-hidden"
       style={{
-        backgroundImage: "url('/images/testimonial-bg-image.png')",
+        backgroundImage: "url('/images/testimonial-bg-image.webp')",
       }}
     >
       {/* 1320px Global Content Container - Keeps carousel constrained within website container */}

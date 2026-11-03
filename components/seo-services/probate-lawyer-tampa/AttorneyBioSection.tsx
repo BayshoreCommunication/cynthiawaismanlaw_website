@@ -5,12 +5,12 @@ export function AttorneyBioSection() {
   return (
     <section
       id="attorney"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-[#e4dccb]"
+      className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-gray-200"
     >
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] lg:grid-cols-[380px_1fr] gap-8 lg:gap-14 items-center">
           {/* Attorney Photo with Gold Offset Shadow */}
-          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/5] max-w-[340px] md:max-w-none mx-auto w-full bg-[#091830] shadow-[12px_12px_0_#b8914a] border border-[#e4dccb]">
+          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/5] max-w-[340px] md:max-w-none mx-auto w-full bg-[#091D46] shadow-[12px_12px_0_#ECAB3C] border border-gray-200">
             <Image
               src="/images/seo-services/cynthia.png"
               alt="Cynthia I. Waisman - Tampa Probate Attorney"
@@ -22,10 +22,10 @@ export function AttorneyBioSection() {
 
           {/* Attorney Info */}
           <div>
-            <span className="inline-block text-xs uppercase tracking-widest font-bold text-[#b8914a] mb-2">
+            <span className="inline-block text-xs uppercase tracking-widest font-bold text-[#ECAB3C] mb-2">
               Meet your probate attorney in Tampa
             </span>
-            <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#0e2240] leading-[1.22] mb-4">
+            <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-4">
               Cynthia I. Waisman
             </h2>
 
@@ -34,7 +34,7 @@ export function AttorneyBioSection() {
                 (badge) => (
                   <span
                     key={badge}
-                    className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#b8914a] text-[#b8914a] bg-[#b8914a]/[0.08] text-xs sm:text-sm font-semibold tracking-wide"
+                    className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#ECAB3C] text-[#091D46] bg-[#ECAB3C]/10 text-xs sm:text-sm font-semibold tracking-wide"
                   >
                     {badge}
                   </span>
@@ -58,7 +58,7 @@ export function AttorneyBioSection() {
 
             <div>
               <a
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-sm tracking-wider uppercase text-white bg-gradient-to-r from-[#b8914a] to-[#967434] hover:from-[#c8a15a] hover:to-[#a68444] shadow-md hover:shadow-lg transition-all"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold text-sm tracking-wider uppercase text-[#091D46] bg-[#ECAB3C] hover:bg-[#dca034] shadow-md hover:shadow-lg transition-all"
                 href="#consult"
                 data-open-consultation
               >

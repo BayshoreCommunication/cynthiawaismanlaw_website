@@ -66,11 +66,11 @@ export function ProbateAssetsSection() {
   ];
 
   return (
-    <section id="assets" className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-[#e4dccb]">
+    <section id="assets" className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-14 items-center mb-11">
           <div className="max-w-[820px]">
-            <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#0e2240] leading-[1.22] mb-3.5">
+            <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
               What assets go through probate in Florida?
             </h2>
             <p className="text-[1.05rem] text-[#586375] leading-relaxed m-0">
@@ -78,7 +78,7 @@ export function ProbateAssetsSection() {
             </p>
           </div>
 
-          <figure className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3] bg-[#091830] shadow-[8px_8px_0_#b8914a] sm:shadow-[12px_12px_0_#b8914a] m-0">
+          <figure className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3] bg-[#091D46] shadow-[8px_8px_0_#ECAB3C] sm:shadow-[12px_12px_0_#ECAB3C] m-0">
             <Image
               src="/images/seo-services/estate-planning.png"
               alt="Florida Probate Real Estate and Assets"
@@ -93,12 +93,12 @@ export function ProbateAssetsSection() {
           {assets.map((asset) => (
             <div
               key={asset.title}
-              className="bg-white border border-[#e4dccb] rounded-[20px] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(14,34,64,0.12)] hover:border-[#b8914a]"
+              className="bg-white border border-gray-200 rounded-[20px] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(9,29,70,0.12)] hover:border-[#ECAB3C]"
             >
-              <span className="w-[52px] h-[52px] rounded-xl bg-[#0e2240] text-[#e0bd7c] flex items-center justify-center mb-4.5">
+              <span className="w-[52px] h-[52px] rounded-xl bg-[#091D46] text-[#ECAB3C] flex items-center justify-center mb-4.5">
                 {asset.icon}
               </span>
-              <h3 className="font-serif text-lg font-semibold text-[#0e2240] mb-2 leading-snug">
+              <h3 className="font-serif text-lg font-semibold text-[#091D46] mb-2 leading-snug">
                 {asset.title}
               </h3>
               <p className="m-0 text-[#586375] text-[0.95rem] leading-relaxed">

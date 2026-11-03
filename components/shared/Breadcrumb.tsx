@@ -82,7 +82,7 @@ export default function Breadcrumb({
   title,
   subtitle,
   description,
-  bgImage = "/images/breadcrumb-bg-image.png",
+  bgImage = "/images/breadcrumb-bg-image.webp",
   variant = "light",
   className = "",
 }: BreadcrumbProps) {

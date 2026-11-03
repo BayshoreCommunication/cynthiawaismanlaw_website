@@ -329,7 +329,7 @@ export default function ProfessionalAssociations() {
         <section
             className="relative w-full bg-cover bg-center bg-no-repeat overflow-hidden pt-8 lg:pt-10 text-gray-900"
             style={{
-                backgroundImage: "url('/images/professional-associations-bg-image-gray.png')",
+                backgroundImage: "url('/images/professional-associations-bg-image-gray.webp')",
             }}
         >
             {/* Light gray overlay with reduced opacity so bg image is subtly visible */}
@@ -392,6 +392,7 @@ export default function ProfessionalAssociations() {
                                         alt={item.title}
                                         width={Math.round(item.logoWidth * 1.6)}
                                         height={Math.round(item.logoHeight * 1.6)}
+                                        sizes="200px"
                                         draggable={false}
                                         className="max-h-[72px] sm:max-h-[88px] w-auto max-w-[92%] object-contain select-none pointer-events-none transition-transform duration-300 group-hover:scale-105"
                                     />

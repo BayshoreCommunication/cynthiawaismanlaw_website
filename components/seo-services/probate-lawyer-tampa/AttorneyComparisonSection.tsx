@@ -4,11 +4,11 @@ export function AttorneyComparisonSection() {
   return (
     <section
       id="lawyer"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-[#e4dccb]"
+      className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200"
     >
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-[820px] mb-10">
-          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#0e2240] leading-[1.22] mb-3.5">
+          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
             An Experienced Attorney Makes Probate Easier, But Doing It Yourself Can
             Lead to Costly Mistakes!
           </h2>
@@ -21,11 +21,11 @@ export function AttorneyComparisonSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-10">
           {/* With Experienced Lawyer */}
-          <div className="bg-[#0e2240] text-[#e6edf8] rounded-[22px] p-8 sm:p-10 shadow-lg relative overflow-hidden border border-[#b8914a]/30">
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#e0bd7c] mb-6 flex items-center gap-3">
-              <span className="w-7 h-7 rounded-full bg-[#e0bd7c]/20 flex items-center justify-center shrink-0">
+          <div className="bg-[#091D46] text-[#e6edf8] rounded-[22px] p-8 sm:p-10 shadow-lg relative overflow-hidden border border-[#ECAB3C]/30">
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#ECAB3C] mb-6 flex items-center gap-3">
+              <span className="w-7 h-7 rounded-full bg-[#ECAB3C]/20 flex items-center justify-center shrink-0">
                 <svg
-                  className="w-4 h-4 text-[#e0bd7c]"
+                  className="w-4 h-4 text-[#ECAB3C]"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2.5"
@@ -46,7 +46,7 @@ export function AttorneyComparisonSection() {
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm sm:text-base leading-relaxed text-[#e6edf8]">
                   <svg
-                    className="w-5 h-5 text-[#e0bd7c] shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#ECAB3C] shrink-0 mt-0.5"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2.5"
@@ -61,8 +61,8 @@ export function AttorneyComparisonSection() {
           </div>
 
           {/* When Attempting Self Try Probate */}
-          <div className="bg-white border border-[#e4dccb] text-[#2b3545] rounded-[22px] p-8 sm:p-10 shadow-xs relative overflow-hidden">
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0e2240] mb-6 flex items-center gap-3">
+          <div className="bg-white border border-gray-200 text-[#2b3545] rounded-[22px] p-8 sm:p-10 shadow-xs relative overflow-hidden">
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#091D46] mb-6 flex items-center gap-3">
               <span className="w-7 h-7 rounded-full bg-red-100 flex items-center justify-center shrink-0">
                 <svg
                   className="w-4 h-4 text-[#c0483f]"
@@ -104,13 +104,13 @@ export function AttorneyComparisonSection() {
         </div>
 
         {/* Action Strip */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 sm:p-8 rounded-2xl bg-white border border-[#e4dccb] shadow-xs">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 sm:p-8 rounded-2xl bg-white border border-gray-200 shadow-xs">
           <a
-            className="inline-flex items-center gap-2.5 font-bold text-lg sm:text-xl text-[#0e2240] hover:text-[#b8914a] transition-colors"
+            className="inline-flex items-center gap-2.5 font-bold text-lg sm:text-xl text-[#091D46] hover:text-[#ECAB3C] transition-colors"
             href="tel:+18132796180"
           >
             <svg
-              className="w-5 h-5 text-[#b8914a]"
+              className="w-5 h-5 text-[#ECAB3C]"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -124,7 +124,7 @@ export function AttorneyComparisonSection() {
             +1 (813) 279-6180
           </a>
           <a
-            className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-bold text-sm tracking-wider uppercase text-white bg-gradient-to-r from-[#b8914a] to-[#967434] hover:from-[#c8a15a] hover:to-[#a68444] shadow-md hover:shadow-lg transition-all"
+            className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-bold text-sm tracking-wider uppercase text-[#091D46] bg-[#ECAB3C] hover:bg-[#dca034] shadow-md hover:shadow-lg transition-all"
             href="#consult"
             data-open-consultation
           >
