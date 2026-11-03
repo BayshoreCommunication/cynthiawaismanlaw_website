@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import EstatePlanningFAQContent from "@/components/estatePlanning/EstatePlanningFAQContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/estate-planning-services/estate-planning-faq",
-  },
-  title: "Estate Planning FAQ | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Estate Planning FAQ",
   description:
     "Get clear answers to frequently asked estate planning and probate questions in Florida. Experienced legal counsel for wills, trusts, and personal representatives.",
-};
+  path: "/estate-planning-services/estate-planning-faq",
+});
 
 export default function EstatePlanningFaqPage() {
   return (

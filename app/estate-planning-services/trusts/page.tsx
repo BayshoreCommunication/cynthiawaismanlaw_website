@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import TrustsContent from "@/components/estatePlanning/TrustsContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/estate-planning-services/trusts",
-  },
-  title: "Trusts & Living Trusts | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Trusts & Living Trusts",
   description:
     "Use trusts to achieve your goals. Florida revocable living trusts, special needs trusts, and irrevocable asset protection trusts in Tampa Bay.",
-};
+  path: "/estate-planning-services/trusts",
+});
 
 export default function TrustsPage() {
   return (

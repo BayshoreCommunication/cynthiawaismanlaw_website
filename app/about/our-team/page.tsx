@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import TeamMembersSection from "@/components/about/TeamMembersSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
@@ -7,14 +8,12 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
 import CallToSection from "@/components/home/callToSection/CallToSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/about/our-team",
-  },
+export const metadata: Metadata = pageMetadata({
   title: "Our Team",
   description:
     "Meet the dedicated team at Cynthia I. Waisman, P.A. providing compassionate and personalized legal support in Immigration, Estate Planning, and Probate across Tampa Bay.",
-};
+  path: "/about/our-team",
+});
 
 export default function OurTeamPage() {
   return (
@@ -26,6 +25,7 @@ export default function OurTeamPage() {
           { label: "Our Team" },
         ]}
         badge="OUR TEAM"
+        titleAs="h1"
         title={
           <>
             Dedicated People.

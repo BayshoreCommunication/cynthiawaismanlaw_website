@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/privacy",
-  },
-  title: "Privacy Policy | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Privacy Policy",
   description:
     "Privacy Policy for Cynthia I. Waisman, P.A. Learn how our Florida law firm collects, protects, and handles your personal information.",
-};
+  path: "/privacy",
+});
 
 export default function PrivacyPolicyPage() {
   return (

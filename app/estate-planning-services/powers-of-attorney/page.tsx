@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import PowersOfAttorneyContent from "@/components/estatePlanning/PowersOfAttorneyContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/estate-planning-services/powers-of-attorney",
-  },
-  title: "Powers of Attorney | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Powers of Attorney",
   description:
     "Protect your financial and legal affairs with a Florida Durable Power of Attorney drafted by experienced counsel in Tampa and Clearwater.",
-};
+  path: "/estate-planning-services/powers-of-attorney",
+});
 
 export default function PowersOfAttorneyPage() {
   return (

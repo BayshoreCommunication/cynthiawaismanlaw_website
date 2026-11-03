@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import EstatePlanReviewContent from "@/components/estatePlanning/EstatePlanReviewContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/estate-planning-services/estate-plan-review",
-  },
-  title: "Review & Update Existing Estate Plans | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Review & Update Existing Estate Plans",
   description:
     "Is your will or trust up to date? Comprehensive estate plan audits, out-of-state document updates, and codicil amendments in Tampa & Clearwater, Florida.",
-};
+  path: "/estate-planning-services/estate-plan-review",
+});
 
 export default function EstatePlanReviewPage() {
   return (

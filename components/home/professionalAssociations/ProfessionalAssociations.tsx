@@ -378,18 +378,23 @@ export default function ProfessionalAssociations() {
                         }`}
                     style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                 >
-                    {/* Render 3 copies of items for seamless infinite drag and auto-scroll */}
+                    {/* 3 copies for a seamless loop. Only the first is real; the
+                        copies are hidden from screen readers and search engines. */}
                     {[...associationItems, ...associationItems, ...associationItems].map(
-                        (item, index) => (
+                        (item, index) => {
+                            const isClone = index >= associationItems.length;
+                            const TitleTag = isClone ? "div" : "h4";
+                            return (
                             <div
                                 key={`${item.id}-${index}`}
+                                aria-hidden={isClone || undefined}
                                 className="w-[210px] sm:w-[235px] flex flex-col items-center text-center select-none shrink-0 transition-transform duration-300 hover:scale-105 group pointer-events-auto px-2 py-2"
                             >
                                 {/* 1. Image (Logo) */}
                                 <div className="h-20 sm:h-24 w-full flex items-center justify-center shrink-0 pointer-events-none">
                                     <Image
                                         src={item.logo}
-                                        alt={item.title}
+                                        alt={isClone ? "" : item.title}
                                         width={Math.round(item.logoWidth * 1.6)}
                                         height={Math.round(item.logoHeight * 1.6)}
                                         sizes="200px"
@@ -400,9 +405,9 @@ export default function ProfessionalAssociations() {
 
                                 {/* 2. Title */}
                                 <div className="mt-3.5 mb-2 flex items-center justify-center">
-                                    <h4 className="font-sans font-bold text-xs sm:text-[13.5px] text-black  leading-snug line-clamp-2 px-1 select-none">
+                                    <TitleTag className="font-sans font-bold text-xs sm:text-[13.5px] text-black  leading-snug line-clamp-2 px-1 select-none">
                                         {item.title}
-                                    </h4>
+                                    </TitleTag>
                                 </div>
 
                                 {/* 3. Position (Membership) */}
@@ -412,7 +417,8 @@ export default function ProfessionalAssociations() {
                                     </span>
                                 </div>
                             </div>
-                        )
+                            );
+                        }
                     )}
                 </div>
             </div>

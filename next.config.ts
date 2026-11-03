@@ -26,22 +26,31 @@ function blogRedirects(taken: Set<string>): Redirect[] {
     permanent: true,
   });
 
-  // Date archives and pagination: /blog/2022, /blog/2022/07, /blog/page/2
+  // Date archives and pagination: /blog/2022, /blog/2022/07, /blog/page/2,
+  // /blog/2022/page/2, /blog/2022/07/page/2
   for (const source of [
     "/blog/:year(\\d{4})",
     "/blog/:year(\\d{4})/:month(\\d{2})",
     "/blog/page/:page(\\d+)",
+    "/blog/:year(\\d{4})/page/:page(\\d+)",
+    "/blog/:year(\\d{4})/:month(\\d{2})/page/:page(\\d+)",
   ]) {
     redirects.push({ source, destination: "/blog", permanent: true });
   }
 
-  // Category archives: /blog/category/<slug> and /blog/category/<parent>/<slug>
-  for (const { slug, name } of blogCategories) {
-    const destination = `/blog?category=${encodeURIComponent(name)}`;
-    redirects.push({ source: `/blog/category/${slug}`, destination, permanent: true });
-    redirects.push({ source: `/blog/category/:parent/${slug}`, destination, permanent: true });
+  // Category archives, with or without the /blog prefix, a parent category
+  // and /page/<n>: /category/<slug>, /blog/category/<parent>/<slug>/page/2.
+  // The destination uses the ASCII slug; /blog maps it back to the name.
+  for (const prefix of ["/blog/category", "/category"]) {
+    for (const { slug } of blogCategories) {
+      const destination = `/blog?category=${slug}`;
+      for (const path of [`${prefix}/${slug}`, `${prefix}/:parent/${slug}`]) {
+        redirects.push({ source: path, destination, permanent: true });
+        redirects.push({ source: `${path}/page/:page(\\d+)`, destination, permanent: true });
+      }
+    }
+    redirects.push({ source: `${prefix}/:path*`, destination: "/blog", permanent: true });
   }
-  redirects.push({ source: "/blog/category/:path*", destination: "/blog", permanent: true });
 
   return redirects;
 }
@@ -147,6 +156,22 @@ const nextConfig: NextConfig = {
       {
         source: "/our-team",
         destination: "/about/our-team",
+        permanent: true,
+      },
+      // Old WordPress office pages
+      {
+        source: "/tampa-probate-law-office",
+        destination: "/probate-lawyer-tampa",
+        permanent: true,
+      },
+      {
+        source: "/tampa-law-office",
+        destination: "/contact",
+        permanent: true,
+      },
+      {
+        source: "/contact-law-offices-of-cynthia-waisman-immigration-elder-law-attorney-tampa-clearwater",
+        destination: "/contact",
         permanent: true,
       },
 

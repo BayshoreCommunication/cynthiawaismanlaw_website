@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/disclaimer",
-  },
-  title: "Disclaimer | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Disclaimer",
   description:
     "Legal disclaimer and terms of website use for Cynthia I. Waisman, P.A., Florida law firm representing clients in Immigration, Estate Planning, and Probate.",
-};
+  path: "/disclaimer",
+});
 
 export default function DisclaimerPage() {
   return (

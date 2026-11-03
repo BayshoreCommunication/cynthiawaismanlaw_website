@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import AboutFirmContent from "@/components/about/AboutFirmContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import TestimonialsSection from "@/components/home/testimonials/TestimonialsSect
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 import CallToSection from "@/components/home/callToSection/CallToSection";
 
-export const metadata: Metadata = {
-  title: "About Our Firm | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "About Our Firm",
   description:
     "Learn about Cynthia I. Waisman, P.A. Dedicated legal counsel in Immigration Law and Estate Planning serving Tampa, Clearwater, and Wesley Chapel.",
-  alternates: {
-    canonical: "/about",
-  },
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import GuardianshipServicesContent from "@/components/guardianship/GuardianshipServicesContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/guardianship-services",
-  },
-  title: "Guardianship Services | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Guardianship Services",
   description:
     "Experienced Florida guardianship representation for mental incapacity and minor guardianships. Protecting your loved ones across Tampa, Clearwater, and Florida.",
-};
+  path: "/guardianship-services",
+});
 
 export default function GuardianshipServicesPage() {
   return (

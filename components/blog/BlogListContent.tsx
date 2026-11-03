@@ -166,6 +166,10 @@ export default function BlogListContent({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Blog Articles List with Pagination */}
           <div className="lg:col-span-8 self-start">
+            <h1 className="font-serif text-[28px] sm:text-[34px] lg:text-[40px] font-normal text-[#091D46] leading-[1.18] mb-6 tracking-tight">
+              Blog &amp; Legal Insights
+            </h1>
+
             {/* Category Filter Pills on Top with full-width bottom divider line */}
             <div className="flex flex-wrap items-center gap-2 pb-5 mb-8 border-b border-gray-200/90">
               {topPillCategories.map((cat) => (

@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import SuccessionPlanningContent from "@/components/estatePlanning/SuccessionPlanningContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/estate-planning-services/succession-planning",
-  },
-  title: "Business Succession Planning | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Business Succession Planning",
   description:
     "Protect your Florida company and family legacy. Strategic business succession planning, buy-sell agreements, leadership transitions, and estate tax solutions in Tampa & Clearwater.",
-};
+  path: "/estate-planning-services/succession-planning",
+});
 
 export default function SuccessionPlanningPage() {
   return (

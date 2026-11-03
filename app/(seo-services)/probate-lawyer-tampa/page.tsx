@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import {
   ProbateHero,
   WhatIsProbateSection,
@@ -21,38 +22,14 @@ import {
   probateFaqs,
 } from "@/components/seo-services/probate-lawyer-tampa";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Probate Lawyer Tampa | Settle Estates & Clear Titles",
   description:
     "Tampa probate attorney settling Florida estates. Clear property titles, resolve debts and protect your inheritance. Call +1 (813) 279-6180 for a consultation.",
-  alternates: {
-    canonical: "https://www.cynthiawaismanlaw.com/probate-lawyer-tampa",
-  },
-  openGraph: {
-    title: "Probate Lawyer Tampa | Settle Estates & Clear Titles",
-    description:
-      "Tampa probate attorney settling Florida estates. Clear property titles, resolve debts and protect your inheritance. Call +1 (813) 279-6180 for a consultation.",
-    url: "https://www.cynthiawaismanlaw.com/probate-lawyer-tampa",
-    siteName: "Cynthia I. Waisman, P.A.",
-    images: [
-      {
-        url: "/images/seo-services/probate.png",
-        width: 1200,
-        height: 630,
-        alt: "Probate Lawyer Tampa - Cynthia I. Waisman, P.A.",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Probate Lawyer Tampa | Settle Estates & Clear Titles",
-    description:
-      "Tampa probate attorney settling Florida estates. Clear property titles, resolve debts and protect your inheritance. Call +1 (813) 279-6180 for a consultation.",
-    images: ["/images/seo-services/probate.png"],
-  },
-};
+  path: "/probate-lawyer-tampa",
+  image: "/images/seo-services/probate.png",
+  imageAlt: "Probate Lawyer Tampa - Cynthia I. Waisman, P.A.",
+});
 
 export default function ProbateLawyerTampaPage() {
   const legalServiceSchema = {

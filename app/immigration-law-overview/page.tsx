@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import ImmigrationOverviewContent from "@/components/immigration/ImmigrationOverviewContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/immigration-law-overview",
-  },
-  title: "Immigration Law Overview | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Immigration Law Overview",
   description:
     "Committed to helping you achieve your American dream. Dedicated legal counsel for citizenship, green cards, waivers, and family immigration across Tampa and Clearwater, FL.",
-};
+  path: "/immigration-law-overview",
+});
 
 export default function ImmigrationLawOverviewPage() {
   return (

@@ -493,10 +493,12 @@ export default function TestimonialsSection() {
                 }`}
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              {/* Render 3 duplicate sets of items for seamless infinite marquee loop */}
+              {/* 3 copies for a seamless loop. Only the first is real; the
+                  copies are hidden from screen readers and search engines. */}
               {[...testimonials, ...testimonials, ...testimonials].map((item, index) => (
                 <div
                   key={`${item.id}-${index}`}
+                  aria-hidden={index >= testimonials.length || undefined}
                   className="w-[310px] sm:w-[360px] md:w-[385px] min-h-[220px] sm:min-h-[240px] shrink-0 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between select-none pointer-events-auto group"
                 >
                   <div>

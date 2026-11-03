@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import WillContestsContent from "@/components/probate/WillContestsContent";
 import ProfessionalAssociations from "@/components/home/professionalAssociations/ProfessionalAssociations";
@@ -7,14 +8,12 @@ import CallToSection from "@/components/home/callToSection/CallToSection";
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/probate-administration/will-contests",
-  },
-  title: "Will Contests & Estate Disputes | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Will Contests & Estate Disputes",
   description:
     "Experienced representation in Florida will contests, undue influence claims, lack of testamentary capacity, and fiduciary litigation.",
-};
+  path: "/probate-administration/will-contests",
+});
 
 export default function WillContestsPage() {
   return (

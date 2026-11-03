@@ -3,6 +3,7 @@
  * blog). Edit data/blog/posts.json to change or add articles.
  */
 import postsData from "@/data/blog/posts.json";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 interface StoredPost {
   id: number;
@@ -65,6 +66,11 @@ export function getAllPostSummaries(): BlogPostSummary[] {
 
 export function getPostBySlug(slug: string): BlogPost | null {
   return postsBySlug.get(slug) ?? null;
+}
+
+/** Share image for a post: its featured image, or the site default. */
+export function getPostImage(post: Pick<BlogPost, "featuredImage">): string {
+  return post.featuredImage || DEFAULT_OG_IMAGE;
 }
 
 export function getAllPostSlugs(): string[] {

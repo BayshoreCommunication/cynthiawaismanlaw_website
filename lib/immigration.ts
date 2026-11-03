@@ -17,8 +17,11 @@ export interface ImmigrationPage {
 function cleanContentHtml(html: string): string {
   if (!html) return "";
 
-  // Remove leading <h1>...</h1> tag
-  let cleaned = html.replace(/^\s*<h1[^>]*>[\s\S]*?<\/h1>/i, "");
+  // Remove the first <h1> (it repeats the page title, sometimes after a
+  // <style> block), then demote any others so the page keeps one H1.
+  let cleaned = html
+    .replace(/<h1[^>]*>[\s\S]*?<\/h1>/i, "")
+    .replace(/<(\/?)h1(\s[^>]*)?>/gi, "<$1h2$2>");
 
   // Replace leftover shortcodes like [nap_phone id="..."]
   cleaned = cleaned.replace(

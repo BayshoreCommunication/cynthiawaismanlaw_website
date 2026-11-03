@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import BlogSidebar, {
@@ -8,6 +9,7 @@ import BlogSidebar, {
 } from "@/components/blog/BlogSidebar";
 import {
   getPostBySlug,
+  getPostImage,
   getAllPostSlugs,
   getAllPostSummaries,
   computeCategoryCounts,
@@ -30,16 +32,22 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) {
-    return { title: "Article Not Found | Cynthia I. Waisman, P.A." };
+    return { title: "Article Not Found" };
   }
 
-  return {
-    title: `${post.title} | Cynthia I. Waisman, P.A.`,
+  return pageMetadata({
+    title: post.title,
     description: post.excerpt,
-    alternates: {
-      canonical: `/blog/${slug}`,
+    path: `/blog/${slug}`,
+    image: getPostImage(post),
+    article: {
+      publishedTime: `${post.isoDate}Z`,
+      modifiedTime: post.modified ? `${post.modified}Z` : undefined,
+      authors: [post.author],
+      section: post.category,
+      tags: post.tags,
     },
-  };
+  });
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {

@@ -74,6 +74,11 @@ export interface BreadcrumbProps {
   bgImage?: string;
   variant?: "light" | "dark";
   className?: string;
+  /**
+   * Render the banner title as the page's H1. Off by default: most pages
+   * use a generic banner line and have their own H1 in the content.
+   */
+  titleAs?: "h1" | "p";
 }
 
 export default function Breadcrumb({
@@ -85,6 +90,7 @@ export default function Breadcrumb({
   bgImage = "/images/breadcrumb-bg-image.webp",
   variant = "light",
   className = "",
+  titleAs: TitleTag = "p",
 }: BreadcrumbProps) {
   // If only breadcrumb navigation items are provided without banner headings, render standalone nav
   if (!badge && !title && !subtitle && !description) {
@@ -126,9 +132,9 @@ export default function Breadcrumb({
 
         {/* Main Headline */}
         {title && (
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-[46px] lg:text-[52px] xl:text-[56px] font-normal text-white tracking-tight leading-[1.12] max-w-5xl" data-animate="fade-up" data-delay="250">
+          <TitleTag className="font-serif text-3xl sm:text-4xl md:text-[46px] lg:text-[52px] xl:text-[56px] font-normal text-white tracking-tight leading-[1.12] max-w-5xl" data-animate="fade-up" data-delay="250">
             {title}
-          </h1>
+          </TitleTag>
         )}
 
         {/* Subtitle (e.g. Attorney at Law) */}

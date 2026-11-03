@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Breadcrumb from "@/components/shared/Breadcrumb";
@@ -34,17 +35,15 @@ export async function generateMetadata({
 
   if (!page) {
     return {
-      title: "Page Not Found | Cynthia I. Waisman, P.A.",
+      title: "Page Not Found",
     };
   }
 
-  return {
+  return pageMetadata({
     title: page.metaTitle,
     description: page.description,
-    alternates: {
-      canonical: `/guardianship-services/${slug}`,
-    },
-  };
+    path: `/guardianship-services/${slug}`,
+  });
 }
 
 export default async function GuardianshipSubPage({

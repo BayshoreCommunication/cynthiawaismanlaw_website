@@ -1,17 +1,17 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import BlogListContent from "@/components/blog/BlogListContent";
 import { getAllPostSummaries } from "@/lib/blog";
+import blogCategories from "@/data/blog/categories.json";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/blog",
-  },
-  title: "Blog & Legal Insights | Cynthia I. Waisman, P.A.",
+export const metadata: Metadata = pageMetadata({
+  title: "Blog & Legal Insights",
   description:
     "Stay informed with legal insights, USCIS policy updates, and Florida estate planning guidance from attorney Cynthia I. Waisman.",
-};
+  path: "/blog",
+});
 
 export const instant = false;
 
@@ -21,7 +21,10 @@ interface BlogPageProps {
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
   const resolvedParams = searchParams ? await searchParams : undefined;
-  const initialCategory = resolvedParams?.category;
+  // Accept a category slug (from old WordPress URLs) or a category name.
+  const categoryParam = resolvedParams?.category;
+  const initialCategory =
+    blogCategories.find((c) => c.slug === categoryParam)?.name ?? categoryParam;
 
   const posts = getAllPostSummaries();
 

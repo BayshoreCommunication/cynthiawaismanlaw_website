@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import AttorneyProfileSection from "@/components/about/AttorneyProfileSection";
 import CallToSection from "@/components/home/callToSection/CallToSection";
@@ -7,14 +8,13 @@ import ProfessionalAssociations from "@/components/home/professionalAssociations
 import TestimonialsSection from "@/components/home/testimonials/TestimonialsSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 
-export const metadata: Metadata = {
-  title: "Cynthia I. Waisman | Tampa Attorney at Law",
+export const metadata: Metadata = pageMetadata({
+  title: "Cynthia I. Waisman, P.A. | Tampa Attorney at Law",
+  absoluteTitle: true,
   description:
     "Meet Cynthia I. Waisman, experienced Immigration and Estate Planning Attorney representing clients across Tampa, Clearwater, and Wesley Chapel, Florida.",
-  alternates: {
-    canonical: "/attorney/waisman-cynthia-i",
-  },
-};
+  path: "/attorney/waisman-cynthia-i",
+});
 
 export default function AttorneyProfilePage() {
   return (
@@ -28,6 +28,7 @@ export default function AttorneyProfilePage() {
           { label: "Cynthia I. Waisman" },
         ]}
         badge="ABOUT OUR FIRM"
+        titleAs="h1"
         title="Cynthia I. Waisman, P.A."
         subtitle="Attorney at Law"
       />

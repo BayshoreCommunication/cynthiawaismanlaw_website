@@ -11,6 +11,7 @@ export default function ContactHero() {
         { label: "Contact" },
       ]}
       badge="CONTACT US"
+      titleAs="h1"
       title={
         <>
           Get the Legal Guidance

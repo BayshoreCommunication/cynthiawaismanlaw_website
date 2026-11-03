@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SITE_URL } from "@/lib/seo";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import ScrollRevealManager from "@/components/shared/ScrollRevealManager";
@@ -15,33 +16,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://www.cynthiawaismanlaw.com";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Cynthia I. Waisman, P.A. | Immigration & Estate Planning Law Firm",
     template: "%s | Cynthia I. Waisman, P.A.",
   },
   description:
     "Cynthia I. Waisman, P.A. provides dedicated and compassionate legal representation in Immigration Law, Estate Planning, Probate Administration, and Guardianship across Tampa, Clearwater, and Wesley Chapel, Florida.",
-  keywords: [
-    "Cynthia I. Waisman",
-    "Tampa Immigration Attorney",
-    "Clearwater Estate Planning Lawyer",
-    "Wesley Chapel Probate Law",
-    "Florida Guardianship Attorney",
-    "Tampa Bay Law Firm",
-    "Immigration Law Florida",
-    "Wills and Trusts Tampa",
-  ],
   authors: [{ name: "Cynthia I. Waisman, P.A." }],
   creator: "Cynthia I. Waisman, P.A.",
   publisher: "Cynthia I. Waisman, P.A.",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: siteUrl,
+    url: SITE_URL,
     siteName: "Cynthia I. Waisman, P.A.",
     title: "Cynthia I. Waisman, P.A. | Immigration & Estate Planning Law Firm",
     description:

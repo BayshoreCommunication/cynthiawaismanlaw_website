@@ -3,11 +3,8 @@ import { getAllPosts } from "@/lib/blog";
 import { getAllImmigrationSlugs } from "@/lib/immigration";
 import { getAllProbateSlugs } from "@/lib/probateData";
 import { getAllGuardianshipSlugs } from "@/lib/guardianshipData";
+import { SITE_URL } from "@/lib/seo";
 
-// Production domain (the non-www domain redirects to www).
-const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.cynthiawaismanlaw.com"
-).replace(/\/+$/, "");
 
 type Entry = MetadataRoute.Sitemap[number];
 
@@ -75,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page(`/guardianship-services/${slug}`, 0.8)
   );
   const blog = getAllPosts().map((post) =>
+    // lastModified = last edit; falls back to the original publish date.
     page(`/blog/${post.slug}`, 0.6, "yearly", (post.modified || post.isoDate).slice(0, 10))
   );
 
