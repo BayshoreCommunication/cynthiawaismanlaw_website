@@ -106,7 +106,7 @@ export default function EstatePlanningSection() {
             <div
                 className="relative w-full bg-cover bg-no-repeat bg-[position:center_right] sm:bg-[position:80%_center] lg:bg-center"
                 style={{
-                    backgroundImage: "url('/images/estate-planing-bg.png')",
+                    backgroundImage: "url('/images/estate-planing-bg.webp?v=2')",
                 }}
             >
                 {/* Smooth white gradient overlay on the left for text legibility */}

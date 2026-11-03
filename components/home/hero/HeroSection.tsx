@@ -17,6 +17,7 @@ export default function HeroSection() {
                 as="image"
                 href="/images/hero-bg-image-main.webp"
                 type="image/webp"
+                fetchPriority="high"
             />
             {/* Scoped Keyframes & Animation Styles for Text Animations */}
             <style>{`
