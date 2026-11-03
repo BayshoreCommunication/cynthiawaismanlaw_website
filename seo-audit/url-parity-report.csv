@@ -1,0 +1,630 @@
+old_url,new_url_equivalent,status,note
+/attorney-referrals/,,MISSING_IN_NEW,returns 404
+/blog/2012/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2012/05/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2013/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2013/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2013/07/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2013/09/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2013/10/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2013/11/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2014/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2014/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2014/03/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2014/04/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2014/05/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2014/07/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2014/08/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2014/09/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2014/page/2/,,MISSING_IN_NEW,returns 404
+/blog/2015/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2015/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2015/02/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2015/03/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2015/06/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2015/07/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2015/10/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2015/page/2/,,MISSING_IN_NEW,returns 404
+/blog/2016/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2016/12/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2017/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2017/07/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2018/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2018/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2018/10/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2018/11/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2019/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2019/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2019/05/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2019/08/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2019/09/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2019/11/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2019/12/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2019/page/2/,,MISSING_IN_NEW,returns 404
+/blog/2020/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/02/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/03/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/04/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/05/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/06/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/07/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/08/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/08/page/2/,,MISSING_IN_NEW,returns 404
+/blog/2020/09/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/10/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/11/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2020/12/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/02/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/03/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/04/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/05/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/06/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/07/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/08/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/09/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/10/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/11/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/12/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2021/page/2/,,MISSING_IN_NEW,returns 404
+/blog/2022/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/02/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/03/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/04/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/05/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/06/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/07/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/08/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/09/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/10/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/11/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/12/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2022/page/2/,,MISSING_IN_NEW,returns 404
+/blog/2023/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/02/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/03/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/04/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/05/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/06/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/07/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/08/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/09/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/10/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/11/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/12/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2023/page/2/,,MISSING_IN_NEW,returns 404
+/blog/2024/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/02/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/03/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/04/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/05/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/06/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/07/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/08/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/09/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/10/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/11/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2024/12/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2025/01/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/2025/02/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/author/cynthiawaisman/,,MISSING_IN_NEW,returns 404
+/blog/category/estate-administration/page/2/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/category/estate-planning/page/2/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/category/estate-planning/trusts/page/2/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/category/immigration/citizenship/page/2/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/category/k1-visas/,/blog?category=K1%20Visa%E2%80%99s,DIFFERENT_PATH,"500 on local next start (curly apostrophe in redirect header), 200 on live Vercel site"
+/blog/category/probate/page/2/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/category/uncategorized/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/blog/page/2/,,MISSING_IN_NEW,no equivalent page; redirects to generic /blog
+/contact-law-offices-of-cynthia-waisman-immigration-elder-law-attorney-tampa-clearwater/,,MISSING_IN_NEW,returns 404
+/tampa-law-office/,,MISSING_IN_NEW,returns 404
+/tampa-probate-law-office/,,MISSING_IN_NEW,returns 404
+/thank-you/,,MISSING_IN_NEW,returns 404
+/blog/2012/05/visa-options-under-vawa/,/blog/visa-options-under-vawa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/01/naturalization-and-false-claims-to-citizenship/,/blog/naturalization-and-false-claims-to-citizenship,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/07/greencards-now-available-for-same-sex-marriages/,/blog/greencards-now-available-for-same-sex-marriages,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/09/deciding-whether-a-divorce-is-valid-for-immigration-purposes/,/blog/deciding-whether-a-divorce-is-valid-for-immigration-purposes,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/09/removing-conditions-on-lawful-permanent-residence/,/blog/removing-conditions-on-lawful-permanent-residence,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/10/following-the-requirements-for-an-affidavit-of-support-i-864/,/blog/following-the-requirements-for-an-affidavit-of-support-i-864,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/10/i-601a-provisional-waivers-an-update-on-processing/,/blog/i-601a-provisional-waivers-an-update-on-processing,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/10/reporting-address-changes-to-immigration-offices/,/blog/reporting-address-changes-to-immigration-offices,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/11/additional-immigration-relief-may-be-available-to-filipino-nationals-immigration-and-elder-law-offices-tampa-and-clearwater-cynthia-waisman-p-a/,/blog/additional-immigration-relief-may-be-available-to-filipino-nationals-immigration-and-elder-law-offices-tampa-and-clearwater-cynthia-waisman-p-a,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/11/responding-to-request-for-evidence-rfe-in-immigration-cases/,/blog/responding-to-request-for-evidence-rfe-in-immigration-cases,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2013/11/uscis-issues-a-new-policy-to-military-family-members-known-as-parole-in-place/,/blog/uscis-issues-a-new-policy-to-military-family-members-known-as-parole-in-place,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/01/an-overview-petitions-to-remove-conditions-on-permanent-residence/,/blog/an-overview-petitions-to-remove-conditions-on-permanent-residence,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/01/delays-in-processing-i-130-family-based-petitions/,/blog/delays-in-processing-i-130-family-based-petitions,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/01/visa-bulletin-what-does-it-mean/,/blog/visa-bulletin-what-does-it-mean,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/03/daca-program-and-tuition-spikes/,/blog/daca-program-and-tuition-spikes,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/03/qualifying-for-a-u-visa/,/blog/qualifying-for-a-u-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/03/the-k-1-visa/,/blog/the-k-1-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/04/selecting-personal-representatives-and-dealing-with-out-of-state-family-members/,/blog/selecting-personal-representatives-and-dealing-with-out-of-state-family-members,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/04/u-visas-what-are-they/,/blog/u-visas-what-are-they,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/05/motions-to-reopen-in-absentia-orders/,/blog/motions-to-reopen-in-absentia-orders,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/07/daca-renewals-are-underway/,/blog/daca-renewals-are-underway,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/07/marriage-based-permanent-residency/,/blog/marriage-based-permanent-residency,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/08/consular-processing-how-long-does-it-take-unpredictable-timelines/,/blog/consular-processing-how-long-does-it-take-unpredictable-timelines,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/08/daca-renewal-process-still-open/,/blog/daca-renewal-process-still-open,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/08/deferred-action-for-early-childhood-arrivals-daca-program/,/blog/deferred-action-for-early-childhood-arrivals-daca-program,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2014/09/immigration-laws-and-crimes-of-moral-turpitude/,/blog/immigration-laws-and-crimes-of-moral-turpitude,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/01/immigration-law-update-provisional-waiver-i-601a-expansion/,/blog/immigration-law-update-provisional-waiver-i-601a-expansion,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/01/united-states-citizenship-the-basics/,/blog/united-states-citizenship-the-basics,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/02/immigration-news-update-expanded-daca-and-dapa-programs-delayed/,/blog/immigration-news-update-expanded-daca-and-dapa-programs-delayed,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/03/cancellation-of-removal-for-lawful-permanent-residents/,/blog/cancellation-of-removal-for-lawful-permanent-residents,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/03/cancellation-of-removal-for-non-lawful-permanent-residents/,/blog/cancellation-of-removal-for-non-lawful-permanent-residents,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/03/what-happens-when-a-petitioner-passes-away-before-your-case-is-complete/,/blog/what-happens-when-a-petitioner-passes-away-before-your-case-is-complete,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/06/crimes-and-their-effect-on-naturalization/,/blog/crimes-and-their-effect-on-naturalization,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/06/failure-to-register-for-selective-service/,/blog/failure-to-register-for-selective-service,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/06/naturalization-and-failure-to-pay-child-support/,/blog/naturalization-and-failure-to-pay-child-support,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/07/deferred-action-for-childhood-arrivals-daca-delay/,/blog/deferred-action-for-childhood-arrivals-daca-delay,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/07/removal-of-condition-on-marriage-based-residency/,/blog/removal-of-condition-on-marriage-based-residency,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2015/10/abandonment-and-loss-of-lpr-status/,/blog/abandonment-and-loss-of-lpr-status,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2016/12/naturalization-applications-on-the-rise/,/blog/naturalization-applications-on-the-rise,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2017/07/backlogs-on-pending-immigration-cases-cynthia-i-wasiman-law/,/blog/backlogs-on-pending-immigration-cases-cynthia-i-wasiman-law,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/01/employment-cards-and-issuance-of-social-security-cards/,/blog/employment-cards-and-issuance-of-social-security-cards,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/01/immigration-and-crimes-trump-pushes-ice-harder-to-arrest/,/blog/immigration-and-crimes-trump-pushes-ice-harder-to-arrest,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/01/naturalization-and-delinquent-taxes/,/blog/naturalization-and-delinquent-taxes,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/01/removal-of-conditions-process-gets-more-difficult-for-couples/,/blog/removal-of-conditions-process-gets-more-difficult-for-couples,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/10/naturalization-reapplying-after-a-denial-based-upon-lack-of-good-moral-character/,/blog/naturalization-reapplying-after-a-denial-based-upon-lack-of-good-moral-character,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/11/establishing-a-trust-what-is-the-role-of-the-trustee/,/blog/establishing-a-trust-what-is-the-role-of-the-trustee,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/11/establishing-a-trust-who-will-be-the-trustee/,/blog/establishing-a-trust-who-will-be-the-trustee,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/11/immigration-policy-update-report-of-medical-examination-procedure-changes/,/blog/immigration-policy-update-report-of-medical-examination-procedure-changes,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/11/immigration-policy-update-uscis-issues-notices-to-appear/,/blog/immigration-policy-update-uscis-issues-notices-to-appear,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2018/11/what-is-a-report-of-medical-examination-and-vaccination-record/,/blog/what-is-a-report-of-medical-examination-and-vaccination-record,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/01/discussing-inheritance-in-a-positive-way/,/blog/discussing-inheritance-in-a-positive-way,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/05/estate-planning-for-blended-families/,/blog/estate-planning-for-blended-families,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/08/immigration-policy-update-trump-administration-plans-to-change-naturalization-test/,/blog/immigration-policy-update-trump-administration-plans-to-change-naturalization-test,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/08/is-there-a-way-someone-could-buy-their-u-s-citizenship/,/blog/is-there-a-way-someone-could-buy-their-u-s-citizenship,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/09/airport-border-searches-digital-privacy/,/blog/airport-border-searches-digital-privacy,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/09/new-law-update-public-charge-inadmissibility-rule-effective-october-15-2019/,/blog/new-law-update-public-charge-inadmissibility-rule-effective-october-15-2019,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/11/durable-and-springing-powers-of-attorney/,/blog/durable-and-springing-powers-of-attorney,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/11/immigrating-to-the-united-states-requires-multiple-steps/,/blog/immigrating-to-the-united-states-requires-multiple-steps,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/12/choosing-an-executor-and-successor-trustee/,/blog/choosing-an-executor-and-successor-trustee,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/12/powers-of-attorney-cease-on-death-of-principal/,/blog/powers-of-attorney-cease-on-death-of-principal,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2019/12/visa-options-for-human-resources-professionals/,/blog/visa-options-for-human-resources-professionals,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/01/how-to-begin-the-probate-process/,/blog/how-to-begin-the-probate-process,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/01/marriage-fraud-interview-provides-second-chance-for-green-card/,/blog/marriage-fraud-interview-provides-second-chance-for-green-card,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/02/estate-administration-personal-representative-fees-and-personal-income-taxes/,/blog/estate-administration-personal-representative-fees-and-personal-income-taxes,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/02/estate-planning-tip-trust-accountings/,/blog/estate-planning-tip-trust-accountings,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/02/estate-planning-tip-uniform-transfer-to-minors-act-umta-protections/,/blog/estate-planning-tip-uniform-transfer-to-minors-act-umta-protections,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/03/estate-planning-tip-health-care-surrogates-and-their-importance/,/blog/estate-planning-tip-health-care-surrogates-and-their-importance,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/03/health-care-rule-could-limit-legal-immigration/,/blog/health-care-rule-could-limit-legal-immigration,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/03/paying-debts-after-a-loved-one-dies/,/blog/paying-debts-after-a-loved-one-dies,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/03/preparing-for-your-naturalization-interview-can-limit-the-stress/,/blog/preparing-for-your-naturalization-interview-can-limit-the-stress,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/03/the-benefits-of-a-trust-as-part-of-an-estate-plan/,/blog/the-benefits-of-a-trust-as-part-of-an-estate-plan,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/04/immigrant-children-may-be-left-behind/,/blog/immigrant-children-may-be-left-behind,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/04/managing-beneficiary-designations-when-planning-for-the-future/,/blog/managing-beneficiary-designations-when-planning-for-the-future,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/05/determining-if-assets-are-subject-to-probate/,/blog/determining-if-assets-are-subject-to-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/05/draft-executive-order-expected-to-alter-h-1b-visa-requirements/,/blog/draft-executive-order-expected-to-alter-h-1b-visa-requirements,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/05/exploring-temporary-visas-for-seasonal-laborers/,/blog/exploring-temporary-visas-for-seasonal-laborers,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/05/immigrants-to-face-new-challenges-in-green-card-approvals/,/blog/immigrants-to-face-new-challenges-in-green-card-approvals,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/05/repaying-debt-after-the-debtor-dies/,/blog/repaying-debt-after-the-debtor-dies,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/05/what-to-know-before-selling-the-deceaseds-home/,/blog/what-to-know-before-selling-the-deceaseds-home,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/assets-typically-included-in-a-probate-proceeding-2/,/blog/assets-typically-included-in-a-probate-proceeding-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/assets-typically-included-in-a-probate-proceeding/,/blog/assets-typically-included-in-a-probate-proceeding,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/draft-executive-order-expected-to-alter-h-1b-visa-requirements-2/,/blog/draft-executive-order-expected-to-alter-h-1b-visa-requirements-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/getting-a-j-1-visitor-visa/,/blog/getting-a-j-1-visitor-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/how-foreign-nationals-can-receive-training-in-the-united-states-2/,/blog/how-foreign-nationals-can-receive-training-in-the-united-states-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/how-foreign-nationals-can-receive-training-in-the-united-states/,/blog/how-foreign-nationals-can-receive-training-in-the-united-states,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/immigrant-u-s-soldiers-file-lawsuit-over-new-citizenship-rules-2/,/blog/immigrant-u-s-soldiers-file-lawsuit-over-new-citizenship-rules-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/immigrant-u-s-soldiers-file-lawsuit-over-new-citizenship-rules/,/blog/immigrant-u-s-soldiers-file-lawsuit-over-new-citizenship-rules,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/specialized-workers-may-enter-u-s-if-approved-for-l-1-visa/,/blog/specialized-workers-may-enter-u-s-if-approved-for-l-1-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/06/what-to-know-before-selling-the-deceaseds-home-2/,/blog/what-to-know-before-selling-the-deceaseds-home-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/07/do-iras-go-through-probate/,/blog/do-iras-go-through-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/07/estate-planning-and-inheritance-in-florida/,/blog/estate-planning-and-inheritance-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/07/how-criminal-convictions-affect-immigration-status/,/blog/how-criminal-convictions-affect-immigration-status,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/07/probate-litigation-in-florida/,/blog/probate-litigation-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/07/tips-to-help-create-strong-estate-plans/,/blog/tips-to-help-create-strong-estate-plans,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/daca-survives-for-now-after-court-ruling-2/,/blog/daca-survives-for-now-after-court-ruling-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/daca-survives-for-now-after-court-ruling/,/blog/daca-survives-for-now-after-court-ruling,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/estate-planning-and-inheritance-in-florida-2/,/blog/estate-planning-and-inheritance-in-florida-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/executing-a-last-will-and-testament-2/,/blog/executing-a-last-will-and-testament-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/executing-a-last-will-and-testament/,/blog/executing-a-last-will-and-testament,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/facebook-post-misleads-immigration-detainees-2/,/blog/facebook-post-misleads-immigration-detainees-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/getting-a-j-1-visitor-visa-2/,/blog/getting-a-j-1-visitor-visa-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/how-criminal-convictions-affect-immigration-status-2/,/blog/how-criminal-convictions-affect-immigration-status-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/how-long-does-probate-take-in-florida-2/,/blog/how-long-does-probate-take-in-florida-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/how-long-does-probate-take-in-florida/,/blog/how-long-does-probate-take-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/interested-parties-in-probate-are-not-unlimited-2/,/blog/interested-parties-in-probate-are-not-unlimited-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/interested-parties-in-probate-are-not-unlimited/,/blog/interested-parties-in-probate-are-not-unlimited,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/probate-litigation-in-florida-2/,/blog/probate-litigation-in-florida-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/sports-team-files-lawsuit-in-immigration-case-2/,/blog/sports-team-files-lawsuit-in-immigration-case-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/supreme-court-has-ruled-on-daca-2/,/blog/supreme-court-has-ruled-on-daca-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/supreme-court-has-ruled-on-daca/,/blog/supreme-court-has-ruled-on-daca,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/temporary-exemptions-for-non-immigrant-student-modified-2/,/blog/temporary-exemptions-for-non-immigrant-student-modified-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/temporary-exemptions-for-non-immigrant-student-modified/,/blog/temporary-exemptions-for-non-immigrant-student-modified,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/tips-to-help-create-strong-estate-plans-2/,/blog/tips-to-help-create-strong-estate-plans-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/understanding-the-difference-between-wills-and-trusts-2/,/blog/understanding-the-difference-between-wills-and-trusts-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/upgrade-to-uscis-website-improves-access-to-resources-2/,/blog/upgrade-to-uscis-website-improves-access-to-resources-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/upgrade-to-uscis-website-improves-access-to-resources/,/blog/upgrade-to-uscis-website-improves-access-to-resources,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/uscis-naturalization-fees-to-rise-by-500/,/blog/uscis-naturalization-fees-to-rise-by-500,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/what-to-know-about-being-an-executor-2/,/blog/what-to-know-about-being-an-executor-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/who-is-an-interested-party-in-probate-2/,/blog/who-is-an-interested-party-in-probate-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/08/who-is-an-interested-party-in-probate/,/blog/who-is-an-interested-party-in-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/09/facebook-post-misleads-immigration-detainees/,/blog/facebook-post-misleads-immigration-detainees,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/09/sports-team-files-lawsuit-in-immigration-case/,/blog/sports-team-files-lawsuit-in-immigration-case,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/09/u-s-immigration-fees-going-up-in-near-future-2/,/blog/u-s-immigration-fees-going-up-in-near-future-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/09/understanding-the-difference-between-wills-and-trusts/,/blog/understanding-the-difference-between-wills-and-trusts,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/09/what-to-know-about-being-an-executor/,/blog/what-to-know-about-being-an-executor,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/10/federal-judge-temporarily-halts-immigration-fee-hikes/,/blog/federal-judge-temporarily-halts-immigration-fee-hikes,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/10/how-does-someone-deal-with-a-visa-denial/,/blog/how-does-someone-deal-with-a-visa-denial,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/10/the-path-to-citizenship-for-a-foreign-spouse/,/blog/the-path-to-citizenship-for-a-foreign-spouse,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/10/when-can-someone-contest-a-will/,/blog/when-can-someone-contest-a-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/10/when-should-i-think-about-updating-my-estate-plan/,/blog/when-should-i-think-about-updating-my-estate-plan,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/11/appeals-court-decision-threatens-tps-for-immigrants/,/blog/appeals-court-decision-threatens-tps-for-immigrants,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/11/keep-these-issues-in-mind-when-selecting-a-trustee/,/blog/keep-these-issues-in-mind-when-selecting-a-trustee,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/11/obtaining-an-e-2-visa/,/blog/obtaining-an-e-2-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/11/what-are-the-requirements-for-a-k-1-fiance-visa/,/blog/what-are-the-requirements-for-a-k-1-fiance-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/11/what-to-know-about-probate-court/,/blog/what-to-know-about-probate-court,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/11/why-knowing-about-the-fiduciary-duty-is-important/,/blog/why-knowing-about-the-fiduciary-duty-is-important,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/12/handling-a-persons-bank-account-after-they-die/,/blog/handling-a-persons-bank-account-after-they-die,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/12/recent-changes-in-florida-guardianship-laws/,/blog/recent-changes-in-florida-guardianship-laws,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/12/specific-requirements-for-a-will-to-be-valid/,/blog/specific-requirements-for-a-will-to-be-valid,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/12/what-are-l1601a-provisional-unlawful-presence-waivers/,/blog/what-are-l1601a-provisional-unlawful-presence-waivers,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2020/12/what-is-probate/,/blog/what-is-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/01/becoming-an-american-citizen/,/blog/becoming-an-american-citizen,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/01/options-for-funding-a-trust/,/blog/options-for-funding-a-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/01/what-does-it-mean-to-have-power-of-attorney-rights/,/blog/what-does-it-mean-to-have-power-of-attorney-rights,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/01/why-are-wills-contested-in-probate/,/blog/why-are-wills-contested-in-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/02/estate-planning-at-every-age/,/blog/estate-planning-at-every-age,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/02/immigration-options-under-the-violence-against-women-act/,/blog/immigration-options-under-the-violence-against-women-act,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/02/new-administration-signals-commitment-to-daca/,/blog/new-administration-signals-commitment-to-daca,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/02/the-probate-process-starts-with-the-filing-of-a-petition/,/blog/the-probate-process-starts-with-the-filing-of-a-petition,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/03/helping-a-fiance-become-a-permanent-u-s-resident/,/blog/helping-a-fiance-become-a-permanent-u-s-resident,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/03/obtaining-a-reentry-permit/,/blog/obtaining-a-reentry-permit,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/03/planning-for-healthcare-needs-in-florida/,/blog/planning-for-healthcare-needs-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/03/understanding-special-needs-trusts-in-florida/,/blog/understanding-special-needs-trusts-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/04/applying-for-an-employment-based-green-card/,/blog/applying-for-an-employment-based-green-card,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/04/contesting-a-will-in-florida/,/blog/contesting-a-will-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/04/grounds-of-inadmissibility-for-immigration/,/blog/grounds-of-inadmissibility-for-immigration,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/04/steps-to-take-in-the-adjustment-of-status-process/,/blog/steps-to-take-in-the-adjustment-of-status-process,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/04/the-basics-of-incapacitated-adult-guardianship-in-florida/,/blog/the-basics-of-incapacitated-adult-guardianship-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/05/common-reasons-for-citizenship-denial/,/blog/common-reasons-for-citizenship-denial,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/05/how-to-select-a-trustee-for-a-florida-trust/,/blog/how-to-select-a-trustee-for-a-florida-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/05/important-financial-details-in-estate-planning/,/blog/important-financial-details-in-estate-planning,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/05/is-it-possible-to-avoid-deportation-with-a-601-waiver/,/blog/is-it-possible-to-avoid-deportation-with-a-601-waiver,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/05/what-is-an-advanced-directive/,/blog/what-is-an-advanced-directive,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/06/accused-of-breach-of-fiduciary-duty-know-how-to-defend-yourself/,/blog/accused-of-breach-of-fiduciary-duty-know-how-to-defend-yourself,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/06/can-the-scope-of-a-guardianship-be-limited/,/blog/can-the-scope-of-a-guardianship-be-limited,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/06/employment-visas-for-extraordinary-ability-and-priority-work/,/blog/employment-visas-for-extraordinary-ability-and-priority-work,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/06/waiver-of-criminal-history-in-the-immigration-process/,/blog/waiver-of-criminal-history-in-the-immigration-process,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/07/benefits-of-a-living-trust/,/blog/benefits-of-a-living-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/07/daca-faces-senate-hearing-and-lawsuit/,/blog/daca-faces-senate-hearing-and-lawsuit,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/07/selecting-an-estate-administrator/,/blog/selecting-an-estate-administrator,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/07/three-estate-planning-myths/,/blog/three-estate-planning-myths,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/08/how-to-tackle-your-immigration-legal-issue/,/blog/how-to-tackle-your-immigration-legal-issue,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/08/what-will-you-think-about-as-you-craft-an-estate-plan/,/blog/what-will-you-think-about-as-you-craft-an-estate-plan,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/09/a-daca-update/,/blog/a-daca-update,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/09/learning-about-senior-healthcare-options/,/blog/learning-about-senior-healthcare-options,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/09/more-information-on-senior-healthcare-options/,/blog/more-information-on-senior-healthcare-options,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/09/the-4-grounds-for-challenging-a-will/,/blog/the-4-grounds-for-challenging-a-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/09/what-is-a-fiance-visa/,/blog/what-is-a-fiance-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/09/who-can-seek-a-provisional-unlawful-presence-waiver/,/blog/who-can-seek-a-provisional-unlawful-presence-waiver,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/10/a-look-at-the-fiancee-visa/,/blog/a-look-at-the-fiancee-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/10/immigration-affidavits-of-support-and-sponsor-responsibilities/,/blog/immigration-affidavits-of-support-and-sponsor-responsibilities,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/10/the-formal-administration-process-in-florida/,/blog/the-formal-administration-process-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/10/understanding-ancillary-probate-in-florida/,/blog/understanding-ancillary-probate-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/10/what-are-the-responsibilities-of-personal-representative/,/blog/what-are-the-responsibilities-of-personal-representative,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/10/who-can-serve-as-a-personal-representative-in-probate/,/blog/who-can-serve-as-a-personal-representative-in-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/11/how-to-obtain-an-e2-visa/,/blog/how-to-obtain-an-e2-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/11/immigration-protections-are-available-to-abuse-victims/,/blog/immigration-protections-are-available-to-abuse-victims,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/11/the-abcs-of-a-successful-will-contest-in-florida/,/blog/the-abcs-of-a-successful-will-contest-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/11/the-many-steps-to-obtaining-a-k-1-visa/,/blog/the-many-steps-to-obtaining-a-k-1-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/11/what-are-the-fiance-visa-requirements/,/blog/what-are-the-fiance-visa-requirements,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/11/will-contests-arent-the-only-reason-for-estate-litigation/,/blog/will-contests-arent-the-only-reason-for-estate-litigation,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/12/florida-powers-of-attorney-superpowers-explained/,/blog/florida-powers-of-attorney-superpowers-explained,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2021/12/probate-can-i-name-a-non-resident-as-my-personal-representative/,/blog/probate-can-i-name-a-non-resident-as-my-personal-representative,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/01/appeals-from-adverse-immigration-decisions/,/blog/appeals-from-adverse-immigration-decisions,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/01/obtaining-a-temporary-work-visa/,/blog/obtaining-a-temporary-work-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/01/the-basics-of-family-based-immigration/,/blog/the-basics-of-family-based-immigration,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/01/what-exactly-does-a-personal-representative-do/,/blog/what-exactly-does-a-personal-representative-do,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/02/becoming-a-u-s-citizen-through-naturalization/,/blog/becoming-a-u-s-citizen-through-naturalization,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/02/estate-executors-may-face-lawsuits-for-breaching-duties/,/blog/estate-executors-may-face-lawsuits-for-breaching-duties,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/02/on-what-grounds-can-you-dispute-a-loved-ones-will/,/blog/on-what-grounds-can-you-dispute-a-loved-ones-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/02/permanent-residents-may-be-eligible-for-naturalization-after-five-years/,/blog/permanent-residents-may-be-eligible-for-naturalization-after-five-years,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/02/trusts-and-wills-can-i-include-a-no-contest-clause/,/blog/trusts-and-wills-can-i-include-a-no-contest-clause,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/02/what-is-a-request-for-evidence/,/blog/what-is-a-request-for-evidence,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/03/can-a-minor-child-inherit-or-be-awarded-a-large-sum-of-money/,/blog/can-a-minor-child-inherit-or-be-awarded-a-large-sum-of-money,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/03/defeating-a-claim-of-undue-influence-in-the-making-of-a-will/,/blog/defeating-a-claim-of-undue-influence-in-the-making-of-a-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/03/do-i-need-a-re-entry-permit-if-im-travelling-abroad/,/blog/do-i-need-a-re-entry-permit-if-im-travelling-abroad,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/03/temporary-protected-status-for-ukrainians/,/blog/temporary-protected-status-for-ukrainians,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/04/guardianship-bill-gives-additional-power-to-judges-and-guardians/,/blog/guardianship-bill-gives-additional-power-to-judges-and-guardians,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/04/who-can-qualify-for-a-e-2-visa/,/blog/who-can-qualify-for-a-e-2-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/05/estate-administration-and-taxes/,/blog/estate-administration-and-taxes,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/05/government-updates-stem-visa-requirements/,/blog/government-updates-stem-visa-requirements,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/05/how-a-vawa-self-petition-protects-abuse-victims/,/blog/how-a-vawa-self-petition-protects-abuse-victims,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/05/immigrant-influence-formed-tampa-years-ago/,/blog/immigrant-influence-formed-tampa-years-ago,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/05/slip-and-fall-accidents-among-the-elderly-population/,/blog/slip-and-fall-accidents-among-the-elderly-population,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/05/understanding-probate-after-a-person-is-gone/,/blog/understanding-probate-after-a-person-is-gone,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/06/how-do-i-select-a-personal-representative-for-my-will/,/blog/how-do-i-select-a-personal-representative-for-my-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/06/requirements-for-a-fiance-visa/,/blog/requirements-for-a-fiance-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/06/what-do-i-need-to-do-after-i-get-my-permanent-green-card/,/blog/what-do-i-need-to-do-after-i-get-my-permanent-green-card,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/06/what-happens-to-unclaimed-estate-property/,/blog/what-happens-to-unclaimed-estate-property,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/07/as-an-immigrant-you-have-rights-when-being-pulled-over/,/blog/as-an-immigrant-you-have-rights-when-being-pulled-over,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/07/what-if-my-online-will-did-not-include-a-guardian/,/blog/what-if-my-online-will-did-not-include-a-guardian,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/08/creating-a-will-that-protects-your-wishes-and-property/,/blog/creating-a-will-that-protects-your-wishes-and-property,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/08/employment-based-green-cards/,/blog/employment-based-green-cards,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/08/green-card-holders-and-re-entry-permits/,/blog/green-card-holders-and-re-entry-permits,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/08/should-trusts-be-a-part-of-your-estate-plan/,/blog/should-trusts-be-a-part-of-your-estate-plan,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/08/spouses-given-preference-as-personal-representatives/,/blog/spouses-given-preference-as-personal-representatives,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/08/understanding-power-of-attorney-documents/,/blog/understanding-power-of-attorney-documents,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/09/an-introduction-to-k-1-the-fiance-visa/,/blog/an-introduction-to-k-1-the-fiance-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/09/can-florida-poas-get-superpowers/,/blog/can-florida-poas-get-superpowers,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/09/for-a-trust-can-i-name-more-than-one-trustee/,/blog/for-a-trust-can-i-name-more-than-one-trustee,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/09/how-do-i-choose-a-trustee-for-a-trust/,/blog/how-do-i-choose-a-trustee-for-a-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/09/how-do-i-obtain-a-waiver-of-inadmissibility/,/blog/how-do-i-obtain-a-waiver-of-inadmissibility,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/09/understanding-the-i-601a-provisional-waiver/,/blog/understanding-the-i-601a-provisional-waiver,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/10/if-you-just-created-a-trust-dont-forget-to-fund-it/,/blog/if-you-just-created-a-trust-dont-forget-to-fund-it,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/10/what-will-happen-if-a-deceased-person-leaves-no-will/,/blog/what-will-happen-if-a-deceased-person-leaves-no-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/11/can-i-share-my-passport/,/blog/can-i-share-my-passport,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/11/part-1-violence-against-womens-act-requirements-for-immigrants/,/blog/part-1-violence-against-womens-act-requirements-for-immigrants,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/11/part-2-violence-against-womens-act-requirements-for-immigrants/,/blog/part-2-violence-against-womens-act-requirements-for-immigrants,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/11/probate-lady-bird-deeds/,/blog/probate-lady-bird-deeds,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/11/provisional-unlawful-presence-waivers-am-i-eligible-or-not/,/blog/provisional-unlawful-presence-waivers-am-i-eligible-or-not,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/11/when-are-personal-representatives-qualified-in-florida/,/blog/when-are-personal-representatives-qualified-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/12/bringing-your-fiance-to-the-united-states-and-obtaining-a-green-card/,/blog/bringing-your-fiance-to-the-united-states-and-obtaining-a-green-card,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/12/handling-probate-proceedings-in-florida/,/blog/handling-probate-proceedings-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/12/understanding-your-right-to-seek-asylum/,/blog/understanding-your-right-to-seek-asylum,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2022/12/what-is-a-preneed-guardian/,/blog/what-is-a-preneed-guardian,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/01/can-i-still-get-a-green-card-if-my-spouse-passes-away/,/blog/can-i-still-get-a-green-card-if-my-spouse-passes-away,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/01/floridas-elective-share-protects-spouses-from-being-disinherited/,/blog/floridas-elective-share-protects-spouses-from-being-disinherited,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/01/obtaining-green-cards-through-family-members/,/blog/obtaining-green-cards-through-family-members,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/01/what-can-i-put-into-a-trust/,/blog/what-can-i-put-into-a-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/01/why-was-my-visa-denied/,/blog/why-was-my-visa-denied,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/02/choosing-an-executor-for-your-estate-in-tampa/,/blog/choosing-an-executor-for-your-estate-in-tampa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/02/the-importance-of-estate-planning/,/blog/the-importance-of-estate-planning,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/02/what-are-the-steps-to-become-a-naturalized-citizen/,/blog/what-are-the-steps-to-become-a-naturalized-citizen,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/02/what-can-i-do-if-i-lose-my-green-card/,/blog/what-can-i-do-if-i-lose-my-green-card,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/02/what-is-a-living-will-and-why-do-you-need-one/,/blog/what-is-a-living-will-and-why-do-you-need-one,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/03/formal-and-summary-probate-administration/,/blog/formal-and-summary-probate-administration,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/03/know-the-time-limits-to-object-after-notice-of-administration/,/blog/know-the-time-limits-to-object-after-notice-of-administration,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/03/must-i-speak-english-when-filing-for-naturalization/,/blog/must-i-speak-english-when-filing-for-naturalization,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/03/what-happens-if-my-i-751-is-filed-late/,/blog/what-happens-if-my-i-751-is-filed-late,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/03/what-is-funding-a-trust/,/blog/what-is-funding-a-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/03/when-can-you-receive-a-provisional-unlawful-presence-waiver/,/blog/when-can-you-receive-a-provisional-unlawful-presence-waiver,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/04/avoiding-disputes-over-your-will/,/blog/avoiding-disputes-over-your-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/04/how-do-i-select-a-trustee-for-my-trust/,/blog/how-do-i-select-a-trustee-for-my-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/04/requirements-for-a-fiance-visa-2/,/blog/requirements-for-a-fiance-visa-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/04/what-is-a-lady-bird-deed/,/blog/what-is-a-lady-bird-deed,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/05/can-i-choose-who-i-want-as-my-guardian-while-im-still-competent/,/blog/can-i-choose-who-i-want-as-my-guardian-while-im-still-competent,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/05/creating-a-land-trust-in-florida/,/blog/creating-a-land-trust-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/05/naturalization-eligibility-and-process/,/blog/naturalization-eligibility-and-process,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/05/probate-asset-inventory-and-distribution/,/blog/probate-asset-inventory-and-distribution,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/05/requirements-for-a-fiance-visa-3/,/blog/requirements-for-a-fiance-visa-3,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/05/understanding-conditional-permanent-residence/,/blog/understanding-conditional-permanent-residence,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/06/an-overview-of-ancillary-probate/,/blog/an-overview-of-ancillary-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/06/do-i-need-an-employment-authorization-document-to-work/,/blog/do-i-need-an-employment-authorization-document-to-work,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/06/how-extensive-is-a-health-care-surrogates-authority/,/blog/how-extensive-is-a-health-care-surrogates-authority,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/07/challenging-the-validity-of-a-will-in-florida/,/blog/challenging-the-validity-of-a-will-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/07/florida-bans-drivers-licenses-issued-to-illegal-immigrants-by-other-states/,/blog/florida-bans-drivers-licenses-issued-to-illegal-immigrants-by-other-states,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/07/major-changes-coming-july-1-under-new-immigration-laws/,/blog/major-changes-coming-july-1-under-new-immigration-laws,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/07/obtaining-a-waiver-of-inadmissibility/,/blog/obtaining-a-waiver-of-inadmissibility,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/07/what-is-a-living-will/,/blog/what-is-a-living-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/08/can-someone-living-outside-of-florida-act-as-a-personal-representative/,/blog/can-someone-living-outside-of-florida-act-as-a-personal-representative,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/08/pre-need-guardian-declarations-and-estate-planning/,/blog/pre-need-guardian-declarations-and-estate-planning,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/08/what-is-an-e-2-visa/,/blog/what-is-an-e-2-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/08/why-would-i-consider-using-a-trust-instead-of-a-will/,/blog/why-would-i-consider-using-a-trust-instead-of-a-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/09/permanent-residency-through-marriage-or-investment/,/blog/permanent-residency-through-marriage-or-investment,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/09/preventing-will-disputes-between-siblings/,/blog/preventing-will-disputes-between-siblings,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/09/remember-an-estate-plan-as-part-of-your-financial-goals/,/blog/remember-an-estate-plan-as-part-of-your-financial-goals,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/09/what-is-a-lady-bird-deed-2/,/blog/what-is-a-lady-bird-deed-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/10/dont-get-bogged-down-with-estate-planning-misconceptions/,/blog/dont-get-bogged-down-with-estate-planning-misconceptions,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/10/what-type-of-visa-do-you-need-for-your-foreign-citizen-fiance/,/blog/what-type-of-visa-do-you-need-for-your-foreign-citizen-fiance,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/11/applying-for-lawful-permanent-residence-under-vawa/,/blog/applying-for-lawful-permanent-residence-under-vawa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/11/considerations-when-choosing-a-personal-representative/,/blog/considerations-when-choosing-a-personal-representative,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/11/four-factors-when-administering-an-estate-with-foreign-assets/,/blog/four-factors-when-administering-an-estate-with-foreign-assets,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/11/is-a-criminal-conviction-threatening-your-immigration-status/,/blog/is-a-criminal-conviction-threatening-your-immigration-status,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/12/a-living-will-and-how-it-could-complete-your-estate-plan/,/blog/a-living-will-and-how-it-could-complete-your-estate-plan,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/12/a-lprs-path-to-citizenship-through-naturalization/,/blog/a-lprs-path-to-citizenship-through-naturalization,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/12/harsh-florida-immigration-law-disrupts-lives-of-immigrants/,/blog/harsh-florida-immigration-law-disrupts-lives-of-immigrants,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/12/how-a-trust-helps-your-assets-avoid-the-probate-process/,/blog/how-a-trust-helps-your-assets-avoid-the-probate-process,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/12/the-duties-of-a-personal-representative-in-a-florida-probate/,/blog/the-duties-of-a-personal-representative-in-a-florida-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2023/12/the-step-by-step-process-of-naturalization/,/blog/the-step-by-step-process-of-naturalization,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/01/applying-for-a-k-1-visa/,/blog/applying-for-a-k-1-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/01/can-i-get-citizenship-after-5-years-of-lawful-permanent-residency/,/blog/can-i-get-citizenship-after-5-years-of-lawful-permanent-residency,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/01/petitioning-for-guardianship-can-assist-your-loved-one/,/blog/petitioning-for-guardianship-can-assist-your-loved-one,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/01/whats-included-in-an-inventory-for-florida-probate/,/blog/whats-included-in-an-inventory-for-florida-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/02/five-employment-visa-preference-categories/,/blog/five-employment-visa-preference-categories,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/02/is-the-90-day-fiance-k-1-visa-real/,/blog/is-the-90-day-fiance-k-1-visa-real,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/02/should-you-use-an-incentive-trust-in-your-estate-plan/,/blog/should-you-use-an-incentive-trust-in-your-estate-plan,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/02/what-is-a-health-care-surrogate-in-florida/,/blog/what-is-a-health-care-surrogate-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/02/who-can-and-cannot-be-a-personal-representative-in-florida/,/blog/who-can-and-cannot-be-a-personal-representative-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/03/if-i-marry-a-foreign-single-parent-can-they-bring-the-kids/,/blog/if-i-marry-a-foreign-single-parent-can-they-bring-the-kids,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/03/minor-guardianships-and-restricted-depositories/,/blog/minor-guardianships-and-restricted-depositories,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/03/what-causes-delays-in-the-immigration-system/,/blog/what-causes-delays-in-the-immigration-system,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/03/what-is-included-in-a-probate-inventory/,/blog/what-is-included-in-a-probate-inventory,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/03/when-does-a-surrogate-take-over-health-care-decisions/,/blog/when-does-a-surrogate-take-over-health-care-decisions,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/04/deferred-action-and-eligibility-requirements/,/blog/deferred-action-and-eligibility-requirements,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/04/dont-make-these-mistakes-when-seeking-vawa-protections/,/blog/dont-make-these-mistakes-when-seeking-vawa-protections,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/04/what-can-a-special-needs-trust-cover-for-your-loved-one/,/blog/what-can-a-special-needs-trust-cover-for-your-loved-one,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/04/why-and-how-a-will-can-be-contested/,/blog/why-and-how-a-will-can-be-contested,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/05/do-you-need-a-living-will/,/blog/do-you-need-a-living-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/05/if-i-get-married-overseas-can-i-bring-my-spouse-home/,/blog/if-i-get-married-overseas-can-i-bring-my-spouse-home,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/05/if-my-marriage-is-a-sham-can-i-still-use-vawa/,/blog/if-my-marriage-is-a-sham-can-i-still-use-vawa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/05/what-documents-do-i-need-to-adjust-my-status/,/blog/what-documents-do-i-need-to-adjust-my-status,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/05/what-is-a-health-care-surrogate-and-what-do-they-do/,/blog/what-is-a-health-care-surrogate-and-what-do-they-do,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/05/what-is-a-personal-representative/,/blog/what-is-a-personal-representative,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/06/in-florida-how-long-do-i-have-to-be-an-lpr/,/blog/in-florida-how-long-do-i-have-to-be-an-lpr,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/06/is-a-living-will-the-same-thing-as-a-traditional-will-in-florida/,/blog/is-a-living-will-the-same-thing-as-a-traditional-will-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/06/preparing-for-your-marriage-based-green-card-interview/,/blog/preparing-for-your-marriage-based-green-card-interview,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/06/the-pros-and-cons-of-family-trustees/,/blog/the-pros-and-cons-of-family-trustees,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/07/can-you-reapply-if-your-family-based-visa-was-denied/,/blog/can-you-reapply-if-your-family-based-visa-was-denied,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/07/pre-need-guardian-talks-with-your-kids-can-be-vital/,/blog/pre-need-guardian-talks-with-your-kids-can-be-vital,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/07/what-are-the-rules-of-intestacy-in-florida/,/blog/what-are-the-rules-of-intestacy-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/07/what-is-anatomical-donation/,/blog/what-is-anatomical-donation,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/08/dhs-announces-new-immigration-process-promoting-family-unity/,/blog/dhs-announces-new-immigration-process-promoting-family-unity,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/08/new-dhs-program-introduces-streamlined-path-to-us-citizenship/,/blog/new-dhs-program-introduces-streamlined-path-to-us-citizenship,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/08/should-you-discuss-your-body-donation-plans-with-your-family/,/blog/should-you-discuss-your-body-donation-plans-with-your-family,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/08/which-assets-can-bypass-probate-in-florida/,/blog/which-assets-can-bypass-probate-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/09/7-essential-qualities-of-an-effective-health-care-surrogate/,/blog/7-essential-qualities-of-an-effective-health-care-surrogate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/09/is-a-lady-bird-deed-right-for-you/,/blog/is-a-lady-bird-deed-right-for-you,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/09/the-role-of-guardian-advocates-in-mental-health-treatment/,/blog/the-role-of-guardian-advocates-in-mental-health-treatment,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/09/whats-slowing-down-your-loved-ones-estate-settlement/,/blog/whats-slowing-down-your-loved-ones-estate-settlement,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/10/5-common-challenges-of-naturalization/,/blog/5-common-challenges-of-naturalization,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/10/can-you-name-more-than-one-personal-representative-in-a-florida-will/,/blog/can-you-name-more-than-one-personal-representative-in-a-florida-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/10/how-do-preneed-guardianship-and-power-of-attorney-differ/,/blog/how-do-preneed-guardianship-and-power-of-attorney-differ,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/10/how-long-does-it-take-to-process-a-k1-visa/,/blog/how-long-does-it-take-to-process-a-k1-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/10/how-to-avoid-work-interruption-due-to-ead-renewal-delay/,/blog/how-to-avoid-work-interruption-due-to-ead-renewal-delay,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/10/uscis-updates-guidelines-for-eb-1-visa-applicants/,/blog/uscis-updates-guidelines-for-eb-1-visa-applicants,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/11/notice-of-trust-and-the-importance-of-filing-with-the-court/,/blog/notice-of-trust-and-the-importance-of-filing-with-the-court,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/11/what-does-it-mean-to-fund-a-trust/,/blog/what-does-it-mean-to-fund-a-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/11/what-to-expect-from-your-uscis-marriage-interview/,/blog/what-to-expect-from-your-uscis-marriage-interview,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/11/when-can-you-challenge-the-validity-of-a-will/,/blog/when-can-you-challenge-the-validity-of-a-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/12/4-common-mistakes-lprs-should-avoid-on-the-path-to-citizenship/,/blog/4-common-mistakes-lprs-should-avoid-on-the-path-to-citizenship,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/12/delays-in-the-immigration-process-what-non-citizens-need-to-know/,/blog/delays-in-the-immigration-process-what-non-citizens-need-to-know,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/12/what-are-your-options-if-your-green-card-renewal-is-denied/,/blog/what-are-your-options-if-your-green-card-renewal-is-denied,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2024/12/when-can-a-health-care-surrogate-decide-for-a-principal/,/blog/when-can-a-health-care-surrogate-decide-for-a-principal,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/01/are-heirs-and-beneficiaries-the-same-in-florida-law/,/blog/are-heirs-and-beneficiaries-the-same-in-florida-law,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/01/the-timing-of-probate-in-florida-what-you-need-to-know/,/blog/the-timing-of-probate-in-florida-what-you-need-to-know,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/01/what-non-english-speakers-must-know-about-the-uscis-language-test/,/blog/what-non-english-speakers-must-know-about-the-uscis-language-test,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/01/why-should-you-consider-creating-a-living-will/,/blog/why-should-you-consider-creating-a-living-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/02/how-to-obtain-an-e2-visa-2/,/blog/how-to-obtain-an-e2-visa-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/02/how-to-prepare-for-your-citizenship-interview/,/blog/how-to-prepare-for-your-citizenship-interview,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/02/what-are-the-different-types-of-guardianships-in-florida/,/blog/what-are-the-different-types-of-guardianships-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/02/when-should-you-appoint-a-healthcare-surrogate/,/blog/when-should-you-appoint-a-healthcare-surrogate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/03/5-things-to-consider-when-choosing-a-trustee-for-a-florida-trust/,/blog/5-things-to-consider-when-choosing-a-trustee-for-a-florida-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/03/can-you-travel-abroad-with-a-family-based-green-card-application/,/blog/can-you-travel-abroad-with-a-family-based-green-card-application,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/03/securing-your-legacy-why-trusts-and-wills-matter/,/blog/securing-your-legacy-why-trusts-and-wills-matter,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/03/what-is-a-probate-inventory-and-why-is-it-important/,/blog/what-is-a-probate-inventory-and-why-is-it-important,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/04/how-do-you-prove-a-legitimate-relationship-for-a-k-1-visa/,/blog/how-do-you-prove-a-legitimate-relationship-for-a-k-1-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/04/what-is-preneed-guardianship-and-why-would-you-need-one/,/blog/what-is-preneed-guardianship-and-why-would-you-need-one,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/04/what-is-summary-administration-in-florida-probate/,/blog/what-is-summary-administration-in-florida-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/04/whats-the-difference-between-a-living-will-and-a-last-will/,/blog/whats-the-difference-between-a-living-will-and-a-last-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/05/can-tampa-homeowners-use-a-lady-bird-deed-to-skip-probate/,/blog/can-tampa-homeowners-use-a-lady-bird-deed-to-skip-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/05/common-delays-in-the-family-immigration-process/,/blog/common-delays-in-the-family-immigration-process,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/05/what-documents-support-a-fiance-visa/,/blog/what-documents-support-a-fiance-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/05/what-is-a-spendthrift-clause/,/blog/what-is-a-spendthrift-clause,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/05/what-is-the-i-601a-waiver/,/blog/what-is-the-i-601a-waiver,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/05/who-should-you-choose-as-your-personal-representative/,/blog/who-should-you-choose-as-your-personal-representative,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/06/consider-these-four-methods-of-funding-a-living-trust/,/blog/consider-these-four-methods-of-funding-a-living-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/06/how-can-you-prove-a-genuine-marriage/,/blog/how-can-you-prove-a-genuine-marriage,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/06/important-g-325r-requirements-for-immigrants/,/blog/important-g-325r-requirements-for-immigrants,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/06/what-to-do-if-your-ead-is-delayed-in-florida/,/blog/what-to-do-if-your-ead-is-delayed-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/07/3-family-members-who-may-need-a-guardian-to-be-appointed-for-them/,/blog/3-family-members-who-may-need-a-guardian-to-be-appointed-for-them,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/07/after-5-years-why-your-citizenship-application-may-be-denied/,/blog/after-5-years-why-your-citizenship-application-may-be-denied,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/07/different-types-of-family-based-immigration-visas/,/blog/different-types-of-family-based-immigration-visas,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/07/what-happens-if-a-beneficiary-dies-during-florida-probate/,/blog/what-happens-if-a-beneficiary-dies-during-florida-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/08/can-a-will-avoid-probate-in-florida/,/blog/can-a-will-avoid-probate-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/08/how-a-lady-bird-deed-protects-your-home-from-medicaid-recovery/,/blog/how-a-lady-bird-deed-protects-your-home-from-medicaid-recovery,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/08/the-importance-of-an-estate-plan/,/blog/the-importance-of-an-estate-plan,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/08/what-is-a-provisional-unlawful-presence-waiver/,/blog/what-is-a-provisional-unlawful-presence-waiver,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/09/do-you-qualify-for-vawa-protection/,/blog/do-you-qualify-for-vawa-protection,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/09/how-do-you-handle-a-request-for-evidence/,/blog/how-do-you-handle-a-request-for-evidence,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/09/the-impact-of-naturalization-on-family-immigration/,/blog/the-impact-of-naturalization-on-family-immigration,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/09/what-happens-after-an-immigrant-fails-the-naturalization-tests/,/blog/what-happens-after-an-immigrant-fails-the-naturalization-tests,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/10/3-things-to-consider-before-contesting-a-will/,/blog/3-things-to-consider-before-contesting-a-will,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/10/can-a-daca-recipient-travel-outside-the-u-s/,/blog/can-a-daca-recipient-travel-outside-the-u-s,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/10/can-probate-be-skipped-for-small-estates-in-florida/,/blog/can-probate-be-skipped-for-small-estates-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/10/how-can-i-replace-my-naturalization-certificate/,/blog/how-can-i-replace-my-naturalization-certificate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/10/what-changes-are-underway-for-the-naturalization-process/,/blog/what-changes-are-underway-for-the-naturalization-process,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/10/what-is-the-role-of-moral-turpitude-in-immigration/,/blog/what-is-the-role-of-moral-turpitude-in-immigration,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/11/can-someone-living-out-of-state-administer-a-florida-estate/,/blog/can-someone-living-out-of-state-administer-a-florida-estate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/11/common-lines-of-questioning-at-a-green-card-marriage-interview/,/blog/common-lines-of-questioning-at-a-green-card-marriage-interview,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/11/who-is-responsible-for-debts-during-probate/,/blog/who-is-responsible-for-debts-during-probate,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/11/who-may-be-eligible-for-a-k-1-fiance-visa/,/blog/who-may-be-eligible-for-a-k-1-fiance-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/12/funding-a-trust-for-the-benefit-of-minor-children/,/blog/funding-a-trust-for-the-benefit-of-minor-children,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/12/what-are-the-test-requirements-for-naturalized-citizenship/,/blog/what-are-the-test-requirements-for-naturalized-citizenship,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/12/why-marriage-alone-doesnt-guarantee-citizenship/,/blog/why-marriage-alone-doesnt-guarantee-citizenship,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2025/12/why-might-discussing-your-advance-health-care-directive-be-wise/,/blog/why-might-discussing-your-advance-health-care-directive-be-wise,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/01/can-someone-challenge-a-will-because-division-was-not-equal/,/blog/can-someone-challenge-a-will-because-division-was-not-equal,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/01/is-a-will-reading-necessary-during-estate-administration/,/blog/is-a-will-reading-necessary-during-estate-administration,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/01/what-is-green-card-marriage-fraud/,/blog/what-is-green-card-marriage-fraud,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/02/trusts-and-blended-families/,/blog/trusts-and-blended-families,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/02/what-happens-when-you-dont-have-an-estate-plan/,/blog/what-happens-when-you-dont-have-an-estate-plan,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/02/when-are-immigrants-at-risk-of-denaturalization/,/blog/when-are-immigrants-at-risk-of-denaturalization,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/02/which-immigrants-receive-conditional-green-cards/,/blog/which-immigrants-receive-conditional-green-cards,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/03/3-benefits-of-drafting-a-lady-bird-deed-for-a-florida-residence/,/blog/3-benefits-of-drafting-a-lady-bird-deed-for-a-florida-residence,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/03/are-you-ready-for-your-stokes-interview/,/blog/are-you-ready-for-your-stokes-interview,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/03/choosing-a-guardian-for-your-minor-child-when-estate-planning/,/blog/choosing-a-guardian-for-your-minor-child-when-estate-planning,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/03/selecting-a-successor-trustee-for-a-living-revocable-trust/,/blog/selecting-a-successor-trustee-for-a-living-revocable-trust,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/03/us-stops-immigrant-visas-for-75-nations/,/blog/us-stops-immigrant-visas-for-75-nations,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/04/3-mistakes-that-can-jeopardize-your-k-1-visa/,/blog/3-mistakes-that-can-jeopardize-your-k-1-visa,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/04/can-you-travel-outside-of-the-u-s-while-on-a-green-card/,/blog/can-you-travel-outside-of-the-u-s-while-on-a-green-card,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/04/conditional-approval-of-a-marriage-green-card/,/blog/conditional-approval-of-a-marriage-green-card,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/04/how-long-until-you-can-become-a-u-s-citizen/,/blog/how-long-until-you-can-become-a-u-s-citizen,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/04/skipping-a-living-will-can-put-your-family-in-a-tough-spot/,/blog/skipping-a-living-will-can-put-your-family-in-a-tough-spot,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/04/the-importance-of-estate-planning-2/,/blog/the-importance-of-estate-planning-2,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/05/3-things-that-could-jeopardize-your-green-card-renewal/,/blog/3-things-that-could-jeopardize-your-green-card-renewal,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/05/the-importance-of-regular-estate-plan-reviews/,/blog/the-importance-of-regular-estate-plan-reviews,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/06/can-you-study-for-your-green-card-marriage-interview/,/blog/can-you-study-for-your-green-card-marriage-interview,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/06/estate-planning-for-floridians-with-non-citizen-spouses/,/blog/estate-planning-for-floridians-with-non-citizen-spouses,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/06/the-green-card-application-process-has-just-dramatically-changed/,/blog/the-green-card-application-process-has-just-dramatically-changed,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/06/what-is-an-anatomical-gift-declaration/,/blog/what-is-an-anatomical-gift-declaration,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/06/will-you-risk-deportation-if-you-get-divorced/,/blog/will-you-risk-deportation-if-you-get-divorced,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/07/helping-foreign-siblings-to-secure-green-cards/,/blog/helping-foreign-siblings-to-secure-green-cards,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/07/should-my-fiancee-come-to-the-usa-to-get-a-green-card/,/blog/should-my-fiancee-come-to-the-usa-to-get-a-green-card,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/07/the-test-requirements-for-naturalization/,/blog/the-test-requirements-for-naturalization,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/07/who-can-serve-as-a-personal-representative-in-florida/,/blog/who-can-serve-as-a-personal-representative-in-florida,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/08/what-to-know-when-naming-a-guardian-for-your-child/,/blog/what-to-know-when-naming-a-guardian-for-your-child,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/08/which-life-changes-may-require-estate-plan-changes/,/blog/which-life-changes-may-require-estate-plan-changes,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/09/choosing-a-health-care-surrogate-when-estate-planning/,/blog/choosing-a-health-care-surrogate-when-estate-planning,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/09/do-you-need-witnesses-when-establishing-a-power-of-attorney/,/blog/do-you-need-witnesses-when-establishing-a-power-of-attorney,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/09/uscis-policy-change-on-incomplete-immigration-benefit-applications/,/blog/uscis-policy-change-on-incomplete-immigration-benefit-applications,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/09/visa-processing-temporarily-suspended/,/blog/visa-processing-temporarily-suspended,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/2026/09/what-type-of-trust-should-you-consider-for-your-estate-plan/,/blog/what-type-of-trust-should-you-consider-for-your-estate-plan,DIFFERENT_PATH,post moved; redirect 308>308
+/blog/category/estate-administration/,/blog?category=Estate%20Administration,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/estate-planning/,/blog?category=Estate%20Planning,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/estate-planning/anatomical-gift-donation/,/blog?category=Anatomical%20Gift%20Donation,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/estate-planning/health-care-surrogate/,/blog?category=Health%20Care%20Surrogate,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/estate-planning/living-will/,/blog?category=Living%20Will,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/estate-planning/powers-of-attorney/,/blog?category=Powers%20Of%20Attorney,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/estate-planning/pre-need-guardian/,/blog?category=Pre-Need%20Guardian,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/estate-planning/trusts/,/blog?category=Trusts,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/estate-planning/wills/,/blog?category=Wills,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/guardianships/,/blog?category=Guardianships,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/guardianships/minor-guardianships/,/blog?category=Minor%20Guardianships,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/immigration/,/blog?category=Immigration,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/immigration/citizenship/,/blog?category=Citizenship,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/immigration/employment-authorization-cards/,/blog?category=Employment%20Authorization%20Cards,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/immigration/family-based-visas/,/blog?category=Family%20Based%20Visas,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/immigration/removal-proceedings/,/blog?category=Removal%20Proceedings,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/naturalization/,/blog?category=Naturalization,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/probate/,/blog?category=Probate,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/probate/personal-representative/,/blog?category=Who%20Qualifies%20As%20A%20Personal%20Representative,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/probate/probate-process/,/blog?category=Probate%20Process,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/probate/will-contests/,/blog?category=Will%20Contests,DIFFERENT_PATH,category now a query string; redirect 308>308
+/blog/category/trust-administration/,/blog?category=Trust%20Administration,DIFFERENT_PATH,category now a query string; redirect 308>308
+/,/,MATCH,
+/about/,/about,MATCH,trailing slash removed (308)
+/about/our-team/,/about/our-team,MATCH,trailing slash removed (308)
+/attorney/waisman-cynthia-i/,/attorney/waisman-cynthia-i,MATCH,trailing slash removed (308)
+/blog/,/blog,MATCH,trailing slash removed (308)
+/contact/,/contact,MATCH,trailing slash removed (308)
+/disclaimer/,/disclaimer,MATCH,trailing slash removed (308)
+/estate-planning-services/,/estate-planning-services,MATCH,trailing slash removed (308)
+/estate-planning-services/estate-planning-faq/,/estate-planning-services/estate-planning-faq,MATCH,trailing slash removed (308)
+/estate-planning-services/funding-administration-your-revocable-trust/,/estate-planning-services/funding-administration-your-revocable-trust,MATCH,trailing slash removed (308)
+/estate-planning-services/living-wills/,/estate-planning-services/living-wills,MATCH,trailing slash removed (308)
+/estate-planning-services/powers-of-attorney/,/estate-planning-services/powers-of-attorney,MATCH,trailing slash removed (308)
+/estate-planning-services/trusts/,/estate-planning-services/trusts,MATCH,trailing slash removed (308)
+/estate-planning-services/wills/,/estate-planning-services/wills,MATCH,trailing slash removed (308)
+/guardianship-services/,/guardianship-services,MATCH,trailing slash removed (308)
+/immigration-law-overview/,/immigration-law-overview,MATCH,trailing slash removed (308)
+/immigration-law-overview/abcs-naturalization-immigration-law/,/immigration-law-overview/abcs-naturalization-immigration-law,MATCH,trailing slash removed (308)
+/immigration-law-overview/citizenship-benefits-requirements/,/immigration-law-overview/citizenship-benefits-requirements,MATCH,trailing slash removed (308)
+/immigration-law-overview/conditional-resident-petitions/,/immigration-law-overview/conditional-resident-petitions,MATCH,trailing slash removed (308)
+/immigration-law-overview/consular-processing/,/immigration-law-overview/consular-processing,MATCH,trailing slash removed (308)
+/immigration-law-overview/deferred-action/,/immigration-law-overview/deferred-action,MATCH,trailing slash removed (308)
+/immigration-law-overview/e2-treaty-visas/,/immigration-law-overview/e2-treaty-visas,MATCH,trailing slash removed (308)
+/immigration-law-overview/family-based-visas/,/immigration-law-overview/family-based-visas,MATCH,trailing slash removed (308)
+/immigration-law-overview/fiance-visa/,/immigration-law-overview/fiance-visa,MATCH,trailing slash removed (308)
+/immigration-law-overview/green-card-renewal/,/immigration-law-overview/green-card-renewal,MATCH,trailing slash removed (308)
+/immigration-law-overview/green-cards/,/immigration-law-overview/green-cards,MATCH,trailing slash removed (308)
+/immigration-law-overview/marriage-based-green-cards/,/immigration-law-overview/marriage-based-green-cards,MATCH,trailing slash removed (308)
+/immigration-law-overview/naturalization-non-english-speaking-residents/,/immigration-law-overview/naturalization-non-english-speaking-residents,MATCH,trailing slash removed (308)
+/immigration-law-overview/requests-for-evidence/,/immigration-law-overview/requests-for-evidence,MATCH,trailing slash removed (308)
+/immigration-law-overview/responding-request-for-evidence/,/immigration-law-overview/responding-request-for-evidence,MATCH,trailing slash removed (308)
+/immigration-law-overview/travel-reentry-permits/,/immigration-law-overview/travel-reentry-permits,MATCH,trailing slash removed (308)
+/immigration-law-overview/vawa-green-cards/,/immigration-law-overview/vawa-green-cards,MATCH,trailing slash removed (308)
+/immigration-law-overview/visa-waiver-program/,/immigration-law-overview/visa-waiver-program,MATCH,trailing slash removed (308)
+/immigration-law-overview/waivers/,/immigration-law-overview/waivers,MATCH,trailing slash removed (308)
+/privacy/,/privacy,MATCH,trailing slash removed (308)
+/probate-administration/,/probate-administration,MATCH,trailing slash removed (308)
+/probate-administration/ancillary-probate/,/probate-administration/ancillary-probate,MATCH,trailing slash removed (308)
+/probate-administration/summary-administration/,/probate-administration/summary-administration,MATCH,trailing slash removed (308)
+/probate-administration/will-contests/,/probate-administration/will-contests,MATCH,trailing slash removed (308)
+/site-map/,/site-map,MATCH,trailing slash removed (308)
