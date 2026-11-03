@@ -1,10 +1,11 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
+import { blogListHref, categorySlug } from "@/lib/blogUrls";
 
 export interface SidebarCategoryItem {
   name: string;
+  /** URL slug. Empty for "All". */
+  slug: string;
   count: number;
 }
 
@@ -18,18 +19,17 @@ export interface SidebarRecentPost {
 
 interface BlogSidebarProps {
   activeCategory?: string;
-  onSelectCategory?: (category: string) => void;
+  /** Show the search box (a plain GET form to /blog?q=…). */
+  showSearch?: boolean;
   searchQuery?: string;
-  onSearchChange?: (query: string) => void;
   categories?: SidebarCategoryItem[];
   recentPosts?: SidebarRecentPost[];
 }
 
 export default function BlogSidebar({
   activeCategory = "All",
-  onSelectCategory,
+  showSearch = false,
   searchQuery = "",
-  onSearchChange,
   categories,
   recentPosts,
 }: BlogSidebarProps) {
@@ -39,7 +39,7 @@ export default function BlogSidebar({
   return (
     <aside className="w-full space-y-6 font-sans">
       {/* 1. Search Box Card */}
-      {onSearchChange && (
+      {showSearch && (
         <div className="bg-white p-5 sm:p-6 rounded-xl border border-gray-200/90 shadow-2xs">
           <div className="flex items-center gap-2 mb-3">
             <span className="w-5 h-[2px] bg-[#ECAB3C]" />
@@ -47,18 +47,22 @@ export default function BlogSidebar({
               SEARCH ARTICLES
             </h3>
           </div>
-          <div className="relative">
+          <form action="/blog" method="get" role="search" className="relative">
+            {activeCategory !== "All" && (
+              <input type="hidden" name="category" value={categorySlug(activeCategory)} />
+            )}
             <input
               type="text"
-              value={searchQuery}
-              onChange={(e) => onSearchChange(e.target.value)}
+              name="q"
+              defaultValue={searchQuery}
+              aria-label="Search articles"
               placeholder="Search legal topics..."
               className="w-full bg-[#fbfcfd] border border-gray-300 rounded-md py-2.5 pl-3.5 pr-10 text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#091D46] focus:ring-1 focus:ring-[#091D46] transition-all"
             />
             <span className="absolute right-3.5 top-2.5 text-[#091D46] text-sm pointer-events-none">
               🔍
             </span>
-          </div>
+          </form>
         </div>
       )}
 
@@ -95,26 +99,13 @@ export default function BlogSidebar({
 
             return (
               <li key={cat.name}>
-                {onSelectCategory ? (
-                  <button
-                    type="button"
-                    onClick={() => onSelectCategory(cat.name)}
-                    className={itemClasses}
-                  >
-                    {innerContent}
-                  </button>
-                ) : (
-                  <Link
-                    href={
-                      cat.name === "All"
-                        ? "/blog"
-                        : `/blog?category=${encodeURIComponent(cat.name)}`
-                    }
-                    className={itemClasses}
-                  >
-                    {innerContent}
-                  </Link>
-                )}
+                <Link
+                  href={blogListHref({ category: cat.slug })}
+                  aria-current={isSelected ? "page" : undefined}
+                  className={itemClasses}
+                >
+                  {innerContent}
+                </Link>
               </li>
             );
           })}

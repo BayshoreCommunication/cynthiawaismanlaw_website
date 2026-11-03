@@ -2,8 +2,18 @@
  * Blog data — served from local JSON (a one-time copy of the old WordPress
  * blog). Edit data/blog/posts.json to change or add articles.
  */
+import { cacheLife, cacheTag } from "next/cache";
 import postsData from "@/data/blog/posts.json";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo";
+import { POSTS_PER_PAGE, categorySlug, postInCategory } from "@/lib/blogUrls";
+
+export {
+  POSTS_PER_PAGE,
+  blogListHref,
+  categorySlug,
+  findCategory,
+  type BlogCategory,
+} from "@/lib/blogUrls";
 
 interface StoredPost {
   id: number;
@@ -30,6 +40,8 @@ export type BlogPostSummary = Omit<BlogPost, "content">;
 
 export interface BlogCategoryCount {
   name: string;
+  /** URL slug, e.g. "estate-planning". Empty for "All". */
+  slug: string;
   count: number;
 }
 
@@ -60,8 +72,7 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export function getAllPostSummaries(): BlogPostSummary[] {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  return allPosts.map(({ content, ...summary }) => summary);
+  return allPosts.map(toSummary);
 }
 
 export function getPostBySlug(slug: string): BlogPost | null {
@@ -97,8 +108,65 @@ export function computeCategoryCounts(
   });
 
   const sorted = Object.entries(countMap)
-    .map(([name, count]) => ({ name, count }))
+    .map(([name, count]) => ({ name, slug: categorySlug(name), count }))
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
-  return [{ name: "All", count: posts.length }, ...sorted];
+  return [{ name: "All", slug: "", count: posts.length }, ...sorted];
+}
+
+function toSummary({ content, ...summary }: BlogPost): BlogPostSummary {
+  void content;
+  return summary;
+}
+
+/**
+ * One page of the blog listing, filtered on the server. Only that page's
+ * posts are returned. Cached for an hour (like ISR revalidate = 3600).
+ */
+export async function getBlogListing({
+  categoryName,
+  q,
+  page,
+}: {
+  categoryName?: string;
+  q?: string;
+  page: number;
+}) {
+  "use cache";
+  cacheLife("hours");
+  cacheTag("blog");
+
+  const query = q?.toLowerCase();
+  const matching = allPosts.filter(
+    (post) =>
+      (!categoryName || postInCategory(post, categoryName)) &&
+      (!query ||
+        post.title.toLowerCase().includes(query) ||
+        post.excerpt.toLowerCase().includes(query))
+  );
+
+  const start = (page - 1) * POSTS_PER_PAGE;
+  return {
+    posts: matching.slice(start, start + POSTS_PER_PAGE).map(toSummary),
+    total: matching.length,
+    totalPages: Math.ceil(matching.length / POSTS_PER_PAGE),
+  };
+}
+
+/** Sidebar data: category counts and the 5 newest posts. Cached for an hour. */
+export async function getBlogSidebarData() {
+  "use cache";
+  cacheLife("hours");
+  cacheTag("blog");
+
+  return {
+    categories: computeCategoryCounts(allPosts),
+    recentPosts: allPosts.slice(0, 5).map((p) => ({
+      id: p.id,
+      title: p.title,
+      slug: p.slug,
+      date: p.date,
+      category: p.category,
+    })),
+  };
 }
