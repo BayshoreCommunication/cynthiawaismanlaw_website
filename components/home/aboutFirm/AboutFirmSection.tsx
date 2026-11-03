@@ -3,9 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import TypingTitle from "@/components/shared/TypingTitle";
 
-export default function AboutFirmSection() {
+interface AboutFirmSectionProps {
+    id?: string;
+}
+
+export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
     return (
         <section
+            id={id}
             className="relative w-full bg-cover bg-center bg-no-repeat overflow-hidden flex flex-col justify-end"
             style={{
                 backgroundImage: "url('/images/about-firm-bg-image.webp')",

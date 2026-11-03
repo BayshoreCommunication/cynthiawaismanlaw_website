@@ -140,26 +140,6 @@ export function NeedProbateLawyerSection() {
             </div>
           ))}
         </div>
-
-        {/* Bottom Banner Strip */}
-        <div className="mt-12 bg-[#091D46] rounded-[18px] p-6 sm:p-8 flex flex-wrap items-center justify-between gap-5 shadow-lg">
-          <a
-            href="tel:+18132796180"
-            className="flex items-center gap-3 text-[#ECAB3C] hover:text-white font-serif font-semibold text-xl sm:text-2xl transition-colors"
-          >
-            <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" />
-            </svg>
-            +1 (813) 279-6180
-          </a>
-          <a
-            href="#consult"
-            data-open-consultation
-            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-bold bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] border-2 border-[#ECAB3C] hover:border-[#dca034] transition-all duration-200 text-sm sm:text-base shadow-sm hover:-translate-y-0.5"
-          >
-            Schedule a Consultation
-          </a>
-        </div>
       </div>
     </section>
   );

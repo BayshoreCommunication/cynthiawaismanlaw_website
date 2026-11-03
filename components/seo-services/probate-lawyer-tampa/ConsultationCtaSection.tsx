@@ -63,7 +63,7 @@ export function ConsultationCtaSection() {
             </a>
 
             <Link
-              href="/contact"
+              href="#contact"
               data-open-consultation
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-base transition-all duration-200 shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
             >

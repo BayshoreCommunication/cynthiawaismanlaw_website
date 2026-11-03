@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
+import CallToSection from "@/components/home/callToSection/CallToSection";
+import AboutFirmSection from "@/components/home/aboutFirm/AboutFirmSection";
+import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 import {
   ProbateHero,
   WhatIsProbateSection,
@@ -14,7 +17,6 @@ import {
   AttorneyComparisonSection,
   BeneficiaryRightsSection,
   WhyChooseUsSection,
-  AttorneyBioSection,
   OfficesSection,
   ProbateFaqSection,
   ConsultationCtaSection,
@@ -99,6 +101,7 @@ export default function ProbateLawyerTampaPage() {
       <ProbateHero />
       <WhatIsProbateSection />
       <NeedProbateLawyerSection />
+      <CallToSection />
       <ProbateTypesSection />
       <TestimonialsProbateSection />
       <ProbateAssetsSection />
@@ -109,10 +112,11 @@ export default function ProbateLawyerTampaPage() {
       <AttorneyComparisonSection />
       <BeneficiaryRightsSection />
       <WhyChooseUsSection />
-      <AttorneyBioSection />
+      <AboutFirmSection id="attorney" />
       <OfficesSection />
       <ProbateFaqSection />
       <ConsultationCtaSection />
+      <ContactFirmSection />
       <MobileStickyBar />
     </main>
   );
