@@ -125,7 +125,7 @@ export function ProbateHero() {
             {/* Main Headline - Typing Animation Without Cursor */}
             <TypingTitle
               as="h1"
-              className="font-serif text-4xl sm:text-5xl md:text-[56px]  text-[#091D46] font-normal leading-[1.08] tracking-tight"
+              className="font-serif text-4xl sm:text-5xl md:text-[52px]  text-[#091D46] font-normal leading-[1.08] tracking-tight"
               text={["Settle Your Loved One’s Estate", "With Legal Guidance"]}
               speed={28}
               delay={100}
