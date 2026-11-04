@@ -1,18 +1,23 @@
 import React from "react";
 
 interface CallToSectionProps {
+    id?: string;
     title?: React.ReactNode;
     subtitle?: React.ReactNode;
     className?: string;
 }
 
 export default function CallToSection({
+    id,
     title = "Your legacy. Their future. Our focus.",
     subtitle = "An estate plan is about more than documents. It's about your family, your wishes, and what happens when you're no longer there to explain them.",
     className = "",
 }: CallToSectionProps = {}) {
     return (
-        <section className={`relative w-full bg-[#061533] overflow-hidden py-9 lg:py-10 text-white border-b border-[#091D46] ${className}`}>
+        <section
+            id={id}
+            className={`relative w-full bg-[#061533] overflow-hidden py-9 lg:py-10 text-white border-b border-[#091D46] ${className}`}
+        >
             {/* Subtle decorative foliage pattern on far left */}
             <div className="absolute left-0 top-0 bottom-0 w-44 pointer-events-none overflow-hidden opacity-10">
                 <svg
