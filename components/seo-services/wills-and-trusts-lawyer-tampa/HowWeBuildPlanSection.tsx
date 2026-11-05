@@ -1,6 +1,13 @@
 import React from "react";
+import Link from "next/link";
 
-const steps = [
+interface PlanStepItem {
+  number: string;
+  title: string;
+  description: React.ReactNode;
+}
+
+const steps: PlanStepItem[] = [
   {
     number: "01",
     title: "01. We review your family and assets",
@@ -22,8 +29,18 @@ const steps = [
   {
     number: "04",
     title: "04. We complete the signing",
-    description:
-      "Florida law sets formal signing and witnessing requirements for wills. Two witnesses sign in the required manner. A Florida notary completes the self proving affidavit when included in the plan.",
+    description: (
+      <>
+        Florida law sets formal signing and witnessing requirements for{" "}
+        <Link
+          href="/estate-planning-services/wills"
+          className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+        >
+          wills
+        </Link>
+        . Two witnesses sign in the required manner. A Florida notary completes the self proving affidavit when included in the plan.
+      </>
+    ),
   },
   {
     number: "05",

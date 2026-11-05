@@ -1,10 +1,27 @@
 import React from "react";
+import Link from "next/link";
 
-const documents = [
+interface DocumentItem {
+  title: string;
+  description: React.ReactNode;
+  icon: React.ReactNode;
+}
+
+const documents: DocumentItem[] = [
   {
     title: "Will can direct your probate estate",
-    description:
-      "Last Will and Testament sets out your wishes for assets passing through probate. It can name beneficiaries, nominate a guardian for minor children and name a personal representative for your estate. A will can also include a pour over provision for a revocable living trust. Florida law sets specific requirements for signing and witnessing a will. The testator signs the will and at least two attesting witnesses sign in the presence of the testator and each other. A self proving affidavit can also support the probate process. Florida Statutes §732.503 provides the procedure for making a will self proved.",
+    description: (
+      <>
+        Last Will and Testament sets out your wishes for assets passing through probate. It can name beneficiaries, nominate a guardian for minor children and name a{" "}
+        <Link
+          href="/probate-administration/executor-guidance"
+          className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+        >
+          personal representative
+        </Link>{" "}
+        for your estate. A will can also include a pour over provision for a revocable living trust. Florida law sets specific requirements for signing and witnessing a will. The testator signs the will and at least two attesting witnesses sign in the presence of the testator and each other. A self proving affidavit can also support the probate process. Florida Statutes §732.503 provides the procedure for making a will self proved.
+      </>
+    ),
     icon: (
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z M14 3v5h5 M9 13h6 M9 17h6" />
@@ -34,8 +51,18 @@ const documents = [
   },
   {
     title: "Health care documents guide medical decisions",
-    description:
-      "A Tampa estate plan can include a health care surrogate designation and living will. A health care surrogate designation names a person for health care decision making under the terms of the document. A living will record your instructions for certain end of life medical decisions. A HIPAA authorization can also help a designated person receive protected health information as allowed by the authorization. These documents address lifetime health care decisions. Your will and trust address separate estate planning needs.",
+    description: (
+      <>
+        A Tampa estate plan can include a health care surrogate designation and{" "}
+        <Link
+          href="/estate-planning-services/living-wills"
+          className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+        >
+          living will
+        </Link>
+        . A health care surrogate designation names a person for health care decision making under the terms of the document. A living will record your instructions for certain end of life medical decisions. A HIPAA authorization can also help a designated person receive protected health information as allowed by the authorization. These documents address lifetime health care decisions. Your will and trust address separate estate planning needs.
+      </>
+    ),
     icon: (
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />

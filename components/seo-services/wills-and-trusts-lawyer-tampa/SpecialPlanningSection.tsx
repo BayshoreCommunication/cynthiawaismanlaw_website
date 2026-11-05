@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const specialCards = [
   {
@@ -47,9 +48,15 @@ export function SpecialPlanningSection() {
             Special Estate Planning Can Protect Family Members and Future Decisions
           </h2>
           <p className="text-[1.05rem] text-[#586375] leading-relaxed m-0">
-            Some families need more than a basic will and revocable trust. The
-            right structure depends on the beneficiary, the asset and the type of
-            future management your family may need.
+            Some families need more than a basic will and{" "}
+            <Link
+              href="/estate-planning-services/funding-administration-your-revocable-trust"
+              className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+            >
+              revocable trust
+            </Link>
+            . The right structure depends on the beneficiary, the asset and the
+            type of future management your family may need.
           </p>
         </div>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function WillsAttorneyBioSection() {
   return (
@@ -45,7 +46,13 @@ export function WillsAttorneyBioSection() {
             </div>
 
             <p className="text-base sm:text-[1.05rem] text-[#586375] leading-relaxed mb-4">
-              Cynthia Waisman is the founding attorney of Cynthia I. Waisman,
+              <Link
+                href="/attorney/waisman-cynthia-i"
+                className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+              >
+                Cynthia Waisman
+              </Link>{" "}
+              is the founding attorney of Cynthia I. Waisman,
               P.A. She focuses on Florida wills, revocable living trusts,
               pour-over wills, Lady Bird deeds, trust funding, homestead
               planning, guardianship and probate. She has more than two decades

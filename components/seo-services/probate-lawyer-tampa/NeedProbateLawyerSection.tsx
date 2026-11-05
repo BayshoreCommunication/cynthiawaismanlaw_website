@@ -1,7 +1,15 @@
 import React from "react";
+import Link from "next/link";
+
+interface NeedProbateCard {
+  num: string;
+  title: string;
+  description: React.ReactNode;
+  icon: React.ReactNode;
+}
 
 export function NeedProbateLawyerSection() {
-  const cards = [
+  const cards: NeedProbateCard[] = [
     {
       num: "01",
       title: "There is a will to file",
@@ -16,8 +24,17 @@ export function NeedProbateLawyerSection() {
     {
       num: "02",
       title: "Estate includes a home or other real estate",
-      description:
-        "Real estate often requires careful review during probate. You cannot sell, transfer or refinance a Tampa home without a judge signing formal court orders. Florida homestead law gives certain spouses and minor children special protection. For example, Florida law limits the devise of homestead property when the owner leaves a spouse or minor child, subject to statutory rules and exceptions. We petition the court to clear the land title or determine homestead status.",
+      description: (
+        <>
+          <Link
+            href="/estate-planning-attorney-tampa"
+            className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+          >
+            Real estate
+          </Link>{" "}
+          often requires careful review during probate. You cannot sell, transfer or refinance a Tampa home without a judge signing formal court orders. Florida homestead law gives certain spouses and minor children special protection. For example, Florida law limits the devise of homestead property when the owner leaves a spouse or minor child, subject to statutory rules and exceptions. We petition the court to clear the land title or determine homestead status.
+        </>
+      ),
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
           <path d="M3 11l9-8 9 8 M5 10v10h14V10 M10 20v-6h4v6" />
@@ -38,8 +55,18 @@ export function NeedProbateLawyerSection() {
     {
       num: "04",
       title: "Decedent died without a will",
-      description:
-        "Florida uses intestate succession rules for an estate without a valid will and trust. The law determines the heirs entitled to the estate based on family relationship. The court also applies statutory preferences when appointing a personal representative. In an intestate estate, Florida law first gives preference to the surviving spouse. Next it prioritizes a person selected by a majority in interest of the heirs, followed by the heir nearest in degree. We identify legal heirs, calculate exact statutory shares and petition the court to appoint an eligible Personal Representative.",
+      description: (
+        <>
+          Florida uses intestate succession rules for an estate without a valid{" "}
+          <Link
+            href="/wills-and-trusts-lawyer-tampa"
+            className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+          >
+            will and trust
+          </Link>
+          . The law determines the heirs entitled to the estate based on family relationship. The court also applies statutory preferences when appointing a personal representative. In an intestate estate, Florida law first gives preference to the surviving spouse. Next it prioritizes a person selected by a majority in interest of the heirs, followed by the heir nearest in degree. We identify legal heirs, calculate exact statutory shares and petition the court to appoint an eligible Personal Representative.
+        </>
+      ),
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 3v18 M6 21h12 M5 7h14 M5 7l-3 7a3 3 0 0 0 6 0z M19 7l-3 7a3 3 0 0 0 6 0z" />

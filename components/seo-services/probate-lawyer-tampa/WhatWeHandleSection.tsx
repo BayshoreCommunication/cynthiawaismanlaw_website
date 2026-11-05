@@ -1,7 +1,14 @@
 import React from "react";
+import Link from "next/link";
+
+interface WhatWeHandleItem {
+  title: string;
+  description: React.ReactNode;
+  icon: React.ReactNode;
+}
 
 export function WhatWeHandleSection() {
-  const items = [
+  const items: WhatWeHandleItem[] = [
     {
       title: "Probate petition and court filings",
       description:
@@ -54,8 +61,18 @@ export function WhatWeHandleSection() {
     },
     {
       title: "Beneficiary distribution",
-      description:
-        "Distribution begins after the estate meets its legal obligations and satisfies the requirements for distribution. We calculate final inheritance shares, draft distribution schedules and collect signed receipts before transferring assets to beneficiaries.",
+      description: (
+        <>
+          Distribution begins after the estate meets its legal obligations and satisfies the requirements for distribution. We calculate final inheritance shares, draft distribution schedules and collect signed receipts before{" "}
+          <Link
+            href="/probate-administration/transfer-of-assets"
+            className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+          >
+            transferring assets
+          </Link>{" "}
+          to beneficiaries.
+        </>
+      ),
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M20 6L9 17l-5-5" />
@@ -74,8 +91,18 @@ export function WhatWeHandleSection() {
     },
     {
       title: "Contested probate and will disputes",
-      description:
-        "A contested probate case may involve a challenge to the will, disagreement over a personal representative, beneficiary disputes, asset ownership issues or another court matter. Attorney Cynthia represents clients in court when disputes arise regarding will validity, undue influence or asset distribution.",
+      description: (
+        <>
+          A contested probate case may involve a challenge to the will, disagreement over a personal representative, beneficiary disputes, asset ownership issues or another court matter. Attorney Cynthia represents clients in court when disputes arise regarding{" "}
+          <Link
+            href="/probate-administration/will-validation"
+            className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+          >
+            will validity
+          </Link>
+          , undue influence or asset distribution.
+        </>
+      ),
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M12 3v18 M6 21h12 M5 7h14 M5 7l-3 7a3 3 0 0 0 6 0z M19 7l-3 7a3 3 0 0 0 6 0z" />

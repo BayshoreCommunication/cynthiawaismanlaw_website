@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const reasons = [
   {
@@ -94,8 +95,14 @@ export function WhyChooseUsWillsSection() {
           <p className="text-[1.05rem] text-[#b0c0d8] leading-relaxed">
             Estate planning involves documents, property records, beneficiary
             forms and follow-through. A Tampa will &amp; trust lawyer keeps those
-            pieces connected, with 2 decades of Florida estate planning work and
-            funding after the signing.
+            pieces connected, with 2 decades of Florida{" "}
+            <Link
+              href="/estate-planning-attorney-tampa"
+              className="text-white font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+            >
+              estate planning
+            </Link>{" "}
+            work and funding after the signing.
           </p>
         </div>
 

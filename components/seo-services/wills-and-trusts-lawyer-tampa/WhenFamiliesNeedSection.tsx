@@ -1,11 +1,29 @@
 import React from "react";
+import Link from "next/link";
 
-const situations = [
+interface SituationItem {
+  num: string;
+  title: string;
+  description: React.ReactNode;
+  icon: React.ReactNode;
+}
+
+const situations: SituationItem[] = [
   {
     num: "01",
     title: "You want your first will",
-    description:
-      "A Last Will lets Tampa families name beneficiaries, specific gifts and a personal representative. It can also nominate a guardian for minor children. Florida probate law then governs assets passing through probate. A Tampa probate lawyer can prepare the document and complete the required signing formalities.",
+    description: (
+      <>
+        A Last Will lets Tampa families name beneficiaries, specific gifts and a personal representative. It can also nominate a guardian for minor children. Florida probate law then governs assets passing through probate. A{" "}
+        <Link
+          href="/probate-lawyer-tampa"
+          className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+        >
+          Tampa probate lawyer
+        </Link>{" "}
+        can prepare the document and complete the required signing formalities.
+      </>
+    ),
     icon: (
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z M14 3v5h5 M9 13h6 M9 17h6" />

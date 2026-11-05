@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function AttorneyBioSection() {
   return (
@@ -43,12 +44,18 @@ export function AttorneyBioSection() {
             </div>
 
             <p className="text-base sm:text-[1.05rem] text-[#586375] leading-relaxed mb-4">
-              Cynthia I. Waisman is the founding attorney of Cynthia I. Waisman,
-              P.A., a Tampa Bay firm focused on immigration, estate planning,
-              guardianship and probate law. With more than two decades of
-              experience, she has guided hundreds of Florida families through
-              formal and summary probate administration, contested estates,
-              ancillary probate and trust administration.
+              <Link
+                href="/attorney/waisman-cynthia-i"
+                className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+              >
+                Cynthia I. Waisman
+              </Link>{" "}
+              is the founding attorney of Cynthia I. Waisman, P.A., a Tampa Bay
+              firm focused on immigration, estate planning, guardianship and
+              probate law. With more than two decades of experience, she has
+              guided hundreds of Florida families through formal and summary
+              probate administration, contested estates, ancillary probate and
+              trust administration.
             </p>
             <p className="text-base sm:text-[1.05rem] text-[#586375] leading-relaxed mb-6">
               Her office is strategically located in Tampa, with additional

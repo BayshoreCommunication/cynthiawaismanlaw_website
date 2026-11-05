@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const comparisonRows = [
   {
@@ -48,10 +49,15 @@ export function CustomPlanComparisonSection() {
             A true estate plan goes far beyond a single piece of paper. It
             involves carefully coordinated legal documents designed to reflect
             your wishes, address your family&apos;s needs and reduce the
-            potential for future disputes. A qualified will &amp; trust lawyer
-            in Tampa can help you determine which documents are appropriate for
-            your circumstances and how they work together to support your estate
-            plan.
+            potential for future disputes. A qualified{" "}
+            <Link
+              href="/wills-and-trusts-lawyer-tampa"
+              className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+            >
+              will &amp; trust lawyer in Tampa
+            </Link>{" "}
+            can help you determine which documents are appropriate for your
+            circumstances and how they work together to support your estate plan.
           </p>
         </div>
 

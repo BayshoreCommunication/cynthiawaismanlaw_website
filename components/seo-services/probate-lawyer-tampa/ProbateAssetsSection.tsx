@@ -1,8 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
+interface ProbateAssetItem {
+  title: string;
+  description: React.ReactNode;
+  icon: React.ReactNode;
+}
 
 export function ProbateAssetsSection() {
-  const assets = [
+  const assets: ProbateAssetItem[] = [
     {
       title: "Real Estate Owned in the Decedent’s Name",
       description:
@@ -25,8 +32,18 @@ export function ProbateAssetsSection() {
     },
     {
       title: "Personal Property and Vehicles",
-      description:
-        "Vehicles, jewelry, furniture, collectibles, equipment and other personal property can become probate assets when the decedent owned them individually. The personal representative must identify the property, protect it and prepare it for an appropriate transfer or sale.",
+      description: (
+        <>
+          Vehicles, jewelry, furniture, collectibles, equipment and other personal property can become probate assets when the decedent owned them individually. The{" "}
+          <Link
+            href="/probate-administration/executor-guidance"
+            className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+          >
+            personal representative
+          </Link>{" "}
+          must identify the property, protect it and prepare it for an appropriate transfer or sale.
+        </>
+      ),
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
           <path d="M21 8l-9-5-9 5v8l9 5 9-5z M3.3 7L12 12l8.7-5 M12 22V12" />

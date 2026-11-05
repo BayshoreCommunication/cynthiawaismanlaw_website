@@ -1,7 +1,15 @@
 import React from "react";
+import Link from "next/link";
+
+interface ProbateTypeItem {
+  num: string;
+  title: string;
+  description: React.ReactNode;
+  icon: React.ReactNode;
+}
 
 export function ProbateTypesSection() {
-  const types = [
+  const types: ProbateTypeItem[] = [
     {
       num: "A",
       title: "Disposition without administration",
@@ -16,8 +24,17 @@ export function ProbateTypesSection() {
     {
       num: "B",
       title: "Summary administration",
-      description:
-        "Summary administration provides a simpler probate procedure for qualifying estates. Under the 2026 Florida Statutes, the estate subject to administration in Florida must have a value of $150,000 or less. After the statutory treatment of property exempt from creditor claims or the decedent must have been dead for more than 2 years. Additional legal requirements apply. The new $150,000 threshold gives some Florida families access to a simplified probate process.",
+      description: (
+        <>
+          <Link
+            href="/probate-administration/summary-administration"
+            className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+          >
+            Summary administration
+          </Link>{" "}
+          provides a simpler probate procedure for qualifying estates. Under the 2026 Florida Statutes, the estate subject to administration in Florida must have a value of $150,000 or less. After the statutory treatment of property exempt from creditor claims or the decedent must have been dead for more than 2 years. Additional legal requirements apply. The new $150,000 threshold gives some Florida families access to a simplified probate process.
+        </>
+      ),
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z M12 7v5l3 2" />
@@ -38,8 +55,18 @@ export function ProbateTypesSection() {
     {
       num: "D",
       title: "Ancillary administration",
-      description:
-        "Ancillary administration applies to certain Florida property owned by a decedent living outside Florida. The Florida court handles the Florida assets while the main estate process takes place elsewhere. Ancillary probate can involve coordination between courts, personal representatives, attorneys and beneficiaries in different locations.",
+      description: (
+        <>
+          Ancillary administration applies to certain Florida property owned by a decedent living outside Florida. The Florida court handles the Florida assets while the main estate process takes place elsewhere.{" "}
+          <Link
+            href="/probate-administration/ancillary-probate"
+            className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+          >
+            Ancillary probate
+          </Link>{" "}
+          can involve coordination between courts, personal representatives, attorneys and beneficiaries in different locations.
+        </>
+      ),
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z M3 12h18 M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18" />
