@@ -1,8 +1,14 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+    const pathname = usePathname();
+    if (pathname === "/review-us" || pathname === "/review") return null;
+
     const currentYear = 2026;
 
     return (

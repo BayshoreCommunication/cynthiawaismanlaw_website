@@ -414,7 +414,7 @@ export default function TestimonialsSection() {
 
             {/* Review Us Button */}
             <a
-              href="https://reviewplatform.findlaw.app/pages/review-request/6656c0b90969960001b12984"
+              href="/review-us"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs tracking-wider uppercase border border-[#ECAB3C] hover:border-[#dca034] shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer"
