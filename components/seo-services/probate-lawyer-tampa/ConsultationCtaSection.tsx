@@ -11,7 +11,7 @@ interface ConsultationCtaSectionProps {
 export function ConsultationCtaSection({
   id = "consult",
   title = "Start your Tampa probate case with a consultation",
-  subtitle = "A probate case can involve a home, financial accounts, family inheritance, creditor claims or years of financial records. You deserve a clear view of the legal work before you begin.",
+  subtitle = "A probate case can involve a home, financial accounts, family inheritance, creditor claims or years of financial records. You deserve a clear view of the legal work before you begin. Call 727 219 9009 today to schedule your probate consultation with attorney Cynthia I. Waisman.",
   className = "",
 }: ConsultationCtaSectionProps = {}) {
   return (

@@ -39,7 +39,7 @@ export function NeedProbateLawyerSection() {
       num: "04",
       title: "Decedent died without a will",
       description:
-        "Florida uses intestate succession rules for an estate without a valid will. The law determines the heirs entitled to the estate based on family relationship. The court also applies statutory preferences when appointing a personal representative. In an intestate estate, Florida law first gives preference to the surviving spouse. Next it prioritizes a person selected by a majority in interest of the heirs, followed by the heir nearest in degree. We identify legal heirs, calculate exact statutory shares and petition the court to appoint an eligible Personal Representative.",
+        "Florida uses intestate succession rules for an estate without a valid will and trust. The law determines the heirs entitled to the estate based on family relationship. The court also applies statutory preferences when appointing a personal representative. In an intestate estate, Florida law first gives preference to the surviving spouse. Next it prioritizes a person selected by a majority in interest of the heirs, followed by the heir nearest in degree. We identify legal heirs, calculate exact statutory shares and petition the court to appoint an eligible Personal Representative.",
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 3v18 M6 21h12 M5 7h14 M5 7l-3 7a3 3 0 0 0 6 0z M19 7l-3 7a3 3 0 0 0 6 0z" />
@@ -94,7 +94,7 @@ export function NeedProbateLawyerSection() {
       num: "09",
       title: "Estate includes a business or complex assets",
       description:
-        "Business interests, investment accounts, valuable personal property and other complex assets can require appraisal and court authority. Our probate lawyer can review ownership documents, business agreements, account records and transfer requirements before the personal representative takes action.",
+        "Business interests, investment accounts, valuable personal property and other complex assets can require appraisal and court authority. Our probate lawyer can review ownership documents, business agreements, account records and transfer requirements.",
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
           <path d="M4 7h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />

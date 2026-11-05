@@ -25,7 +25,7 @@ export function WhatIsProbateSection() {
               Probate transfers legal property ownership and clears land titles after someone passes away.
             </p>
             <p className="text-[#586375] text-sm sm:text-base leading-relaxed">
-              Probate is the court supervised legal process. This law allow transfering a deceased person&apos;s property to their legal heirs or named beneficiaries. Probate Division of 13th Judicial Circuit Court in Hillsborough County oversees all local probate cases. During probate, the court validates decedent&apos;s last will. Then appoints a legal representative and resolves creditor claims. Finally the court approves last asset distributions to beneficiaries.
+              Probate is the court supervised legal process. This law allows transferring a deceased person&apos;s property to their legal heirs or named beneficiaries. The Probate Division of 13th Judicial Circuit Court in Hillsborough County oversees all local probate cases. During probate, the court validates the decedent&apos;s last will. Then appoints a legal representative and resolves creditor claims. Finally the court approves last asset distributions to beneficiaries.
             </p>
           </div>
 

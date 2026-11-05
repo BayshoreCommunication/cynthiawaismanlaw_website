@@ -29,7 +29,7 @@ const steps = [
     number: "5",
     title: "Required Notices and Creditor Period",
     description:
-      "The personal representative must provide required notices to beneficiaries and other interested parties. Florida law also requires a notice to creditors in applicable formal probate cases. Our tampa probate lawyer sent written notice to known creditors. We publishs a legal notice in a Hillsborough County newspaper to start the mandatory 3 months for unknown creditors and 30 days for served creditors.",
+      "The personal representative must provide required notices to beneficiaries and other interested parties. Florida law also requires a notice to creditors in applicable formal probate cases. Our tampa probate lawyer sent written notice to known creditors. We publish a legal notice in a Hillsborough County newspaper to start the mandatory 3 months for unknown creditors and 30 days for served creditors.",
   },
   {
     number: "6",

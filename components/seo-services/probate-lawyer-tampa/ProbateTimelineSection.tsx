@@ -4,7 +4,7 @@ const delays = [
   "Missing original documents.",
   "Incomplete asset records.",
   "Family disputes.",
-  "Will challenges.",
+  "Will challenge.",
   "Creditor claims.",
   "Real estate title problems.",
   "Homestead questions.",
@@ -76,7 +76,7 @@ export function ProbateTimelineSection() {
 
         <div className="mt-12 pt-8 border-t border-gray-200">
           <h3 className="font-serif text-2xl font-semibold text-[#091D46] mb-5">
-            What can delay probate case?
+            What can delay a probate case?
           </h3>
           <div className="flex flex-wrap gap-2.5">
             {delays.map((item) => (

@@ -24,7 +24,7 @@ const beneficiaryCards = [
   {
     title: "Right to Receive Information About Tampa Estate",
     description:
-      "Beneficiaries may have rights to information about estate administration. The exact scope depends on estate, the person's legal status and the issue involved. Our probate lawyer can review the records and explain the information available to each beneficiary.",
+      "Beneficiaries may have rights to information about estate administration. The exact scope depends on the estate, the person's legal status and the issue involved. Our probate lawyer can review the records and explain the information available to each beneficiary.",
     icon: (
       <svg
         className="w-6 h-6"
