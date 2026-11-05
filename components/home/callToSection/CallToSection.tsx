@@ -4,6 +4,8 @@ interface CallToSectionProps {
     id?: string;
     title?: React.ReactNode;
     subtitle?: React.ReactNode;
+    phone?: string;
+    phoneHref?: string;
     className?: string;
 }
 
@@ -11,6 +13,8 @@ export default function CallToSection({
     id,
     title = "Your legacy. Their future. Our focus.",
     subtitle = "An estate plan is about more than documents. It's about your family, your wishes, and what happens when you're no longer there to explain them.",
+    phone = "(813) 279-6180",
+    phoneHref = "tel:+18132796180",
     className = "",
 }: CallToSectionProps = {}) {
     return (
@@ -62,7 +66,7 @@ export default function CallToSection({
 
                         {/* Direct Phone Call */}
                         <a
-                            href="tel:+18132796180"
+                            href={phoneHref}
                             className="inline-flex items-center gap-2 text-white hover:text-[#ECAB3C] transition-colors font-bold text-sm sm:text-[15px] tracking-wide pt-0.5 group"
                         >
                             <svg
@@ -72,7 +76,7 @@ export default function CallToSection({
                             >
                                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z" />
                             </svg>
-                            <span>(813) 279-6180</span>
+                            <span>{phone}</span>
                         </a>
                     </div>
 

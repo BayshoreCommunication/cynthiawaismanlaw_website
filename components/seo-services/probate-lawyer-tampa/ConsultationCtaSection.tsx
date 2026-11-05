@@ -19,6 +19,8 @@ export function ConsultationCtaSection({
       id={id}
       title={title}
       subtitle={subtitle}
+      phone="727 219 9009"
+      phoneHref="tel:+17272199009"
       className={className}
     />
   );
