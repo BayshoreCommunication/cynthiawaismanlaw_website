@@ -119,8 +119,8 @@ export function AttorneyComparisonSection({
       <CallToSection
         title={ctaTitle}
         subtitle={ctaSubtitle}
-        phone="727 219 9009"
-        phoneHref="tel:+17272199009"
+        phone="(813) 279-6180"
+        phoneHref="tel:+18132796180"
       />
     </>
   );

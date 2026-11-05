@@ -7,7 +7,7 @@ export function WillsMobileStickyBar() {
       aria-label="Quick contact mobile bar"
     >
       <a
-        href="tel:+17272199009"
+        href="tel:+18132796180"
         className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-sm tracking-wide shadow-md active:scale-95 transition-all"
       >
         <svg

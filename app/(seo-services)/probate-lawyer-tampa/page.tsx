@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = pageMetadata({
   title: "Probate Lawyer Tampa | Settle Estates & Clear Titles",
   description:
-    "Tampa probate attorney settling Florida estates. Clear property titles, resolve debts and protect your inheritance. Call 727 219 9009 for a consultation.",
+    "Tampa probate attorney settling Florida estates. Clear property titles, resolve debts and protect your inheritance. Call (813) 279-6180 for a consultation.",
   path: "/probate-lawyer-tampa",
   image: "/images/seo-services/probate.png",
   imageAlt: "Probate Lawyer Tampa - Cynthia I. Waisman, P.A.",
@@ -41,7 +41,7 @@ export default function ProbateLawyerTampaPage() {
     description:
       "Tampa probate attorney guiding families through formal administration, summary administration, ancillary probate, and estate settlement across Florida.",
     url: "https://www.cynthiawaismanlaw.com/probate-lawyer-tampa",
-    telephone: "+1-727-219-9009",
+    telephone: "+1-813-279-6180",
     image: "https://www.cynthiawaismanlaw.com/images/seo-services/cynthia.png",
     priceRange: "$$",
     address: {

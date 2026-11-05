@@ -154,13 +154,13 @@ export function ProbateHero() {
                 </span>
               </button>
 
-              {/* Button 2: Call 727 219 9009 */}
+              {/* Button 2: Call (813) 279-6180 */}
               <a
-                href="tel:+17272199009"
-                aria-label="Call 727 219 9009"
+                href="tel:+18132796180"
+                aria-label="Call (813) 279-6180"
                 className="bg-white/90 hover:bg-[#091D46] hover:text-white text-[#091D46] border border-[#091D46] font-bold text-xs md:text-[13px] tracking-wider uppercase px-7 py-3.5 rounded-md inline-flex items-center gap-2 transition-all duration-300 group hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span>Call 727 219 9009</span>
+                <span>Call (813) 279-6180</span>
                 <span className="group-hover:translate-x-1.5 transition-transform duration-200">
                   →
                 </span>

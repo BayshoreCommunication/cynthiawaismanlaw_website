@@ -7,8 +7,8 @@ const offices = [
     firm: "Cynthia I. Waisman, P.A.",
     street: "5406 Hoover Blvd, Ste. 11",
     city: "Tampa, FL 33634",
-    phone: "727 219 9009",
-    phoneHref: "tel:+17272199009",
+    phone: "+1 (813) 279-6180",
+    phoneHref: "tel:+18132796180",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=5406+Hoover+Blvd+Ste+11+Tampa+FL+33634",
     note: "By Appointment Only",
@@ -19,8 +19,8 @@ const offices = [
     firm: null,
     street: "2451 McMullen Booth Rd, Ste. 239",
     city: "Clearwater, FL 33759",
-    phone: "727 219 9009",
-    phoneHref: "tel:+17272199009",
+    phone: "+1 (813) 279-6180",
+    phoneHref: "tel:+18132796180",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=2451+McMullen+Booth+Rd+Clearwater+FL+33759",
     note: "By Appointment Only",
@@ -31,8 +31,8 @@ const offices = [
     firm: null,
     street: "6013 Wesley Grove Blvd, Bldg. 2, Ste. 208",
     city: "Wesley Chapel, FL 33544",
-    phone: "727 219 9009",
-    phoneHref: "tel:+17272199009",
+    phone: "+1 (813) 279-6180",
+    phoneHref: "tel:+18132796180",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=6013+Wesley+Grove+Blvd+Wesley+Chapel+FL+33544",
     note: "By Appointment Only",
