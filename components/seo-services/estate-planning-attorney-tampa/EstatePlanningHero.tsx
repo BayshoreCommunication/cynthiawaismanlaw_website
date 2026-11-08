@@ -126,7 +126,7 @@ export function EstatePlanningHero() {
             {/* Main Headline - Typing Animation Without Cursor */}
             <TypingTitle
               as="h1"
-              className="font-serif text-3xl sm:text-4xl md:text-[46px] lg:text-[48px] text-[#091D46] font-normal leading-[1.12] tracking-tight"
+              className="font-serif text-3xl sm:text-4xl md:text-[38px]  text-[#091D46] font-normal leading-[1.12] tracking-tight"
               text={[
                 "Estate Planning Attorney Tampa, FL,",
                 "Comprehensive Wills & Trust Services",

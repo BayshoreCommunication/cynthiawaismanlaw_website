@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
+import AboutFirmSection from "@/components/home/aboutFirm/AboutFirmSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 import {
   EstatePlanningHero,
@@ -8,7 +9,6 @@ import {
   WhyTrustUsSection,
   EstatePlanningProcessSection,
   CoreServicesSection,
-  EstateAttorneyBioSection,
   EstateClientReviewsSection,
   EstateOfficesSection,
   EstatePlanningFaqSection,
@@ -18,12 +18,13 @@ import {
 } from "@/components/seo-services/estate-planning-attorney-tampa";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Estate Planning Attorney Tampa | Wills & Trusts",
+  title: "Estate Planning Attorney Tampa",
   description:
     "Protect your family and assets with a Tampa estate planning attorney. Get personalized wills, trusts, and estate planning guidance. Schedule a consultation",
   path: "/estate-planning-attorney-tampa",
   image: "/images/seo-services/probate.png",
   imageAlt: "Estate Planning Attorney Tampa - Cynthia I. Waisman, P.A.",
+  absoluteTitle: true,
 });
 
 export default function EstatePlanningAttorneyTampaPage() {
@@ -97,7 +98,7 @@ export default function EstatePlanningAttorneyTampaPage() {
       <WhyTrustUsSection />
       <EstatePlanningProcessSection />
       <CoreServicesSection />
-      <EstateAttorneyBioSection />
+      <AboutFirmSection id="attorney" />
       <EstateClientReviewsSection />
       <EstateOfficesSection />
       <EstatePlanningFaqSection />

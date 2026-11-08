@@ -105,7 +105,9 @@ export function WillsTrustsFaqSection() {
                 className="group bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-200 open:border-[#ECAB3C] open:shadow-[0_8px_24px_rgba(9,29,70,0.08)]"
               >
                 <summary className="font-serif text-base sm:text-lg font-semibold text-[#091D46] p-5 sm:p-6 cursor-pointer list-none flex items-center justify-between gap-4 select-none hover:text-[#ECAB3C] transition-colors [&::-webkit-details-marker]:hidden">
-                  <span>{faq.question}</span>
+                  <h3 className="font-serif text-base sm:text-lg font-semibold text-inherit m-0 p-0 leading-snug">
+                    {faq.question}
+                  </h3>
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#fbf9f5] group-open:bg-[#ECAB3C]/15 text-[#ECAB3C] flex items-center justify-center text-xl font-bold transition-transform duration-200 group-open:rotate-45">
                     +
                   </span>

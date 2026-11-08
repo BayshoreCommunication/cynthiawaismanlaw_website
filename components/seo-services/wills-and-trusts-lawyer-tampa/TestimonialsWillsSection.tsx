@@ -77,14 +77,6 @@ export function TestimonialsWillsSection() {
               <blockquote className="m-0 text-[#2b3545] text-[0.97rem] leading-relaxed italic flex-1">
                 {r.text}
               </blockquote>
-              <figcaption className="mt-2 pt-3 border-t border-[#ECAB3C]/20">
-                <b className="block text-[#091D46] font-serif text-[1.1rem] font-semibold not-italic">
-                  {r.name}
-                </b>
-                <span className="text-[#ECAB3C] text-[0.85rem] font-medium not-italic">
-                  {r.service}
-                </span>
-              </figcaption>
             </figure>
           ))}
         </div>

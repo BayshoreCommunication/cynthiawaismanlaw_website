@@ -84,9 +84,9 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                     {/* Card Header */}
                                     <div className="inline-flex items-center gap-2 pb-0.5">
                                         <span className="w-5 h-[2px] bg-[#ECAB3C]" />
-                                        <h4 className="text-xs font-bold tracking-wider text-[#091D46] uppercase font-sans">
+                                        <h2 className="text-xs font-bold tracking-wider text-[#091D46] uppercase font-sans">
                                             Practice Areas
-                                        </h4>
+                                        </h2>
                                     </div>
 
                                     {/* Practice Area 1: Immigration */}
@@ -110,9 +110,9 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                             </svg>
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-[13.5px] sm:text-[14px] text-[#091D46] group-hover/pa:text-[#ECAB3C] transition-colors leading-snug">
+                                            <h3 className="font-bold text-[13.5px] sm:text-[14px] text-[#091D46] group-hover/pa:text-[#ECAB3C] transition-colors leading-snug">
                                                 Immigration
-                                            </h5>
+                                            </h3>
                                             <p className="text-[11px] sm:text-[11.5px] text-gray-500 leading-snug mt-0.5">
                                                 Family-based immigration, visas, green cards,
                                                 citizenship, and more.
@@ -141,9 +141,9 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                             </svg>
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-[13.5px] sm:text-[14px] text-[#091D46] group-hover/pa:text-[#ECAB3C] transition-colors leading-snug">
+                                            <h3 className="font-bold text-[13.5px] sm:text-[14px] text-[#091D46] group-hover/pa:text-[#ECAB3C] transition-colors leading-snug">
                                                 Probate, Estate &amp; Trust Administration
-                                            </h5>
+                                            </h3>
                                             <p className="text-[11px] sm:text-[11.5px] text-gray-500 leading-snug mt-0.5">
                                                 Wills, trusts, probate administration
                                             </p>
@@ -171,9 +171,9 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                             </svg>
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-[13.5px] sm:text-[14px] text-[#091D46] group-hover/pa:text-[#ECAB3C] transition-colors leading-snug">
+                                            <h3 className="font-bold text-[13.5px] sm:text-[14px] text-[#091D46] group-hover/pa:text-[#ECAB3C] transition-colors leading-snug">
                                                 Estate Planning
-                                            </h5>
+                                            </h3>
                                             <p className="text-[11px] sm:text-[11.5px] text-gray-500 leading-snug mt-0.5">
                                                 Wills, living trusts, and personalized estate
                                                 planning.
@@ -202,9 +202,9 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                             </svg>
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-[13.5px] sm:text-[14px] text-[#091D46] group-hover/pa:text-[#ECAB3C] transition-colors leading-snug">
+                                            <h3 className="font-bold text-[13.5px] sm:text-[14px] text-[#091D46] group-hover/pa:text-[#ECAB3C] transition-colors leading-snug">
                                                 Guardianship
-                                            </h5>
+                                            </h3>
                                             <p className="text-[11px] sm:text-[11.5px] text-gray-500 leading-snug mt-0.5">
                                                 Protecting loved ones and planning for the future
                                             </p>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
+import AboutFirmSection from "@/components/home/aboutFirm/AboutFirmSection";
 import ContactFirmSection from "@/components/home/contact/ContactFirmSection";
 import {
   WillsTrustsHero,
@@ -14,7 +15,6 @@ import {
   WillsTrustsTimelineSection,
   WillsTrustsCostSection,
   WhyChooseUsWillsSection,
-  WillsAttorneyBioSection,
   TestimonialsWillsSection,
   WillsOfficesSection,
   WillsTrustsFaqSection,
@@ -24,12 +24,13 @@ import {
 } from "@/components/seo-services/wills-and-trusts-lawyer-tampa";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Will & Trust Lawyer Tampa | Cynthia I. Waisman, P.A.",
+  title: "Will & Trust Lawyer Tampa",
   description:
     "Tampa will and trust lawyer for homestead, Lady Bird deeds, funded living trusts, pour over wills and Hillsborough probate. Call (813) 279-6180.",
   path: "/wills-and-trusts-lawyer-tampa",
   image: "/images/seo-services/probate.png",
   imageAlt: "Will & Trust Lawyer Tampa - Cynthia I. Waisman, P.A.",
+  absoluteTitle: true,
 });
 
 export default function WillsAndTrustsLawyerTampaPage() {
@@ -109,7 +110,7 @@ export default function WillsAndTrustsLawyerTampaPage() {
       <WillsTrustsTimelineSection />
       <WillsTrustsCostSection />
       <WhyChooseUsWillsSection />
-      <WillsAttorneyBioSection />
+      <AboutFirmSection id="attorney" />
       <TestimonialsWillsSection />
       <WillsOfficesSection />
       <WillsTrustsFaqSection />
