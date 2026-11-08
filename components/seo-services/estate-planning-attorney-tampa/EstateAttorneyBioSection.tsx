@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function EstateAttorneyBioSection() {
   return (
@@ -46,12 +47,18 @@ export function EstateAttorneyBioSection() {
             </div>
 
             <p className="text-base sm:text-[1.05rem] text-[#586375] leading-relaxed mb-4">
-              Cynthia I. Waisman, Esq. brings over 2 decades of focused
-              experience in Florida estate planning and elder law. She dedicates
-              her practice exclusively to protecting families and their futures.
-              A formidable legal foundation began with her Juris Doctor from The
-              John Marshall Law School in 1997 and a Bachelor of Science in
-              Journalism from the University of Florida in 1993.
+              <Link
+                href="/attorney/waisman-cynthia-i"
+                className="text-[#091D46] font-medium underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+              >
+                Cynthia I. Waisman, Esq.
+              </Link>{" "}
+              brings over 2 decades of focused experience in Florida estate
+              planning and elder law. She dedicates her practice exclusively to
+              protecting families and their futures. A formidable legal foundation
+              began with her Juris Doctor from The John Marshall Law School in
+              1997 and a Bachelor of Science in Journalism from the University
+              of Florida in 1993.
             </p>
             <p className="text-base sm:text-[1.05rem] text-[#586375] leading-relaxed mb-6">
               Since her admission to the Florida Bar in 1999 under Bar ID

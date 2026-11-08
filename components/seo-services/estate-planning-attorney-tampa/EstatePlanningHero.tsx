@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import TypingTitle from "@/components/shared/TypingTitle";
 
 export function EstatePlanningHero() {
@@ -172,7 +173,14 @@ export function EstatePlanningHero() {
 
             {/* Sub note */}
             <p className="text-xs sm:text-[13px] text-[#586375] font-medium tracking-wide reveal-left reveal-delay-3">
-              Serving Tampa, Clearwater, and Wesley Chapel.
+              Schedule a Consultation at{" "}
+              <Link
+                href="/"
+                className="text-[#091D46] underline decoration-[#ECAB3C] underline-offset-4 hover:text-[#ECAB3C] transition-colors"
+              >
+                www.cynthiawaismanlaw.com
+              </Link>
+              . Serving Tampa, Clearwater, and Wesley Chapel.
             </p>
           </div>
 
