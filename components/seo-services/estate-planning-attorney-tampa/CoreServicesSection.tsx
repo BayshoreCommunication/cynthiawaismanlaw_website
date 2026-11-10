@@ -60,24 +60,24 @@ export function CoreServicesSection() {
     <>
       <section
         id="services"
-        className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-gray-200"
+        className="relative w-full py-12 sm:py-20 lg:py-24 bg-white border-t border-gray-200"
       >
         <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-[840px] mb-11">
-            <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
+          <div className="max-w-[840px] mb-8 sm:mb-11">
+            <h2 className="font-serif text-[clamp(1.45rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
               Core Legal Services
             </h2>
-            <p className="text-[1.05rem] text-[#586375] leading-relaxed m-0">
+            <p className="text-sm sm:text-[1.05rem] text-[#586375] leading-relaxed m-0">
               Every family needs a different approach. Our core services we
               provide as your chosen estate planning attorney tampa include:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {services.map((item) => (
               <div
                 key={item.title}
-                className="bg-[#fdf8f0] border border-[#ECAB3C]/25 rounded-[20px] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(9,29,70,0.1)] hover:border-[#ECAB3C] flex flex-col justify-between"
+                className="bg-[#fdf8f0] border border-[#ECAB3C]/25 rounded-[20px] p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(9,29,70,0.1)] hover:border-[#ECAB3C] flex flex-col justify-between"
               >
                 <div>
                   <span className="w-[52px] h-[52px] rounded-xl bg-[#091D46] text-[#ECAB3C] flex items-center justify-center mb-4.5">

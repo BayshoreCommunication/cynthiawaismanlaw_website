@@ -52,14 +52,14 @@ export function WillsTrustsCostSection() {
   return (
     <section
       id="cost"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200"
+      className="relative w-full py-12 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200"
     >
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[820px] mb-8">
-          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
+        <div className="max-w-[820px] mb-6 sm:mb-8">
+          <h2 className="font-serif text-[clamp(1.45rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
             How Much Does a Will or Trust Cost in Florida?
           </h2>
-          <p className="text-[1.05rem] text-[#586375] leading-relaxed">
+          <p className="text-sm sm:text-[1.05rem] text-[#586375] leading-relaxed">
             Florida does not set one statewide attorney fee for a will or trust.
             The fee depends on the documents, family structure, assets and
             funding work. After we review your facts, we give you the applicable
@@ -68,11 +68,29 @@ export function WillsTrustsCostSection() {
           </p>
         </div>
 
+        {/* Mobile Cost Cards */}
+        <div className="sm:hidden space-y-3 my-5">
+          {costRows.map((row) => (
+            <div
+              key={row.service}
+              className="border border-gray-200 rounded-xl p-4 bg-white"
+            >
+              <p className="font-bold text-sm text-[#091D46] mb-1">
+                {row.service}
+              </p>
+              <p className="text-xs text-[#586375] leading-relaxed m-0">
+                {row.factors}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Cost Table */}
         <div
           tabIndex={0}
           role="region"
           aria-label="Estate planning cost factors table"
-          className="overflow-x-auto border border-gray-200 rounded-2xl bg-white shadow-xs my-6 focus:outline-none focus:ring-2 focus:ring-[#ECAB3C]"
+          className="hidden sm:block overflow-x-auto border border-gray-200 rounded-2xl bg-white shadow-xs my-6 focus:outline-none focus:ring-2 focus:ring-[#ECAB3C]"
         >
           <table className="w-full border-collapse text-left text-sm sm:text-base">
             <thead className="bg-[#091D46] text-[#ECAB3C]">

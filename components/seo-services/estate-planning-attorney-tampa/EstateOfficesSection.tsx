@@ -44,24 +44,24 @@ export function EstateOfficesSection() {
   return (
     <section
       id="offices"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200"
+      className="relative w-full py-12 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200"
     >
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[820px] mb-10">
-          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
+        <div className="max-w-[820px] mb-8 sm:mb-10">
+          <h2 className="font-serif text-[clamp(1.45rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
             Tampa Offices and Areas We Serve
           </h2>
-          <p className="text-[1.05rem] text-[#586375] leading-relaxed m-0">
+          <p className="text-sm sm:text-[1.05rem] text-[#586375] leading-relaxed m-0">
             Cynthia I. Waisman, P.A. serves clients across Tampa, Clearwater, and
             Wesley Chapel by appointment.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8">
           {offices.map((office) => (
             <div
               key={office.name}
-              className="bg-white border border-gray-200 rounded-[22px] overflow-hidden p-6 sm:p-7 shadow-xs hover:shadow-[0_18px_40px_rgba(9,29,70,0.12)] hover:border-[#ECAB3C] transition-all flex flex-col justify-between"
+              className="bg-white border border-gray-200 rounded-[22px] overflow-hidden p-5 sm:p-7 shadow-xs hover:shadow-[0_18px_40px_rgba(9,29,70,0.12)] hover:border-[#ECAB3C] transition-all flex flex-col justify-between"
             >
               <div>
                 <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-5 bg-[#091D46] border border-gray-200">

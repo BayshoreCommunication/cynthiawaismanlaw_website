@@ -385,7 +385,7 @@ export default function TestimonialsSection() {
           </div>
 
           {/* Main Title */}
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-normal text-[#091D46] tracking-tight leading-tight" data-animate="fade-up" data-delay="200">
+          <h2 className="font-serif text-[26px] sm:text-4xl md:text-[44px] font-normal text-[#091D46] tracking-tight leading-tight" data-animate="fade-up" data-delay="200">
             Real Families. Real Peace of Mind.
           </h2>
 
@@ -458,9 +458,9 @@ export default function TestimonialsSection() {
             type="button"
             onClick={handlePrev}
             aria-label="Previous Testimonials"
-            className="absolute -left-2 sm:-left-4 lg:-left-5 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white border border-[#ECAB3C] text-[#ECAB3C] hover:bg-[#ECAB3C] hover:text-[#091D46] shadow-md flex items-center justify-center transition-all duration-300 focus:outline-hidden cursor-pointer"
+            className="absolute left-0 sm:-left-4 lg:-left-5 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white border border-[#ECAB3C] text-[#ECAB3C] hover:bg-[#ECAB3C] hover:text-[#091D46] shadow-md flex items-center justify-center transition-all duration-300 focus:outline-hidden cursor-pointer"
           >
-            <svg className="w-5 h-5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
@@ -470,9 +470,9 @@ export default function TestimonialsSection() {
             type="button"
             onClick={handleNext}
             aria-label="Next Testimonials"
-            className="absolute -right-2 sm:-right-4 lg:-right-5 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white border border-[#ECAB3C] text-[#ECAB3C] hover:bg-[#ECAB3C] hover:text-[#091D46] shadow-md flex items-center justify-center transition-all duration-300 focus:outline-hidden cursor-pointer"
+            className="absolute right-0 sm:-right-4 lg:-right-5 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white border border-[#ECAB3C] text-[#ECAB3C] hover:bg-[#ECAB3C] hover:text-[#091D46] shadow-md flex items-center justify-center transition-all duration-300 focus:outline-hidden cursor-pointer"
           >
-            <svg className="w-5 h-5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </button>
@@ -489,7 +489,7 @@ export default function TestimonialsSection() {
               onTouchEnd={handleTouchEnd}
               onTouchCancel={handleTouchCancel}
               onScroll={handleScroll}
-              className={`w-full overflow-x-auto no-scrollbar flex gap-6 py-4 px-1 select-none ${isDragging ? "cursor-grabbing" : "cursor-grab"
+              className={`w-full overflow-x-auto no-scrollbar flex gap-4 sm:gap-6 py-4 px-1 select-none ${isDragging ? "cursor-grabbing" : "cursor-grab"
                 }`}
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
@@ -499,7 +499,7 @@ export default function TestimonialsSection() {
                 <div
                   key={`${item.id}-${index}`}
                   aria-hidden={index >= testimonials.length || undefined}
-                  className="w-[310px] sm:w-[360px] md:w-[385px] min-h-[220px] sm:min-h-[240px] shrink-0 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between select-none pointer-events-auto group"
+                  className="w-[280px] sm:w-[360px] md:w-[385px] min-h-[210px] sm:min-h-[240px] shrink-0 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 p-5 sm:p-7 flex flex-col justify-between select-none pointer-events-auto group"
                 >
                   <div>
                     {/* Card Top: Gold Quote Icon */}

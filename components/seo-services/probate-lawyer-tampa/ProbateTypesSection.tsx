@@ -103,33 +103,33 @@ export function ProbateTypesSection() {
   ];
 
   return (
-    <section id="types" className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-gray-200">
+    <section id="types" className="relative w-full py-12 sm:py-20 lg:py-24 bg-white border-t border-gray-200">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl mb-12">
-          <h2 className="font-serif text-[#091D46] text-2xl sm:text-3xl lg:text-[36px] font-semibold leading-tight mb-4">
+        <div className="max-w-3xl mb-8 sm:mb-12">
+          <h2 className="font-serif text-[#091D46] text-[1.45rem] sm:text-3xl lg:text-[36px] font-semibold leading-tight mb-3.5 sm:mb-4">
             Types of probate administration in florida
           </h2>
-          <p className="text-[#586375] text-base sm:text-lg leading-relaxed">
+          <p className="text-[#586375] text-sm sm:text-lg leading-relaxed">
             Florida offers several probate procedures and each procedure serves a different type of estate. Choosing the right process can affect the documents, court involvement, timing and work required.
           </p>
         </div>
 
         {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
           {types.map((type) => (
             <div
               key={type.num}
-              className="relative bg-white border border-gray-200 rounded-[20px] p-7 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#ECAB3C] flex flex-col justify-between"
+              className="relative bg-white border border-gray-200 rounded-[20px] p-5 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#ECAB3C] flex flex-col justify-between"
             >
               <div>
-                <div className="w-[52px] h-[52px] rounded-[14px] bg-[#091D46] text-[#ECAB3C] flex items-center justify-center mb-5">
+                <div className="w-[46px] h-[46px] sm:w-[52px] sm:h-[52px] rounded-[14px] bg-[#091D46] text-[#ECAB3C] flex items-center justify-center mb-4 sm:mb-5">
                   {type.icon}
                 </div>
-                <span className="absolute right-6 top-6 font-serif text-3xl font-semibold text-[#ECAB3C]/40 select-none">
+                <span className="absolute right-5 top-5 sm:right-6 sm:top-6 font-serif text-2xl sm:text-3xl font-semibold text-[#ECAB3C]/40 select-none">
                   {type.num}
                 </span>
-                <h3 className="font-serif text-xl font-semibold text-[#091D46] mb-3 leading-snug">
+                <h3 className="font-serif text-lg sm:text-xl font-semibold text-[#091D46] mb-2.5 sm:mb-3 leading-snug">
                   {type.title}
                 </h3>
                 <p className="text-[#586375] text-sm sm:text-[15px] leading-relaxed">
@@ -141,11 +141,48 @@ export function ProbateTypesSection() {
         </div>
 
         {/* Comparison Table */}
-        <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#091D46] mt-14 mb-6">
+        <h3 className="font-serif text-[1.35rem] sm:text-3xl font-semibold text-[#091D46] mt-10 sm:mt-14 mb-5 sm:mb-6">
           Which one fits your case?
         </h3>
 
-        <div className="overflow-x-auto rounded-[18px] border border-gray-200 bg-white shadow-xs">
+        {/* Mobile Stacked Cards */}
+        <div className="md:hidden space-y-4">
+          {tableData.map((row) => (
+            <div
+              key={row.type}
+              className="border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-xs"
+            >
+              <div className="bg-[#091D46] px-4 py-3">
+                <span className="text-[#ECAB3C] font-bold text-xs uppercase tracking-wider">
+                  {row.type}
+                </span>
+              </div>
+              <div className="p-4 space-y-3 text-sm">
+                <div>
+                  <span className="block text-[11px] font-bold uppercase tracking-wider text-gray-500 mb-0.5">
+                    Asset Value Threshold
+                  </span>
+                  <p className="text-[#091D46] font-medium m-0">{row.threshold}</p>
+                </div>
+                <div>
+                  <span className="block text-[11px] font-bold uppercase tracking-wider text-gray-500 mb-0.5">
+                    When It May Apply
+                  </span>
+                  <p className="text-[#586375] m-0">{row.when}</p>
+                </div>
+                <div>
+                  <span className="block text-[11px] font-bold uppercase tracking-wider text-gray-500 mb-0.5">
+                    Main Features
+                  </span>
+                  <p className="text-[#2b3545] font-medium m-0">{row.features}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Table */}
+        <div className="hidden md:block overflow-x-auto rounded-[18px] border border-gray-200 bg-white shadow-xs">
           <table className="w-full min-w-[620px] border-collapse text-left text-sm sm:text-base">
             <thead>
               <tr className="bg-[#091D46] text-[#ECAB3C]">

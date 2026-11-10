@@ -38,14 +38,14 @@ export function CustomPlanComparisonSection() {
   return (
     <section
       id="custom-plan"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-gray-200"
+      className="relative w-full py-12 sm:py-20 lg:py-24 bg-white border-t border-gray-200"
     >
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[860px] mb-10">
-          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
+        <div className="max-w-[860px] mb-8 sm:mb-10">
+          <h2 className="font-serif text-[clamp(1.45rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
             Custom Estate Planning with Cynthia I. Waisman, P.A.
           </h2>
-          <p className="text-[1.05rem] text-[#586375] leading-relaxed m-0">
+          <p className="text-sm sm:text-[1.05rem] text-[#586375] leading-relaxed m-0">
             A true estate plan goes far beyond a single piece of paper. It
             involves carefully coordinated legal documents designed to reflect
             your wishes, address your family&apos;s needs and reduce the
@@ -61,11 +61,41 @@ export function CustomPlanComparisonSection() {
           </p>
         </div>
 
+        {/* Mobile Stacked Comparison Cards */}
+        <div className="md:hidden space-y-4">
+          {comparisonRows.map((row) => (
+            <div
+              key={row.defaultSituation}
+              className="border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-xs"
+            >
+              <div className="p-4 border-b border-gray-100 bg-white">
+                <span className="block text-[11px] font-bold tracking-wider uppercase text-red-600 mb-1.5">
+                  What Happens By Default
+                </span>
+                <div className="flex items-start gap-2.5 text-sm text-[#586375] leading-relaxed">
+                  <span className="text-red-500 font-bold shrink-0 mt-0.5">✕</span>
+                  <span>{row.defaultSituation}</span>
+                </div>
+              </div>
+              <div className="p-4 bg-[#fdf8f0]">
+                <span className="block text-[11px] font-bold tracking-wider uppercase text-[#091D46] mb-1.5">
+                  Advantage of a Custom Plan
+                </span>
+                <div className="flex items-start gap-2.5 text-sm text-[#091D46] font-medium leading-relaxed">
+                  <span className="text-[#ECAB3C] font-bold shrink-0 mt-0.5">✓</span>
+                  <span>{row.customAdvantage}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Comparison Table */}
         <div
           tabIndex={0}
           role="region"
           aria-label="Default vs Custom Plan comparison table"
-          className="overflow-x-auto border border-gray-200 rounded-2xl bg-white shadow-xs focus:outline-none focus:ring-2 focus:ring-[#ECAB3C]"
+          className="hidden md:block overflow-x-auto border border-gray-200 rounded-2xl bg-white shadow-xs focus:outline-none focus:ring-2 focus:ring-[#ECAB3C]"
         >
           <table className="w-full min-w-[700px] border-collapse text-[0.95rem]">
             <thead>

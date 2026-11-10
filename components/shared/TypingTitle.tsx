@@ -43,6 +43,33 @@ export interface TypingTitleProps {
  * - Multi-line support: cleanly handles lines and line-breaks.
  * - Full SEO and screen-reader accessibility.
  */
+/** Split each line into unbreakable word tokens and spaces with cumulative character indices. */
+function parseTypingLines(lines: string[]) {
+  let idx = 0;
+  const parsedLines = lines.map((line) =>
+    line
+      .split(/(\s+)/)
+      .filter((token) => token.length > 0)
+      .map((token) => {
+        if (/^\s+$/.test(token)) {
+          idx += Array.from(token).length;
+          return {
+            type: "space" as const,
+            chars: [] as { char: string; index: number }[],
+          };
+        }
+        return {
+          type: "word" as const,
+          chars: Array.from(token).map((char) => ({
+            char,
+            index: idx++,
+          })),
+        };
+      })
+  );
+  return { parsedLines, totalChars: idx };
+}
+
 export default function TypingTitle({
   text,
   children,
@@ -55,7 +82,6 @@ export default function TypingTitle({
   const containerRef = useRef<HTMLElement>(null);
   const [visibleCount, setVisibleCount] = useState<number>(0);
   const [hasStarted, setHasStarted] = useState<boolean>(false);
-  const [isClient, setIsClient] = useState<boolean>(false);
 
   // Normalize text into lines
   const lines: string[] = useMemo(() => {
@@ -73,29 +99,32 @@ export default function TypingTitle({
 
   const fullText = useMemo(() => lines.join(" "), [lines]);
 
-  // Total character count across all lines
-  const totalChars = useMemo(() => {
-    return lines.reduce((acc, line) => acc + line.length, 0);
-  }, [lines]);
+  // Precompute word tokens and character indices to keep words unbreakable across wraps
+  const { parsedLines, totalChars } = useMemo(
+    () => parseTypingLines(lines),
+    [lines]
+  );
 
   useEffect(() => {
-    setIsClient(true);
-
-    // If reduced motion is requested, show full text immediately
+    // If reduced motion is requested, show full text without blocking initial mount
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setVisibleCount(totalChars);
-      setHasStarted(true);
-      return;
+      const immediateTimer = setTimeout(() => {
+        setVisibleCount(totalChars);
+        setHasStarted(true);
+      }, 0);
+      return () => clearTimeout(immediateTimer);
     }
 
     const node = containerRef.current;
     if (!node) return;
 
+    let startTimer: ReturnType<typeof setTimeout> | undefined;
+
     // Trigger typing when scrolled into view
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
+          startTimer = setTimeout(() => {
             setHasStarted(true);
           }, delay);
           if (once) {
@@ -104,8 +133,8 @@ export default function TypingTitle({
         }
       },
       {
-        threshold: 0.15,
-        rootMargin: "0px 0px -30px 0px",
+        threshold: 0.1,
+        rootMargin: "0px 0px -20px 0px",
       }
     );
 
@@ -113,6 +142,7 @@ export default function TypingTitle({
 
     return () => {
       observer.disconnect();
+      if (startTimer) clearTimeout(startTimer);
     };
   }, [delay, once, totalChars]);
 
@@ -130,42 +160,58 @@ export default function TypingTitle({
 
   const Tag = as;
 
-  // Track global index across lines
-  let globalCharIndex = 0;
-
   return (
     <Tag
-      ref={containerRef as any}
+      ref={containerRef as React.RefObject<HTMLHeadingElement>}
       className={`typing-title-container ${className}`}
       aria-label={fullText}
     >
-      {lines.map((line, lineIndex) => {
-        const lineChars = Array.from(line);
-
-        return (
-          <React.Fragment key={lineIndex}>
-            <span className="inline-block whitespace-normal">
-              {lineChars.map((char, charIndex) => {
-                const currentIndex = globalCharIndex++;
-                const isVisible = isClient ? currentIndex < visibleCount : false;
-
+      {parsedLines.map((tokens, lineIndex) => (
+        <React.Fragment key={lineIndex}>
+          <span className="inline whitespace-normal">
+            {tokens.map((token, tokenIndex) => {
+              if (token.type === "space") {
                 return (
-                  <span
-                    key={charIndex}
-                    aria-hidden="true"
-                    className={`inline-block transition-opacity duration-150 ${
-                      isVisible ? "opacity-100" : "opacity-0"
-                    }`}
-                  >
-                    {char === " " ? "\u00A0" : char}
-                  </span>
+                  <React.Fragment key={`space-${tokenIndex}`}>
+                    {" "}
+                  </React.Fragment>
                 );
-              })}
-            </span>
-            {lineIndex < lines.length - 1 && <br aria-hidden="true" />}
-          </React.Fragment>
-        );
-      })}
+              }
+
+              return (
+                <span
+                  key={`word-${tokenIndex}`}
+                  className="inline-block whitespace-nowrap"
+                >
+                  {token.chars.map(({ char, index }, charIndex) => {
+                    const isVisible = index < visibleCount;
+
+                    return (
+                      <span
+                        key={charIndex}
+                        aria-hidden="true"
+                        className={`inline-block transition-opacity duration-150 ${
+                          isVisible ? "opacity-100" : "opacity-0"
+                        }`}
+                      >
+                        {char}
+                      </span>
+                    );
+                  })}
+                </span>
+              );
+            })}
+          </span>
+          {lineIndex < parsedLines.length - 1 && (
+            <>
+              <span className="sm:hidden" aria-hidden="true">
+                {" "}
+              </span>
+              <br className="hidden sm:inline" aria-hidden="true" />
+            </>
+          )}
+        </React.Fragment>
+      ))}
     </Tag>
   );
 }

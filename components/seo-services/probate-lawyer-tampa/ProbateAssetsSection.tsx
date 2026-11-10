@@ -83,19 +83,19 @@ export function ProbateAssetsSection() {
   ];
 
   return (
-    <section id="assets" className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200">
+    <section id="assets" className="relative w-full py-12 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-14 items-center mb-11">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-14 items-center mb-9 sm:mb-11">
           <div className="max-w-[820px]">
-            <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
+            <h2 className="font-serif text-[clamp(1.45rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
               What assets go through probate in Florida?
             </h2>
-            <p className="text-[1.05rem] text-[#586375] leading-relaxed m-0">
+            <p className="text-sm sm:text-[1.05rem] text-[#586375] leading-relaxed m-0">
               Asset ownership often determines the probate path. A simple bank account can follow a different transfer process from a home held only in the decedent&apos;s name.
             </p>
           </div>
 
-          <figure className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3] bg-[#091D46] shadow-[8px_8px_0_#ECAB3C] sm:shadow-[12px_12px_0_#ECAB3C] m-0">
+          <figure className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3] bg-[#091D46] shadow-[6px_6px_0_#ECAB3C] sm:shadow-[12px_12px_0_#ECAB3C] m-0">
             <Image
               src="/images/seo-services/estate-planning.png"
               alt="Florida Probate Real Estate and Assets"
@@ -106,11 +106,11 @@ export function ProbateAssetsSection() {
           </figure>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {assets.map((asset) => (
             <div
               key={asset.title}
-              className="bg-white border border-gray-200 rounded-[20px] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(9,29,70,0.12)] hover:border-[#ECAB3C]"
+              className="bg-white border border-gray-200 rounded-[20px] p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(9,29,70,0.12)] hover:border-[#ECAB3C]"
             >
               <span className="w-[52px] h-[52px] rounded-xl bg-[#091D46] text-[#ECAB3C] flex items-center justify-center mb-4.5">
                 {asset.icon}

@@ -5,7 +5,7 @@ import TypingTitle from "@/components/shared/TypingTitle";
 export function ProbateHero() {
   return (
     <section
-      className="relative w-full bg-cover bg-center bg-no-repeat overflow-hidden min-h-[600px] lg:min-h-[680px] flex flex-col justify-end"
+      className="relative w-full bg-cover bg-center bg-no-repeat overflow-hidden min-h-0 lg:min-h-[680px] flex flex-col justify-end"
       style={{
         backgroundImage: "url('/images/hero-bg-image-main.webp')",
       }}
@@ -113,10 +113,10 @@ export function ProbateHero() {
       <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent pointer-events-none" />
 
       {/* Same 1320px Container */}
-      <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 pt-10 pb-0">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end min-h-[560px] lg:min-h-[640px]">
+      <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 pt-6 sm:pt-10 pb-0">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-end lg:min-h-[640px]">
           {/* Left Column: Headline, Tags, Description, CTAs - Centered in middle */}
-          <div className="lg:col-span-7 xl:col-span-7 flex flex-col justify-center space-y-6 self-center py-10 lg:py-16">
+          <div className="lg:col-span-7 xl:col-span-7 flex flex-col justify-center space-y-4 sm:space-y-6 self-center py-4 sm:py-10 lg:py-16">
             {/* Practice Area Tags */}
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs sm:text-[13px] md:text-sm font-semibold tracking-widest text-[#091D46] uppercase reveal-left">
               <span>Probate Lawyer in Tampa</span>
@@ -125,7 +125,7 @@ export function ProbateHero() {
             {/* Main Headline - Typing Animation Without Cursor */}
             <TypingTitle
               as="h1"
-              className="font-serif text-4xl sm:text-5xl md:text-[52px]  text-[#091D46] font-normal leading-[1.08] tracking-tight"
+              className="font-serif text-[26px] sm:text-4xl md:text-[52px] text-[#091D46] font-normal leading-[1.15] sm:leading-[1.08] tracking-tight"
               text={["Settle Your Loved One’s Estate", "With Legal Guidance"]}
               speed={28}
               delay={100}
@@ -140,13 +140,13 @@ export function ProbateHero() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2 reveal-left reveal-delay-3">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 pt-2 reveal-left reveal-delay-3">
               {/* Button 1: Schedule A Consultation */}
               <button
                 type="button"
                 data-open-consultation
                 aria-label="Schedule a consultation"
-                className="bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs md:text-[13px] tracking-wider uppercase px-7 py-3.5 rounded-md inline-flex items-center gap-2 shadow-xs transition-all duration-300 group hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+                className="w-full sm:w-auto justify-center bg-[#ECAB3C] hover:bg-[#dca034] text-[#091D46] font-bold text-xs md:text-[13px] tracking-wider uppercase px-6 sm:px-7 py-3.5 rounded-md inline-flex items-center gap-2 shadow-xs transition-all duration-300 group hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
               >
                 <span>Schedule A Consultation</span>
                 <span className="group-hover:translate-x-1.5 transition-transform duration-200">
@@ -158,7 +158,7 @@ export function ProbateHero() {
               <a
                 href="tel:+18132796180"
                 aria-label="Call (813) 279-6180"
-                className="bg-white/90 hover:bg-[#091D46] hover:text-white text-[#091D46] border border-[#091D46] font-bold text-xs md:text-[13px] tracking-wider uppercase px-7 py-3.5 rounded-md inline-flex items-center gap-2 transition-all duration-300 group hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
+                className="w-full sm:w-auto justify-center bg-white/90 hover:bg-[#091D46] hover:text-white text-[#091D46] border border-[#091D46] font-bold text-xs md:text-[13px] tracking-wider uppercase px-6 sm:px-7 py-3.5 rounded-md inline-flex items-center gap-2 transition-all duration-300 group hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>Call (813) 279-6180</span>
                 <span className="group-hover:translate-x-1.5 transition-transform duration-200">
@@ -170,7 +170,7 @@ export function ProbateHero() {
 
           {/* Right Column: Cynthia Portrait - Reveal from Right */}
           <div className="lg:col-span-5 xl:col-span-5 flex justify-center lg:justify-end items-end self-end pb-0 leading-none">
-            <div className="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-none flex justify-center lg:justify-end items-end leading-none reveal-image-right">
+            <div className="relative w-full max-w-[300px] sm:max-w-[440px] lg:max-w-none flex justify-center lg:justify-end items-end leading-none reveal-image-right">
               <Image
                 src="/images/cynthia.png"
                 alt="Attorney Cynthia I. Waisman - Tampa Probate Lawyer"
@@ -178,7 +178,7 @@ export function ProbateHero() {
                 height={1126}
                 priority
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 420px"
-                className="w-auto h-[380px] sm:h-[460px] md:h-[520px] lg:h-[580px] xl:h-[640px] object-contain object-bottom drop-shadow-sm select-none block align-bottom -mb-px"
+                className="w-auto h-[300px] sm:h-[460px] md:h-[520px] lg:h-[580px] xl:h-[640px] object-contain object-bottom drop-shadow-sm select-none block align-bottom -mb-px"
               />
             </div>
           </div>

@@ -16,22 +16,59 @@ const delays = [
   "Delays in collecting estate assets.",
 ];
 
+const timelines = [
+  {
+    process: "Summary administration",
+    duration: "Often several weeks to a few months",
+  },
+  {
+    process: "Straightforward formal administration",
+    duration: "Often several months",
+  },
+  {
+    process: "Formal administration with tax or real estate matters",
+    duration: "Often 6–12 months or longer",
+  },
+  {
+    process: "Contested probate",
+    duration: "Often 12 months or longer, based on court and litigation activity",
+  },
+];
+
 export function ProbateTimelineSection() {
   return (
-    <section id="time" className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-gray-200">
+    <section id="time" className="relative w-full py-12 sm:py-20 lg:py-24 bg-white border-t border-gray-200">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[820px] mb-8">
-          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
+        <div className="max-w-[820px] mb-6 sm:mb-8">
+          <h2 className="font-serif text-[clamp(1.45rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
             How long does probate take in Tampa?
           </h2>
-          <p className="text-[1.05rem] text-[#586375] leading-relaxed m-0">
+          <p className="text-sm sm:text-[1.05rem] text-[#586375] leading-relaxed m-0">
             Probate timing depends on administration type, estate assets,
             creditor issues, property matters, beneficiary cooperation, court
             schedules and contested issues.
           </p>
         </div>
 
-        <div className="overflow-x-auto border border-gray-200 rounded-2xl bg-white shadow-xs my-6">
+        {/* Mobile Timeline Cards */}
+        <div className="sm:hidden space-y-3 my-5">
+          {timelines.map((row) => (
+            <div
+              key={row.process}
+              className="border border-gray-200 rounded-xl p-4 bg-[#fbf9f5]"
+            >
+              <p className="font-bold text-sm text-[#091D46] mb-1">
+                {row.process}
+              </p>
+              <p className="text-xs text-[#586375] leading-relaxed m-0">
+                {row.duration}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Timeline Table */}
+        <div className="hidden sm:block overflow-x-auto border border-gray-200 rounded-2xl bg-white shadow-xs my-6">
           <table className="w-full min-w-[580px] border-collapse text-[0.94rem]">
             <thead>
               <tr className="bg-[#091D46]">
@@ -44,24 +81,19 @@ export function ProbateTimelineSection() {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
-              <tr className="hover:bg-[#fbf9f5] transition-colors">
-                <td className="py-4 px-6 font-bold text-[#091D46]">Summary administration</td>
-                <td className="py-4 px-6 text-[#586375]">Often several weeks to a few months</td>
-              </tr>
-              <tr className="bg-[#ECAB3C]/[0.06] hover:bg-[#ECAB3C]/[0.10] transition-colors">
-                <td className="py-4 px-6 font-bold text-[#091D46]">Straightforward formal administration</td>
-                <td className="py-4 px-6 text-[#586375]">Often several months</td>
-              </tr>
-              <tr className="hover:bg-[#fbf9f5] transition-colors">
-                <td className="py-4 px-6 font-bold text-[#091D46]">Formal administration with tax or real estate matters</td>
-                <td className="py-4 px-6 text-[#586375]">Often 6–12 months or longer</td>
-              </tr>
-              <tr className="bg-[#ECAB3C]/[0.06] hover:bg-[#ECAB3C]/[0.10] transition-colors">
-                <td className="py-4 px-6 font-bold text-[#091D46]">Contested probate</td>
-                <td className="py-4 px-6 text-[#586375]">
-                  Often 12 months or longer, based on court and litigation activity
-                </td>
-              </tr>
+              {timelines.map((row, idx) => (
+                <tr
+                  key={row.process}
+                  className={
+                    idx % 2 === 1
+                      ? "bg-[#ECAB3C]/[0.06] hover:bg-[#ECAB3C]/[0.10] transition-colors"
+                      : "hover:bg-[#fbf9f5] transition-colors"
+                  }
+                >
+                  <td className="py-4 px-6 font-bold text-[#091D46]">{row.process}</td>
+                  <td className="py-4 px-6 text-[#586375]">{row.duration}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

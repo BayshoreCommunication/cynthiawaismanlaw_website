@@ -126,9 +126,10 @@ export default function EstatePlanningSection() {
                             </div>
 
                             {/* Main Heading */}
-                            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-[#091D46] tracking-tight leading-[1.15]" data-animate="fade-up" data-delay="200">
+                            <h2 className="font-serif text-[26px] sm:text-4xl lg:text-[42px] font-normal text-[#091D46] tracking-tight leading-[1.18] sm:leading-[1.15]" data-animate="fade-up" data-delay="200">
                                 Why Families Choose
-                                <br />
+                                <span className="sm:hidden"> </span>
+                                <br className="hidden sm:inline" />
                                 Cynthia for Estate Planning
                             </h2>
 

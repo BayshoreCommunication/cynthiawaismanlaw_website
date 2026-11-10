@@ -127,10 +127,10 @@ const navItems: NavItem[] = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  if (pathname === "/review-us" || pathname === "/review") return null;
-
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openSubmenus, setOpenSubmenus] = useState<Record<string, boolean>>({});
+
+  if (pathname === "/review-us" || pathname === "/review") return null;
 
   const toggleSubmenu = (label: string) => {
     setOpenSubmenus((prev) => ({
@@ -150,21 +150,21 @@ export default function Navbar() {
     <header className="w-full bg-white sticky top-0 z-50 shadow-xs">
       {/* Top Header Section */}
       <div className="w-full bg-white border-b border-gray-100">
-        <div className="w-full max-w-[1320px] mx-auto px-4 py-3 sm:py-4 flex items-center justify-between gap-4">
+        <div className="w-full max-w-[1320px] mx-auto px-3 sm:px-4 py-2.5 sm:py-4 flex items-center justify-between gap-2 sm:gap-4">
           {/* Logo */}
-          <Link href="/" className="inline-block transition-opacity hover:opacity-95">
+          <Link href="/" className="inline-block min-w-0 shrink transition-opacity hover:opacity-95">
             <Image
               src="/images/logo.png"
               alt="Cynthia I. Waisman, P.A. Attorney At Law"
               width={335}
               height={67}
               priority
-              className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+              className="h-10 sm:h-14 md:h-16 w-auto max-w-[205px] sm:max-w-none object-contain"
             />
           </Link>
 
           {/* Right: Phone & Mobile Hamburger */}
-          <div className="flex items-center gap-4 sm:gap-6">
+          <div className="flex items-center gap-2 sm:gap-6 shrink-0">
             {/* Call Action Link: Icon only on phone, Icon + Number on web */}
             <a
               href="tel:+18132796180"

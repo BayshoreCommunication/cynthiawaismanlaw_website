@@ -13,15 +13,15 @@ export function WhatIsProbateSection() {
   ];
 
   return (
-    <section id="what" className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-gray-200">
+    <section id="what" className="relative w-full py-12 sm:py-20 lg:py-24 bg-white border-t border-gray-200">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-start">
           {/* Left Column: Description */}
           <div>
-            <h2 className="font-serif text-[#091D46] text-2xl sm:text-3xl lg:text-[36px] font-semibold leading-tight mb-4">
+            <h2 className="font-serif text-[#091D46] text-[1.45rem] sm:text-3xl lg:text-[36px] font-semibold leading-tight mb-3.5 sm:mb-4">
               Let’s understand what probate is
             </h2>
-            <p className="font-serif text-[#ECAB3C] font-semibold text-lg sm:text-xl leading-relaxed mb-4">
+            <p className="font-serif text-[#ECAB3C] font-semibold text-base sm:text-xl leading-relaxed mb-3.5 sm:mb-4">
               Probate transfers legal property ownership and clears land titles after someone passes away.
             </p>
             <p className="text-[#586375] text-sm sm:text-base leading-relaxed">
@@ -34,7 +34,7 @@ export function WhatIsProbateSection() {
             <p className="font-bold text-[#091D46] text-base mb-3.5">
               Probate usually involves below core tasks,
             </p>
-            <div className="bg-[#091D46] rounded-[22px] p-6 sm:p-8 text-[#e6edf8] shadow-lg">
+            <div className="bg-[#091D46] rounded-[22px] p-5 sm:p-8 text-[#e6edf8] shadow-lg">
               <ol className="space-y-3.5 list-none m-0 p-0">
                 {coreTasks.map((task, index) => (
                   <li

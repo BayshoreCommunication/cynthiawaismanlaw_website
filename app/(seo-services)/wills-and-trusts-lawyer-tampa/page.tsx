@@ -88,7 +88,7 @@ export default function WillsAndTrustsLawyerTampaPage() {
   };
 
   return (
-    <main className="w-full bg-[#fbf9f5] min-h-screen">
+    <div className="w-full max-w-full overflow-x-clip bg-[#fbf9f5] min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceSchema) }}
@@ -117,7 +117,7 @@ export default function WillsAndTrustsLawyerTampaPage() {
       <WillsConsultationCtaSection />
       <ContactFirmSection />
       <WillsMobileStickyBar />
-    </main>
+    </div>
   );
 }
 

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -9,6 +8,10 @@ export default function Footer() {
     const pathname = usePathname();
     if (pathname === "/review-us" || pathname === "/review") return null;
 
+    const hasStickyMobileBar =
+        pathname === "/probate-lawyer-tampa" ||
+        pathname === "/wills-and-trusts-lawyer-tampa" ||
+        pathname === "/estate-planning-attorney-tampa";
     const currentYear = 2026;
 
     return (
@@ -336,7 +339,7 @@ export default function Footer() {
 
             {/* Bottom Bar: Copyright, Nav Links, Social, Legal */}
             <div className="w-full border-t border-white/10 bg-[#01172d]">
-                <div className="w-full max-w-[1320px] mx-auto px-4 py-5 space-y-4">
+                <div className={`w-full max-w-[1320px] mx-auto px-4 pt-5 space-y-4 ${hasStickyMobileBar ? "pb-24 md:pb-5" : "pb-5"}`}>
                     {/* Top Row: Copyright, Nav Links, Social */}
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-gray-400">
                         {/* Copyright */}

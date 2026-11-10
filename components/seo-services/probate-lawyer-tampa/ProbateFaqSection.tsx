@@ -36,17 +36,17 @@ export const probateFaqs = [
 
 export function ProbateFaqSection() {
   return (
-    <section id="faq" className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200">
+    <section id="faq" className="relative w-full py-12 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.35fr] gap-8 lg:gap-14 items-start">
           <div className="lg:sticky lg:top-28">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ECAB3C]/10 border border-[#ECAB3C]/25 text-[#091D46] text-xs font-bold uppercase tracking-wider mb-3.5">
               Got Questions?
             </div>
-            <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-4">
+            <h2 className="font-serif text-[clamp(1.45rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-4">
               Frequently asked questions about probate
             </h2>
-            <p className="text-base sm:text-[1.02rem] text-[#586375] leading-relaxed mb-6">
+            <p className="text-sm sm:text-[1.02rem] text-[#586375] leading-relaxed mb-6">
               Have questions about probating a will or administering an estate in Hillsborough County? Here are clear, straightforward answers to the legal questions families ask most often.
             </p>
             <a
@@ -75,15 +75,15 @@ export function ProbateFaqSection() {
                 key={faq.question}
                 className="group bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-200 open:border-[#ECAB3C] open:shadow-[0_8px_24px_rgba(9,29,70,0.08)]"
               >
-                <summary className="font-serif text-base sm:text-lg font-semibold text-[#091D46] p-5 sm:p-6 cursor-pointer list-none flex items-center justify-between gap-4 select-none hover:text-[#ECAB3C] transition-colors [&::-webkit-details-marker]:hidden">
-                  <h3 className="font-serif text-base sm:text-lg font-semibold text-inherit m-0 p-0 leading-snug">
+                <summary className="font-serif text-[15px] sm:text-lg font-semibold text-[#091D46] p-4 sm:p-6 cursor-pointer list-none flex items-center justify-between gap-3 sm:gap-4 select-none hover:text-[#ECAB3C] transition-colors [&::-webkit-details-marker]:hidden">
+                  <h3 className="font-serif text-[15px] sm:text-lg font-semibold text-inherit m-0 p-0 leading-snug">
                     {faq.question}
                   </h3>
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#fbf9f5] group-open:bg-[#ECAB3C]/15 text-[#ECAB3C] flex items-center justify-center text-xl font-bold transition-transform duration-200 group-open:rotate-45">
                     +
                   </span>
                 </summary>
-                <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 border-t border-transparent group-open:border-gray-200">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-0 border-t border-transparent group-open:border-gray-200">
                   <p className="text-sm sm:text-base text-[#586375] leading-relaxed m-0 pt-3">
                     {faq.answer}
                   </p>

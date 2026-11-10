@@ -216,7 +216,7 @@ export default function ServicesSection() {
           {/* Main Title - Typing Animation Without Cursor */}
           <TypingTitle
             as="h2"
-            className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-[#091D46] tracking-tight leading-tight"
+            className="font-serif text-[25px] sm:text-4xl md:text-[42px] font-normal text-[#091D46] tracking-tight leading-snug sm:leading-tight"
             text="Immigration & Elder Law Services For The Tampa Area"
             speed={22}
             delay={100}

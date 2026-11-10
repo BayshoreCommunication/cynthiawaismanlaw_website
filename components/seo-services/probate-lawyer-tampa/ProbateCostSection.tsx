@@ -21,14 +21,14 @@ export function ProbateCostSection() {
   return (
     <section
       id="cost"
-      className="relative w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-gray-200"
+      className="relative w-full py-12 sm:py-20 lg:py-24 bg-white border-t border-gray-200"
     >
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[820px] mb-8">
-          <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
+        <div className="max-w-[820px] mb-6 sm:mb-8">
+          <h2 className="font-serif text-[clamp(1.45rem,3.2vw,2.5rem)] font-semibold text-[#091D46] leading-[1.22] mb-3.5">
             How much does probate cost in Florida?
           </h2>
-          <p className="text-[1.05rem] text-[#586375] leading-relaxed">
+          <p className="text-sm sm:text-[1.05rem] text-[#586375] leading-relaxed">
             Probate expenses depend on administration type, court filings,
             estate assets, property work, notices, recording, accounting and
             other case requirements. Florida law sets maximum clerk filing fees
@@ -36,7 +36,25 @@ export function ProbateCostSection() {
           </p>
         </div>
 
-        <div className="overflow-x-auto border border-gray-200 rounded-2xl bg-white shadow-xs my-6">
+        {/* Mobile Cost List Cards */}
+        <div className="sm:hidden space-y-2.5 my-5">
+          {expenses.map((row) => (
+            <div
+              key={row.item}
+              className="border border-gray-200 rounded-xl p-3.5 bg-[#fbf9f5] flex flex-col gap-1"
+            >
+              <span className="font-semibold text-sm text-[#091D46]">
+                {row.item}
+              </span>
+              <span className="text-xs font-medium text-[#586375]">
+                {row.cost}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Cost Table */}
+        <div className="hidden sm:block overflow-x-auto border border-gray-200 rounded-2xl bg-white shadow-xs my-6">
           <table className="w-full border-collapse text-left text-sm sm:text-base">
             <thead className="bg-[#091D46] text-[#ECAB3C]">
               <tr>

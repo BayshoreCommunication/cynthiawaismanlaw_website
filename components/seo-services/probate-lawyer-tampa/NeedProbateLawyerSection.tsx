@@ -131,30 +131,30 @@ export function NeedProbateLawyerSection() {
   ];
 
   return (
-    <section id="need" className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200">
+    <section id="need" className="relative w-full py-12 sm:py-20 lg:py-24 bg-[#fbf9f5] border-t border-gray-200">
       <div className="w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl mb-12">
-          <h2 className="font-serif text-[#091D46] text-2xl sm:text-3xl lg:text-[36px] font-semibold leading-tight mb-4">
+        <div className="max-w-3xl mb-8 sm:mb-12">
+          <h2 className="font-serif text-[#091D46] text-[1.45rem] sm:text-3xl lg:text-[36px] font-semibold leading-tight mb-3.5 sm:mb-4">
             Do you need a probate lawyer in Tampa, FL ?
           </h2>
-          <p className="text-[#586375] text-base sm:text-lg leading-relaxed">
+          <p className="text-[#586375] text-sm sm:text-lg leading-relaxed">
             It’s very common to face wills with limited assets, real estate, creditor claims, several beneficiaries, business interests or a dispute over the estate after a loved one passes away. Each situation requires legal work. Tampa probate attorneys can review the estate, identify the correct probate administration and protect estate assets.
           </p>
         </div>
 
         {/* 9 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {cards.map((card) => (
             <div
               key={card.num}
-              className="relative bg-white border border-gray-200 rounded-[20px] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#ECAB3C] flex flex-col justify-between"
+              className="relative bg-white border border-gray-200 rounded-[20px] p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#ECAB3C] flex flex-col justify-between"
             >
               <div>
-                <div className="w-[52px] h-[52px] rounded-[14px] bg-[#091D46] text-[#ECAB3C] flex items-center justify-center mb-5">
+                <div className="w-[46px] h-[46px] sm:w-[52px] sm:h-[52px] rounded-[14px] bg-[#091D46] text-[#ECAB3C] flex items-center justify-center mb-4 sm:mb-5">
                   {card.icon}
                 </div>
-                <span className="absolute right-6 top-6 font-serif text-3xl font-semibold text-[#ECAB3C]/40 select-none">
+                <span className="absolute right-5 top-5 sm:right-6 sm:top-6 font-serif text-2xl sm:text-3xl font-semibold text-[#ECAB3C]/40 select-none">
                   {card.num}
                 </span>
                 <h3 className="font-serif text-xl font-semibold text-[#091D46] mb-3 leading-snug">

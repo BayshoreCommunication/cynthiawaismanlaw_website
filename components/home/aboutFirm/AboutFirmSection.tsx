@@ -21,23 +21,23 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
 
             {/* Same 1320px Container */}
             <div className="relative z-10 w-full max-w-[1320px] mx-auto px-4 pb-0">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-end">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-end">
                     {/* Left Column: Cynthia Portrait flush to bottom - Reveal from Left */}
-                    <div className="lg:col-span-4 xl:col-span-4 flex justify-center lg:justify-start items-end self-end relative leading-none pb-0">
-                        <div className="relative w-full max-w-[340px] sm:max-w-[380px] lg:max-w-none flex justify-center lg:justify-start items-end leading-none reveal-image-left">
+                    <div className="lg:col-span-4 xl:col-span-4 flex justify-center lg:justify-start items-end self-end relative leading-none pt-6 lg:pt-0 pb-0">
+                        <div className="relative w-full max-w-[280px] sm:max-w-[380px] lg:max-w-none flex justify-center lg:justify-start items-end leading-none reveal-image-left">
                             <Image
                                 src="/images/cynthia2.png"
                                 alt="Attorney Cynthia I. Waisman"
                                 width={692}
                                 height={1037}
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
-                                className="w-auto h-[440px] sm:h-[480px] md:h-[520px] lg:h-[540px] xl:h-[580px] object-contain object-bottom drop-shadow-md select-none block align-bottom -mb-px"
+                                className="w-auto h-[300px] sm:h-[460px] md:h-[520px] lg:h-[540px] xl:h-[580px] object-contain object-bottom drop-shadow-md select-none block align-bottom -mb-px"
                             />
                         </div>
                     </div>
 
                     {/* Right Content Area: Box 1 (Text + Practice Areas) on Top, Box 2 (4 Stats) at Bottom */}
-                    <div className="lg:col-span-8 xl:col-span-8 flex flex-col justify-center self-center py-8 lg:py-10">
+                    <div className="lg:col-span-8 xl:col-span-8 flex flex-col justify-center self-center pb-8 pt-2 sm:py-8 lg:py-10">
                         {/* Box 1 (Top Block): Left Text + Right Practice Areas Card */}
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-7 items-start">
                             {/* Left Text Block */}
@@ -53,7 +53,7 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                 {/* Main Heading - Typing Animation Without Cursor */}
                                 <TypingTitle
                                     as="h2"
-                                    className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-normal text-[#091D46] tracking-tight leading-[1.18]"
+                                    className="font-serif text-[26px] sm:text-4xl lg:text-[40px] font-normal text-[#091D46] tracking-tight leading-[1.2] sm:leading-[1.18]"
                                     text={["Guiding Families Toward", "a More Secure Future"]}
                                     speed={28}
                                     delay={120}
@@ -80,7 +80,7 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
 
                             {/* Right Practice Areas Card */}
                             <div className="md:col-span-5 flex justify-center md:justify-end">
-                                <div className="w-full max-w-[340px] md:max-w-none bg-white rounded-xl shadow-lg border border-gray-100 p-5 sm:p-5.5 space-y-3.5 reveal-right reveal-delay-2">
+                                <div className="w-full max-w-full sm:max-w-[360px] md:max-w-none bg-white rounded-xl shadow-lg border border-gray-100 p-4 sm:p-5.5 space-y-3.5 reveal-right reveal-delay-2">
                                     {/* Card Header */}
                                     <div className="inline-flex items-center gap-2 pb-0.5">
                                         <span className="w-5 h-[2px] bg-[#ECAB3C]" />
@@ -216,12 +216,12 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
 
                         {/* Box 2 (Bottom Block): 4 Feature / Stat Badges spanning horizontally across */}
                         <div className="mt-8 pt-6 border-t border-gray-200/80">
-                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 lg:gap-2">
+                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-3 lg:gap-2">
                                 {/* Stat 1: 25+ Years */}
-                                <div className="flex items-center gap-3 sm:border-r sm:border-gray-200/80 sm:pr-3" data-animate="fade-up" data-delay="150">
-                                    <div className="w-[60px] h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
+                                <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left gap-2.5 sm:gap-3 sm:border-r sm:border-gray-200/80 sm:pr-3" data-animate="fade-up" data-delay="150">
+                                    <div className="w-12 h-12 sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
                                         <svg
-                                            className="w-6 h-6"
+                                            className="w-5 h-5 sm:w-6 sm:h-6"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -238,17 +238,17 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                         <p className="font-bold text-xs sm:text-[13.5px] text-[#091D46]">
                                             25+ Years
                                         </p>
-                                        <p className="text-[10.5px] sm:text-[11px] text-gray-500 mt-0.5">
+                                        <p className="text-[11px] text-gray-500 mt-0.5">
                                             of Legal Experience
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Stat 2: Personalized Guidance */}
-                                <div className="flex items-center gap-3 sm:border-r sm:border-gray-200/80 sm:px-3" data-animate="fade-up" data-delay="250">
-                                    <div className="w-[60px] h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
+                                <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left gap-2.5 sm:gap-3 sm:border-r sm:border-gray-200/80 sm:px-3" data-animate="fade-up" data-delay="250">
+                                    <div className="w-12 h-12 sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
                                         <svg
-                                            className="w-6 h-6"
+                                            className="w-5 h-5 sm:w-6 sm:h-6"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -265,17 +265,17 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                         <p className="font-bold text-xs sm:text-[13.5px] text-[#091D46]">
                                             Personalized Guidance
                                         </p>
-                                        <p className="text-[10.5px] sm:text-[11px] text-gray-500 mt-0.5">
+                                        <p className="text-[11px] text-gray-500 mt-0.5">
                                             Direct Attorney Communication
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Stat 3: Compassionate Approach */}
-                                <div className="flex items-center gap-3 sm:border-r sm:border-gray-200/80 sm:px-3" data-animate="fade-up" data-delay="350">
-                                    <div className="w-[60px] h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
+                                <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left gap-2.5 sm:gap-3 sm:border-r sm:border-gray-200/80 sm:px-3" data-animate="fade-up" data-delay="350">
+                                    <div className="w-12 h-12 sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
                                         <svg
-                                            className="w-6 h-6"
+                                            className="w-5 h-5 sm:w-6 sm:h-6"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -292,17 +292,17 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                         <p className="font-bold text-xs sm:text-[13.5px] text-[#091D46]">
                                             Compassionate Approach
                                         </p>
-                                        <p className="text-[10.5px] sm:text-[11px] text-gray-500 mt-0.5">
+                                        <p className="text-[11px] text-gray-500 mt-0.5">
                                             Focused on Your Family&apos;s Future
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Stat 4: Serving Tampa Bay */}
-                                <div className="flex items-center gap-3 sm:pl-3" data-animate="fade-up" data-delay="450">
-                                    <div className="w-[60px] h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
+                                <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left gap-2.5 sm:gap-3 sm:pl-3" data-animate="fade-up" data-delay="450">
+                                    <div className="w-12 h-12 sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] rounded-full bg-[#fdf8f0] border border-[#ECAB3C]/40 text-[#ECAB3C] flex items-center justify-center shrink-0 shadow-xs">
                                         <svg
-                                            className="w-6 h-6"
+                                            className="w-5 h-5 sm:w-6 sm:h-6"
                                             fill="currentColor"
                                             viewBox="0 0 24 24"
                                         >
@@ -313,7 +313,7 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                                         <p className="font-bold text-xs sm:text-[13.5px] text-[#091D46]">
                                             Serving Tampa Bay
                                         </p>
-                                        <p className="text-[10px] sm:text-[10.5px] text-gray-500 mt-0.5">
+                                        <p className="text-[10.5px] text-gray-500 mt-0.5">
                                             Tampa • Clearwater • Wesley Chapel
                                         </p>
                                     </div>

@@ -31,7 +31,7 @@ export default function ContactFirmSection() {
                     </div>
 
                     {/* Main Title */}
-                    <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-normal text-[#091D46] tracking-tight leading-tight mb-4" data-animate="fade-up" data-delay="200">
+                    <h2 className="font-serif text-[26px] sm:text-4xl lg:text-[44px] font-normal text-[#091D46] tracking-tight leading-tight mb-4" data-animate="fade-up" data-delay="200">
                         Take the First Step Toward Peace of Mind
                     </h2>
 
@@ -46,7 +46,7 @@ export default function ContactFirmSection() {
                 {/* Two-Column Grid: Left Navy Info Card & Right White Form Card */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch gap-8 lg:gap-0">
                     {/* Left Column: Navy Contact Card */}
-                    <div className="lg:col-span-5 bg-[#091D46] text-white rounded-2xl lg:rounded-r-none p-7 sm:p-9 lg:p-10 shadow-2xl flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-b border-blue-950" data-animate="fade-right" data-delay="200">
+                    <div className="lg:col-span-5 bg-[#091D46] text-white rounded-2xl lg:rounded-r-none p-5 sm:p-9 lg:p-10 shadow-2xl flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-b border-blue-950" data-animate="fade-right" data-delay="200">
                         {/* Top: Title & Subtitle moved to Left Column */}
                         <div>
                             <div className="flex items-center gap-2 mb-2">
