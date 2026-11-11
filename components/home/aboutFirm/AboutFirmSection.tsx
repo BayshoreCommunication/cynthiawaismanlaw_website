@@ -26,7 +26,7 @@ export default function AboutFirmSection({ id }: AboutFirmSectionProps = {}) {
                     <div className="lg:col-span-4 xl:col-span-4 flex justify-center lg:justify-start items-end self-end relative leading-none pt-6 lg:pt-0 pb-0">
                         <div className="relative w-full max-w-[280px] sm:max-w-[380px] lg:max-w-none flex justify-center lg:justify-start items-end leading-none reveal-image-left">
                             <Image
-                                src="/images/cynthia2.png"
+                                src="/images/cynthia3.png"
                                 alt="Attorney Cynthia I. Waisman"
                                 width={692}
                                 height={1037}
